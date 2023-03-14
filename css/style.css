@@ -30,7 +30,8 @@ hr.line {
 /* IDs */
 
 #home,
-#sobre {
+#sobre,
+#autoras {
     background-color: var(--font-light);
 }
 

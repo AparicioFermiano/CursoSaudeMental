@@ -12,19 +12,14 @@ function nav() {
 }
 
 function mudar_carrosel(id, sem_nav) {
-	var id_format = '#list-' + id.substring(1);
-	var $carousel = $('#carousel');
-	var $sidebarItems = $('.sidebar-item');
-	var $selectedItem = $(id_format);
-  
-	$carousel.carousel($selectedItem.index());
-	$sidebarItems.removeClass('active');
-	$selectedItem.addClass('active');
-	console.log(sem_nav)
+	$('#carousel').carousel($(id).index());
+	$('.sidebar-item').removeClass('active');
+	$('#list-' + id.substring(1)).addClass('active');
+
 	if (sem_nav !== 1) {
 	  nav();
 	}
-	
+
 	$('html, body').scrollTop(0);
   }
 	
