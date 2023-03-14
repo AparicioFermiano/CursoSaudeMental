@@ -1,38 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/sidenav.css">
     <title>Módulo 01</title>
 </head>
+
 <body>
-    <div class="p-4 vh-75">
-        <div class="container-fluid bg-dark rounded-2">
-            <div class="row d-flex justify-content-center align-items-center vh-100">
-                <div class="col-lg-6 col-md-8 col-sm-12 align-items-center text-center">
-                    <h3 class="bold text-light">Curso em aperfeiçoamento em saúde mental e atenção psicossocial de adolescentes e jovens</h3>
-                    <hr class="light">
-                    <p class="text-light">Módulo: Adolescências e juventudes na contemporaneidade: diferentes perspectivas, diversidades, aspectos étnicos e culturais</p>
-                    <div class="d-flex justify-content-around">
-                        <button class="btn btn-danger rounded-5 px-5">Sobre as autoras</button>
-                        <button class="btn btn-danger rounded-5 px-5">Iniciar</button>
+    <!-- SIDEBAR -->
+    <nav class="sidebar-navbar">
+        <button id="btn-sidebar" class="z-5 btn-sidebar" type="button" data-toggle="collapse"
+            aria-expanded="false" aria-label="Toggle navigation" onclick="nav()">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <p class="title">MENU</p>
+        <ul class="list-group">
+            <li id="list-home" class="sidebar-item active py-1 px-2">
+                <button class="w-100 text-start" onclick="mudar_carrosel('#home')">
+                    <i class="bi bi-house"></i>
+                </button>
+            </li>
+            <li id="list-sobre" class="sidebar-item py-3 px-2">
+                <button class="w-100 text-start" onclick="mudar_carrosel('#sobre')">
+                    sobre o módulo
+                </button>
+            </li>
+        </ul>
+        <div class="mt-auto p-2">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div id="home" class="carousel-item active p-4">
+                <div  class="container-fluid background-capa rounded-2">
+                    <div class="row justify-content-center align-items-center padding-container">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-container">
+                            <span class="title font-size-md">Curso em aperfeiçoamento em saúde mental e atenção psicossocial de
+                                adolescentes e jovens</span>
+                            <hr class="line line-primary my-4">
+                            <p class="subtitle">Módulo: Adolescências e juventudes na contemporaneidade: diferentes
+                                perspectivas, diversidades, aspectos étnicos e culturais</p>
+                            <div class="row justify-content-around py-5">
+                                <button class="col-lg-6 col-md-12 col-sm-12 btn btn-1 rounded-5">Sobre as autoras</button>
+                                <button class="col-lg-6 col-md-12 col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#sobre')">Iniciar</button>
+                            </div>
+                            <div class="d-flex justify-content-between pb-5">
+                                <div class="wrapper my-auto mx-1">
+                                    <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
+                                </div>
+                                <div class="wrapper my-auto mx-1">
+                                    <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
+                                </div>
+                                <div class="wrapper my-auto mx-1">
+                                    <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <img class="w-100 mx-auto d-block" src="./image/capa_modulo_1.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-4 col-sm-12 vh-100">
-                    <div class="background-light"></div>
-                    <svg width="178" height="309" viewBox="0 0 178 309" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="178" height="309" rx="20" fill="#EACD97"/>
-                        </svg>
-                        
-                    <img src="./image/capa_modulo_1.png" alt="">
-                </div>
+              </div>
+              <div id="sobre" class="carousel-item">
+                <div class="w-100 vh-100 bg-warning" ></div>
+              </div>
+              <div id="teste1" class="carousel-item">
+                <div class="w-100 vh-100 bg-dark" ></div>
+              </div>
             </div>
-        </div>
-        
+          </div>
+       
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    
 </body>
+
 </html>
