@@ -11,11 +11,20 @@ function nav() {
 	}
 }
 
-function mudar_carrosel(id) {
-	var id_format = '#list-' + id.replace('#', '');
-	$('#carousel').carousel($(id).index());
-	$('.sidebar-item').removeClass('active');
-	$(id_format).addClass('active');
-
-}
+function mudar_carrosel(id, sem_nav) {
+	var id_format = '#list-' + id.substring(1);
+	var $carousel = $('#carousel');
+	var $sidebarItems = $('.sidebar-item');
+	var $selectedItem = $(id_format);
+  
+	$carousel.carousel($selectedItem.index());
+	$sidebarItems.removeClass('active');
+	$selectedItem.addClass('active');
+	console.log(sem_nav)
+	if (sem_nav !== 1) {
+	  nav();
+	}
+	
+	$('html, body').scrollTop(0);
+  }
 	

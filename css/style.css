@@ -13,21 +13,35 @@ body {
     overflow-y: scroll;
 }
 
-p {
+p, li {
     font-size: 1.2em;
     color: var(--font-dark);
 }
 
-.padding-container{
-    padding: 3rem;
+p.rodape {
+    font-size: small;
+}
+
+hr.line {
+    border: solid 1px;
+    opacity: 1;
+}
+
+/* IDs */
+
+#home,
+#sobre {
+    background-color: var(--font-light);
 }
 
 #corpo {
     margin-right: 300px !important;
 }
 
-#home {
-    background-color: var(--font-light);
+/* CORES, BACKGROUND e FONTE */
+
+.bold {
+    font-weight: 700;
 }
 
 .background-capa {
@@ -36,27 +50,38 @@ p {
     display: flex;
 }
 
-.text-dark {
-    color: var(--font-dark);
+.text-primary {
+    color: var(--primary) !important; 
 }
 
-.bold {
+.text-dark,
+h5, h4, h3, h2, h1 {
+    color: var(--font-dark) !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+/* UTILITARIOS */
+
+.title {
+    font-style: normal;
     font-weight: 700;
+    font-size: 2em;
 }
 
-hr.line {
-    border: solid 1px;
-    opacity: 1;
+.subtitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6em;
 }
 
-p.rodape {
-    font-size: small;
-
+.space-line {
+    letter-spacing: 1px;
 }
 
-.line.line-primary  {
-    border-color: var(--primary) !important;
-}
+/* BOTAO */
 
 .btn-1 {
     background-color: var(--primary);
@@ -75,19 +100,21 @@ p.rodape {
     color: var(--font-light);
 }
 
-.title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2em;
-    color: var(--font-dark);
+/* OUTROS */
+
+.padding-container{
+    padding: 3rem;
 }
 
-.subtitle {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.6em;
-    color: var(--primary);
+.line.line-primary  {
+    border-color: var(--primary) !important;
 }
+
+.box-gradiente {
+    background: linear-gradient(89.58deg, #6CACAA 13.41%, #78D6CC 96.79%);
+    box-shadow: 0px 4px 4px rgba(20, 46, 82, 0.2);
+}
+
 
 @media (max-width: 992px) {
     #corpo {
@@ -96,10 +123,6 @@ p.rodape {
 
     .sidenav {
         margin-right: -300px;
-    }
-
-    p {
-        font-size: 0.8em;
     }
 
     .title {
@@ -122,5 +145,17 @@ p.rodape {
 
     .padding-container{
         padding: 2rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .padding-x-desk-5 {
+        padding-right: 3rem!important;
+        padding-left: 3rem!important;
+    }
+
+    .padding-x-desk-3 {
+        padding-right: 2rem!important;
+        padding-left: 2rem!important;
     }
 }
