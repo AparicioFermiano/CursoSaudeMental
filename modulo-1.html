@@ -32,11 +32,31 @@
                     <i class="bi bi-house"></i>
                 </button>
             </li>
+
             <li id="list-sobre" class="sidebar-item py-3 px-2">
                 <button class="w-100 text-start" onclick="mudar_carrosel('#sobre')">
                     sobre o módulo
                 </button>
             </li>
+
+            <li id="list-apresentacao-slide-1" class="sidebar-item py-3 px-2">
+                <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-1')">
+                    apresentação do módulo
+                </button>
+            </li>
+
+            <li id="list-conceituando" class="sidebar-item py-3 px-2">
+                <button class="w-100 text-start" onclick="mudar_carrosel('#conceituando')">
+                    conceituando adolescências e juventudes
+                </button>
+            </li>
+
+            <li id="list-trabalho_juventudes" class="sidebar-item py-3 px-2">
+                <button class="w-100 text-start" onclick="mudar_carrosel('#trabalho_juventudes')">
+                    Trabalho e juventudes
+                </button>
+            </li>
+
         </ul>
         <div class="mt-auto p-2">
             <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -54,7 +74,7 @@
         <div id="carousel" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
                 <!-- Home -->
-                <div id="home" class="carousel-item p-4 bg-default">
+                <div id="home" class="carousel-item bg-default">
                     <div class="container-fluid background-capa rounded-2">
                         <div class="row justify-content-center align-items-center padding-container">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-container">
@@ -67,7 +87,8 @@
                                     contemporaneidade: diferentes
                                     perspectivas, diversidades, aspectos étnicos e culturais</p>
                                 <div class="row justify-content-around py-5">
-                                    <button class="col-lg-6 col-md-12 col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#autoras', 1)">Sobre as
+                                    <button class="col-lg-6 col-md-12 col-sm-12 btn btn-1 rounded-5"
+                                        onclick="mudar_carrosel('#autoras', 1)">Sobre as
                                         autoras</button>
                                     <button class="col-lg-6 col-md-12 col-sm-12 btn btn-1 rounded-5"
                                         onclick="mudar_carrosel('#sobre', 1)">Iniciar</button>
@@ -91,9 +112,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Sobre -->
-                <div id="sobre" class="carousel-item p-4 bg-default">
-                    <div class="container-fluid rounded-2">
+                <!-- Sobre o curso -->
+                <div id="sobre" class="carousel-item bg-default">
+                    <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente text-center p-4">
                             <p class="title text-light">Sobre o Módulo</p>
                             <p class="text-light">Módulo: Adolescências e juventudes na contemporaneidade: diferentes
@@ -158,13 +179,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- Autoras -->
-                <div id="autoras" class="carousel-item py-4 active bg-default">
-                    <div class="container-fluid rounded-2">
+                <!-- Sobre as Autoras -->
+                <div id="autoras" class="carousel-item bg-default">
+                    <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente p-4">
-                            <button onclick="mudar_carrosel('#home', 1)" class="btn text-light title ml-auto text-start"><i class="bi bi-file-x"></i></button>
+                            <button onclick="mudar_carrosel('#home', 1)"
+                                class="btn text-light title ml-auto text-start"><i class="bi bi-file-x"></i></button>
                             <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
-                            
                         </div>
                         <div class="container-fluid pt-5">
                             <div class="row justify-content-center align-items-top">
@@ -201,7 +222,8 @@
                                         estruturação das primeiras ações de Saúde do Trabalhador, do Ministério da
                                         Saúde, para eliminação do trabalho infantil e proteção do trabalhador
                                         adolescente (2003 a 2009). Participou da cooperação técnica ao Programa Caminho
-                                        Melhor Jovem, da Secretaria de justifyEstado de Esportes, Lazer e Juventude (2013 a
+                                        Melhor Jovem, da Secretaria de justifyEstado de Esportes, Lazer e Juventude
+                                        (2013 a
                                         2016) e coordenou oficinas com jovens dos territórios de favelas, com Unidades
                                         de Polícia Pacificadora, contemplados pelo programa. Tem autoria em Módulos de
                                         autoaprendizagem para formação de equipes multidisciplinares nas áreas de
@@ -239,14 +261,326 @@
 
                     </div>
                 </div>
+                <!-- Apresentacao do modulo -->
+                <div id="apresentacao-slide-1" class="carousel-item bg-default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <div class="row">
+                            <div
+                                class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
+                                <img class="w-75 w-md-100" src="./image/apresentacao_modulo_1.png" alt="">
+                            </div>
+
+                            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 padding-x-desk-5 py-3">
+                                <p class="text-center title text-primary">Apresentação do módulo</p>
+                                <p class="text-justify">As adolescências e as juventudes brasileiras vêm conquistando um
+                                    novo olhar nas
+                                    últimas décadas. A Constituição de 1988, o Estatuto da Criança e do Adolescente
+                                    (BRASIL, 1990), o Estatuto da Juventude (BRASIL, 2013) e a definição dos
+                                    instrumentos legais de proteção a essa população representam grandes avanços para o
+                                    reconhecimento e a garantia dos direitos juvenis. Indicam a necessidade de
+                                    compreensão das diversidades desses grupos populacionais e a criação de condições
+                                    necessárias para a plena realização de suas potencialidades.
+                                    Neste módulo, abordaremos alguns dos principais temas que envolvem as juventudes
+                                    contemporâneas e que deverão ser considerados pelas equipes multidisciplinares nas
+                                    intervenções realizadas em muitos contextos por diferenciados setores.
+
+                                    Convidamos você a conhecer as histórias de três jovens moradores de um mesmo
+                                    território e protagonistas de diferentes trajetórias. Por meio dessas narrativas,
+                                    reafirmamos o entendimento das adolescências e das juventudes como processos
+                                    complexos, plurais e heterogêneos de emancipação. A pluralidade do conceito de
+                                    adolescência abrange as peculiaridades existentes nas várias regiões do país, nos
+                                    territórios rurais e urbanos, assim como nos diferentes gêneros, raças, etnias e
+                                    classes sociais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apresentacao do modulo - parte 2 -->
+                <div id="apresentacao-slide-2" class="carousel-item bg-default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-x-desk-5 text-justify">
+                                <p class="pb-2">De acordo com Novaes (2007), os modos de vida proporcionados à juventude
+                                    em nossa
+                                    sociedade criam o pano de fundo que influencia a adoção de suas práticas cotidianas.
+                                    Se pensarmos nos jovens do século XXI, podemos constatar que eles vivem em um mundo
+                                    globalizado, mas com profundas desigualdades sociais. Conforme vimos no caso
+                                    complexo, a condição juvenil pode ser vivida de forma desigual e diversa, ainda que
+                                    em um mesmo território, devido a diferenças de raça, etnia, gênero, orientação
+                                    sexual, inserção no mercado de trabalho, configurações familiares etc.</p>
+                                <p class="py-2">Nesse contexto, existem situações diferenciadas de vulnerabilidade
+                                    juvenil. Não
+                                    podemos, portanto, homogeneizar a categoria juventude. Em cada tempo e lugar,
+                                    fatores históricos, estruturais e conjunturais determinam as vulnerabilidades e as
+                                    potencialidades das juventudes.</p>
+                                <p class="py-2">Assim, é fundamental refletir sobre questões ligadas às novas
+                                    configurações
+                                    familiares, às identidades de gênero e orientações sexuais, às violências, à
+                                    desigualdade de direitos e oportunidades, à gravidez na adolescência, ao trabalho,
+                                    entre tantos outros aspectos</p>
+                                <img class="w-75" src="./image/apresentacao_modulo_1_detalhes.png" alt="">
+                            </div>
+
+                            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 padding-x-desk-5">
+                                <div class="rounded-4 box">
+                                    <p class="title text-light p-4 text-center">Você considera possível pensar em um
+                                        único jeito de ser adolescente?</p>
+                                </div>
+                                <p class="text-justify py-2">Falamos em adolescências e juventudes no plural por
+                                    considerarmos a diversidade dessas experiências no Brasil. Se a puberdade é um
+                                    fenômeno biológico e universal, as adolescências e juventudes são experiências sócio
+                                    e culturalmente construídas. O que você pensa sobre ser adolescente e jovem em uma
+                                    cidade grande, em um município pequeno, na zona rural, nas comunidades indígenas,
+                                    quilombolas etc.? Você conhece adolescentes e jovens que vivem essas experiências
+                                    diversas?
+                                </p>
+                                <p class="text-justify py-2">Neste módulo, falaremos também da puberdade, que invade o
+                                    corpo
+                                    da criança, provocando às vezes um sentimento de estranheza. O conceito de puberdade
+                                    está ligado às modificações hormonais que podem começar a partir dos oito anos nas
+                                    meninas e nove anos nos meninos e provocam aumento das mamas, dos pelos, dos
+                                    testículos e do pênis. Nessa fase, o crescimento acelera – é o que chamamos estirão
+                                    da puberdade.
+                                </p>
+                                <p class="text-justify py-2">
+                                    Nesse momento, ocorre, também, um intenso processo de maturação cerebral. Até o
+                                    século passado, acreditava-se que o cérebro finalizasse seu processo de
+                                    desenvolvimento aos 10 anos de idade. Hoje, sabemos que isso acontece além do
+                                    período definido como adolescência, especialmente a possibilidade de controlar os
+                                    impulsos e de planejar decisões.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apresentacao do modulo - parte 3 -->
+                <div id="apresentacao-slide-3" class="carousel-item bg-default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-x-desk-5">
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-desk-5 padding-mobile-2">
+                                        <p class="bold">Despertou seu interesse em conhecer mais sobre
+                                            a puberdade?</p>
+                                        <p class="text-justify py-2">Esse e-book trata da saúde de adolescentes e
+                                            aprofunda as questões sobre puberdade e adolescência Siga explorando o tema
+                                            Saúde do adolescente, clicando no documento:</p>
+                                        <p>
+                                            <a
+                                                href="https://www.nescon.medicina.ufmg.br/biblioteca/registro/referencia/0000002738">Clique
+                                                aqui para acessar o material descrito</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pt-5 text-justify">
+                                    <p class="py-2">Iremos abordar também as adolescências e juventudes, sempre no
+                                        plural, porque são muitas experiências e muito diversas. Raça, etnia, gênero,
+                                        orientação sexual, território etc. marcam profundamente cada adolescência e
+                                        juventude.</p>
+                                    <p class="py-2">Para falar de adolescentes e jovens, é fundamental falar das
+                                        famílias e dos territórios. Vamos indicar algumas leituras, filmes, músicas,
+                                        entre outros materiais, ok? Veja na lista de referências o que você vai ler, ver
+                                        ou ouvir!</p>
+                                    <p class="py-2">Vamos pensar em quantas famílias diferentes umas das outras você
+                                        conhece?
+                                        E em quantos lugares e modos de viver existem?</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 padding-x-desk-5 text-justify">
+                                <p class="pb-2">Agora que você já conhece os rumos da nossa prosa, fica uma dica: cada
+                                    adolescente ou jovem é único! As receitas prontas não dão conta da singularidade das
+                                    pessoas. Por esse motivo, nossa proposta é de conversarmos e trocarmos ideias, não
+                                    fornecer um guia de como você deverá atuar.</p>
+                                <p class="py-2">Estamos juntos aprendendo a melhor forma de nos aproximarmos dos
+                                    adolescentes e jovens. Você concorda que, na hora de “se abrir”, é necessário
+                                    escolher bem com quem falar?</p>
+                                <p class="py-2">Sabemos da importância de uma escuta atenta, interessada e desprovida de
+                                    preconceitos. A lealdade e a possibilidade de compartilhar segredos e dúvidas são
+                                    fundamentais. Nas sociedades contemporâneas, as pessoas experimentam novas formas de
+                                    relacionamento por meio das redes sociais e de outras tecnologias de comunicação,
+                                    tanto no mundo real como no virtual. Estar junto dos adolescentes e dos jovens é
+                                    reconhecer o potencial criativo e a pujança de vida e, acima de tudo, não
+                                    menosprezar as questões que os preocupam e que lhes trazem sofrimento.</p>
+                                <img class="w-100" src="./image/apresentacao_modulo_1_detalhes_2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topico - conceituando adolescencias -->
+                <div id="conceituando" class="carousel-item bg-default">
+                    <div class="container-fluid background-topico vh-100 d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line">Conceituando adolescências e juventudes</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Conceituando adolescencias - parte 1 -->
+                <div id="conceituando-2" class="carousel-item bg-default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <div class="row">
+                            <div
+                                class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-x-desk-5 d-flex align-items-center justify-content-center">
+                                <img class="w-100" src="./image/conceituando_capa.png" alt="">
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-x-desk-5 text-justify">
+                                <p class="title text-primary text-center pt-4">Conceituando adolescências e juventudes
+                                </p>
+                                <p class="text-start">Por falar em adolescentes e jovens, que tal conceituarmos
+                                    ADOLESCÊNCIA e JUVENTUDE?
+                                </p>
+                                <div class="box rounded-4">
+                                    <p class="padding-desk-5 padding-mobile-2 text-light">Segundo a Organização Mundial
+                                        da Saúde (OMS, 2007), a adolescência vai dos 10 aos
+                                        20 anos incompletos. Já no Estatuto da Criança e do Adolescente (ECA), Lei n.
+                                        8069, de 1990, ela inicia aos 12 e termina aos 18 anos. Pelo Código Civil
+                                        Brasileiro, atinge-se a maioridade aos 18 anos, entretanto é permitido votar a
+                                        partir dos 16 anos. ​</p>
+                                </div>
+                                <p class="py-2">Na atualidade, o Estatuto da Juventude (BRASIL, 2013) oficializou a
+                                    juventude como categoria que congrega pessoas com idades entre 15 e 29 anos. A
+                                    Política Nacional de Juventude (BRASIL, 2006) considera adolescentes-jovens pessoas
+                                    entre 15 e 17 anos, jovens-jovens as pessoas que estão entre 18 e 24 anos e
+                                    jovens-adultos as que estão entre 25 e 29 anos. Existem diferentes definições de
+                                    adolescência e juventude, mas é importante ressaltar que o entendimento da
+                                    adolescência enquanto um período particular da vida, situado entre a infância e a
+                                    vida adulta, é recente na história da humanidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Conceituando adolescencias - parte 2 -->
+                <div id="conceituando-3" class="carousel-item bg-default">
+                    <div class="container-fluid pt-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify padding-x-desk-5">
+                                <p class="pb-2">O conceito de adolescência é cultural, pois a forma como cada sociedade
+                                    interage com os jovens é particular e está inserida em contextos socioculturais e
+                                    históricos. Nesse sentido, é importante lembrar que a categoria adolescência emerge
+                                    no século XIX, quando há uma importante mudança na sociedade: a passagem de uma
+                                    experiência coletiva para o fortalecimento do espaço privado e da família. Esse
+                                    movimento inspirou a necessidade de proteger as crianças e os jovens e deu destaque
+                                    aos colégios como instituições essenciais da sociedade. Crianças e adolescentes
+                                    passaram a frequentar as escolas, destinadas a indivíduos de 10 a 25 anos, sob a
+                                    influência de especialistas adultos e práticas pedagógicas que enfatizavam a
+                                    formação moral, religiosa e intelectual.</p>
+                                <p class="py-2">Esse grupo populacional apresenta um padrão de morbimortalidade – isto
+                                    é, de adoecimento e morte – com características específicas. Apesar das diferenças
+                                    observáveis entre os diversos países, entre as Regiões do Brasil, estados,
+                                    municípios e suas culturas locais, podemos dizer que, em linhas gerais, os jovens
+                                    adoecem e morrem por causas externas e evitáveis. Será que nossos serviços têm
+                                    atentado para essa particularidade? Se sim, como alcançar a juventude com vistas à
+                                    prevenção desses agravos e promoção de suas condições de vida?</p>
+                                <p class="py-2">Você já havia pensado sobre isso? Em seu cotidiano, você conhece jovens
+                                    que adoeceram ou morreram devido a causas externas¹ (acidente, homicídio, suicídio,
+                                    enchente, afogamento, envenenamento etc.)? Você já participou de algum movimento
+                                    organizado para a promoção da saúde e prevenção de agravos?</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-x-desk-5 text-justify">
+                                <p class="pb-2">Ainda sobre as causas externas de mortalidade entre os jovens, os
+                                    acidentes de trânsito relacionados com o trabalho têm, atualmente, uma taxa alta de
+                                    ocorrência. Você já pensou na relação entre trabalho e acidentes de trânsito? É
+                                    sobre o que vamos conversar a seguir.</p>
+                                <img class="p-2 w-100" src="./image/conceituando-detalhe_2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topico - trabalho e juventudes -->
+                <div id="trabalho_juventudes" class="carousel-item bg-default">
+                    <div class="container-fluid background-topico vh-100 d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line">Trabalho e juventudes</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- trabalho e juventudes - parte 1 -->
+                <div id="trabalho-juventudes-2" class="carousel-item active bg-default">
+                    <div class="container-fluid pt-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-justify padding-x-desk-5">
+                                <p class="title text-primary text-center">Trabalho e juventudes</p>
+                                
+                                
+                                
+                                <button id="btn">Clique aqui</button>
+<div id="popover">
+  <div class="popover-arrow"></div>
+  <div class="popover-content">Conteúdo do popover</div>
+</div>
+
+
+
+                                <p class="py-2">Já reparou como na paisagem contemporânea tem sido muito comum nos
+                                    depararmos com adolescentes e jovens em motocicletas, bicicletas e até mesmo a pé
+                                    carregando mochilas de entrega? Na verdade, ainda conhecemos pouco seus cotidianos
+                                    de <button onclick="conteudo_popover(this, 'popover_trabalho')" type="button" class="btn-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right">
+                                        trabalho
+                                      </button>, possíveis situações de risco à saúde e, em especial, de que forma
+                                    interpretam o trabalho e a si mesmos como trabalhadores.
+                                </p>
+                                <div id="popover_trabalho">Conteúdo do popover aqui</div>
+                                <p class="py-2">
+                                    De acordo com Novaes (2007), ser jovem é viver uma contraditória convivência entre
+                                    as normas e valores familiares e sociais e, ao mesmo tempo, grandes expectativas de
+                                    emancipação. Os jovens do século XXI vivem uma experiência geracional em comum e
+                                    historicamente inédita: a aceleração da globalização e o agravamento das
+                                    desigualdades. Assim, as características do tempo contemporâneo compreendem: as
+                                    mudanças tecnológicas do mundo do trabalho (mutante e restrito), maior violência
+                                    simbólica e física, além da evidência dos riscos ecológicos. Esses marcadores
+                                    relacionam-se com a vivência contemporânea juvenil, caracterizada por múltiplas
+                                    entradas e saídas do mundo do trabalho e da escola. Temos uma juventude com
+                                    escolaridade cada vez maior em relação às gerações anteriores, mas, por outro lado,
+                                    o mundo do trabalho não tem correspondido a esse novo patamar de escolaridade. Isso
+                                    tem gerado entre os jovens o medo “de sobrar”.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-x-desk-5 text-justify">
+                                <div class="box rounded-4">
+                                    <p class="p-5 text-light">Esse contexto tem significado, sobretudo, para jovens das
+                                        camadas populares, jovens negros, jovens LGBTQIA+ e mulheres, que habitualmente
+                                        se inserem precocemente no mundo do trabalho informal e sem garantia de
+                                        direitos.
+                                    </p>
+                                </div>
+                                <p class="py-3">
+                                    Conformeimos nas histórias de José Ribamar e de seus amigos, apesar de a Lei nº
+                                    12.009 (BRASIL, 2009) regulamentar serviços como mototaxista e motoboy, sabemos,
+                                    pelo Ministério da Saúde (GIANNINI, 2018), que os motoboys são os que mais sofrem
+                                    acidentes. Porém, esses acidentes, que por vezes trazem consequências sérias, não
+                                    são considerados acidentes de trabalho, e sim acidentes de trânsito. Esse fato
+                                    mascara quanto as formas de trabalho contemporâneas podem representar riscos à saúde
+                                    juvenil, assim como a ausência de direitos trabalhistas e previdenciários (RAYMUNDO;
+                                    VEIGA, 2013). Orientações importantes sobre essa temática podem ser encontradas no
+                                    Módulo de autoaprendizagem sobre Saúde e Segurança no trabalho Infantil e Juvenil,
+                                    organizado pela Organização Internacional do Trabalho (2007).
+                                </p>
+                                <div class="citacao">
+                                    <small><i>¹ Sobre a morte juvenil por causas externas, o Atlas da Violência tem sido um
+                                        referencial importante. Na seção sobre violências e juventudes, apresentaremos os
+                                        dados mais recentes.</i>    
+                                    </small>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
-
-    <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/index.js"></script>
 
 </body>
 
