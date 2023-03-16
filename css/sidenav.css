@@ -29,7 +29,7 @@
 }
 
 .sidebar-item {
-    border-left: 3px solid var(--font-dark);
+    border-left: 3px solid var(--font-dark) !important;
     border-radius: 0% !important;
     list-style-type: none;
     font-size: 1.4em;
@@ -37,10 +37,19 @@
     color: var(--color-dark);
 }
 
+.sidebar-subitem {
+    font-size: 0.8em;
+    list-style: none;
+}
+
+.sidebar-subitem:hover {
+    border-bottom: 1px solid var(--font-dark);
+}
+
 .sidebar-item:hover,
 .sidebar-item:focus,
 .sidebar-item.active {
-    border-left: 3px solid var(--primary);
+    border-left: 3px solid var(--primary) !important;
     color: var(--primary);
 }
 
@@ -64,9 +73,7 @@
     .sidebar-navbar {
         display: none;
     }
-
     .sidenav {
         margin-right: 0px !important;
     }
-
 }
