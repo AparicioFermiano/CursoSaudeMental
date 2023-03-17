@@ -8,8 +8,7 @@
     --font-dark: #6D6C6C;
     --font-light: #ffffff;
     --disabled: #B8B8B8;
-    --card-size: 400px
-    
+    --card-size: 400px 
 }
 
 body {
@@ -306,10 +305,15 @@ small {
 
 .card-front {
     transform: rotateY(0deg);
-    background-image: url(../image/mask.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img {
+    border-radius: 1rem;
+    height: 50vh;
+    width: 50vh;
 }
 
 .card-back {
@@ -441,6 +445,11 @@ small {
     .padding-desk-5 {
         padding: 3rem!important;
     }
+
+    .padding-desk-3 {
+        padding: 2rem!important;
+    }
+
     .padding-x-desk-3 {
         padding-right: 2rem!important;
         padding-left: 2rem!important;

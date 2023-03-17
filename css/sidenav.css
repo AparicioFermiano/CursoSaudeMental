@@ -12,6 +12,7 @@
     font-size: 0.8em;
     padding-left: 1em;
     padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     background-color: var(--font-light);
@@ -41,6 +42,7 @@
 .sidebar-subitem {
     font-size: 0.8em;
     list-style: none;
+    padding: 3% 0px;
 }
 
 .sidebar-subitem:hover,
