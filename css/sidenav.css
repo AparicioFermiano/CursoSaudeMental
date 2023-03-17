@@ -10,8 +10,8 @@
     overflow-x: hidden;
     transition: 0.5s;
     font-size: 0.8em;
-    padding-top: 60px;
     padding-left: 1em;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     background-color: var(--font-light);
@@ -71,6 +71,33 @@
     color: var(--font-dark);
     transition: 0.5s;
 }
+
+.btn-carousel {
+    font-size: 3em !important;
+    color: var(--font-dark);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: 100%;
+    border: none;
+    background-color: var(--font-light);
+}
+
+.btn-carousel:hover,
+.btn-carousel:active {
+    color: var(--primary);
+}
+
+.sidebar-action {
+    position: fixed;
+    background-color: var(--font-light);
+    bottom: 0;;
+    width: 300px;
+    -webkit-box-shadow: 20px 5px 80px -10px rgba(121, 121, 121, 0.397);
+    -moz-box-shadow: 20px 5px 80px -10px rgba(121, 121, 121, 0.397);
+    box-shadow: 20px 5px 80px -10px rgba(121, 121, 121, 0.397);
+}
+
 
 @media (min-width: 992px) {
     .sidebar-navbar {
