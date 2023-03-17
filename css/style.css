@@ -64,8 +64,29 @@ body::-webkit-scrollbar-thumb,
     font-weight: 700;
 }
 
-.bg-default {
+.default {
     background-color: var(--font-light);
+    background-size: contain;
+    height: 100vh !important;
+    overflow-y:scroll;
+    
+}
+
+.default::-webkit-scrollbar,
+.box-scrool::-webkit-scrollbar {
+    width: 12px;
+}
+
+.default::-webkit-scrollbar-track,
+.box-scrool::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.default::-webkit-scrollbar-thumb,
+.box-scrool::-webkit-scrollbar-thumb {
+    background-color: var(--primary-dark);
+    border-radius: 20px;
+    border: 3px solid var(--font-light);
 }
 
 .bg-card {
