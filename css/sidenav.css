@@ -30,6 +30,7 @@
 
 .sidebar-item {
     border-left: 3px solid var(--font-dark) !important;
+    border-bottom: 0px !important;
     border-radius: 0% !important;
     list-style-type: none;
     font-size: 1.4em;
@@ -42,13 +43,15 @@
     list-style: none;
 }
 
-.sidebar-subitem:hover {
-    border-bottom: 1px solid var(--font-dark);
+.sidebar-subitem:hover,
+.sidebar-subitem.active {
+    color: var(--primary);
 }
 
 .sidebar-item:hover,
 .sidebar-item:focus,
-.sidebar-item.active {
+.sidebar-item.active
+ {
     border-left: 3px solid var(--primary) !important;
     color: var(--primary);
 }
