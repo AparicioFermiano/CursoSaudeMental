@@ -69,7 +69,6 @@ body::-webkit-scrollbar-thumb,
     background-size: contain;
     height: 100vh !important;
     overflow-y:scroll;
-    
 }
 
 .default::-webkit-scrollbar,
