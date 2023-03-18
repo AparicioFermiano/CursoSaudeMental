@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/modulo02.min.css">
+    <link rel="stylesheet" href="./css/popover.min.css?v=17032023">
+    <link rel="stylesheet" href="./css/sidenav.min.css">
+    <title>Módulo 02</title>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar-navbar">
+        <button id="btn-sidebar" class="z-5 btn-sidebar" type="button" data-toggle="collapse" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="nav()">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <p class="title text-dark">MENU</p>
+        <!-- SIDEBAR - HOME -->
+        <div id="list-home" class="sidebar-item active py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('#home')">
+                <i class="bi bi-house"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR - SOBRE -->
+        <div id="list-sobre" class="sidebar-item py-1 px-2">
+            <button id="list-sobre" class="w-100 text-start" onclick="mudar_carrosel('#sobre')">
+                sobre o módulo
+            </button>
+        </div>
+        <!-- SIDEBAR - APRESENTACAO DO MODULO -->
+        <div id="apresentacao" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-apresentacao" aria-expanded="false">
+                apresentação do módulo
+            </button>
+            <div id="accordion-apresentacao" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-apresentacao-slide-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-1')">
+                                1. Apresentação do módulo
+                            </button>
+                        </li>
+                        <li id="list-apresentacao-slide-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-2')">
+                                1.2. Você considera
+                                possível pensar em
+                                um único jeito de
+                                ser adolescente?
+                            </button>
+                        </li>
+                        <li id="list-apresentacao-slide-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-3')">
+                                2. Saiba mais
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDEBAR - CONCEITUANDO ADOLESCENCIAS -->
+        <div id="conceituando" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-conceituando" aria-expanded="false">
+                conceituando adolescências e juventudes
+            </button>
+            <div id="accordion-conceituando" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-conceituando-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#conceituando-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-conceituando-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#conceituando-2')">
+                                2. Conceituando adolescências e juventudes
+                            </button>
+                        </li>
+                        <li id="list-conceituando-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#conceituando-3')">
+                                1.2. Conceituando adolescências e juventudes
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRABALHO DE JUVENTUDE -->
+        <div id="trabalho" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-trabalho" aria-expanded="false">
+                trabalho e Juventudes
+            </button>
+            <div id="accordion-trabalho" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-trabalho-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#trabalho-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-trabalho-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#trabalho-2')">
+                                2. Trabalho e juventudes
+                            </button>
+                        </li>
+                        <li id="list-trabalho-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#trabalho-3')">
+                                3. Saiba mais
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIOLENCIA DE ONDE ESPERAMOS PROTECAO -->
+        <div id="violencia" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-violencia" aria-expanded="false">
+                E quando a violência vem de onde esperamos proteção?
+            </button>
+            <div id="accordion-violencia" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-violencia-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#violencia-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-violencia-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#violencia-2')">
+                                2. Violência institucional
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- RACISMO -->
+        <div id="racismo" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-racismo" aria-expanded="false">
+                racismo
+            </button>
+            <div id="accordion-racismo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-racismo-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#racismo-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-racismo-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#racismo-2')">
+                                2. Racismo
+                            </button>
+                        </li>
+                        <li id="list-racismo-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#racismo-3')">
+                                2.2. Racismo
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- JUVENTUDES E TERRITORIOS -->
+        <div id="juventudes" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-juventudes" aria-expanded="false">
+                juventudes e territórios
+            </button>
+            <div id="accordion-juventudes" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-juventudes-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#juventudes-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-juventudes-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#juventudes-2')">
+                                2. Juventudes e territórios
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEXUALIDADE, GENERO E AFETOS -->
+        <div id="sexualidade" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-sexualidade" aria-expanded="false">
+                Sexualidade, gênero e afetos
+            </button>
+            <div id="accordion-sexualidade" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-sexualidade-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-sexualidade-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-2')">
+                                2. Sexualidade, gênero e afetos
+                            </button>
+                        </li>
+                        <li id="list-sexualidade-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-3')">
+                                3. Conversando sobre sexualidade
+                            </button>
+                        </li>
+                        <li id="list-sexualidade-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-4')">
+                                3.2. Conversando sobre sexualidade
+                            </button>
+                        </li>
+                        <li id="list-sexualidade-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-5')">
+                                4. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-sexualidade-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-6')">
+                                4.2. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-sexualidade-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-7')">
+                                5. Incidência da violência contra a população LGBTQIA+
+                            </button>
+                        </li>
+                        <li id="list-sexualidade-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-8')">
+                                5.2. Incidência da violência contra a população LGBTQIA+
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- JOVENS COM DEFICIENCIA -->
+        <div id="jovens" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-jovens" aria-expanded="false">
+                jovens com deficiência, direitos e equidade
+            </button>
+            <div id="accordion-jovens" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-jovens-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#jovens-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-jovens-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#jovens-2')">
+                                2. Jovens com deficiência, direitos e equidade
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- GRAVIDEZ NA ADOLESCENCIA -->
+        <div id="gravidez" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-gravidez" aria-expanded="false">
+                gravidez na adolescência: discutindo maternidades e paternidades juvenis
+            </button>
+            <div id="accordion-gravidez" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-gravidez-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#gravidez-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-gravidez-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#gravidez-2')">
+                                2. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-gravidez-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#gravidez-3')">
+                                3. Gravidez na adolescência: discutindo maternidades e paternidades juvenis
+                            </button>
+                        </li>
+                        <li id="list-gravidez-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#gravidez-4')">
+                                3.2. Gravidez na adolescência: discutindo maternidades e paternidades juvenis
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONVERSANDO SOBRE FAMILIAS -->
+        <div id="conversando" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-conversando" aria-expanded="false">
+                conversando sobre famílias
+            </button>
+            <div id="accordion-conversando" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-conversando-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#conversando-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-conversando-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#conversando-2')">
+                                2. Conversando sobre famílias
+                            </button>
+                        </li>
+                        <li id="list-conversando-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#conversando-3')">
+                                3. Vamos ouvir?
+                            </button>
+                        </li>
+                        <li id="list-conversando-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#conversando-4')">
+                                4. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-conversando-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#conversando-5')">
+                                4.2. Saiba mais
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADOLESCENCIAS E JUVENTUDES -->
+        <div id="adolescencias" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-adolescencias" aria-expanded="false">
+                adolescências e juventudes: singularidades e diversidades
+            </button>
+            <div id="accordion-adolescencias" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-adolescencias-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencias-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-adolescencias-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencias-2')">
+                                2. Singularidades e diversidades
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENCERRAMENTO -->
+        <div id="list-encerramento" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('#encerramento-1')">
+                encerramento do módulo
+            </button>
+        </div>
+
+        <!-- REFERENCIAS -->
+        <div id="referencias" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-referencias" aria-expanded="false">
+                referências
+            </button>
+            <div id="accordion-referencias" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-referencias-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-1')">
+                                1. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-2')">
+                                1.2. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-3')">
+                                1.3. Principais referencias
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTOES CARROSEL -->
+        <div id="list-encerramento" class="sidebar-action px-2 d-flex">
+            <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="prev">
+                < </button>
+                    <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="next"> >
+                    </button>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+                <!-- Home -->
+                <div id="home" class="carousel-item default">
+                    <div class="container-fluid background-capa rounded-2">
+                        <div class="row justify-content-center
+                                align-items-center padding-x-container">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-container">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
+                                <span class="title text-dark">Curso
+                                    em aperfeiçoamento em saúde mental e
+                                    atenção
+                                    psicossocial de
+                                    adolescentes e jovens</span>
+                                <hr class="line line-primary my-4">
+                                <p class="subtitle text-primary">Módulo: Adolescências e Juventudes: Dores e Sofrimentos
+                                    Específicos
+                                </p>
+                                <div class="row justify-content-around
+                                        py-5">
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#autoras',
+                                            1)">Sobre as
+                                        autoras</button>
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#sobre',
+                                            1)">Iniciar</button>
+                                </div>
+                                <div class="d-flex justify-content-between
+                                        pb-5">
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_02/capa_modulo_2.png"
+                                    alt="Capa Modulo 02">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre as Autoras -->
+                <div id="autoras" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente p-4">
+                            <button onclick="mudar_carrosel('#home', 1)" class="btn text-light title ml-auto
+                                    text-start"><i class="bi bi-file-x"></i></button>
+                            <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
+                        </div>
+                        <div class="container-fluid p-4">
+                            <div class="row justify-content-center
+                                    align-items-top">
+                                <div class="col-lg-4 col-md-12 col-sm-12
+                                        pt-3">
+                                    <img src="./image/modulo_02/autor-1.png" alt="Paulo Vitor Palma Navasconi"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Paulo Vitor Palma Navasconi
+                                    </h5>
+                                    <p class="text-justify">
+                                        Psicólogo, professor e membro do coletivo Yalodê-Badá e do Núcleo de Estudos
+                                        Interdisciplinar Afro-Brasileiro da UEM (NEIAB). Graduado pela Universidade
+                                        Estadual de Maringá (UEM). Especialista em Psicologia Social. Mestre e Doutor em
+                                        Subjetividade e Práticas Sociais na Contemporaneidade pela Universidade Estadual
+                                        de Maringá. Autor do livro Vida, Adoecimento e Suicídio: racismo na produção do
+                                        conhecimento sobre jovens negros LGBTTIs, publicado no ano de 2019.
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_02/autor-3.png" alt="Vládia Jamile dos Santos Jucá"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Vládia Jamile dos Santos Jucá
+                                    </h5>
+                                    <p class="text-justify">
+                                        Psicóloga pela Universidade Federal do Ceará (UFC), com mestrado em Comunicação
+                                        e Cultura e doutorado em Saúde Pública, ambos pela Universidade Federal da Bahia
+                                        (UFBA). Realizou estágio pós-doutoral em teoria psicanalítica pela Universidade
+                                        Federal de Minas Gerais (UFMG). Professora dos cursos de graduação de
+                                        pós-graduação do Departamento de Psicologia da UFC, em que integra o grupo de
+                                        Pesquisas e Intervenções sobre Violências e Produção das Subjetividades
+                                        (VIESES). Desenvolve pesquisas e práticas de extensão voltadas para adolescentes
+                                        em contextos de vulnerabilidade, por meio do diálogo entre a teoria
+                                        psicanalítica e a saúde mental coletiva.
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_02/autor-2.png" alt="Estela Ramires Lourenço"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Estela Ramires Lourenço
+                                    </h5>
+                                    <p class="text-justify">
+                                        Psicóloga e consultora em Saúde Mental na Escola. Doutoranda do PPG Educação e
+                                        Saúde na Infância e Adolescência pela UNIFESP. Mestra em Ensino em Ciências da
+                                        Saúde pela UNIFESP. Especialista em Autolesão, Prevenção e Posvenção do Suicídio
+                                        pelo Instituto Vita Alere-SP. Especialista em Gestão em Saúde pela UFSJ.
+                                        Especialista em Gestão de Pessoas e Projetos Sociais pela UNIFEI. Membro da
+                                        Associação Brasileira de Estudos e Prevenção de Suicídio (ABEPS).
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="row justify-content-center align-items-top pt-3">
+                                <div class="col-lg-6 col-md-12 col-sm-12 pt-3 d-lg-flex align-items-center">
+                                    <div class="w-100 px-3">
+                                        <img src="./image/modulo_02/autor-4.png"
+                                            alt="Coordenação acadêmica – Luana Lima"
+                                            class="img-fluid d-block mx-auto pb-3">
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="bold text-center pb-md-3">Coordenação acadêmica – Luana Lima
+                                        </h5>
+                                        <p class="text-justify">
+                                            Psicóloga e Bacharel Interdisciplinar em Humanidades (UFBA). Doutoranda e
+                                            Mestra
+                                            em Bioética (UnB). Membra-fundadora da Associação Brasileira de Estudo e
+                                            Prevenção do Suicídio (ABEPS). Pesquisadora do Observatório de Direitos
+                                            Humanos
+                                            dos Pacientes (ODHP). Autora do livro Deverei velar pelo Outro? Suicídio,
+                                            estigma e economia dos cuidados.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 pt-3 d-lg-flex align-items-center">
+                                    <div class="w-100 px-3">
+                                        <img src="./image/modulo_02/autor-5.png"
+                                            alt="Coordenação Pedagógica – Maisse Fernandes de Oliveira Rotta"
+                                            class="img-fluid d-block mx-auto pb-3">
+                                    </div>
+                                    <div class="p-3">
+                                        <h5 class="bold text-center pb-md-3">Coordenação Pedagógica – Maisse Fernandes
+                                            de
+                                            Oliveira Rotta
+                                        </h5>
+                                        <p class="text-justify">
+                                            Médica pediatra. Mestra em Saúde da Família e Comunidade pela Fiocruz.
+                                            Doutoranda em Saúde e Desenvolvimento na Região Centro-Oeste pela UFMS.
+                                            Pós-graduada em psiquiatria infantil. Professora do curso de medicina da
+                                            Universidade Anhanguera (UNIDERP) e da Universidade Estadual do Mato Grosso
+                                            do
+                                            Sul.Suicídio, estigma e economia dos cuidados.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Sobre o curso -->
+                <div id="sobre" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente text-center p-5">
+                            <p class="title text-light">Sobre o Módulo</p>
+                            <p class="text-light">Módulo: Adolescências e Juventudes: Dores e Sofrimentos Específicos
+                            </p>
+                            <p class="subtitle text-light">Carga horaria: 40 horas
+                            </p>
+                        </div>
+                        <div class="container-fluid px-4 pt-5">
+                            <div class="row justify-content-center align-items-top padding-x-container">
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-x-desk-5">
+                                    <img class="w-100 w-md-75 d-block mx-auto"
+                                        src="./image/modulo_02/sobre_detalhes_1.png" alt="Icone Leitura">
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                    <div class="d-flex pb-5 justify-content-center">
+                                        <img class="mx-2" src="./image/modulo_02/icon-leitura.svg" alt="Icone Leitura">
+                                        <p class="title space-line text-primary
+                                                mx-2 my-auto text-center"><b>OBJETIVOS DE
+                                                APRENDIZAGEM</b>
+                                        </p>
+                                    </div>
+                                    <p class="text-justify pb-3">Apresentar os principais sofrimentos e transtornos
+                                        mentais na adolescência, a violência e adições, como um problema de saúde
+                                        pública, considerando a violência estrutural, as desigualdades sociais e o risco
+                                        de suicídio, visando à promoção da saúde e à garantia de direitos.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apresentacao do modulo -->
+                <div id="apresentacao-slide-1" class="carousel-item default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <div class="row padding-mobile-2">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    d-flex align-items-center
+                                    justify-content-center">
+                                <img class="w-75 w-sm-100" src="./image/modulo_02/apresentacao_detalhes_1.png"
+                                    alt="Apresentacao Modulo 02">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-x-desk-5 py-3">
+                                <p class="text-center title text-primary">Apresentação do módulo</p>
+                                <p class="bold text-left">“Ponho linhas no mundo, mas já quis pôr no pulso,<br>
+                                    Sem o torro, nossa vida não vale a de um cachorro triste.<br>
+                                    Hoje cedo não era um hit, era um pedido de socorro.<br>
+                                    [...] A última tendência é depressão com aparência de férias.<br>
+                                    [...] Tenho sangrado demais,<br>
+                                    Tenho chorado pra cachorro.<br>
+                                    Ano passado eu morri,<br>
+                                    Mas esse ano eu não morro.<br>
+                                    [...] Permita que eu fale e não as minhas cicatrizes.<br>
+                                    Tanta dor rouba a nossa voz, sabe o que resta de nós?”<br>
+                                </p>
+                                <p class="title text-dark text-end">(EMICIDA)</p>
+
+                                <p class="py-4 text-justify">Seja bem-vindo ao módulo Adolescência e Juventudes: Dores e
+                                    Sofrimentos Específicos. Pretendemos, nesta nossa breve jornada de aprendizagem,
+                                    conversar sobre as experiências de sofrimento mais recorrentes na adolescência, com
+                                    destaque para violência, transtornos mentais, comportamento suicida e luto, que são
+                                    vivências que provocam grandes impactos na saúde mental e nas dinâmicas relacionais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apresentacao do modulo - parte 2 -->
+                <div id="apresentacao-slide-2" class="carousel-item default">
+                    <div class="container-fluid mt-4">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A adolescência é uma experiência plural, portanto, falamos de
+                                    adolescências. Um dos aspectos fundamentais sobre os quais precisamos refletir é a
+                                    violência durante esse período da vida. A primeira parte do módulo foi dedicada,
+                                    dessa forma, à elaboração do conceito de violência, aos tipos e aos efeitos diversos
+                                    que estas podem causar. Abordamos, em seguida, a adolescência e as substâncias
+                                    psicoativas, especialmente com base nas perspectivas ampliadas da tríade
+                                    sujeito-droga-contexto e na redução de danos. O bloco seguinte tratou de
+                                    experiências de sofrimento e transtornos mentais. Para além de uma descrição desses
+                                    estados de fragilidade e/ou adoecimento, refletimos acerca da tendência à
+                                    patologização das experiências vitais, especialmente as desviantes, indesejadas e
+                                    improdutivas, que tendem a centralizar os problemas no indivíduo, desatrelando os
+                                    processos de subjetivação das relações sociais e afetivas.</p>
+                                <p class="pt-2">Analisamos também o fenômeno da autolesão, suas expressões, modos de
+                                    enfrentamento, etc. Em diálogo temático, aprofundamos o tema do comportamento
+                                    suicida: apresentamos dados estatísticos acerca do fenômeno e fazemos uma análise
+                                    dos condicionantes sociais da saúde, dos fatores de risco, de proteção e mitos
+                                    envolvidos. A análise do módulo se encerra com o estudo acerca do luto – desde
+                                    perdas e/ou transformações corporais, que caracterizam o adolescer, às mortes que
+                                    determinam os processos de enlutamento.</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A nossa proposta denega uma leitura individualizante acrítica, que
+                                    ,comumente, desconsidera a dimensão sociopolítica presente na produção do
+                                    sofrimento. Ao contrário de uma tendência moderna e neoliberal que compreende a
+                                    ansiedade, a depressão, o comportamento suicida ou qualquer comportamento indesejado
+                                    como sinal de inadequação, transtorno ou fracasso individual, o passeio pelo
+                                    universo psíquico da nossa juventude no presente módulo tem por finalidade
+                                    potencializar as diversas vozes e experiências; estimular o debate sobre as diversas
+                                    manifestações de sofrimento na atualidade; legitimar os discursos dos sujeitos
+                                    sofrentes para ampliar e intensificar os modos de cuidado, as ações e políticas de
+                                    promoção à saúde mental e prevenção do suicídio. Vamos juntos?</p>
+                                <img src="./image/modulo_02/apresentacao_detalhes_2.svg"
+                                    class="w-75 w-md-100 img-fluid d-block ml-auto" alt="Detalhes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - Adolescencia e violencia - parte 1 -->
+                <div id="adolescencia-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line">Adolescência(s) e violência(s)</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_02/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 2 -->
+                <div id="adolescencia-2" class="carousel-item default">
+                    <div class="container-fluid mt-4">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-x-container text-justify">
+                                <p class="title text-primary text-center pt-4">Adolescência(s) e violência(s)
+                                </p>
+                                <p class="py-2">Afinal, o que é adolescência? Quando começa e quando termina? Como
+                                    acontecem a adolescência e a juventude? Essas são questões que passaram a ser
+                                    fundamentais nos estudos do desenvolvimento humano e, principalmente, nas áreas das
+                                    ciências humanas e da saúde. No entanto, a cada tentativa de responder a essas
+                                    questões, tendemos a naturalizar o processo de desenvolvimento da pessoa, sobretudo,
+                                    o período da adolescência. Você deve estar se perguntando: o que significa dizer
+                                    isso?</p>
+                                <p class="py-2">Pois bem, naturalizar significa compreender que o desenvolvimento humano
+                                    é um produto natural e, desse modo, que as práticas educativas e sociais pouco
+                                    interferem no processo de desenvolvimento. Olhar a adolescência por esse viés nos
+                                    faz universalizar um fenômeno complexo e plural, com tendências e variações de
+                                    acordo com a época histórica, povos e culturas. Por exemplo: imagine como foi a sua
+                                    adolescência. Imaginou? Agora imagine a adolescência de Júlia ou Alex. Elas podem
+                                    ser consideradas iguais, semelhantes ou diferentes?</p>
+                                <p class="pt-2">
+                                    Convidamos você a pensar a adolescência não como um fenômeno universal, ou seja,
+                                    comum a todas e todos, entendemos que não existe uma adolescência, mas várias formas
+                                    de experienciar o que estamos chamando de adolescências. Por exemplo, basta
+                                    pensarmos em nossas brincadeiras, vestimentas e hábitos que vamos perceber que
+                                    nossos comportamentos, ações e hábitos mudam, conforme transformações
+                                    sócio-históricas vão acontecendo.</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-x-container text-justify">
+                                <h1>ANIMAÇÃO TÓPICO</h1>
+                                <div class="box">
+                                    <div class="d-flex justify-content-around pt-4">
+                                        <img src="./image/modulo_02/icone_editar_modulo_02.svg" alt="Icone Editar"
+                                            class="img-fluid d-block mx-auto">
+                                        <img src="./image/modulo_02/icone_home_modulo_02.svg" alt="Icone Home"
+                                            class="img-fluid d-block mx-auto">
+                                        <img src="./image/modulo_02/icone_maleta_modulo_02.svg" alt="Icone Maleta"
+                                            class="img-fluid d-block mx-auto">
+                                        <img src="./image/modulo_02/icone_game_modulo_02.svg" alt="Icone Game"
+                                            class="img-fluid d-block mx-auto">
+                                    </div>
+                                    <p class="padding-container pt-4 text-light">No país há graves problemas
+                                        educacionais, de moradia, de oportunidades de trabalho e lazer, e,
+                                        consequentemente, grandes desigualdades nas formas de viver, de adoecer e de
+                                        morrer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 3 -->
+                <div id="adolescencia-3" class="carousel-item default">
+                    <div class="container-fluid pt-mobile-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    text-justify padding-container">
+                                <p class="pb-2">Esses problemas provocam profundas desigualdades socioeconômicas e
+                                    sociais, que também afetam adolescentes e jovens. Essas desigualdades fazem com que
+                                    muitos adolescentes tenham dificuldades em obter reconhecimento e acesso a seus
+                                    direitos elementares, como educação, mobilidade, nutrição, habitação, boa saúde
+                                    física e mental, trabalho, lazer, entre outros (MINAYO; SOUZA, 1999).
+                                <p class="title text-primary text-center">Refletindo sobre o fenômeno da violência</p>
+                                <p class="py-2">A violência está presente nas relações e experiências humanas desde os
+                                    primórdios da humanidade e atinge todos os setores da sociedade, apresentando-se
+                                    como um fenômeno multideterminado e complexo.</p>
+                                <div class="citacao-2 my-3">De origem latina, o vocábulo vem da palavra vis, que quer
+                                    dizer força e se refere às noções de constrangimento e de uso da superioridade
+                                    física sobre o outro. No seu sentido material, o termo parece neutro, mas quem
+                                    analisa os eventos violentos descobre que eles se referem a conflitos de autoridade,
+                                    a lutas pelo poder e a vontade de domínio, de posse e de aniquilamento do outro ou
+                                    de seus bens (MINAYO, 2006, p. 13).
+                                </div>
+                                <p class="pt-2">A violência “não se limita ao uso da força física, mas à possibilidade
+                                    ou ameaça de usá-la” (VELHO, 2000, p. 11). Com isso, é possível associar a violência
+                                    a uma ideia de poder efetivado pela dinâmica das relações sociais marcada pela
+                                    hierarquia e dominação. </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">“Encerrar a noção de violência numa definição fixa e simples é expor-se
+                                    a reduzi-la, a compreender mal sua evolução e sua especificidade histórica” (MINAYO,
+                                    2006, p. 14).</p>
+                                <p class="py-2">A seguir, duas lições importantes sobre a violência:</p>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-6 p-0">
+                                        <div class="card card-separador mx-auto">
+                                            <div class="card-front bg-card flex-column w-100">
+                                                <img src="./image/modulo_02/icon-leitura.svg" alt="Icone leitura"
+                                                    class="p-3 d-block mx-auto w-25">
+                                                <p class="title text-light text-center">Lição 01</p>
+                                            </div>
+                                            <div class="card-back border-card d-flex align-items-center w-100">
+                                                <p class="text-center text-dark p-4">
+                                                    Apesar de já percebermos algumas pequenas mudanças na sociedade, em
+                                                    geral,
+                                                    na TV e nas redes sociais, as mulheres são magras e têm cabelos
+                                                    lisos e os
+                                                    homens são altos e atléticos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6 p-0">
+                                        <div class="card card-separador mx-auto">
+                                            <div class="card-front bg-card flex-column w-100">
+                                                <img src="./image/modulo_02/icon-leitura.svg" alt="Icone leitura"
+                                                    class="p-3 d-block mx-auto w-25">
+                                                <p class="title text-light text-center">Lição 02</p>
+
+                                            </div>
+                                            <div class="card-back border-card d-flex align-items-center w-100">
+                                                <p class="text-center text-dark p-4">
+                                                    A violência se torna um tema do campo da saúde pelo impacto que
+                                                    provoca na qualidade de vida; pelas lesões físicas, psíquicas e
+                                                    morais que acarreta e pelas exigências de atenção e cuidados dos
+                                                    serviços médico-hospitalares (MINAYO, 2004).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="pt-2">No ano de 2002, a Organização Mundial da Saúde publicou extenso informe
+                                    denominado Relatório Mundial sobre Violência e Saúde (KRUG et al., 2002, p.5),
+                                    trazendo a seguinte definição de violência: “uso intencional da força física ou do
+                                    poder, real ou em ameaça, contra si próprio, contra outra pessoa, ou contra um grupo
+                                    ou uma comunidade, que resulte ou tenha grande possibilidade de resultar em lesão,
+                                    morte, dano psicológico, deficiência de desenvolvimento ou privação”.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 4 -->
+                <div id="adolescencia-4" class="carousel-item default">
+                    <div class="container-fluid pt-mobile-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    text-justify padding-container text-justify">
+                                <p class="pb-2">Quanto à tipologia, a violência divide-se em: a) autoinfligida, que é a
+                                    violência dirigida contra si mesmo; b) interpessoal, infligida entre duas pessoas, a
+                                    qual se subdivide em familiar e comunitária, ou seja, considera-se violência
+                                    doméstica/intrafamiliar a que ocorre entre os parceiros íntimos e entre os membros
+                                    da família, principalmente no ambiente da casa, mas não unicamente. É toda ação ou
+                                    omissão que prejudique o bem-estar, a integridade física, psicológica ou a liberdade
+                                    e o direito ao pleno desenvolvimento de outra pessoa da família. Pode ser cometida
+                                    dentro ou fora de casa por algum membro da família, incluindo pessoas que passam a
+                                    assumir função parental, ainda que sem laços de consanguinidade, e que tenha relação
+                                    de poder. A violência doméstica/intrafamiliar não se refere apenas ao espaço físico
+                                    onde a violência ocorre, mas, também, às relações em que se constrói e efetua. Este
+                                    tipo de violência também inclui outros membros do grupo, sem função parental, que
+                                    convivam no espaço doméstico. A violência comunitária é definida como aquela que
+                                    ocorre no ambiente social em geral, entre conhecidos ou desconhecido. É praticada
+                                    por meio de agressão às pessoas, por atentado à sua integridade e vida e/ou a seus
+                                    bens e constitui objeto de prevenção e repressão por parte das forças de segurança
+                                    pública e sistema de justiça (polícias, Ministério Público e poder Judiciário). Por
+                                    fim, a violência c) coletiva, cometida pelos grandes grupos ou Estado, podendo ser
+                                    social, política ou econômica. Quanto à natureza dos atos violentos, eles podem ser
+                                    de caráter: físico, sexual e psicológico (KRUG et al., 2002).
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <img src="./image/modulo_02/adolescencia_detalhes_1.svg" alt="Detalhes"
+                                    class="d-block mx-auto w-75 w-md-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 5 -->
+                <div id="adolescencia-5" class="carousel-item default">
+                    <div class="container-fluid padding-container">
+                        <p class="title text-center text-primary pt-3">Conhecendo os tipos de violência</p>
+                        <p class="pt-2 pb-5">Quais tipos de violência você conhece? Krug et al. (2002) nos apresentam
+                            alguns tipos, com suas respectivas definições. Veja mais clicando nos flash cards a seguir:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card flex-column w-100">
+                                        <p class="title text-light text-center">Tortura</p>
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            atos intencionalmente praticados para causar lesões físicas ou mentais, ou
+                                            de ambas as naturezas, com a finalidade de obter vantagem, informação,
+                                            aplicar castigo, entre outros.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-primary flex-column w-100">
+                                        <p class="title text-light text-center">Violência psicológica</p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            ação ou omissão destinada a degradar ou a controlar ações, comportamentos,
+                                            crenças e decisões de outra pessoa por meio de intimidação, manipulação,
+                                            ameaça direta ou indireta, humilhação, isolamento ou qualquer outra conduta
+                                            que implique prejuízo, à saúde psicológica, à autodeterminação ou ao
+                                            desenvolvimento pessoal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-light flex-column w-100">
+                                        <p class="title text-light text-center">Discriminação</p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            ato de distinção, segregação, prejuízo danos ou tratamento diferenciado de
+                                            alguém, por causa de características pessoais, raça/etnia, gênero, religião,
+                                            idade, origem social, entre outras.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 6 -->
+                <div id="adolescencia-6" class="carousel-item default">
+                    <div class="container-fluid padding-container">
+                        <p class="title text-center text-primary pt-3">Conhecendo os tipos de violência</p>
+                        <p class="pt-2 pb-5">Quais tipos de violência você conhece? Krug et al. (2002) nos apresenta
+                            alguns tipos, com suas respectivas definições. Veja mais clicando nos flash cards a seguir:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card flex-column w-100">
+                                        <p class="title text-light text-center p-2">Violência sexual</p>
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            Quais tipos de violência você conhece? Krug et al. (2002) nos apresenta
+                                            alguns tipos, com suas respectivas definições. Veja mais clicando nos flash
+                                            cards a seguir:
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-primary flex-column w-100">
+                                        <p class="title text-light text-center p-2">Abuso sexual sem contato físico</p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            assédio sexual; abuso sexual verbal; telefonemas obscenos; exibicionismo;
+                                            voyeurismo; e pornografia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-light flex-column w-100">
+                                        <p class="title text-light text-center p-2">Abuso sexual com contato físico</p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            atos físico-genitais praticados a outrem, que incluem carícias nos órgãos
+                                            genitais, tentativas de relações sexuais, masturbação, sexo oral, penetração
+                                            vaginal e anal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 7 -->
+                <div id="adolescencia-7" class="carousel-item default">
+                    <div class="container-fluid padding-container">
+                        <p class="title text-center text-primary pt-3">Conhecendo os tipos de violência</p>
+                        <p class="pt-2 pb-5">Quais tipos de violência você conhece? Krug et al. (2002) nos apresenta
+                            alguns tipos, com suas respectivas definições. Veja mais clicando nos flash cards a seguir:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card flex-column w-100">
+                                        <p class="title text-light text-center p-2">Violência física</p>
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            ato de agressão física que provoca marcas visíveis ou não. Pode ser
+                                            praticada com uso de força física do agressor, no qual machuca a vítima de
+                                            várias maneiras, inclusive com o uso de armas. Exemplos: bater,
+                                            chutar, queimar, cortar e mutilar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-primary flex-column w-100">
+                                        <p class="title text-light text-center p-2">Negligência e abandono</p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            abandono, descuido, desamparo, desresponsabilização e descompromisso do
+                                            cuidado. Esse ato não está necessariamente relacionado a dificuldades
+                                            socioeconômicas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-light flex-column w-100">
+                                        <p class="title text-light text-center p-2"><i>Bullying</i></p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <div class="card-scrool">
+                                            <p class="text-center text-dark p-4">
+                                                também chamado de intimidação sistemática, conforme definido pela Lei nº
+                                                13.185/2015, pode ser compreendido como sendo, “todo ato de violência
+                                                física
+                                                ou psicológica, intencional e repetitivo que ocorre sem motivação
+                                                evidente,
+                                                praticado por indivíduo ou grupo, contra uma ou mais pessoas, com o
+                                                objetivo
+                                                de intimidá-la ou agredi-la, causando dor e angústia à vítima, em uma
+                                                relação de desequilíbrio de poder entre as partes envolvidas (BRASIL,
+                                                2015).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 8 -->
+                <div id="adolescencia-8" class="carousel-item default">
+                    <div class="container-fluid padding-container">
+                        <p class="title text-center text-primary pt-3">Conhecendo os tipos de violência</p>
+                        <p class="pt-2 pb-5">Quais tipos de violência você conhece? Krug et al. (2002) nos apresenta
+                            alguns tipos, com suas respectivas definições. Veja mais clicando nos flash cards a seguir:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card flex-column w-100">
+                                        <p class="title text-light text-center p-2">Trabalho infantil</p>
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <div class="card-scrool">
+                                            <p class="text-center text-dark p-4">
+                                                é a exploração da força de trabalho de pessoas que tenham idade inferior
+                                                à mínima permitida para trabalhar. No Brasil, o trabalho não é
+                                                permitido, sob qualquer condição, para crianças e adolescentes com menos
+                                                de 14 anos. Adolescentes entre 14 e 16 podem trabalhar, mas na condição
+                                                de aprendizes. Quando a pessoa tem entre 16 e 18 anos, as atividades
+                                                laborais são permitidas, desde que não aconteçam das 22h às 5h e não
+                                                sejam insalubres ou perigosas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-primary flex-column w-100">
+                                        <p class="title text-light text-center p-2">Tráfico de crianças e adolescentes
+                                        </p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            recrutamento, transporte, transferência, alojamento ou acolhimento de uma
+                                            criança ou adolescente para fins de exploração.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-light flex-column w-100">
+                                        <p class="title text-light text-center p-2"><i>Violência institucional</i></p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            tipo de violência motivada por desigualdades (de gênero, étnico-raciais,
+                                            econômicas, etc.). Essas desigualdades se formalizam e institucionalizam nas
+                                            organizações privadas e nos aparelhos estatais, assim como nos diferentes
+                                            grupos que constituem essas sociedades.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 9 -->
+                <div id="adolescencia-9" class="carousel-item default">
+                    <div class="container-fluid padding-container">
+                        <p class="title text-center text-primary pt-3">Conhecendo os tipos de violência</p>
+                        <p class="pt-2 pb-5">Quais tipos de violência você conhece? Krug et al. (2002) nos apresenta
+                            alguns tipos, com suas respectivas definições. Veja mais clicando nos flash cards a seguir:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card flex-column w-100">
+                                        <p class="title text-light text-center p-2">Violência intrafamiliar</p>
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            é qualquer tipo de violência praticada dentro de casa ou unidade doméstica,
+                                            sendo, geralmente, praticada por um membro da família que vive com a vítima.
+                                            As agressões domésticas incluem: abuso físico, sexual e psicológico,
+                                            negligência e abandono.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-primary flex-column w-100">
+                                        <p class="title text-light text-center p-2">Violência moral</p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            ação destinada a caluniar, difamar ou injuriar a honra ou a reputação da
+                                            pessoa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4 p-0">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-light flex-column w-100">
+                                        <p class="title text-light text-center p-2"><i>Violência patrimonial</i></p>
+
+                                    </div>
+                                    <div class="card-back border-card d-flex align-items-center w-100">
+                                        <p class="text-center text-dark p-4">
+                                            ato de violência que implique dano, perda, subtração, destruição ou retenção
+                                            de objetos, documentos pessoais, bens e valores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 10 -->
+                <div id="adolescencia-10" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <p class="pb-1 text-center text-primary">Figura 1 - Violência</p>
+                                <img class="d-block mx-auto w-100" src="./image/modulo_02/tirinha.png" alt="Tirinha">
+                                <div class="box padding-container mt-5">
+                                    <p class="bold text-light space-line">Fatores de risco ou de maior vulnerabilidade
+                                        para crianças,
+                                        adolescentes e jovens</p>
+                                    <ul class="py-2 list-decimal">
+                                        <li class="text-light py-1">Violência por parte dos pais e de outros
+                                            responsáveis;</li>
+                                        <li class="text-light py-1">Abuso sexual, negligência educacional e nutricional,
+                                            prostituição forçada;</li>
+                                        <li class="text-light py-1">Ambientes familiares instáveis;</li>
+                                        <li class="text-light py-1">Reprodução e naturalização da violência, ou seja, em
+                                            muitos casos, a violência
+                                            se torna a forma escolhida para a resolução de conflitos;</li>
+                                        <li class="text-light py-1">Pobreza, elevados níveis de desemprego e
+                                            rotatividade populacional. A pobreza
+                                            afeta a população infantojuvenil por impactar o comportamento parental e
+                                            provocar a deterioração de infraestruturas físicas e sociais da comunidade;
+                                        </li>
+                                        <li class="text-light py-1">Abuso de substâncias, o estresse e o isolamento
+                                            social (KRUG et al., 2002).</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <button id="btn0" class="btn btn-2 rounded-4 d-block mx-auto">Proposição</button>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content"><b>Proposição:</b> Essa reflexão inicial trouxe alguma
+                                        contribuição para você? Além disso, no dia a dia do seu serviço, quais dos
+                                        fatores de risco apresentados parecem exercer influência para que ocorra
+                                        violência?<br><br>
+
+                                        <b>Feedback positivo:</b> Os profissionais que trabalham com crianças e
+                                        adolescentes em
+                                        situação de vulnerabilidade ou de maior risco de violência precisam estar
+                                        atentos para identificar quais fatores de risco estão associados ao contexto
+                                        específico. Reconhecer os fatores de risco é uma forma de ampliar os modos de
+                                        intervenção e cuidado.<br><br>
+
+                                        <b>Feedback orientador:</b> Para prevenir a violência contra crianças e
+                                        adolescentes é
+                                        preciso saber identificá-la e notificá-la, assim como buscar formas eticamente
+                                        comprometidas de atuação.
+                                    </div>
+                                </div>
+                                <p class="pb-2 pt-4">
+                                    Em toda situação de violência, deve haver uma intervenção de qualquer pessoa que
+                                    conheça o fato. O artigo 13 do ECA (BRASIL, 2017a) prevê que “os casos de suspeita
+                                    ou confirmação de maus-tratos contra criança ou adolescente serão obrigatoriamente
+                                    comunicados ao Conselho Tutelar da respectiva localidade, sem prejuízo de outras
+                                    providências legais”.
+                                </p>
+                                <p class="py-2 pb-4">Nesse momento, gostaríamos de saber: quais são as ações de
+                                    prevenção à
+                                    violência contra adolescentes que são desenvolvidas no serviço em que você se
+                                    encontra inserido?</p>
+                                <img src="./image/modulo_02/adolescencia_detalhes_2.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block ml-auto py-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 11 -->
+                <div id="adolescencia-11" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <p class="title text-center text-primary pb-2">
+                                    Humanizar e cuidar para prevenir
+                                </p>
+                                <p class="pt-2 pb-4 text-justify">
+                                    Humanizar o cuidado é se posicionar a favor da vida com dignidade, respeitando as
+                                    diferenças e as particularidades, como gênero, etnia, raça, orientação sexual, entre
+                                    outras características, assim como as populações específicas (indígenas,
+                                    quilombolas,
+                                    ribeirinhos, assentados, etc.). A prevenção à violência não se dá somente por meio
+                                    de uma única ação ou iniciativa, mas pela combinação de diversas estratégias que
+                                    visem à garantia de direitos fundamentais. Nesse sentido, é possível afirmar que a
+                                    assistência à vítima de violência, aqui, em especial, ao adolescente que está
+                                    inserido em um contexto de violência, requer empatia, habilidade, sensibilidade e
+                                    compromisso com essa questão. Por isso, os profissionais devem sempre atuar de forma
+                                    articulada, desenvolvendo um trabalho interdisciplinar e interprofissional, visando
+                                    sempre à promoção, à proteção e à garantia de direitos.
+                                </p>
+                                <img src="./image/modulo_02/adolescencia_detalhes_3.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto mb-3">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <p class="title">ADICIONAR CARROUSEL</p>
+                                <img src="./image/modulo_02/adolescencia_detalhes_4.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block ml-auto mb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adolescencia e violencia - parte 12 -->
+                <div id="adolescencia-12" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box padding-container mb-3">
+                                    <p class="text-light">Os casos de violência contra criança e adolescente devem ser
+                                        denunciados ao Conselho Tutelar, Ministério Público ou aos disque-denúncias 24h,
+                                        como o Disque 100. O disque 100 é um canal de comunicação da sociedade civil com
+                                        o poder público, que possibilita conhecer e avaliar a dimensão da violência
+                                        contra os direitos humanos e o sistema de proteção, bem como orientar a
+                                        elaboração de políticas públicas. </p>
+                                </div>
+                                <p class="pt-4">Em suma, abordamos neste primeiro momento, o conceito de violência, sua
+                                    tipologia, as vulnerabilidades específicas quando se trata das violências praticadas
+                                    contra os adolescentes, bem como algumas recomendações de como proceder no
+                                    atendimento às vítimas. A violência hoje atravessa transversalmente adolescentes de
+                                    várias etnias, classes sociais e gêneros, mas de modo desigual, como tratamos
+                                    anteriormente. A partir da próxima seção, trataremos de questões concernentes aos
+                                    modos de expressão do sofrimento psíquico, iniciando com as adições na adolescência.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <img src="./image/modulo_02/adolescencia_detalhes_5.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto mb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - Substancias psicoativas - parte 1 -->
+                <div id="substancias-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line">Adolescências e o uso de
+                                substâncias psicoativas
+                            </p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_02/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Substancias psicoativas - parte 2 -->
+                <div id="substancias-2" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="title text-center text-primary padding-x-desk-3">Adolescência e o uso
+                                    de substâncias psicoativas
+                                </p>
+                                <p class="py-2">O uso de substâncias psicoativas por adolescentes preocupa tanto
+                                    profissionais da rede de assistência e de proteção a crianças e adolescentes quanto
+                                    pais e professores. Para entendermos melhor essa questão, é importante falarmos
+                                    sobre os vários usos que os adolescentes fazem das substâncias. Por exemplo, se é um
+                                    uso para socializar com seus pares ou um uso para relaxar diante de situações
+                                    adversas com as quais não está conseguindo lidar. Outro ponto é sabermos quais são
+                                    as substâncias mais utilizadas e entendermos quando o uso precisa ser objeto de uma
+                                    atenção especializada no campo da saúde. Nesta direção, ao tratarmos das questões
+                                    que envolvem adolescência e substâncias psicoativas, é importante diferenciarmos
+                                    uso, abuso e adição. Considerando a possibilidade de o uso se tornar abusivo, vamos
+                                    conhecer, também, os fatores de risco que aumentam a probabilidade de o uso
+                                    tornar-se problemático, bem como os fatores de proteção que atuam na direção
+                                    contrária.</p>
+                                <img src="./image/modulo_02/substancias_detalhes_1.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 img-fluid d-block mr-auto">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box padding-container mb-3">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                                            <p class="bold text-center text-light">
+                                                O uso de substâncias deve ser pensado a partir de um tripé formado pela
+                                                pessoa usuária e sua história, a substância consumida e o contexto no
+                                                qual acontece o uso
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 col-lg-6">
+                                            <img src="./image/modulo_02/substancias_detalhes_2.png" alt="Detalhes"
+                                                class="w-75 w-md-100 d-block mx-auto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="py-2">
+                                    “[...] cada humano consumirá essa ou aquela droga em função de suas necessidades
+                                    subjetivas e sociais. Não são as drogas que fazem os humanos [...] são os homens que
+                                    fazem as drogas” (NERY FILHO, 2012, p. 20).
+                                </p>
+                                <p class="py-2">
+                                    É importante esclarecer que preferimos usar substâncias psicoativas a drogas porque,
+                                    quando escutamos o segundo termo, geralmente pensamos em algo que necessariamente é
+                                    ilegal e prejudicial à saúde. O termo substâncias psicoativas, por sua vez,
+                                    ajuda-nos a evitar um julgamento moral prévio e evidencia o fato de que um conjunto
+                                    de substâncias atua em nosso cérebro, alterando seu funcionamento. Nesse sentido, o
+                                    café, muito ingerido em nossa cultura, é uma substância psicoativa que, tomada em
+                                    demasia, pode gerar dependência. No entanto, em doses pequenas, é um estimulante,
+                                    sem maiores prejuízos à saúde. Vejamos o exemplo das medicações prescritas por
+                                    psiquiatras, como ansiolíticos e antidepressivos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Substancias psicoativas - parte 3 -->
+                <div id="substancias-3" class="carousel-item default">
+                    <div class="container-fluid padding-container pt-5">
+                        <p class="text-justify">Essas medicações são lícitas, atuam sobre o cérebro e são
+                            comercializadas de forma controlada. Devem ser utilizadas com finalidade terapêutica. No
+                            entanto, identificamos, inclusive entre adolescentes, uso indevido dessas medicações que,
+                            por vezes, são prescritas para familiares ou obtidas no mercado informal.</p>
+                        <p class="subtitle py-2 bold text-center">Em linhas gerais, as substância psicoativas são
+                            classificadas em: </p>
+                        <div class="row py-2 justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                <div class="box bg-card-primary h-100">
+                                    <div class="box-title d-flex padding-x-desk-3 padding-mobile-1 py-2">
+                                        <img src="./image/modulo_02/icon_num_1.svg" alt="Icon numero 01"
+                                            class="padding-x-desk-2">
+                                        <span class="bold text-center text-light padding-x-desk-3">
+                                            depressoras do sistema nervoso central
+                                        </span>
+                                    </div>
+                                    <div class="row p-4">
+                                        <div class="col-8 col-lg-7 d-flex align-items-center">
+                                            <p class="small text-light">
+                                                bebidas alcoólicas, solventes ou inalantes, tranquilizantes ou
+                                                ansiolíticos, calmantes e sedativos, ópio e morfina
+                                            </p>
+                                        </div>
+                                        <div class="col-4 col-lg-5 d-flex align-items-center">
+                                            <img class="w-100" src="./image/modulo_02/icon_bebida.svg"
+                                                alt="Icon bebida">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                <div class="box bg-card-primary h-100">
+                                    <div class="box-title d-flex padding-x-desk-3 padding-mobile-1 py-2">
+                                        <img src="./image/modulo_02/icon_num_2.svg" alt="Icon numero 02"
+                                            class="padding-x-desk-2">
+                                        <span class="bold text-center text-light padding-x-desk-3">
+                                            estimulantes do sistema nervoso central
+                                        </span>
+                                    </div>
+                                    <div class="row p-4">
+                                        <div class="col-8 col-lg-7 d-flex align-items-center">
+                                            <p class="small text-light">
+                                                cafeína, anfetaminas, cocaína e tabaco
+                                            </p>
+                                        </div>
+                                        <div class="col-4 col-lg-5 d-flex align-items-center">
+                                            <img class="w-100" src="./image/modulo_02/icon_estimulante.svg"
+                                                alt="Icon estimulante">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                                <div class="box bg-card-primary h-100">
+                                    <div class="box-title d-flex padding-x-desk-3 padding-mobile-1 py-2">
+                                        <img src="./image/modulo_02/icon_num_3.svg" alt="Icon numero 03"
+                                            class="padding-x-desk-2">
+                                        <span class="bold text-center text-light padding-x-desk-3">
+                                            depressoras do sistema nervoso central
+                                        </span>
+                                    </div>
+                                    <div class="row p-4 h-75">
+                                        <div class="col-8 col-lg-7 d-flex align-items-center">
+                                            <p class="small text-light">
+                                                bebidas alcoólicas, solventes ou inalantes, tranquilizantes ou
+                                                ansiolíticos, calmantes e sedativos, ópio e morfina
+                                            </p>
+                                        </div>
+                                        <div class="col-4 col-lg-5 d-flex align-items-center">
+                                            <img class="w-100" src="./image/modulo_02/icon_cogumelo.svg"
+                                                alt="Icon bebida">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box h-100">
+                            <div class="box-title bg-card-primary d-flex padding-x-desk-3 padding-mobile-1 py-2">
+                                <span class="bold text-center text-light padding-x-desk-3">
+                                    As substâncias mais utilizadas por adolescentes são o álcool e o tabaco, seguidos
+                                    pela maconha (cannabis) (MALTA et al., 2018).
+                                </span>
+                            </div>
+                            <div class="row p-4">
+                                <div class="col-12 col-lg-4">
+                                    <div class="mx-auto">
+                                        <div class="d-flex justify-content-around">
+                                            <img class="py-2 d-block mx-auto"
+                                                src="./image/modulo_02/icon_num_primeiro.svg" alt="Icon Primeiro">
+                                            <img class="py-2 d-block mx-auto"
+                                                src="./image/modulo_02/icon_num_segundo.svg" alt="Icon Segundo">
+                                            <img class="py-2 d-block mx-auto"
+                                                src="./image/modulo_02/icon_num_terceiro.svg" alt="Icon Terceiro">
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <div class="d-flex align-items-center">
+                                                <img class="py-2 w-100 d-block mx-auto"
+                                                    src="./image/modulo_02/icon_bebida.svg" alt="Icon Bebida">
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="py-2 w-100 d-block mx-auto"
+                                                    src="./image/modulo_02/icon_cigarro.svg" alt="Icon Cigarro">
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="py-2 w-100 d-block mx-auto"
+                                                    src="./image/modulo_02/icon_maconha.svg" alt="Icon Cannabis">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-7 d-flex align-items-center mx-auto">
+                                    <p class="small text-light text-justify">
+                                        O nível socioeconômico, os territórios onde circulam e as cenas de uso são muito
+                                        importantes para definir quais substâncias estarão disponíveis para as (os)
+                                        adolescentes. Por exemplo, em festas eletrônicas, é comum o uso das drogas
+                                        sintéticas que alteram o estado de consciência e permitem experiências
+                                        psicodélicas (RAUPP; PEREIRA, 2022). Com recorrência, o uso dessas substâncias
+                                        nesses contextos tem um caráter experimental, e as práticas de redução de danos
+                                        são fundamentais para proteger os adolescentes
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Substancias psicoativas - parte 4 -->
+                <div id="substancias-4" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="py-2">A redução de danos é um modo de cuidar, efetivado por meio de um
+                                    conjunto de práticas com o propósito de evitar agravos à saúde relacionados ao uso
+                                    de substâncias psicoativas. A redução de danos se alinha aos princípios da
+                                    integralidade e da universalidade do Sistema Único de Saúde. Todas as pessoas têm o
+                                    direito de ser cuidadas, mesmo as que estão em uso abusivo ou dependência de
+                                    substâncias e não conseguem interrompê-lo (SURJUS; SILVA, 2019). Falar de redução de
+                                    danos, quando se trata de adolescentes, é sempre delicado, porque envolve admitir
+                                    que adolescentes usam drogas. Não ofertar a redução de danos a esse público, por
+                                    outro lado, é negar um dado da realidade e, em certa medida, ferir a base do
+                                    Estatuto da Criança e do Adolescente, pautada pela ideia de proteção integral.</p>
+                                <p class="py-2">As finalidades dos usos dessas substâncias são várias. Temos usos
+                                    ritualísticos (em contextos religiosos), usos recreativos, usos medicinais e,
+                                    principalmente entre os adolescentes, usos para vencer a timidez, na tentativa de
+                                    superar as dificuldades de socialização. Por vezes, a cocaína é utilizada com este
+                                    intuito: facilitar a interação com os demais quando a inibição é um obstáculo para
+                                    estar entre os pares. Encontramos, também, adolescentes que fazem uso, por exemplo,
+                                    de maconha para aliviar momentos de ansiedade. Além disso, é muito comum o
+                                    adolescente experimentar substâncias psicoativas para conhecer o seu efeito e para
+                                    facilitar a construção de seu lugar no campo social, uma vez que esse uso geralmente
+                                    é compartilhado nos grupos com os quais ele se identifica (SOUZA et al., 2015).</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="py-2">
+                                    O fato de um adolescente fazer uso esporádico de uma substância não significa
+                                    necessariamente que esteja em um padrão abusivo de uso ou em dependência química. É
+                                    necessário investigar para conhecer o padrão de uso e como isso afeta sua vida. O
+                                    uso pode ser ocasional e, conforme afirmamos acima, ser recreativo ou para fins de
+                                    socialização. Quando se percebe esse padrão de uso, o melhor é conversar e encontrar
+                                    as formas de proteção para que o uso não se torne abusivo ou provoque outros agravos
+                                    à saúde. Nessa direção, a lógica da redução de danos é fundamental. A redução de
+                                    danos não acontece apenas quando os problemas de saúde já estão instalados. A
+                                    estratégia em questão serve para reduzir agravos.
+                                </p>
+                                <button id="btn1" class="btn btn-2 rounded-4 d-block mx-auto">Proposição</button>
+                                <div class="popover top">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content"><b>Proposição:</b> Por quais motivos você acredita que
+                                        o uso
+                                        de drogas se torna problemático para um adolescente em particular?
+
+                                        <b>Feedback positivo:</b> A droga não é a causa primeira dos problemas de um
+                                        adolescente. Quando o uso se torna abusivo, geralmente a substância se tornou
+                                        uma resposta a uma história de sofrimento psíquico e social.
+
+                                        <b>Feedback orientador:</b> Importante escutarmos o adolescente para sabermos as
+                                        respostas. Responsabilizar a droga é silenciar os jovens e as pessoas que
+                                        compõem sua história e sua rede social.
+                                    </div>
+                                </div>
+                                <img src="./image/modulo_02/substancias_detalhes_3.svg" alt="Detalhes"
+                                    class="w-100 d-block mx-auto padding-y-desk-5 padding-y-mobile-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Substancias psicoativas - parte 5 -->
+                <div id="substancias-5" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="py-2">Muitas pessoas confundem o abuso de substâncias com dependência, que
+                                    pode ser psicológica e/ou química. Nos quadros de dependência, há perdas de laços
+                                    sociais, e mesmo os cuidados básicos, como higiene e alimentação, podem ser
+                                    interrompidos. O uso se torna compulsivo. Com frequência, nesse quadro, adolescentes
+                                    se colocam em situação de risco para obter a substância, submetendo-se a diversos
+                                    tipos de exploração, como sexual, ou entrando para o mundo do crime para pagar pelo
+                                    que consomem. É fundamental entendermos que a dependência é uma questão de saúde e
+                                    assim deve ser tratada. Não é uma falha de caráter ou qualquer outro modo de desvio
+                                    moral. Os Centros de Atenção Psicossocial para a Infância e para Adolescência
+                                    (CAPSi), bem como os Centros de Atenção Psicossocial, que tratam os casos de álcool
+                                    e de outras drogas (CAPSad), têm equipes que podem ser acionadas para realizar o
+                                    cuidado necessário. Eventualmente, a internação para desintoxicação pode ser
+                                    necessária e deve acontecer no âmbito de um hospital geral, durando o tempo mínimo
+                                    para que o tratamento possa seguir no contexto comunitário.
+                                <p class="py-2">Precisamos conhecer os fatores de risco e os fatores de proteção
+                                    presentes na relação dos adolescentes com as substâncias psicoativas (SCHENKER;
+                                    MINAYO, 2005). Reconhecer ambos os fatores nos ajuda a trabalhar no sentido da
+                                    promoção da saúde, ou seja, do cuidado ampliado que chega antes do adoecimento.</p>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="accordion-header">
+                                    <div class="accordion-item-person">
+                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_fatores_1" aria-expanded="true">
+                                            Fatores de risco
+                                        </button>
+                                        <div id="accordion_fatores_1" class="accordion-collapse collapse">
+                                            <div class="accordion-corpo">
+                                                <ul class="p-4 small">
+                                                    <li class="py-1">Vulnerabilidade social e ausência de uma rede de
+                                                        proteção;</li>
+                                                    <li class="py-1">O padrão de uso familiar e a “naturalidade” diante
+                                                        de um início precoce do uso, por exemplo, de álcool;</li>
+                                                    <li class="py-1">Relações em grupo que levam a uma necessidade de
+                                                        uso de substâncias para ser aceito (situação mais complicada
+                                                        quando os adultos não estão atentos a esses movimentos)</li>
+                                                    <li class="py-1">A escola opera como fator de risco quando é fonte
+                                                        de fatores estressantes, como práticas de bullying e cobranças
+                                                        excessivas que geram o sentimento de não ser bom o suficiente, a
+                                                        não atenção às necessidades de cada pessoa, inclusive aos sinais
+                                                        apresentados pelos adolescentes que estão sendo alvos de
+                                                        violência;</li>
+                                                    <li class="py-1">A glamourização de algumas substâncias pela
+                                                        publicidade e pelas redes sociais;</li>
+                                                    <li class="py-1">A disponibilidade e facilidade de obtenção de
+                                                        substâncias no território do jovem.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item-person">
+                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_fatores_2" aria-expanded="true">
+                                            Fatores de proteção
+                                        </button>
+                                        <div id="accordion_fatores_2" class="accordion-collapse collapse">
+                                            <div class="accordion-corpo">
+                                                <ul class="p-4 small">
+                                                    <li class="py-1">A existência de uma rede de proteção com pessoas
+                                                        nas quais o adolescente confia e com quem pode contar;</li>
+                                                    <li class="py-1">Vínculos familiares produtores de acolhimento e um
+                                                        contexto relacional que permita o adolescente se expressar;</li>
+                                                    <li class="py-1">Autoestima e relações de amizade fundadas na
+                                                        solidariedade e na partilha das estratégias de cuidado e
+                                                        proteção;</li>
+                                                    <li class="py-1">Escolas que estimulam a aprendizagem, ofertam
+                                                        atividades extraclasse (como artes e esportes) e desenvolvem
+                                                        espaços de trocas e conversas sobre temas diversos. É
+                                                        fundamental que a escola esteja atenta às necessidades de cada
+                                                        pessoa e aos sinais de sofrimento que eventualmente venham a
+                                                        apresentar;</li>
+                                                    <li class="py-1">Acesso às informações reais sobre o uso de
+                                                        substâncias e seus efeitos, incluindo práticas de redução de
+                                                        danos.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Substancias psicoativas - parte 6 -->
+                <div id="substancias-6" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="py-2">Apresentamos, nesta seção, as substâncias psicoativas na adolescência,
+                                    diferenciando os vários tipos de uso e destacando a diferença entre uso ocasional,
+                                    abusivo e dependência. Elencamos também os fatores de proteção e de risco, cujo
+                                    conhecimento nos auxilia a aprimorar as práticas de cuidado. Enfatizamos, por fim, a
+                                    necessidade de trabalharmos com a redução de danos em contextos diversos, como
+                                    escolas, festas e eventos, pelos quais circulam jovens, bem como em outros espaços
+                                    que agreguem adolescentes, como pistas de skate, centros de convivência e de
+                                    referência em juventudes e espaços destinados à prática de esportes. Dialogar é o
+                                    melhor caminho, e não há diálogo sem a escuta do adolescente acerca das suas
+                                    experiências, inquietações e dúvidas.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img src="./image/modulo_02/substancias_detalhes_4.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto pb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - Ansiedade e contextos sociais - parte 1 -->
+                <div id="ansiedade-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100 d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line">Adolescências, ansiedade
+                                e contextos sociais
+                            </p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_02/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ansiedade e contextos sociais - parte 2 -->
+                <div id="ansiedade-2" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="title text-primary text-center pb-3 padding-x-desk-5">Adolescências, ansiedade
+                                    e contextos sociais
+                                </p>
+                                <p class="py-2">A ansiedade é uma das formas mais recorrentes de expressão do sofrimento
+                                    psíquico na atualidade entre adolescentes, ao lado de outras condições clínicas,
+                                    como a depressão e a síndrome do pânico. Uma definição de ansiedade é: “reação
+                                    defensiva comum frente ao perigo ou situações consideradas ameaçadoras.
+                                    Caracteriza-se por um grande mal-estar físico e psíquico, aflição, agonia” (ASSIS et
+                                    al., 2007, p. 12).
+                                <p class="py-2">A ansiedade é uma das formas mais recorrentes de expressão do sofrimento
+                                    psíquico na atualidade entre adolescentes, ao lado de outras condições clínicas,
+                                    como a depressão e a síndrome do pânico. Uma definição de ansiedade é: “reação
+                                    defensiva comum frente ao perigo ou situações consideradas ameaçadoras.
+                                    Caracteriza-se por um grande mal-estar físico e psíquico, aflição, agonia” (ASSIS et
+                                    al., 2007, p. 12).</p>
+                                <p class="py-2">Outro elemento importante é o fato de a ansiedade ser vivida como uma
+                                    experiência concreta que afeta o corpo, podendo causar taquicardia, suor excessivo
+                                    nas mãos e nos pés, tremores e até a sensação de morte iminente (nesses casos,
+                                    falamos de ataques de pânico).</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img src="./image/modulo_02/ansiedade_detalhes_1.png" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto pb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ansiedade e contextos sociais - parte 3 -->
+                <div id="ansiedade-3" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Nem toda ansiedade é patológica, portanto nem sempre essa condição
+                                    requer tratamento. É fundamental entendermos o contexto no qual se encontra a pessoa
+                                    ansiosa. Assim,</p>
+                                <div class="citacao-2 w-75 my-3">[...] a ansiedade só deveria ser considerada patológica
+                                    quando exageradamente intensa, persistente, inadequada à idade ou à fase do
+                                    desenvolvimento e quando interfere negativamente nas relações nos ambientes onde a
+                                    criança circula (LIMA, 2022, p. 87).
+                                </div>
+                                <p class="py-2">A ansiedade é uma resposta esperada diante de certas circunstâncias.
+                                    Talvez o melhor exemplo de ansiedade seja a de separação, muito vivida por crianças
+                                    ao iniciarem a vida escolar. É natural que, depois de um tempo de convívio intenso
+                                    com a família, as primeiras idas para a escola gerem desconforto e medo; desconforto
+                                    por haver o distanciamento de um contexto de proteção (quando a família funciona
+                                    como fator protetivo) e medo por causa do desconhecido. A ansiedade de separação
+                                    acomete não apenas as crianças, mas também seus cuidadores principais. Isso faz
+                                    parte do processo de constituição do novo sujeito.
+                                </p>
+
+                                <p class="py-2">Outras situações contextuais com forte potencial para gerar ansiedade
+                                    são as várias violências, elencadas na primeira parte deste módulo. As diversas
+                                    formas de violência, como a decorrente do tráfico de drogas, sobretudo para crianças
+                                    e adolescentes que habitam em territórios mais vulneráveis, a violência
+                                    intrafamiliar e o bullying no contexto escolar, são fatores que contribuem para o
+                                    surgimento da ansiedade.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A manifestação da ansiedade, como a de qualquer outro sinal de
+                                    sofrimento, requer, portanto, um olhar cuidadoso, inclusive para o contexto no qual
+                                    a pessoa está inserida. Vamos lembrar de Maria, cuja história foi brevemente
+                                    apresentada no nosso caso complexo. Maria é vítima de violência intrafamiliar e
+                                    habita em um território em que as disputas entre facções e a violência policial são
+                                    parte do cotidiano.</p>
+                                <p class="py-2">Diante da história de vida de Maria e do contexto em que ela estava, o
+                                    sofrimento psíquico é uma resposta às adversidades vividas. Diante do exposto,
+                                    tratá-la apenas com medicações e com psicoterapia seria insuficiente. Aliás, seria
+                                    inadequado, pois estaríamos tentando controlar os sintomas sem realizar outras ações
+                                    necessárias para tratar as causas do seu sofrimento. Cuidar de Maria envolve
+                                    certamente ofertar um espaço de escuta para ela, mas requer, também, um trabalho
+                                    dirigido à sua família. O que temos é insuficiente para afirmar que seu tratamento
+                                    envolverá o uso de medicações. Por vezes, a terapia individual, a participação em
+                                    grupos e o trabalho dirigido à família já são suficientes para sair do quadro de
+                                    ansiedade apresentado. No entanto, a construção de um plano terapêutico demandaria
+                                    mais conhecimento sobre Maria e seu entorno.</p>
+                                <p class="py-2">É necessário compreender o pedido de ajuda e o que o sofrimento do
+                                    adolescente comunica para que possam ser construídas estratégias de cuidado
+                                    adequadas. A elaboração de um plano de cuidado deve sempre considerar o adolescente,
+                                    suas necessidades, interesses e disponibilidades, assim como os recursos disponíveis
+                                    no território.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ansiedade e contextos sociais - parte 4 -->
+                <div id="ansiedade-4" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Ainda refletindo sobre a ansiedade de Maria, é oportuno lembrarmos que,
+                                    na perspectiva da promoção da saúde (CZERESNIA; FREITAS, 2000), é necessário cuidar
+                                    antes de o adoecimento se instalar. Nessa direção, cuidar de crianças e
+                                    adolescentes, no Brasil atual, envolve uma luta maior na esfera macropolítica para
+                                    que Maria e outras crianças e adolescentes não cresçam em meio às diversas
+                                    violências, para que suas famílias tenham condições dignas de existência e para que
+                                    o racismo historicamente associado à diferença entre classes possa ser superado.</p>
+                                <p class="py-2">As crises de ansiedade de adolescentes têm sido uma questão recorrente e
+                                    motivo de preocupação. Com a reabertura das escolas após o isolamento social que foi
+                                    necessário ao enfrentamento da pandemia do coronavírus, crises coletivas de
+                                    ansiedade também passaram a acontecer, sendo, inclusive, veiculadas pela mídia.
+                                </p>
+                                <p class="py-2">Tais situações não são novas na clínica com adolescentes. É importante
+                                    considerarmos a ansiedade como uma manifestação de sofrimento psíquico, que tanto
+                                    diz respeito ao sujeito em sua singularidade quanto ao contexto no qual se encontra
+                                    inserido. Desse modo, os momentos de crise social e política também contribuem para
+                                    o surgimento de quadros de ansiedade.</p>
+                                <p class="py-2">Um exemplo de contexto produtor de medo, desamparo e ansiedade foi a
+                                    pandemia do coronavírus. O sofrimento psíquico entre adolescentes, que já era
+                                    preocupante antes da pandemia, intensificou-se com a propagação do coronavírus, não
+                                    apenas pela questão sanitária, mas pelo fato de o país ter entrado em uma grave
+                                    crise política e socioeconômica.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Considerando o impacto da pandemia na saúde mental de jovens, o Conselho
+                                    Nacional da Juventude (CONJUVE) escutou 68.114 jovens entre 15 e 29 anos sobre como
+                                    estavam se sentindo. Entre os dados produzidos, vejamos alguns muito significativos
+                                    para o assunto sobre o qual estamos refletindo: “de 6 a cada 10 jovens relatam
+                                    ansiedade e uso exagerado de redes sociais; 5 a cada 10 sentem exaustão ou cansaço
+                                    constante; e 4 a cada 10 têm insônia ou tiveram distúrbios de peso. (ATLAS DA
+                                    JUVENTUDE, 2022).</p>
+                                <p class="py-2">A pandemia se instalou em um contexto de indicadores preocupantes na
+                                    saúde mental. O distanciamento social necessário ao enfrentamento da pandemia
+                                    agregou fatores de agravo ao sofrimento já existente, como: a impossibilidade de
+                                    estar na escola, a agudização da violência intrafamiliar e nos territórios
+                                    periferizados, a imersão nos conflitos familiares e no sofrimento psíquico dos
+                                    adultos ao redor, a redução das possibilidades de lazer, a perda de entes queridos,
+                                    a dificuldade em realizar o luto diante da impossibilidade de fazer os rituais de
+                                    despedida, o medo de morrer e de perder as figuras de referência. Como afirma o
+                                    psicanalista Joel Birman, a pandemia provocou: “a ruptura e a descontinuidade
+                                    radical das práticas de sociabilidade e dos laços intersubjetivos” (BIRMAN, 2020, p.
+                                    9).</p>
+                                <img src="./image/modulo_02/ansiedade_detalhes_2.svg" alt="Detalhes"
+                                    class="w-50 w-md-75 d-block ml-auto py-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ansiedade e contextos sociais - parte 5 -->
+                <div id="ansiedade-5" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">As crises de ansiedade podem acontecer individual e coletivamente.
+                                    Quando a crise de uma pessoa desencadeia crise em outras, estamos falando do
+                                    contágio psíquico. Tal forma de contágio foi descrita por <button id="btn2" class="popover-btn">Sigmund Freud</button> (1921/2010),
+                                    o criador da Psicanálise, no início do século XX, quando abordava outro quadro
+                                    clínico denominado de histeria. As crises de ansiedade coletivas nas escolas,
+                                    durante a travessia pandêmica, são um fenômeno em que vimos acontecer o contágio
+                                    psíquico. O contágio acontece quando uma pessoa se identifica com algo expresso pelo
+                                    sofrimento de outra.</p>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content p-2">
+                                        <img src="./image/modulo_02/sigmund_freud.png" alt="Sigmund Freud" class="w-100">
+                                    </div>
+                                </div>
+                                <p class="py-2">Essa coletivização da ansiedade, para além de uma manifestação de um
+                                    sofrimento compartilhado por adolescentes, pode ser tomada também como uma mensagem
+                                    dirigida aos adultos, uma mensagem cifrada que nos alerta sobre a necessidade,
+                                    depois da pandemia, de escutarmos os adolescentes sobre como atravessaram esse tempo
+                                    com suas famílias, como estão, quais as dificuldades que sentiram quando retomaram
+                                    as atividades e assim por diante. Talvez os adolescentes estejam nos dizendo que é
+                                    impossível fingir que nada aconteceu e simplesmente seguir adiante.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container d-flex align-items-center">
+                                <img src="./image/modulo_02/ansiedade_detalhes_3.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto pb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - Nem toda tristeza e patalogica - parte 1 -->
+                <div id="tristeza-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100 d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line">Nem toda tristeza é patológica: diferenciando
+                                depressão da condição humana de ficar triste
+                            </p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_02/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nem toda tristeza e patalogica - parte 2 -->
+                <div id="tristeza-2" class="carousel-item default active">
+                    <div class="container-fluid padding-container">
+                        <p class="title text-center text-primary pt-5 pb-3 padding-x-desk-5">
+                            Nem toda tristeza é patológica: diferenciando depressão da condição humana de ficar triste
+                        </p>
+                        <p class="py-2 text-justify">
+                            A depressão, assim como as outras formas de sofrimento abordadas no presente módulo, tem sido muito recorrente nos dias atuais, tanto em adultos quanto em adolescentes. Durante a pandemia de Covid-19, as taxas de ansiedade e de depressão cresceram de modo significativo. De acordo com a Organização Mundial da Saúde, apenas no primeiro ano de pandemia, esse crescimento foi de 25% na população em geral (WORLD HEALTH ORGANIZATION, 2022).   
+                        </p>
+                        <div class="box h-100">
+                            <div class="box-title bg-card-primary d-flex padding-x-desk-3 padding-mobile-1 py-2">
+                                <span class="bold text-center text-light padding-x-desk-3">
+                                    Em âmbito nacional, o relatório do Conselho Nacional de Juventude (2021), tratando de dados relativos à juventude:
+                                </span>
+                            </div>
+                            <div class="row p-4">
+                                <div class="col-12 col-lg-4">
+                                    <div class="mx-auto">
+                                        <div class="d-flex justify-content-around">
+                                            <img class="py-2 d-block mx-auto"
+                                                src="./image/modulo_02/icon_num_primeiro.svg" alt="Icon Primeiro">
+                                            <img class="py-2 d-block mx-auto"
+                                                src="./image/modulo_02/icon_num_segundo.svg" alt="Icon Segundo">
+                                            <img class="py-2 d-block mx-auto"
+                                                src="./image/modulo_02/icon_num_terceiro.svg" alt="Icon Terceiro">
+                                        </div>
+                                        <div class="d-flex justify-content-around">
+                                            <div class="d-flex align-items-center">
+                                                <img class="py-2 w-100 d-block mx-auto"
+                                                    src="./image/modulo_02/icon_bebida.svg" alt="Icon Bebida">
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="py-2 w-100 d-block mx-auto"
+                                                    src="./image/modulo_02/icon_cigarro.svg" alt="Icon Cigarro">
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="py-2 w-100 d-block mx-auto"
+                                                    src="./image/modulo_02/icon_maconha.svg" alt="Icon Cannabis">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-7 d-flex align-items-center mx-auto">
+                                    <p class="small text-light text-justify">
+                                        O nível socioeconômico, os territórios onde circulam e as cenas de uso são muito
+                                        importantes para definir quais substâncias estarão disponíveis para as (os)
+                                        adolescentes. Por exemplo, em festas eletrônicas, é comum o uso das drogas
+                                        sintéticas que alteram o estado de consciência e permitem experiências
+                                        psicodélicas (RAUPP; PEREIRA, 2022). Com recorrência, o uso dessas substâncias
+                                        nesses contextos tem um caráter experimental, e as práticas de redução de danos
+                                        são fundamentais para proteger os adolescentes
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/index.min.js"></script>
+    <script src="./js/popover.min.js"></script>
+
+</body>
+
+</html>

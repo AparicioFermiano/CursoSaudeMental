@@ -20,21 +20,24 @@ function nav() {
 }
 
 function mudar_carrosel(id, sem_nav) {
-    const id_pai = document.getElementById(id.split("-")[0]);
-    const id_lista = document.querySelector("#list-" + id.substring(1));
+    let id_pai = document.getElementById(id.split("-")[0]);
+    let id_lista = document.querySelector("#list-" + id.substring(1));
 
     $("#carousel").carousel($(id).index());
     document.querySelectorAll(".sidebar-item, .sidebar-subitem").forEach((item) => {
         item.classList.remove("active");
     });
+
     id_lista.classList.add("active");
 
     if (id_pai && id_pai.querySelector(".active")) {
         id_pai.classList.add("active");
     }
+
     if (sem_nav !== 1) {
         nav();
     }
+
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
 }
