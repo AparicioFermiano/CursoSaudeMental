@@ -193,17 +193,6 @@ small {
     color: var(--font-light);
 }
 
-.btn-popover {
-    border: none;
-    background-color: transparent;
-    color: var(--primary-dark);
-    text-decoration: underline;
-}
-
-.btn-popover:hover {
-    color: var(--primary);
-}
-
 .btn-panel {
     border: none;
     border-bottom: 1px solid var(--disabled);
@@ -224,6 +213,11 @@ small {
 
 .padding-container {
     padding: 3rem;
+}
+
+.padding-x-container {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
 }
 
 .line.line-primary {
@@ -252,7 +246,6 @@ small {
     border-radius: 1rem;
     padding: 2rem;
 }
-
 
 /* Saiba mais */
 
@@ -399,6 +392,11 @@ small {
         font-size: 1em;
     }
 
+    .title-topico {
+        text-align: center !important;
+        font-size: 2em;
+    }
+
     .btn-1 {
         width: 100%;
         margin-top: 2%;
@@ -413,8 +411,17 @@ small {
         padding: 2rem !important;
     }
 
+    .padding-x-container {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+
     .w-md-100 {
         width: 100% !important;
+    }
+
+    .w-md-75 {
+        width: 75% !important;
     }
 
     .padding-mobile-2 {
@@ -427,7 +434,15 @@ small {
     }
 
     .video {
-        height: 500px;
+        height: 350px;
+    }
+
+    .pt-mobile-5 {
+        padding-top: 3rem !important;
+    }
+
+    .background-topico {
+        border: 1em solid var(--font-light);
     }
 }
 
@@ -458,10 +473,18 @@ small {
     .padding-t-desk-5 {
         padding-top: 3rem!important;
     }
+
+    .h-lg-75 {
+        height: 75% !important;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    .w-md-75 {
-        width: 75% !important;
+@media (max-width: 767px) {
+    .video {
+        height: 250px;
+    }
+
+    .w-sm-100 {
+        width: 100% !important;
     }
 }
