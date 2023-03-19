@@ -26,7 +26,7 @@
               left = btnRect.left + btnRect.width + 10;
               break;
       }
-  
+
       popover.style.top = top + "px";
       popover.style.left = left + "px";
   }

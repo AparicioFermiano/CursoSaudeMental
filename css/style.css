@@ -82,6 +82,18 @@ body::-webkit-scrollbar-thumb,
     background-color: var(--primary) !important;
 }
 
+.bg-primary-dark {
+    background-color: var(--primary-dark) !important;
+}
+
+.bg-secondary-dark {
+    background-color: var(--secondary-dark) !important;
+}
+
+.bg-secondary-light {
+    background-color: var(--secondary-light) !important;
+}
+
 .bg-card-light {
     background-color: var(--primary-light) !important;
 }
@@ -102,6 +114,14 @@ body::-webkit-scrollbar-thumb,
     color: var(--primary) !important;
 }
 
+.text-primary-light {
+    color: var(--primary-light) !important;
+}
+
+.text-secondary-light {
+    color: var(--secondary-light) !important;
+}
+
 .text-dark,
 h5,
 h4,
@@ -109,7 +129,7 @@ h3,
 h2,
 h1,
 small {
-    color: var(--font-dark) !important;
+    color: var(--font-dark);
 }
 
 .text-justify {
@@ -171,8 +191,7 @@ small {
 
 .list-decimal {
     list-style-type: decimal;
-  }
-
+}
 /* BOTAO */
 
 .btn-1 {
@@ -201,7 +220,8 @@ small {
     letter-spacing: 1px;
 }
 
-.btn-panel:hover {
+.btn-panel:hover, 
+.btn-panel.active {
     border-bottom: 2px solid var(--primary-dark);
     color: var(--primary-dark);
 }
@@ -222,7 +242,6 @@ small {
     border: 2px solid var(--primary-light);
     color: var(--font-light);
 }
-
 
 /* OUTROS */
 
@@ -524,6 +543,10 @@ small {
     .h-lg-75 {
         height: 75% !important;
     }
+
+    .align-items-center-lg {
+        align-items: center !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -534,4 +557,12 @@ small {
     .w-sm-100 {
         width: 100% !important;
     }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .px-md-2 {
+        padding-left: 1.2rem !important;
+        padding-right: 1.2rem !important;
+    } 
 }
