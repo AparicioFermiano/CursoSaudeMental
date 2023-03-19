@@ -1,5 +1,3 @@
-
-  
   const popovers = document.querySelectorAll(".popover");
   const numPopovers = popovers.length;
   const tela = document.querySelectorAll(".default.active")[0];

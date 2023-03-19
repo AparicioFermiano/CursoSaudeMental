@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/modulo03.min.css">
+    <link rel="stylesheet" href="./css/popover.min.css?v=17032023">
+    <link rel="stylesheet" href="./css/sidenav.min.css">
+    <title>Módulo 03</title>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar-navbar">
+        <button id="btn-sidebar" class="z-5 btn-sidebar" type="button" data-toggle="collapse" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="nav()">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <p class="title text-dark">MENU</p>
+        <!-- SIDEBAR - HOME -->
+        <div id="list-home" class="sidebar-item active py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('#home')">
+                <i class="bi bi-house"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR - SOBRE -->
+        <div id="list-sobre" class="sidebar-item py-1 px-2">
+            <button id="list-sobre" class="w-100 text-start" onclick="mudar_carrosel('#sobre')">
+                sobre o módulo
+            </button>
+        </div>
+        <!-- SIDEBAR - APRESENTACAO DO MODULO -->
+        <div id="apresentacao" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-apresentacao" aria-expanded="false">
+                apresentação do módulo
+            </button>
+            <div id="accordion-apresentacao" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-apresentacao-slide-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-1')">
+                                1. Apresentação do módulo
+                            </button>
+                        </li>
+                        <li id="list-apresentacao-slide-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-2')">
+                                1.2. Apresentação do módulo
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDEBAR - ADOLESCENCIA E VIOLENCIA -->
+        <div id="adolescencia" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-adolescencia" aria-expanded="false">
+                adolescência(s) e violência(s)
+            </button>
+            <div id="accordion-adolescencia" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-adolescencia-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-1')">
+                                1. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-2')">
+                                2. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-3')">
+                                1.2. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-4')">
+                                2. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-5')">
+                                3. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-6')">
+                                4. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-7')">
+                                5. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-8')">
+                                6. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-9" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-9')">
+                                7. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-10" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-10')">
+                                8. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-11" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-11')">
+                                9. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-12" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-12')">
+                                10. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                        <li id="list-adolescencia-13" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-13')">
+                                11. adolescência(s) e violência(s)
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUBSTANCIAS PSICOATIVAS -->
+        <div id="substancias" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-substancias" aria-expanded="false">
+                aolescências e o uso de substâncias psicoativas
+            </button>
+            <div id="accordion-substancias" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-substancias-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-substancias-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-2')">
+                                2. Adolescências e o uso de substâncias psicoativas
+                            </button>
+                        </li>
+                        <li id="list-substancias-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-3')">
+                                3. Adolescências e o uso de substâncias psicoativas
+                            </button>
+                        </li>
+                        <li id="list-substancias-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-4')">
+                                4. Adolescências e o uso de substâncias psicoativas
+                            </button>
+                        </li>
+                        <li id="list-substancias-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-5')">
+                                5. Adolescências e o uso de substâncias psicoativas
+                            </button>
+                        </li>
+                        <li id="list-substancias-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-6')">
+                                6. Adolescências e o uso de substâncias psicoativas
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANSIEDADE E CONTEXTOS SOCIAIS -->
+        <div id="ansiedade" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-ansiedade" aria-expanded="false">
+                Adolescências, ansiedade e contextos sociais
+            </button>
+            <div id="accordion-ansiedade" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-ansiedade-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-ansiedade-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-2')">
+                                2. Adolescências, ansiedade e contextos sociais
+                            </button>
+                        </li>
+                        <li id="list-ansiedade-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-3')">
+                                3. Adolescências, ansiedade e contextos sociais
+                            </button>
+                        </li>
+                        <li id="list-ansiedade-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-4')">
+                                4. Adolescências, ansiedade e contextos sociais
+                            </button>
+                        </li>
+                        <li id="list-ansiedade-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-5')">
+                                5. Adolescências, ansiedade e contextos sociais
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEM TODA TRISTEZA E PATALOGICA -->
+        <div id="tristeza" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-tristeza" aria-expanded="false">
+                Nem toda tristeza é patológica
+            </button>
+            <div id="accordion-tristeza" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-tristeza-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-tristeza-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-2')">
+                                2. Nem toda tristeza é patológica
+                            </button>
+                        </li>
+                        <li id="list-tristeza-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-3')">
+                                2.2. Nem toda tristeza é patológica
+                            </button>
+                        </li>
+                        <li id="list-tristeza-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-4')">
+                                4. Nem toda tristeza é patológica
+                            </button>
+                        </li>
+                        <li id="list-tristeza-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-5')">
+                                5. Nem toda tristeza é patológica
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGEM CORPORAL -->
+        <div id="corporal" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-corporal" aria-expanded="false">
+                Adolescência, imagem corporal e transtornos alimentares
+            </button>
+            <div id="accordion-corporal" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-corporal-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-corporal-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-2')">
+                                2. Adolescência, imagem corporal e transtornos alimentares
+                            </button>
+                        </li>
+                        <li id="list-corporal-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-3')">
+                                3. Adolescência, imagem corporal e transtornos alimentares
+                            </button>
+                        </li>
+                        <li id="list-corporal-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-4')">
+                                4. Adolescência, imagem corporal e transtornos alimentares
+                            </button>
+                        </li>
+                        <li id="list-corporal-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-5')">
+                                5. Adolescência, imagem corporal e transtornos alimentares
+                            </button>
+                        </li>
+                        <li id="list-corporal-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-6')">
+                                6. Adolescência, imagem corporal e transtornos alimentares
+                            </button>
+                        </li>
+                        <li id="list-corporal-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-7')">
+                                7. Adolescência, imagem corporal e transtornos alimentares
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- AUTOLESAO -->
+        <div id="autolesao" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-autolesao" aria-expanded="false">
+                autolesão
+            </button>
+            <div id="accordion-autolesao" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-autolesao-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autolesao-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-autolesao-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autolesao-2')">
+                                2. autolesão
+                            </button>
+                        </li>
+                        <li id="list-autolesao-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autolesao-3')">
+                                3. autolesão
+                            </button>
+                        </li>
+                        <li id="list-autolesao-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autolesao-4')">
+                                3.2. autolesão
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- IDEACAO SUICIDA E SUICIDIO -->
+        <div id="suicidio" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-suicidio" aria-expanded="false">
+                ideação suicida e suicídio
+            </button>
+            <div id="accordion-suicidio" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-suicidio-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-suicidio-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-2')">
+                                2. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-3')">
+                                3. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-4')">
+                                3.2. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-5')">
+                                4. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-6')">
+                                5. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-7')">
+                                6. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-8')">
+                                7. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-9" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-9')">
+                                8. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-10" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-10')">
+                                9. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                        <li id="list-suicidio-11" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-11')">
+                                10. Ideação suicida e suicídio
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PERDAS E LUTOS -->
+        <div id="perdas" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-perdas" aria-expanded="false">
+                perdas e lutos nas adolescências e juventudes
+            </button>
+            <div id="accordion-perdas" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-perdas-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#perdas-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-perdas-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#perdas-2')">
+                                2. Perdas e lutos nas adolescências e juventudes
+                            </button>
+                        </li>
+                        <li id="list-perdas-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#perdas-3')">
+                                3. Perdas e lutos nas adolescências e juventudes
+                            </button>
+                        </li>
+                        <li id="list-perdas-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#perdas-4')">
+                                4. Perdas e lutos nas adolescências e juventudes
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENCERRAMENTO -->
+        <div id="list-encerramento" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('#encerramento')">
+                encerramento do módulo
+            </button>
+        </div>
+
+        <!-- REFERENCIAS -->
+        <div id="referencias" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-referencias" aria-expanded="false">
+                referências
+            </button>
+            <div id="accordion-referencias" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-referencias-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-1')">
+                                1. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-2')">
+                                1.2. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-3')">
+                                1.3. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-4')">
+                                1.4. Principais referencias
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTOES CARROSEL -->
+        <div id="list-encerramento" class="sidebar-action px-2 d-flex">
+            <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="prev">
+                < </button> <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="next">
+                        >
+                    </button>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+                <!-- Home -->
+                <div id="home" class="carousel-item default">
+                    <div class="container-fluid background-capa rounded-2">
+                        <div class="row justify-content-center
+                                align-items-center padding-x-container">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-container">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
+                                <span class="title text-dark">Curso
+                                    em aperfeiçoamento em saúde mental e
+                                    atenção
+                                    psicossocial de
+                                    adolescentes e jovens</span>
+                                <hr class="line line-primary my-4">
+                                <p class="subtitle text-primary">Módulo: Escola e redes sociais nas adolescências e
+                                    juventudes
+                                </p>
+                                <div class="row justify-content-around
+                                        py-5">
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#autoras',
+                                            1)">Sobre as
+                                        autoras</button>
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#sobre',
+                                            1)">Iniciar</button>
+                                </div>
+                                <div class="d-flex justify-content-between
+                                        pb-5">
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_03/capa_modulo_3.png"
+                                    alt="Capa Modulo 03">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre as Autoras -->
+                <div id="autoras" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente p-4">
+                            <button onclick="mudar_carrosel('#home', 1)" class="btn text-light title ml-auto
+                                    text-start"><i class="bi bi-file-x"></i></button>
+                            <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
+                        </div>
+                        <div class="container-fluid p-4">
+                            <div class="row justify-content-center
+                                    align-items-top text-center">
+                                <div class="col-lg-6 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/icon-pessoa.svg" alt="Icon pessoa"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold pb-3">Ana Carina Stelko-Pereira</h5>
+                                    <p class="padding-x-desk-3">
+                                        Psicóloga (UFPR), Especialista em Terapia Analítico-Comportamental (Paradigma),
+                                        Mestre em Educação Especial (UFSCar), Doutora em Psicologia (UFSCar) e
+                                        professora adjunta da Universidade Federal do Paraná e do Programa de
+                                        Pós-graduação em Educação. Desenvolve trabalhos teórico-práticos com relação aos
+                                        temas bullying, indisciplina e habilidades socioemocionais. Vice-coordenadora do
+                                        Observatório do Clima Institucional e Prevenção das Violências em Contexto
+                                        Educacional: Xará
+                                        (https://linktr.ee/observatorioxara)
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/icon-pessoa.svg" alt="Icon pessoa"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Sabrina Martins Barroso</h5>
+                                    <p class="padding-x-desk-3">
+                                        Psicóloga pela Universidade Federal de São João del-Rei (UFSJ), Especialista em
+                                        Desenvolvimento Humano (Universidade Federal de Minas Gerais – UFMG), Avaliação
+                                        Psicológica (CRP 04) e Terapia Cognitivo-Comportamental (Faculdade
+                                        Metropolitana). Mestre em Psicologia e Doutora em Saúde Pública (Epidemiologia)
+                                        pela UFMG. Professora associada da Universidade Federal do Triângulo Mineiro
+                                        (UFTM). Líder do Grupo de Pesquisa Núcleo de Avaliação Psicológica e
+                                        Investigações em Saúde (NAPIS) e do Grupo de Trabalho de Pesquisa em Avaliação
+                                        Psicológica da Associação Nacional de Pesquisa e Pós-graduação em Psicologia
+                                        (ANPEPP). Desenvolve pesquisas sobre saúde mental de estudantes, entre outros
+                                        temas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Sobre o curso -->
+                <div id="sobre" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente text-center p-5">
+                            <p class="title text-light">Sobre o Módulo</p>
+                            <p class="text-light">Módulo: Escola e redes sociais nas adolescências e juventudes
+                            </p>
+                            <p class="subtitle text-light">Carga horaria: 30 horas
+                            </p>
+                        </div>
+                        <div class="container-fluid px-4 pt-5">
+                            <div class="row justify-content-center align-items-top padding-x-container">
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-x-desk-5">
+                                    <img class="w-100 w-md-75 d-block mx-auto"
+                                        src="./image/modulo_03/sobre_detalhes_1.png" alt="Icone Leitura">
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                    <div class="d-flex pb-5 justify-content-center">
+                                        <img class="mx-2" src="./image/modulo_03/icon-leitura.svg" alt="Icone Leitura">
+                                        <p class="title space-line text-primary
+                                                mx-2 my-auto text-center"><b>OBJETIVOS DE
+                                                APRENDIZAGEM</b>
+                                        </p>
+                                    </div>
+                                    <p class="text-justify pb-3">Promover a reflexão sobre o uso das redes sociais, sua
+                                        influência e impacto na saúde física e mental de adolescentes e jovens, bem como
+                                        sobre o papel da escola como espaço potente nas relações interpessoais e na
+                                        escuta acolhedora.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apresentacao do modulo - parte 1 -->
+                <div id="apresentacao-slide-1" class="carousel-item default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <div class="row padding-mobile-2">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    d-flex align-items-center
+                                    justify-content-center">
+                                <img class="w-75 w-sm-100" src="./image/modulo_03/apresentacao_detalhes_1.png"
+                                    alt="Apresentacao Modulo 02">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-x-desk-5 py-3 text-justify">
+                                <p class="text-center title text-primary">Apresentação do módulo</p>
+                                <p class="py-2">Todos sonhamos com um país em que a educação seja valorizada; com um
+                                    mundo em que todos os jovens possam desenvolver espírito curioso e relacionamentos
+                                    felizes e respeitosos, que os preparem para vidas plenas e significativas; com um
+                                    país em que não precisemos nos preocupar com qualquer tipo de violência.</p>
+                                <p class="py-2">No Brasil, isso parece utópico, e, talvez, seja mesmo. Apenas para
+                                    ilustrar, em 2021, 10,8% dos jovens entre 15 e 17 anos estavam fora das escolas
+                                    (INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA, 2022a). Ao verificar a violência
+                                    em nosso contexto, apenas em 2019 houve 45.503 homicídios no território nacional
+                                    (INSTITUTO DE PESQUISA ECONÔMICA APLICADA; FÓRUM BRASILEIRO DE SEGURANÇA PÚBLICA;
+                                    INSTITUTO JONES DOS SANTOS NEVES, 2021), e essa não é a única forma de violência que
+                                    enfrentamos todos os dias.</p>
+                                <p class="py-2">Há realmente muita violência no mundo e podemos ter a percepção de que
+                                    novas formas de maldade surgem a cada dia. Com o avanço da tecnologia, passamos a
+                                    ter medo também de que nossos cartões de crédito sejam clonados, que nossa
+                                    intimidade seja vazada na internet ou que alguém que amamos seja vítima de
+                                    <i>cyberbullying</i>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apresentacao do modulo - parte 2 -->
+                <div id="apresentacao-slide-2" class="carousel-item default">
+                    <div class="container-fluid mt-4">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Esses dados nos afastam da nossa visão utópica, certo? Mas o que será do
+                                    mundo sem os sonhadores? É por isso que, neste módulo, convidamos você a dar uma
+                                    chance ao “talvez” e a pensar no que podemos fazer para que um raio de esperança se
+                                    mantenha, mesmo quando a violência e a escuridão se aproximam de nós.</p>
+                                <p class="py-2">
+                                    O “talvez”, aqui, terá a função de nos lembrar de que temos amigos ou de que podemos
+                                    usar as redes sociais para ficar próximos de pessoas de quem gostamos; será como
+                                    aquele bilhete que um professor recebe com notícias de um ex-aluno agradecendo o
+                                    incentivo que recebeu enquanto estudava e contando o impacto que isso teve em sua
+                                    vida. Esses são exemplos de momentos em que a mágica acontece!</p>
+                                <button id="btn0" class="btn btn-2 w-50 rounded-4 d-block mx-auto my-4">Proposição
+                                    1</button>
+                                <div class="popover right">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content"><b>Proposição:</b> De qual momento você se recorda em
+                                        que a
+                                        mágica da possibilidade aconteceu?
+
+                                        <b>Feedback positivo:</b> Estamos certas de que houve diversos momentos em sua
+                                        atuação profissional em que você viu sentido, pela reação das pessoas, no
+                                        esforço que você fez. Essa reação pode ter sido um bilhete de agradecimento,
+                                        um elogio espontâneo e até mesmo um sorriso largo. Esses momentos são
+                                        importantes, tanto para quem os oferta quanto para quem os recebe. Eles
+                                        podem ser compartilhados com todos e em qualquer lugar, como na família, no
+                                        trabalho, na comunidade ou em qualquer local de sua convivência.
+
+                                        <b>Feedback orientador:</b> É muito importante colecionar os momentos de
+                                        pequenos
+                                        sucessos em nossa profissão. Se puder, pause um pouquinho a leitura e faça
+                                        agora um registro, em um caderno ou em um documento on-line, de seus
+                                        diversos pequenos sucessos. Se preferir, coloque uma música de sua
+                                        preferência, feche os olhos e recorde alguns desses momentos. Estamos certas
+                                        de que, ao recordar, se sentirá bem e confiante. Quando houver um desafio
+                                        maior a ser vencido na sua ocupação, resgate esse registro.
+                                    </div>
+                                </div>
+                                <p class="py-2">Sim, vamos conversar sobre vários temas, mas a escola será um dos
+                                    assuntos centrais, porque, para termos uma chance de chegar à nossa utopia, a escola
+                                    terá um papel fundamental. Por isso, este é nosso convite a você: falarmos sobre a
+                                    realidade das escolas brasileiras e sua influência nesse período especial que é a
+                                    adolescência. Vamos apresentar potencialidades e dificuldades relacionadas ao
+                                    contexto escolar e o impacto das redes sociais e do bullying nos jovens e em sua
+                                    saúde mental. No entanto, também falaremos sobre alternativas. E, “talvez”, ao
+                                    abordar esses assuntos, poderemos caminhar alguns passos rumo à utopia em que algum
+                                    dia queremos viver.</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Para dar mais sentido a esse caminho, traremos um caso que, embora
+                                    ilustrativo, poderia estar no cotidiano de muitos de nós. Pretendemos, em especial,
+                                    mostrar que a escola pode ser um imenso “talvez” para esse assunto, um espaço
+                                    criativo e potente não apenas para o aprendizado formal, mas, também, para a saúde
+                                    mental dos jovens. A escola pode ajudar a mediar a relação dos adolescentes com as
+                                    redes sociais e com alguns de seus medos e dúvidas. Pode ser um espaço acolhedor,
+                                    que contribui para que os jovens entendam seus direitos e deveres e aprendam sobre
+                                    respeito e a buscar ajuda, passando a ser outros fomentadores da utopia, novos
+                                    adeptos do “talvez”.</p>
+                                <img src="./image/modulo_03/apresentacao_detalhes_2.svg"
+                                    class="w-100 img-fluid d-block ml-auto" alt="Detalhes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - A escola como espaco de possibilidades - parte 1 -->
+                <div id="escola-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line">A escola como espaço de possibilidades</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_03/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A escola como espaco de possibilidades - parte 2 -->
+                <div id="apresentacao-slide-2" class="carousel-item default">
+                    <div class="container-fluid mt-4">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="title text-center text-primary p-2">A escola como espaço
+                                    de possibilidades</p>
+                                <p class="py-2">O primeiro passo para qualquer ação é ter uma boa fotografia do
+                                    contexto. Nos módulos 1 e 2, você conheceu mais sobre os adolescentes, como os
+                                    aspectos de sua saúde mental e as violências a que estão mais sujeitos. Neste
+                                    módulo, nossa conversa abordará vivências nas escolas, as relações dos adolescentes
+                                    com as redes sociais e alternativas envolvendo a escola, a família e os próprios
+                                    adolescentes para melhorar a convivência dentro e fora do mundo das telas.
+                                <p class="py-2">
+                                    A escola ocupa papel central na formação dos cidadãos e na ampliação das
+                                    possibilidades profissionais das pessoas. Indivíduos com Ensino Superior completo,
+                                    no Brasil, ganham, em média, 2,4 vezes mais do que quem terminou apenas o Ensino
+                                    Médio (ORGANIZAÇÃO PARA A COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO, 2018). No entanto,
+                                    a escola é bem mais do que um trampolim profissional. Ela é uma das memórias
+                                    afetivas mais importantes na vida de muitos de nós.</p>
+                                <p class="pb-2">A escola pode ser parte do problema ou uma das forças mais ricas que
+                                    temos para o nosso “talvez”. Se nossa experiência foi boa, podemos lembrar para
+                                    sempre dos colegas de infância, do gosto do lanche que era servido na sexta-feira,
+                                    da professora que nos ensinou a ler, da primeira pessoa que quisemos namorar e de
+                                    vários outros momentos especiais em nossas vidas que ocorreram na escola. Por outro
+                                    lado, se tivemos a tristeza de frequentar uma escola pouco afetiva, que não tinha
+                                    condições de atender às nossas necessidades ou em que o bullying era prática
+                                    constante, a história muda. No lugar de lembranças felizes, podemos carregar traumas
+                                    e cicatrizes que também ficarão conosco por toda a nossa vida.</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <button id="btn1" class="btn btn-2 w-md-75 rounded-4 d-block mx-auto mb-4">Proposição
+                                    1</button>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content">
+                                        <b>Proposição:</b> De qual momento você se recorda em que a mágica da
+                                        possibilidade aconteceu?
+
+                                        <b>Feedback positivo:</b> Estamos certas de que houve diversos momentos em sua
+                                        atuação profissional em que você viu sentido, pela reação das pessoas, no
+                                        esforço que você fez. Essa reação pode ter sido um bilhete de agradecimento,
+                                        um elogio espontâneo e até mesmo um sorriso largo. Esses momentos são
+                                        importantes, tanto para quem os oferta quanto para quem os recebe. Eles
+                                        podem ser compartilhados com todos e em qualquer lugar, como na família, no
+                                        trabalho, na comunidade ou em qualquer local de sua convivência.
+
+                                        <b>Feedback orientador:</b> É muito importante colecionar os momentos de
+                                        pequenos
+                                        sucessos em nossa profissão. Se puder, pause um pouquinho a leitura e faça
+                                        agora um registro, em um caderno ou em um documento on-line, de seus
+                                        diversos pequenos sucessos. Se preferir, coloque uma música de sua
+                                        preferência, feche os olhos e recorde alguns desses momentos. Estamos certas
+                                        de que, ao recordar, se sentirá bem e confiante. Quando houver um desafio
+                                        maior a ser vencido na sua ocupação, resgate esse registro.
+                                    </div>
+                                </div>
+                                <p class="py-2">O objetivo explícito das escolas envolve ensinar conteúdos acadêmicos,
+                                    mas todos podemos ver que seu alcance vai muito além disso. Na escola, aprendemos
+                                    regras sociais e a negociar fora de nossas famílias; convivemos com pessoas com
+                                    hábitos e culturas distintas da nossa, o que nos permite desenvolver identidade e
+                                    tolerância; mesclamos obrigações e lazer, aprendendo a valorizar responsabilidade e
+                                    descanso; e, se nossa escola for cuidadosa, ainda temos a chance de desenvolver
+                                    nossas competências emocionais, como aprender a reconhecer como nos sentimos, a
+                                    identificar como as pessoas à nossa volta se sentem e que devemos avaliar nossas
+                                    ações para evitar as consequências de agir sem pensar. O impacto positivo de cuidar
+                                    do bem-estar e das competências emocionais dos estudantes tem sido visto em diversos
+                                    aspectos da vida deles, incluindo em sua capacidade de aprender (DIAS-VIANA;
+                                    NORONHA, 2022).</p>
+                                <p class="py-2">A importância do desenvolvimento de competências socioemocionais tem
+                                    sido considerada tão importante que Secretarias Estaduais da Educação têm incluído o
+                                    tema em suas pautas. Para citar apenas algumas: Secretaria do Estado de São Paulo
+                                    (2019), Secretaria do Estado da Educação e do Desporto do Amazonas (2020) e
+                                    Secretaria do Estado do Mato Grosso (2021) discutiram esse tema ao longo dos últimos
+                                    anos, como pode ser avaliado verificando as pautas debatidas em seus sites oficiais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A escola como espaco de possibilidades - parte 3 -->
+                <div id="apresentacao-slide-3" class="carousel-item default active">
+                    <div class="container-fluid mt-4">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-desk-5 padding-mobile-2 text-justify ">
+                                        <p class="bold">Quer entender mais sobre competências socioemocionais?</p>
+                                        <p class="py-2">Convidamos você a ler sobre o tema no site do Instituto Ayrton
+                                            Senna:</p>
+                                        <p class="py-2"><a
+                                                href="https://institutoayrtonsenna.org.br/o-que-defendemos/socioemocional-estudantes/?gclid=Cj0KCQiA-oqdBhDfARIsAO0TrGEwW1xQtTWJr-RZz9njxRsjuDvOwCa9P6lyEt1P3wCG4GWdi-Xy0LoaAstgEALw_wcB"
+                                                target="_blank">Clique aqui para acessar o material descrito</a></p>
+                                    </div>
+                                </div>
+                                <p class="py-2">Ensinar os adolescentes a respeitarem a si próprios e aos colegas está
+                                    ainda mais complexo. A escola precisa ajudá-los a lidar com uma vida híbrida –
+                                    metade ao vivo e metade on-line – e a combater a violência entre pares que ocorre
+                                    nesses ambientes.</p>
+                                <button id="btn2" class="btn btn-2 w-md-75 rounded-4 d-block mx-auto mb-4">Proposição
+                                    3</button>
+                                <div class="popover right">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content popover-w-2 text-justify">
+                                        <b>Proposição:</b> Sempre ouvimos falar dos riscos da tecnologia. Convidamos você a
+                                            pensar nos principais pontos sobre os quais os adolescentes precisam ser
+                                            orientados no que se refere ao uso da internet e das redes sociais.<br><br>
+
+                                           <b>Feedback positivo:</b> Os educadores (e adultos em geral) sabem que precisam
+                                            orientar os adolescentes sobre o uso da tecnologia, mas, por vezes, não
+                                            sabem exatamente quais riscos esse uso oferece. O interesse em ajudar é
+                                            ótimo e poderá ser potencializado se pensarmos em pontos-chave para essa
+                                            conversa.<br><br>
+
+                                            <b>Feedback orientador:</b> É importante orientar os adolescentes sobre permissões
+                                            ocultas solicitadas por aplicativos e jogos que instalamos, pois podemos
+                                            estar autorizando o uso de nossas informações, localização e fotos para fins
+                                            que não conhecemos. Pergunte-se por que um aplicativo ou jogo precisa
+                                            acessar as fotos do seu aparelho e seus documentos. Se achar que estão
+                                            pedindo mais do que o necessário, não instale o aplicativo ou jogo. Em
+                                            especial, precisamos ficar atentos a se os aplicativos e jogos serão ou
+                                            foram instalados em aparelhos de telefone com acesso a aplicativos de banco
+                                            ou cartão de crédito, pois podem ser usados para roubar nossas senhas e
+                                            dinheiro.<br>
+                                            É igualmente importante alertar para a exposição excessiva de nossa vida,
+                                            mostrando o risco de postar fotos com uniformes escolares e fotos íntimas ou
+                                            de compartilhar nossa localização. Esses dados podem ser usados por pessoas
+                                            mal-intencionadas. Quando pensamos especialmente nos adolescentes,
+                                            precisamos mostrar que as informações e fotos publicadas na internet podem
+                                            ser alteradas ou parciais, sendo perigoso, portanto, tomá-las como
+                                            representações da verdade e parâmetros para definir nossa beleza, valor ou
+                                            autoestima. Quanto ao cyberbullying, é necessário mostrar as formas que ele
+                                            pode assumir e o que fazer para não nos tornarmos vítimas.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/modulo_03/escola_detalhes_1.svg" alt="Detalhes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/index.min.js"></script>
+    <script src="./js/popover.min.js"></script>
+
+</body>
+
+</html>

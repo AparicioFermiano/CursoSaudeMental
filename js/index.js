@@ -20,7 +20,7 @@ function nav() {
 }
 
 function mudar_carrosel(id, sem_nav) {
-    let id_pai = document.getElementById(id.split("-")[0]);
+    let id_pai = document.querySelector(id.split("-")[0]);
     let id_lista = document.querySelector("#list-" + id.substring(1));
 
     $("#carousel").carousel($(id).index());

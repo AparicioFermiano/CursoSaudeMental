@@ -58,8 +58,15 @@
     width: 500px;
 }
 
+.popover-w-2 {
+    width: 700px !important;
+}
+
 @media (max-width: 767px) {
     .popover-content {
         width: 300px;
+    }
+    .popover-w-2 {
+        width: 400px !important;
     }
 }
