@@ -505,6 +505,11 @@ small {
     .background-capa {
         border: 0px;
     }
+
+    .card-md-scrool {
+        overflow-y: scroll;
+        align-items: baseline !important;
+    }
 }
 
 @media (min-width: 992px) {
