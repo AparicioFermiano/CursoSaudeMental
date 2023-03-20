@@ -424,6 +424,27 @@ small {
     border-bottom: 1px solid var(--disabled) !important;
 }
 
+.porcentagem-larger {
+    font-size: 10rem;
+    color: var(--secondary-light);
+    font-weight: 700;
+    line-height: 10rem;
+}
+
+.porcentagem-medium {
+    font-size: 7rem;
+    color: var(--secondary-light);
+    font-weight: 700;
+    line-height: 7rem;
+}
+
+.porcentagem-small {
+    font-size: 3rem;
+    color: var(--secondary-light);
+    font-weight: 700;
+    line-height: 3rem;
+}
+
 @media (max-width: 992px) {
     #corpo {
         margin-right: 0 !important;
