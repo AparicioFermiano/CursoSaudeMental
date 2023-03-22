@@ -41,3 +41,15 @@ function mudar_carrosel(id, sem_nav) {
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
 }
+
+$(document).ready(function() {
+    $("#carousel").swipe({
+      swipeLeft: function() {
+        $(this).carousel("next");
+      },
+      swipeRight: function() {
+        $(this).carousel("prev");
+      },
+      threshold: 75
+    });
+  });

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/modulo04.min.css">
+    <link rel="stylesheet" href="./css/popover.min.css?v=17032023">
+    <link rel="stylesheet" href="./css/sidenav.min.css">
+    <title>Módulo 03</title>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar-navbar">
+        <button id="btn-sidebar" class="z-5 btn-sidebar" type="button" data-toggle="collapse" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="nav()">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <p class="title text-dark">MENU</p>
+        <!-- SIDEBAR - HOME -->
+        <div id="list-home" class="sidebar-item active py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('#home')">
+                <i class="bi bi-house"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR - SOBRE -->
+        <div id="list-sobre" class="sidebar-item py-1 px-2">
+            <button id="list-sobre" class="w-100 text-start" onclick="mudar_carrosel('#sobre')">
+                sobre o módulo
+            </button>
+        </div>
+        <!-- SIDEBAR - APRESENTACAO DO MODULO -->
+        <div id="apresentacao" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-apresentacao" aria-expanded="false">
+                apresentação do módulo
+            </button>
+            <div id="accordion-apresentacao" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-apresentacao-slide-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-1')">
+                                1. Apresentação do módulo
+                            </button>
+                        </li>
+                        <li id="list-apresentacao-slide-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-2')">
+                                1.2. Apresentação do módulo
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SIDEBAR - A escola como espaco de possibilidades -->
+        <div id="escola" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-escola" aria-expanded="false">
+                a escola como espaço de possibilidades
+            </button>
+            <div id="accordion-escola" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-escola-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-escola-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-2')">
+                                2. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-3')">
+                                1.2. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-4')">
+                                2. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-5')">
+                                3. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-6')">
+                                4. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-7')">
+                                5. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-8')">
+                                6. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-9" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-9')">
+                                7. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-10" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-10')">
+                                8. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                        <li id="list-escola-11" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-11')">
+                                9. A escola como espaco de possibilidades
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pessoas estao na foto da violencia -->
+        <div id="foto" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-foto" aria-expanded="false">
+                mas quantas pessoas estão na foto da violência?
+            </button>
+            <div id="accordion-foto" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-foto-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#foto-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-foto-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#foto-2')">
+                                2. pessoas estao na foto da violencia
+                            </button>
+                        </li>
+                        <li id="list-foto-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#foto-3')">
+                                3. pessoas estao na foto da violencia
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consequencias de toda essa violencia? -->
+        <div id="consequencias" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-consequencias" aria-expanded="false">
+                e quais são as consequências de toda essa violência?
+            </button>
+            <div id="accordion-consequencias" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-consequencias-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#consequencias-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-consequencias-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#consequencias-2')">
+                                2. Consequencias de toda essa violencia?
+                            </button>
+                        </li>
+                        <li id="list-consequencias-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#consequencias-3')">
+                                3. Adolescências, ansiedade e contextos sociais
+                            </button>
+                        </li>
+                        <li id="list-consequencias-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#consequencias-4')">
+                                4. Adolescências, ansiedade e contextos sociais
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tanta dor -->
+        <div id="dor" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-dor" aria-expanded="false">
+                tanta dor, tanta tristeza... o que gera tudo isso?
+            </button>
+            <div id="accordion-dor" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-dor-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#dor-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-dor-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#dor-2')">
+                                2. Tanta dor, tanta tristeza...
+                            </button>
+                        </li>
+                        <li id="list-dor-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#dor-3')">
+                                3. Tanta dor, tanta tristeza...
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Influencias para estar vitima -->
+        <div id="influencia" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-influencia" aria-expanded="false">
+                influências para estar vítima
+            </button>
+            <div id="accordion-influencia" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-influencia-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#influencia-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-influencia-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#influencia-2')">
+                                2. influências para estar vítima
+                            </button>
+                        </li>
+                        <li id="list-influencia-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#influencia-3')">
+                                3. influências para estar vítima
+                            </button>
+                        </li>
+                        <li id="list-influencia-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#influencia-4')">
+                                4. influências para estar vítima
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- autor -->
+        <div id="autor" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-autor" aria-expanded="false">
+                influências para estar autor
+            </button>
+            <div id="accordion-autor" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-autor-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-autor-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-2')">
+                                2. Influências para estar autor
+                            </button>
+                        </li>
+                        <li id="list-autor-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-3')">
+                                3. Influências para estar autor
+                            </button>
+                        </li>
+                        <li id="list-autor-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-4')">
+                                3.2. Influências para estar autor
+                            </button>
+                        </li>
+                        <li id="list-autor-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-5')">
+                                4. Influências para estar autor
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- As situacoes podem mudar se todos nos envolvermos  -->
+        <div id="situacoes" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-situacoes" aria-expanded="false">
+                as situações podem mudar se todos nos envolvermos
+            </button>
+            <div id="accordion-situacoes" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-situacoes-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-situacoes-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-2')">
+                                2. as situações podem mudar se todos nos envolvermos
+                            </button>
+                        </li>
+                        <li id="list-situacoes-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-3')">
+                                3. as situações podem mudar se todos nos envolvermos
+                            </button>
+                        </li>
+                        <li id="list-situacoes-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-4')">
+                                3.2. as situações podem mudar se todos nos envolvermos
+                            </button>
+                        </li>
+                        <li id="list-situacoes-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-5')">
+                                4. as situações podem mudar se todos nos envolvermos
+                            </button>
+                        </li>
+                        <li id="list-situacoes-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-6')">
+                                5. as situações podem mudar se todos nos envolvermos
+                            </button>
+                        </li>
+                        <li id="list-situacoes-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-7')">
+                                6. as situações podem mudar se todos nos envolvermos
+                            </button>
+                        </li>
+                        <li id="list-situacoes-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-8')">
+                                7. as situações podem mudar se todos nos envolvermos
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENCERRAMENTO -->
+        <div id="list-encerramento" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('#encerramento')">
+                encerramento do módulo
+            </button>
+        </div>
+
+        <!-- REFERENCIAS -->
+        <div id="referencias" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-referencias" aria-expanded="false">
+                referências
+            </button>
+            <div id="accordion-referencias" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-referencias-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-1')">
+                                1. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-2')">
+                                1.2. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-3')">
+                                1.3. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-4')">
+                                1.4. Principais referencias
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTOES CARROSEL -->
+        <div id="btn_control_carousel" class="sidebar-action px-2 d-flex">
+            <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="prev">
+                < </button> <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="next">
+                    >
+            </button>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div id="carousel" class="carousel slide slide-to-right" data-bs-touch="false" data-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+                <!-- Home -->
+                <div id="home" class="carousel-item default active">
+                    <div class="container-fluid background-capa rounded-2">
+                        <div class="row justify-content-center
+                                align-items-center padding-x-container">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-container">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
+                                <span class="title text-dark">Curso
+                                    em aperfeiçoamento em saúde mental e
+                                    atenção
+                                    psicossocial de
+                                    adolescentes e jovens</span>
+                                <hr class="line line-primary my-4">
+                                <p class="subtitle text-primary">Módulo: Escola e redes sociais nas adolescências e
+                                    juventudes
+                                </p>
+                                <div class="row justify-content-around
+                                        py-5">
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#autoras',
+                                            1)">Sobre as
+                                        autoras</button>
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#sobre',
+                                            1)">Iniciar</button>
+                                </div>
+                                <div class="d-flex justify-content-between
+                                        pb-5">
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_03/capa_modulo_3.png"
+                                    alt="Capa Modulo 03">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre as Autoras -->
+                <div id="autoras" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente p-4">
+                            <button onclick="mudar_carrosel('#home', 1)" class="btn text-light title ml-auto
+                                    text-start"><i class="bi bi-file-x"></i></button>
+                            <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
+                        </div>
+                        <div class="container-fluid p-4">
+                            <div class="row justify-content-center
+                                    align-items-top text-center">
+                                <div class="col-lg-6 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/icon-pessoa.svg" alt="Icon pessoa"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold pb-3">Ana Carina Stelko-Pereira</h5>
+                                    <p class="padding-x-desk-3">
+                                        Psicóloga (UFPR), Especialista em Terapia Analítico-Comportamental (Paradigma),
+                                        Mestre em Educação Especial (UFSCar), Doutora em Psicologia (UFSCar) e
+                                        professora adjunta da Universidade Federal do Paraná e do Programa de
+                                        Pós-graduação em Educação. Desenvolve trabalhos teórico-práticos com relação aos
+                                        temas <i>bullying</i>, indisciplina e habilidades socioemocionais. Vice-coordenadora do
+                                        Observatório do Clima Institucional e Prevenção das Violências em Contexto
+                                        Educacional: Xará
+                                        (https://linktr.ee/observatorioxara)
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/icon-pessoa.svg" alt="Icon pessoa"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Sabrina Martins Barroso</h5>
+                                    <p class="padding-x-desk-3">
+                                        Psicóloga pela Universidade Federal de São João del-Rei (UFSJ), Especialista em
+                                        Desenvolvimento Humano (Universidade Federal de Minas Gerais – UFMG), Avaliação
+                                        Psicológica (CRP 04) e Terapia Cognitivo-Comportamental (Faculdade
+                                        Metropolitana). Mestre em Psicologia e Doutora em Saúde Pública (Epidemiologia)
+                                        pela UFMG. Professora associada da Universidade Federal do Triângulo Mineiro
+                                        (UFTM). Líder do Grupo de Pesquisa Núcleo de Avaliação Psicológica e
+                                        Investigações em Saúde (NAPIS) e do Grupo de Trabalho de Pesquisa em Avaliação
+                                        Psicológica da Associação Nacional de Pesquisa e Pós-graduação em Psicologia
+                                        (ANPEPP). Desenvolve pesquisas sobre saúde mental de estudantes, entre outros
+                                        temas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Sobre o curso -->
+                <div id="sobre" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente text-center p-5">
+                            <p class="title text-light">Sobre o Módulo</p>
+                            <p class="text-light">Módulo: Escola e redes sociais nas adolescências e juventudes
+                            </p>
+                            <p class="subtitle text-light">Carga horaria: 30 horas
+                            </p>
+                        </div>
+                        <div class="container-fluid px-4 pt-5">
+                            <div class="row justify-content-center align-items-top padding-x-container">
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-x-desk-5">
+                                    <img class="w-100 w-md-75 d-block mx-auto"
+                                        src="./image/modulo_03/sobre_detalhes_1.png" alt="Icone Leitura">
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                    <div class="d-flex pb-5 justify-content-center">
+                                        <img class="mx-2" src="./image/modulo_03/icon-leitura.svg" alt="Icone Leitura">
+                                        <p class="title space-line text-primary
+                                                mx-2 my-auto text-center"><b>OBJETIVOS DE
+                                                APRENDIZAGEM</b>
+                                        </p>
+                                    </div>
+                                    <p class="text-justify pb-3">Promover a reflexão sobre o uso das redes sociais, sua
+                                        influência e impacto na saúde física e mental de adolescentes e jovens, bem como
+                                        sobre o papel da escola como espaço potente nas relações interpessoais e na
+                                        escuta acolhedora.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apresentacao do modulo - parte 1 -->
+                <div id="apresentacao-slide-1" class="carousel-item default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <div class="row padding-mobile-2">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    d-flex align-items-center
+                                    justify-content-center">
+                                <img class="w-75 w-sm-100" src="./image/modulo_03/apresentacao_detalhes_1.png"
+                                    alt="Apresentacao Modulo 02">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-x-desk-5 py-3 text-justify">
+                                <p class="text-center title text-primary">Apresentação do módulo</p>
+                                <p class="py-2">Todos sonhamos com um país em que a educação seja valorizada; com um
+                                    mundo em que todos os jovens possam desenvolver espírito curioso e relacionamentos
+                                    felizes e respeitosos, que os preparem para vidas plenas e significativas; com um
+                                    país em que não precisemos nos preocupar com qualquer tipo de violência.</p>
+                                <p class="py-2">No Brasil, isso parece utópico, e, talvez, seja mesmo. Apenas para
+                                    ilustrar, em 2021, 10,8% dos jovens entre 15 e 17 anos estavam fora das escolas
+                                    (INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA, 2022a). Ao verificar a violência
+                                    em nosso contexto, apenas em 2019 houve 45.503 homicídios no território nacional
+                                    (INSTITUTO DE PESQUISA ECONÔMICA APLICADA; FÓRUM BRASILEIRO DE SEGURANÇA PÚBLICA;
+                                    INSTITUTO JONES DOS SANTOS NEVES, 2021), e essa não é a única forma de violência que
+                                    enfrentamos todos os dias.</p>
+                                <p class="py-2">Há realmente muita violência no mundo e podemos ter a percepção de que
+                                    novas formas de maldade surgem a cada dia. Com o avanço da tecnologia, passamos a
+                                    ter medo também de que nossos cartões de crédito sejam clonados, que nossa
+                                    intimidade seja vazada na internet ou que alguém que amamos seja vítima de
+                                    <i>cyberbullying</i>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="./js/index.min.js"></script>
+    <script src="./js/popover.min.js"></script>
+
+</body>
+
+</html>
