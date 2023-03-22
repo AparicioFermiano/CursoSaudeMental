@@ -19,6 +19,10 @@ hr.line {
     opacity: 1;
 }
 
+a {
+    color: var(--primary-dark);
+}
+
 body::-webkit-scrollbar,
 .box-scrool::-webkit-scrollbar {
     width: 12px;
@@ -78,6 +82,10 @@ body::-webkit-scrollbar-thumb,
     background-color: var(--primary-dark) !important;
 }
 
+.bg-card-hover {
+    background-color: var(--primary-hover) !important;
+}
+
 .bg-card-primary {
     background-color: var(--primary) !important;
 }
@@ -112,6 +120,10 @@ body::-webkit-scrollbar-thumb,
 
 .text-primary {
     color: var(--primary) !important;
+}
+
+.text-primary-dark {
+    color: var(--primary-dark) !important;
 }
 
 .text-primary-light {
@@ -373,7 +385,6 @@ small {
 
 .card-scrool {
     overflow-y: scroll;
-    height: 100%;
 }
 
 /* Accordion - Animacao */
@@ -530,6 +541,18 @@ small {
     .card-md-scrool {
         overflow-y: scroll;
         align-items: baseline !important;
+    }
+
+    .porcentagem-larger {
+        font-size: 8rem;
+    }
+    
+    .porcentagem-medium {
+        font-size: 5rem;
+    }
+    
+    .porcentagem-small {
+        font-size: 2rem;
     }
 }
 
