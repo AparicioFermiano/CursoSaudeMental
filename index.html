@@ -134,7 +134,7 @@
         <div id="violencia" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-violencia" aria-expanded="false">
-                E quando a violência vem de onde esperamos proteção?
+                e quando a violência vem de onde esperamos proteção?
             </button>
             <div id="accordion-violencia" class="accordion-collapse collapse">
                 <div class="accordion-body">
@@ -211,7 +211,7 @@
         <div id="sexualidade" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-sexualidade" aria-expanded="false">
-                Sexualidade, gênero e afetos
+                sexualidade, gênero e afetos
             </button>
             <div id="accordion-sexualidade" class="accordion-collapse collapse">
                 <div class="accordion-body">
@@ -278,6 +278,11 @@
                         <li id="list-jovens-2" class="sidebar-subitem">
                             <button class="w-100 text-start" onclick="mudar_carrosel('#jovens-2')">
                                 2. Jovens com deficiência, direitos e equidade
+                            </button>
+                        </li>
+                        <li id="list-jovens-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#jovens-3')">
+                                2.1. Jovens com deficiência, direitos e equidade
                             </button>
                         </li>
                     </ul>
@@ -421,14 +426,14 @@
         <!-- BOTOES CARROSEL -->
         <div id="list-encerramento" class="sidebar-action px-2 d-flex">
             <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="prev">
-                < </button>
-                    <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="next"> >
+                < </button> <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="next">
+                        >
                     </button>
         </div>
     </div>
 
     <div id="corpo">
-        <div id="carousel" class="carousel slide carousel-fade" data-bs-touch="false" data-bs-interval="false">
+        <div id="carousel" class="carousel slide slide-to-right" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
                 <!-- Home -->
                 <div id="home" class="carousel-item default active">
@@ -440,12 +445,14 @@
                                 <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
                                     src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
                                 <span class="title text-dark">Curso
-                                    em aperfeiçoamento em saúde mental e
+                                    de aperfeiçoamento em saúde mental e
                                     atenção
                                     psicossocial de
                                     adolescentes e jovens</span>
                                 <hr class="line line-primary my-4">
-                                <p class="subtitle text-primary">Módulo: Adolescências e juventudes na contemporaneidade: diferentes perspectivas, diversidades, aspectos étnicos e culturais</p>
+                                <p class="subtitle text-primary">Módulo: Adolescências e juventudes na
+                                    contemporaneidade: diferentes perspectivas, diversidades, aspectos étnicos e
+                                    culturais</p>
                                 <div class="row justify-content-around
                                         py-5">
                                     <button class="col-lg-6 col-md-12
@@ -471,7 +478,8 @@
                             </div>
 
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <img class="w-75 mx-auto d-block" src="./image/modulo_01/capa_modulo_1.png" alt="Capa Modulo 01">
+                                <img class="w-75 mx-auto d-block pb-4" src="./image/modulo_01/capa_modulo_1.png"
+                                    alt="Capa Modulo 01">
                             </div>
                         </div>
                     </div>
@@ -480,16 +488,17 @@
                 <div id="autoras" class="carousel-item default">
                     <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente p-4">
-                            <button onclick="mudar_carrosel('#home', 1)" class="btn text-light title ml-auto
-                                    text-start"><i class="bi bi-file-x"></i></button>
+                            <button onclick="mudar_carrosel('#home', 1)"
+                                class="btn text-light title ml-auto text-start">
+                                <i class="bi bi-file-x"></i>
+                            </button>
                             <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
                         </div>
                         <div class="container-fluid pt-5">
-                            <div class="row justify-content-center
-                                    align-items-top">
-                                <div class="col-lg-3 col-md-12 col-sm-12
-                                        col-xs-12 padding-x-desk-3">
-                                    <img src="./image/icon-pessoa.svg" alt="Icone pessoa" class="img-fluid d-block mx-auto pb-3">
+                            <div class="row justify-content-center align-items-top">
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_01/cristiane.png" alt="autora 01"
+                                        class="w-25 w-md-50 img-fluid d-block mx-auto pb-3">
                                     <h5 class="bold text-center pb-3">Cristiane de Freitas Cunha Grillo
                                     </h5>
                                     <p class="text-justify">
@@ -508,9 +517,9 @@
                                     </p>
                                 </div>
 
-                                <div class="col-lg-6 col-md-12 col-sm-12
-                                        col-xs-12">
-                                    <img src="./image/icon-pessoa.svg" alt="Icone pessoa" class="img-fluid d-block mx-auto pb-3">
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_01/carmen.png" alt="autora 02"
+                                        class="w-25 w-md-50 img-fluid d-block mx-auto pb-3">
                                     <h5 class="bold text-center pb-3">Carmen Maria Raymundo
                                     </h5>
                                     <p class="text-justify">
@@ -526,7 +535,7 @@
                                         estruturação das primeiras ações de Saúde do Trabalhador,
                                         do Ministério da Saúde, para eliminação do trabalho infantil e proteção do
                                         trabalhador adolescente (2003 a 2009). Participou da cooperação técnica ao
-                                        Programa Caminho Melhor Jovem, da Secretaria de justifyEstado
+                                        Programa Caminho Melhor Jovem, da Secretaria de Estado
                                         de Esportes, Lazer e Juventude (2013 a 2016) e coordenou oficinas com jovens dos
                                         territórios de favelas, com Unidades de Polícia Pacificadora, contemplados pelo
                                         programa. Tem autoria em Módulos de autoaprendizagem
@@ -544,11 +553,10 @@
                                     </p>
                                 </div>
 
-                                <div class="col-lg-3 col-md-12 col-sm-12
-                                        col-xs-12 padding-x-desk-3">
-                                    <img src="./image/icon-pessoa.svg" alt="Icone pessoa" class="img-fluid d-block mx-auto pb-3">
-                                    <h5 class="bold text-center pb-3">Luiza Buzgaib Martins
-                                    </h5>
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_01/luiza.png" alt="autora 03"
+                                        class="w-25 w-md-50 img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Luiza Buzgaib Martins</h5>
                                     <p class="text-justify">
                                         Assistente Social graduada pela Universidade Federal Fluminense. Especialista em
                                         Serviço Social e Saúde pela Universidade do Estado do Rio de Janeiro, com ênfase
@@ -574,7 +582,7 @@
                     <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente text-center p-4">
                             <p class="title text-light">Sobre o Módulo</p>
-                            <p class="text-light">Módulo: Adolescências e juventudes na contemporaneidade: diferentes
+                            <p class="text-light">Adolescências e juventudes na contemporaneidade: diferentes
                                 perspectivas, diversidades, aspectos étnicos e culturais</p>
                             <p class="subtitle text-light">Carga horaria: 30 horas
                             </p>
@@ -588,7 +596,7 @@
                                     <div class="d-flex pb-5 justify-content-center">
                                         <img class="mx-2" src="./image/modulo_01/icon-leitura.svg" alt="Icone Leitura">
                                         <p class="space-line text-primary
-                                                mx-2 my-auto text-center"><b>OBJETIVOS DE
+                                                mx-2 my-auto text-center"><b>OBJETIVO DE
                                                 APRENDIZAGEM</b>
                                         </p>
                                     </div>
@@ -598,7 +606,7 @@
                                         adolescente/jovem.
                                     </p>
                                     <h5 class="py-2"><b>Conteúdo</b></h5>
-                                    <ul>
+                                    <ul class="text-start">
                                         <li>Processo de transição do ser adolescente: transformações físicas,
                                             emocionais, cognitivas, sociais;
                                         </li>
@@ -615,7 +623,7 @@
                                 <div class="col-lg-7 col-md-12 col-sm-12
                                         col-xs-12 padding-x-desk-5">
                                     <h5 class="py-2"><b>Conhecimentos</b></h5>
-                                    <ul>
+                                    <ul class="text-start">
                                         <li>Reconhecer a adolescência como um processo de transição em diferentes
                                             aspectos;
                                         </li>
@@ -657,12 +665,13 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12
                                     d-flex align-items-center
                                     justify-content-center">
-                                <img class="w-75 w-sm-100" src="./image/modulo_01/apresentacao_modulo_1.png" alt="Apresentacao Modulo 01">
+                                <img class="w-75 w-sm-100" src="./image/modulo_01/apresentacao_modulo_1.png"
+                                    alt="Apresentacao Modulo 01">
                             </div>
 
                             <div class="col-lg-6 col-md-12 col-sm-12
                                     col-xs-12 padding-x-desk-5 py-3">
-                                <p class="text-center title text-primary">Apresentação do módulo</p>
+                                <p class="text-center title text-primary">Apresentação do Módulo</p>
                                 <p class="text-justify">As adolescências e as juventudes brasileiras vêm conquistando um
                                     novo olhar nas últimas décadas. A Constituição de 1988, o Estatuto da Criança e do
                                     Adolescente (BRASIL, 1990), o Estatuto da Juventude (BRASIL, 2013) e a
@@ -707,9 +716,10 @@
                                 <p class="py-2">Assim, é fundamental refletir sobre questões ligadas às novas
                                     configurações familiares, às identidades de gênero e orientações sexuais, às
                                     violências, à desigualdade de direitos e oportunidades, à gravidez na adolescência,
-                                    ao trabalho, entre tantos outros aspectos
+                                    ao trabalho, entre tantos outros aspectos.
                                 </p>
-                                <img class="w-75 w-md-100" src="./image/modulo_01/apresentacao_modulo_1_detalhes.png" alt="Detalhes 01">
+                                <img class="w-75 w-md-100" src="./image/modulo_01/apresentacao_modulo_1_detalhes.png"
+                                    alt="Detalhes 01">
                             </div>
 
                             <div class="col-lg-6 col-md-12 col-sm-12
@@ -762,7 +772,7 @@
                                             padding-mobile-2">
                                         <p class="bold">Despertou seu interesse em conhecer mais sobre a puberdade?</p>
                                         <p class="text-justify py-2">Esse e-book trata da saúde de adolescentes e
-                                            aprofunda as questões sobre puberdade e adolescência Siga explorando o tema
+                                            aprofunda as questões sobre puberdade e adolescência. Siga explorando o tema
                                             Saúde do adolescente, clicando no documento:</p>
                                         <p>
                                             <a target="_blank"
@@ -805,7 +815,8 @@
                                     jovens é reconhecer o potencial criativo e a
                                     pujança de vida e, acima de tudo, não menosprezar as questões que os preocupam e que
                                     lhes trazem sofrimento.</p>
-                                <img class="w-100" src="./image/modulo_01/apresentacao_modulo_1_detalhes_2.svg" alt="detalhes">
+                                <img class="w-100" src="./image/modulo_01/apresentacao_modulo_1_detalhes_2.svg"
+                                    alt="detalhes">
                             </div>
                         </div>
                     </div>
@@ -815,9 +826,9 @@
                     <div class="container-fluid background-topico vh-100
                             d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">Conceituando adolescências e juventudes</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="detalhes">
+                            <p class="text-light title-topico space-line">CONCEITUANDO ADOLESCÊNCIAS E JUVENTUDES</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -828,7 +839,8 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12
                                     padding-x-container d-flex align-items-center
                                     justify-content-center">
-                                <img class="w-75" src="./image/modulo_01/conceituando_capa.png" alt="Conceituando Capa">
+                                <img class="w-75" src="./image/modulo_01/conceituando_detalhe_1.png"
+                                    alt="Conceituando Capa">
                             </div>
 
                             <div class="col-lg-6 col-md-12 col-sm-12
@@ -898,8 +910,19 @@
                                     acidentes de trânsito relacionados com o trabalho têm, atualmente, uma taxa alta de
                                     ocorrência. Você já pensou na relação entre trabalho e acidentes de trânsito?
                                     É sobre o que vamos conversar a seguir.</p>
-                                <img class="p-2 w-100 w-md-75 d-block mx-auto" src="./image/modulo_01/conceituando-detalhe_2.svg"
-                                    alt="detalhes">
+                                <img class="p-3 w-75 w-md-100 d-block mx-auto"
+                                    src="./image/modulo_01/conceituando_detalhe_2.svg" alt="detalhes">
+                                <div class="citacao">
+                                    <small><i>¹ Sobre a morte juvenil por
+                                            causas externas, o Atlas da
+                                            Violência tem sido
+                                            um
+                                            referencial importante. Na seção
+                                            sobre violências e juventudes,
+                                            apresentaremos os
+                                            dados mais recentes.</i>
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -909,9 +932,9 @@
                     <div class="container-fluid background-topico vh-100
                             d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">Trabalho e juventudes</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="detalhes">
+                            <p class="text-light title-topico space-line">TRABALHO E JUVENTUDES</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -921,11 +944,14 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12
                                     col-xs-12 text-justify padding-container">
-                                <p class="title text-primary text-center">Trabalho e juventudes</p>
+                                <p class="title text-primary text-center">TRABALHO E JUVENTUDES</p>
                                 <p class="py-2">Já reparou como na paisagem contemporânea tem sido muito comum nos
                                     depararmos com adolescentes e jovens em motocicletas, bicicletas e até mesmo a pé
-                                    carregando mochilas de entrega? Com relação especificamente às práticas
-                                    discriminatórias que têm como base o racismo, a médica Jurema Werneck, ativista do
+                                    carregando mochilas de entrega? Na verdade, ainda conhecemos pouco seus cotidianos
+                                    de trabalho, possíveis situações de risco à saúde e, em especial, de que forma
+                                    interpretam o trabalho e a si mesmos como trabalhadores.
+                                    Com relação especificamente às práticas discriminatórias que têm como base o
+                                    racismo, a médica Jurema Werneck, ativista do
                                     movimento de mulheres negras e doutora em Comunicação e Cultura, alerta-nos que, no
                                     nosso país, elas se manifestam de forma institucional, seja na forma de exclusão,
                                     prioridades ou metas de realização das diversas instituições sociais, nas áreas da
@@ -942,23 +968,25 @@
                                 </p>
                                 <div class="popover right">
                                     <div class="popover-arrow"></div>
-                                    <div class="popover-content">Proposição: Você avalia que o trabalho possa ter
+                                    <div class="popover-content"><b>Proposição:</b> Você avalia que o trabalho possa ter
                                         implicações na saúde juvenil? Você já pensou que existe uma possível relação
                                         entre a experiência de trabalho na adolescência e na juventude e o
                                         aproveitamento escolar, a necessidade de tempo livre e a convivência familiar e
                                         comunitária?<br><br>
 
-                                        Feedback positivo: A realidade do trabalho juvenil ilustra que, apesar dos
+                                        <b>Feedback positivo:</b> A realidade do trabalho juvenil ilustra que, apesar
+                                        dos
                                         direitos assegurados pelo arcabouço jurídico-legal, ainda são poucos ou inexatos
                                         os dados conhecidos acerca da ocorrência de doenças e acidentes de trabalho
                                         neste grupo populacional, assim como das situações de risco à saúde, as quais
                                         estão submetidos nas experiências de trabalho de que participam.<br><br>
 
-                                        Feedback orientador: Uma maior aproximação com a diversidade dos universos
+                                        <b>Feedback orientador:</b> Uma maior aproximação com a diversidade dos
+                                        universos
                                         juvenis no Brasil tem no tema trabalho uma mediação da maior importância, pelos
                                         possíveis impactos originados por esta experiência, na qualidade de vida deste
                                         grupo populacional. É fundamental aferir se os jovens com os quais trabalhamos
-                                        estão inseridos em atividades de trabalho.<br><br>
+                                        estão inseridos em atividades de trabalho.
                                     </div>
                                 </div>
                                 <p class="py-2">
@@ -971,14 +999,15 @@
                                     mundo do trabalho (mutante e restrito), maior violência
                                     simbólica e física, além da evidência dos riscos ecológicos. Esses marcadores
                                     relacionam-se com a vivência contemporânea juvenil, caracterizada por múltiplas
-                                    entradas e saídas do mundo do trabalho e da escola. Temos
+                                    entradas e saídas do mundo do trabalho e da escola. </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    col-xs-12 padding-container text-justify">
+                                <p class="py-2">Temos
                                     uma juventude com escolaridade cada vez maior em relação às gerações anteriores,
                                     mas, por outro lado, o mundo do trabalho não tem correspondido a esse novo patamar
                                     de escolaridade. Isso tem gerado entre os jovens o
                                     medo “de sobrar”.</p>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12
-                                    col-xs-12 padding-container text-justify">
                                 <div class="box">
                                     <p class="p-5 text-light">Esse contexto tem significado, sobretudo, para jovens das
                                         camadas populares, jovens negros, jovens LGBTQIA+ e mulheres, que habitualmente
@@ -987,7 +1016,7 @@
                                     </p>
                                 </div>
                                 <p class="py-3">
-                                    Conformeimos nas histórias de José Ribamar e de seus amigos, apesar de a Lei nº
+                                    Conforme vimos nas histórias de José Ribamar e de seus amigos, apesar de a Lei nº
                                     12.009 (BRASIL, 2009) regulamentar serviços como mototaxista e motoboy, sabemos,
                                     pelo Ministério da Saúde (GIANNINI, 2018), que os motoboys são os que mais sofrem
                                     acidentes.
@@ -1000,18 +1029,6 @@
                                     Saúde e Segurança no trabalho Infantil e Juvenil, organizado pela Organização
                                     Internacional do Trabalho (2007).
                                 </p>
-                                <div class="citacao">
-                                    <small><i>¹ Sobre a morte juvenil por
-                                            causas externas, o Atlas da
-                                            Violência tem sido
-                                            um
-                                            referencial importante. Na seção
-                                            sobre violências e juventudes,
-                                            apresentaremos os
-                                            dados mais recentes.</i>
-                                    </small>
-                                </div>
-
                             </div>
                         </div>
                     </div>
@@ -1022,7 +1039,8 @@
                         <div class="row">
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-desk-5 d-flex justify-content-center">
-                                <img class="img-fluid w-75 h-lg-75" src="./image/modulo_01/trabalho_juventude_capa.png" alt="Capa Trabalho e Juventudes">
+                                <img class="img-fluid w-75 h-lg-75" src="./image/modulo_01/trabalho_juventude_capa.png"
+                                    alt="Capa Trabalho e Juventudes">
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-desk-5 text-justify">
                                 <div class="box-saiba-mais">
@@ -1059,20 +1077,18 @@
                 <div id="violencia-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">E quando a violência vem de onde esperamos
-                                proteção?
-                            </p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="detalhes">
+                            <p class="text-light title-topico space-line">E QUANDO A VIOLÊNCIA VEM DE ONDE ESPERAMOS
+                                PROTEÇÃO?</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
                         </div>
                     </div>
                 </div>
                 <!-- violencia e protecao - parte 2 -->
                 <div id="violencia-2" class="carousel-item default">
                     <div class="container-fluid pt-mobile-5">
-                        <p class="title text-primary text-center pt-5">E quando a violência vem de onde esperamos
-                            proteção?
-                        </p>
+                        <p class="title text-primary text-center pt-5">E QUANDO A VIOLÊNCIA VEM DE ONDE ESPERAMOS
+                            PROTEÇÃO?</p>
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-justify padding-container">
                                 <p class="py-2">Nos relatos dos jovens, também chamaram a atenção alguns episódios de
@@ -1100,7 +1116,7 @@
                                 </p>
                             </div>
                             <div
-                                class="d-flex flex-column justify-content-between col-lg-6 col-md-12 col-sm-12 col-xs-12 text-justify padding-x-desk-5">
+                                class="d-flex flex-column justify-content-between col-lg-6 col-md-12 col-sm-12 col-xs-12 text-justify padding-container">
                                 <div>
                                     <div class="d-flex" id="myTab" role="tablist">
                                         <div class="w-100" role="presentation">
@@ -1142,7 +1158,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-0 pb-5">
-                                    <p class="p-3">No caso complexo, identificamos uma violência subjetiva, explícita,
+                                    <p class="py-2">No caso complexo, identificamos uma violência subjetiva, explícita,
                                         no relato de
                                         Renata, que foi expulsa de casa, de alguma forma da escola e trabalhava na
                                         exploração sexual comercial.
@@ -1170,6 +1186,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <p class="py-3">As violências incidem sobre as vidas dos jovens sob a forma de
+                                        genocídio, de extermínio violento, mas também de segregação, evasão escolar,
+                                        sofrimento psíquico etc.</p>
                                 </div>
                             </div>
                         </div>
@@ -1179,10 +1198,10 @@
                 <div id="racismo-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">Racismo
+                            <p class="text-light title-topico space-line">RACISMO
                             </p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -1191,7 +1210,7 @@
                     <div class="container-fluid pt-5">
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-justify padding-container">
-                                <p class="title text-primary text-center">Racismo</p>
+                                <p class="title text-primary text-center">RACISMO</p>
                                 <p>Com relação especificamente às práticas discriminatórias que têm como base o racismo,
                                     a médica Jurema Werneck, ativista do movimento de mulheres negras e doutora em
                                     Comunicação e Cultura, alerta-nos que, no nosso país, elas se manifestam de forma
@@ -1291,18 +1310,18 @@
                 <div id="juventudes-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">Juventudes e territórios
+                            <p class="text-light title-topico space-line">JUVENTUDES E TERRITÓRIOS
 
                             </p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
                         </div>
                     </div>
                 </div>
                 <!-- juventudes - parte 2 -->
                 <div id="juventudes-2" class="carousel-item default">
                     <div class="container-fluid pt-5">
-                        <p class="title text-primary text-center py-3">Juventudes e territórios</p>
+                        <p class="title text-primary text-center py-3">JUVENTUDES E TERRITÓRIOS</p>
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p>Conforme vimos no caso, é relevante observar a importância do território para a
@@ -1336,13 +1355,9 @@
                                     comportamentos de risco” (CALAZANS, 2006, p. 37). E mais: os serviços precisam
                                     reconhecer os jovens como sujeitos autônomos, com os quais se pode e se deve
                                     dialogar.
-                                <p class="py-2">Esses jovens exercem “resistência” em um território
-                                    definido, em um espaço em que os acontecimentos e fatos ocorrem, em que a
-                                    existência se manifesta e a vida flui. Por isso, é muito importante conversarmos
-                                    sobre território.</p>
                                 <p class="py-2">Conforme vimos no caso que inaugura este módulo, convidar os jovens
                                     para compor reuniões intersetoriais e escutar suas histórias é uma estratégia
-                                    bastante interessante! Saber quem são, onde se reúnem nos territórios e quais
+                                    bastante interessante! Saber quem são, onde se reúnem nos <b>territórios</b> e quais
                                     são suas necessidades é um excelente ponto de partida para uma aproximação com
                                     os jovens. Chamá-los para a construção de ações, valorizar suas experiências
                                     pessoais e propor a participação criativa e o fortalecimento da autonomia dos
@@ -1356,24 +1371,22 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Topico - sexualidade e genero - parte 1 -->
                 <div id="sexualidade-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">Sexualidade, gênero e afetos</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="detalhes">
+                            <p class="text-light title-topico space-line">SEXUALIDADES, GÊNERO E AFETOS</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
                         </div>
                     </div>
                 </div>
-
                 <!-- sexualidade - parte 2 -->
                 <div id="sexualidade-2" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
-                                <p class="title text-primary text-center">Sexualidade, gêneros e afetos</p>
+                                <p class="title text-primary text-center">SEXUALIDADES, GÊNERO E AFETOS</p>
                                 <p>Na adolescência, o corpo passa por diversas transformações. Alguns adolescentes ficam
                                     em guerra permanente com a sua imagem. Passam horas na frente do espelho para
                                     identificar e pensar em formas de modificar o que os desagrada. Em algumas
@@ -1447,7 +1460,6 @@
                     </div>
 
                 </div>
-
                 <!-- sexualidade - parte 3 -->
                 <div id="sexualidade-3" class="carousel-item default">
                     <div class="container-fluid pt-5">
@@ -1525,7 +1537,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- sexualidade - parte 4 -->
                 <div id="sexualidade-4" class="carousel-item default">
                     <div class="container-fluid pt-mobile-5">
@@ -1574,7 +1585,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- sexualidade - parte 5 -->
                 <div id="sexualidade-5" class="carousel-item default">
                     <div class="container-fluid pt-mobile-5 pt-3">
@@ -1594,12 +1604,39 @@
                                     386 apud MARTINS, 2021, p. 17).</p>
                                 <p class="pt-2 bold">Você acha que a diversidade de gênero e de orientação sexual tem
                                     relação com a saúde e com a escola?</p>
-                                <img class="w-75 img-fluid d-block mx-auto" src="./image/modulo_01/sexualidade_detalhes_2.svg"
-                                    alt="detalhes">
+                                <img class="w-75 img-fluid d-block mx-auto"
+                                    src="./image/modulo_01/sexualidade_detalhes_2.svg" alt="detalhes">
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
                                 <p class="pb-2">Como vimos, o período da adolescência envolve complexas mudanças e
-                                    elaborações sociais, comportamentais, físicas etc. Por isso,</p>
+                                    elaborações <button id="btn1" class="popover-btn">sociais</button>, comportamentais,
+                                    físicas etc. Por isso,</p>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content"><b>Proposição:</b> Você já pensou na importância do
+                                        nome
+                                        social? Vamos pensar no impacto para um adolescente de não ter o nome social
+                                        acolhido e respeitado na escola, no centro de saúde etc? <br><br>
+
+                                        <b>Feedback positivo:</b> Nome social é o modo como a pessoa se autoidentifica e
+                                        é
+                                        reconhecida, identificada, chamada e denominada na sua comunidade e no meio
+                                        social, uma vez que o seu nome civil, isto é, seu nome de registro não
+                                        reflete a sua identidade de gênero.<br><br>
+                                        Se considerarmos a grande evasão escolar por parte de travestis e
+                                        transexuais e portadores de outras identidades de gênero que estão em
+                                        desacordo com seu registro, conceder o nome social significa promover o
+                                        acesso aos espaços educacionais (também de saúde e outros) a esses grupos
+                                        histórica e sistematicamente marginalizados.<br><br>
+
+                                        <b>Feedback orientador:</b> Não acolher o nome equivale a não acolher a
+                                        diferença,
+                                        a diversidade. Estamos vendo aqui que cada adolescente é diferente do outro,
+                                        cada um de nós tem a sua marca singular. Esse acolhimento pode definir o
+                                        destino de um jovem, como vemos aqui com Lucca e Renata.
+                                        rabalhamos estão inseridos em atividades de trabalho.
+                                    </div>
+                                </div>
                                 <div class="citacao-2 w-75 my-3">Não raro, neste período os/as jovens se entendem acerca
                                     de sua sexualidade e identidade de gênero, identificando-se como heterossexuais,
                                     homossexuais, bissexuais, cisgêneros, não-binários, transexuais… Tal processo, senão
@@ -1618,11 +1655,13 @@
                                     de gênero também é outro assunto que precisa ser discutido. Afinal, vivemos em um
                                     país que lidera a estatística de mortes violentas contra pessoas trans e travestis.
                                 </p>
+                                <p class="py-2"><a
+                                        href="https://www.ufsm.br/pro-reitorias/pre/observatorio-de-direitos-humanos/nome-social/">Acesse
+                                        o link aqui.</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- sexualidade - parte 6 -->
                 <div id="sexualidade-6" class="carousel-item default">
                     <div class="container-fluid pt-5">
@@ -1656,7 +1695,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- sexualidade - parte 7 -->
                 <div id="sexualidade-7" class="carousel-item default">
                     <div class="container-fluid pt-5">
@@ -1670,7 +1708,8 @@
                                     – Brasil: Perfil de pessoas vítimas de violências, por orientação sexual, por
                                     raça/cor (2019)
                                 </p>
-                                <img class="img-fluid d-block mx-auto" src="./image/modulo_01/sexualidade_grafico_1.png" alt="Grafico 01">
+                                <img class="w-100 d-block mx-auto" src="./image/modulo_01/sexualidade_grafico_1.png"
+                                    alt="Grafico 01">
                                 <p class="pt-2">
                                     De acordo com os dados dispostos na Figura 1, pode-se observar que pessoas negras
                                     eram a maioria das vítimas. No que tange à diversidade de orientação sexual,
@@ -1682,24 +1721,19 @@
                                 <p class="py-2 bold text-center text-primary padding-x-desk-5 padding-mobile-2">Figura 2
                                     – Brasil: Perfil de pessoas trans vítimas de violências, por raça/cor (2019)
                                 </p>
-                                <img class="img-fluid d-block mx-auto" src="./image/modulo_01/sexualidade_grafico_2.png" alt="Grafico 02">
-                                <p class="pt-2">De acordo com os dados dispostos na Figura 2, pode-seobservar que se
-                                    mantém a maior vulnerabilidade de pessoas negras no que se refere a identidade de
-                                    gênero: 58% das travestis 58% das mulheres trans e 60% dos homens trans vítimas de
-                                    violência eram negras/os. Ressalta-se, ainda, que esses dados também podem ser
-                                    observados nos indicadores de violências letais referentes à população em geral
-                                    (CERQUEIRA et al., 2021, p. 67).
-                                    Nessa direção, as políticas públicas de focalização refinada voltadas às
-                                    intersecções entre gênero e raça são fundamentais para o enfrentamento das
-                                    violências que atingem ambos os grupos. No entanto, pessoas trans negras têm
-                                    necessidades que demandam ainda mais focalização.
+                                <img class="w-100 d-block mx-auto" src="./image/modulo_01/sexualidade_grafico_2.png"
+                                    alt="Grafico 02">
+                                <p class="pt-2">De acordo com os dados dispostos na Figura 2, pode--se observar que
+                                    pessoas negras também são mais vulneráveis à violência relacionada à identidade de
+                                    gênero: 58% das travestis, 58% das mulheres trans e 60% dos homens trans vítimas de
+                                    violência
+                                    eram negros (CERQUEIRA et al., 2021).
 
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- sexualidade - parte 8 -->
                 <div id="sexualidade-8" class="carousel-item default">
                     <div class="container-fluid pt-5">
@@ -1712,7 +1746,8 @@
                                     mental dos jovens mais vulneráveis. A criação de espaços de convivência e de
                                     vínculos entre as famílias e entre jovens é fundamental.</p>
                                 <p class="py-2">Apesar de todos os avanços na construção e implementação de políticas
-                                    públicas, reconhece-se que o racismo e a intolerância religiosa persistem na
+                                    públicas, reconhece-se que o <button id="btn2" class="popover-btn">racismo e a
+                                        intolerância</button> persistem na
                                     sociedade brasileira. Essas duas dimensões das relações raciais no Brasil são,
                                     sabe-se, históricas e, como afirmam muitos militantes do movimento negro e
                                     pesquisadores, assumem, na atualidade, novas formas e reinventam-se. Quando traçamos
@@ -1720,77 +1755,124 @@
                                     afirmar que, em sua grande maioria, são homens negros (“pretos” e “pardos”, segundo
                                     a classificação do IBGE) com baixa escolaridade e moradores de periferia. Porém,
                                     também constitui fator de grande vulnerabilidade o pertencimento à população
-                                    LGBTQIA+</p>
+                                    LGBTQIA+
+                                </p>
+                                <div class="popover right">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content"><b>Proposição:</b> São muitas as violências e muito
+                                        complexas, já que estão entrelaçadas. A violência na fala, no discurso, às
+                                        vezes é sutil e se encontra tão naturalizada que não a chamamos de
+                                        violência. Você pensa em algum exemplo? <br><br>
+
+                                        <b>Feedback positivo:</b> Muitas crianças negras sofrem o racismo, que é chamado
+                                        de
+                                        bullying muitas vezes, velando a violência racial. É importante nomear a
+                                        violência como tal, para poder enfrentá-la.<br><br>
+
+                                        <b>Feedback orientador:</b> É importante uma atenção constante para detectarmos
+                                        em
+                                        nós e no nosso trabalho as evidências, às vezes discretas, mas não menos
+                                        violentas, do racismo, do machismo, da transfobia, da intolerância religiosa
+                                        etc. Devemos ver e explicitar as violações, violências, vulnerabilidades,
+                                        mas sempre com um olhar para o outro que realce sempre sua potência.
+                                    </div>
+                                </div>
                                 <p class="py-2">Uma forma de violência institucional é não considerar as diversidades
-                                    juvenis, que abrangem o cotidiano, a socialização e as necessidades dos jovens
-                                    portadores de deficiências.
-                                    O que podemos falar sobre as pessoas com deficiência? Como os adolescentes e jovens
-                                    vivem as diversas deficiências? Você já pensou sobre isso? Vamos conversar um pouco
-                                    mais sobre esse assunto...</p>
+                                    juvenis, que abrangem o cotidiano, a socialização e
+                                    as necessidades dos jovens portadores de deficiências. O que podemos falar sobre as
+                                    pessoas com deficiência?
+                                    Como os adolescentes e jovens vivem as diversas deficiências? Você já pensou sobre
+                                    isso? Vamos conversar um pouco mais sobre esse assunto...</p>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
-                                <img class="w-75 img-fluid d-block mx-auto" src="./image/modulo_01/sexualidade_detalhes_4.svg"
-                                    alt="Detalhes">
+                                <p class="pb-2">
+                                    <!-- ADICIONAR O TEXTO INFORMADO -->
+                                </p>
+                                <img class="w-75 img-fluid d-block mx-auto"
+                                    src="./image/modulo_01/sexualidade_detalhes_4.svg" alt="Detalhes">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- Topico - jovens com deficiencia - parte 1 -->
                 <div id="jovens-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">Jovens com deficiência, direitos e equidade
+                            <p class="text-light title-topico space-line">JOVENS COM DEFICIÊNCIA, DIREITOS E EQUIDADE
                             </p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="Detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="Detalhes">
                         </div>
                     </div>
                 </div>
-
                 <!-- jovens - parte 2 -->
                 <div id="jovens-2" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="row">
-                            <p class="title text-center text-primary pt-mobile-5">Jovens com deficiência, direitos e
-                                equidade</p>
+                            <p class="title text-center text-primary pt-mobile-5">JOVENS COM DEFICIÊNCIA, DIREITOS E
+                                EQUIDADE</p>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
-                                <p class="py-2">Será que temos olhado para as pessoas com deficiência e para as
+                                <p class="py-2">Será que temos olhado para as <b>pessoas com deficiência</b> e para as
                                     necessidades delas tentando enxergar além da deficiência? Para que efetivamente
                                     ocorra a inclusão dessas pessoas, é importante refletir sobre os conceitos de
-                                    igualdade e equidade.</p>
+                                    <i>igualdade e <button id="btn3" class="popover-btn">equidade.</button></i>
+                                </p>
+                                <div class="popover right">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content">Enquanto a igualdade pressupõe tratamento igualitário a
+                                        todos, a equidade busca garantir que pessoas diferentes recebam tratamentos
+                                        adequados às suas necessidades. Como exemplo, podemos refletir sobre as ações
+                                        referentes à saúde sexual e reprodutiva de pessoas com deficiência: em geral,
+                                        famílias e profissionais estão despreparados para lidar com pessoas sob seus
+                                        cuidados e orientá-las.
+                                    </div>
+                                </div>
                                 <p class="py-2">Popularmente, considera-se que pessoas com deficiência tenham uma
-                                    sexualidade incompleta, como reflexo de sua deficiência. Devemos sempre lembrar da
+                                    sexualidade incompleta, como reflexo de sua deficiência. Devemos sempre lembrar
+                                    da
                                     potência, da dignidade e dos direitos de cada pessoa que vive uma deficiência,
-                                    ressaltando a vida, a sexualidade e a liberdade. Os profissionais, suas estratégias
-                                    e seus materiais educativos, em geral, não atendem a necessidade desse público nas
+                                    ressaltando a vida, a sexualidade e a liberdade. Os profissionais, suas
+                                    estratégias
+                                    e seus materiais educativos, em geral, não atendem a necessidade desse público
+                                    nas
                                     questões de educação em saúde, em especial no caso de pessoas com deficiências
                                     sensoriais.</p>
                                 <p class="py-2">É importante pensar nas diversas deficiências e no enfrentamento das
                                     violências e violações que as pessoas com deficiências sofrem. Vamos ver o que o
                                     Atlas da Violência 2021 tem a nos ensinar sobre isso:</p>
-                                <img src="./image/modulo_01/jovem_detalhes_1.svg" alt="Detalhes" class="img-fluid w-100">
+                                <img src="./image/modulo_01/jovem_detalhes_1.svg" alt="Detalhes"
+                                    class="img-fluid w-100">
                             </div>
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-mobile-2 padding-desk-5 text-justify">
                                 <div class="box-2 p-4 mx-3">
                                     <p class="text-light p-3">O conceito de pessoas com deficiência agrupa um
                                         conjunto de indivíduos com importantes diferenças, e aqui isso se traduz
-                                        inicialmente em maiores taxas de notificações de violências contra pessoas com
-                                        deficiência intelectual. As taxas de notificações são também superiores para as
+                                        inicialmente em maiores taxas de notificações de violências contra pessoas
+                                        com
+                                        deficiência intelectual. As taxas de notificações são também superiores para
+                                        as
                                         mulheres, independentemente do tipo de deficiência. O tipo de violência
                                         construído a partir da autoria presumida permite separar apenas os casos de
-                                        violência interpessoal para a análise e, nestes casos, os dados indicam um maior
-                                        registro de violência doméstica do que comunitária e institucional para qualquer
-                                        tipo de deficiência. Os registros se concentram na faixa etária de 10 a 19 anos
+                                        violência interpessoal para a análise e, nestes casos, os dados indicam um
+                                        maior
+                                        registro de violência doméstica do que comunitária e institucional para
+                                        qualquer
+                                        tipo de deficiência. Os registros se concentram na faixa etária de 10 a 19
+                                        anos
                                         e em geral decaem gradativamente nas faixas seguintes. A violência mais
-                                        frequentemente registrada é a física, mas a violência sexual é frequente para
-                                        mulheres. Por fim, compartilha-se aqui a compreensão de que a violência reforça
+                                        frequentemente registrada é a física, mas a violência sexual é frequente
+                                        para
+                                        mulheres. Por fim, compartilha-se aqui a compreensão de que a violência
+                                        reforça
                                         a vulnerabilidade dessa população, pautada em processos de exclusão social,
-                                        segregação, preconceito e estigmatização dos indivíduos que estão caracterizados
+                                        segregação, preconceito e estigmatização dos indivíduos que estão
+                                        caracterizados
                                         por diferenças biológicas ou psicológicas, que são tomadas como desvios da
-                                        normalidade e expressão de menor valia social. (Ministério da Saúde, 2020b, p.
-                                        3). Acrescente-se que parte dessa violência, como as negligências, poderia ser
+                                        normalidade e expressão de menor valia social. (Ministério da Saúde, 2020b,
+                                        p.
+                                        3). Acrescente-se que parte dessa violência, como as negligências, poderia
+                                        ser
                                         prevenida com um aperfeiçoamento de políticas de cuidado (CERQUEIRA et al.,
                                         2021, p. 78-79).
                                     </p>
@@ -1799,19 +1881,38 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- jovens - parte 3 -->
+                <div id="jovens-3" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pb-4">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
+                                <p class="pb-2">É muito importante um olhar atento e uma escuta qualificada para as
+                                    pessoas que vivem com deficiências, mas também com potências e possibilidades!</p>
+                                <p class="py-2">Ainda conversando sobre sexualidade e saúde reprodutiva, um tema
+                                    bastante importante é a gravidez na adolescência, em virtude da prevalência, dos
+                                    preconceitos que envolvem esse acontecimento e da importância de cuidado adequado
+                                    nessa
+                                    situação. Vamos conhecer um pouco mais sobre esse assunto?
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
+                                <img class="w-75 img-fluid d-block mx-auto"
+                                    src="./image/modulo_01/sexualidade_detalhes_5.svg" alt="Detalhes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Topico - gravidez na adolescencia - parte 1 -->
                 <div id="gravidez-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line px-2">Gravidez na adolescência: discutindo
-                                maternidades e paternidades juvenis</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="Detalhes">
+                            <p class="text-light title-topico space-line px-2">GRAVIDEZ NA ADOLESCÊNCIA: DISCUTINDO
+                                MATERNIDADES E PATERNIDADES JUVENIS</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="Detalhes">
                         </div>
                     </div>
                 </div>
-
                 <!-- gravidez - parte 2 -->
                 <div id="gravidez-2" class="carousel-item default">
                     <div class="container-fluid pt-5">
@@ -1822,7 +1923,8 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="py-2">Lendo o caso complexo, você conheceu Lia, adolescente que morava na
                                     mesma ocupação de Renata e que estava grávida.
-                                    Você conhece alguma adolescente que vivenciou uma gravidez? E/ou um adolescente que
+                                    Você conhece alguma adolescente que vivenciou uma gravidez? E/ou um adolescente
+                                    que
                                     se tornou pai?
                                 </p>
                                 <div class="box-saiba-mais">
@@ -1830,8 +1932,9 @@
                                         <p class="title text-light text-center py-3">Saiba mais</p>
                                     </div>
                                     <div class="padding-desk-5 padding-mobile-2">
-                                        <p class="text-justify py-2">Vamos assistir a um vídeo bem curtinho no qual uma
-                                            ginecologista fala um pouco sobre esse assunto? Vamos:
+                                        <p class="text-justify py-2">Vamos assistir a um vídeo bem curtinho no qual
+                                            uma
+                                            ginecologista fala um pouco sobre esse assunto?
                                         </p>
                                         <iframe class="w-100 video" src="https://www.youtube.com/embed/YEtDgQ21Hsc"
                                             title="YouTube video player" frameborder="0"
@@ -1846,9 +1949,12 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="py-2">A gravidez na adolescência é uma questão complexa, não é? É uma
                                     discussão que geralmente vem acompanhada por muita preocupação!
-                                    <br>Isso acontece, sobretudo, porque, em geral, a gravidez na adolescência é tratada
-                                    como problema de saúde pública e social, além de ser vista, de forma generalizada,
-                                    como algo negativo. Também existe a ideia de que adolescentes sempre são incapazes
+                                    <br>Isso acontece, sobretudo, porque, em geral, a gravidez na adolescência é
+                                    tratada
+                                    como problema de saúde pública e social, além de ser vista, de forma
+                                    generalizada,
+                                    como algo negativo. Também existe a ideia de que adolescentes sempre são
+                                    incapazes
                                     de lidar com ela!
                                 </p>
                                 <div class="accordion-header">
@@ -1862,15 +1968,18 @@
                                                 <p class="p-4 small">
                                                     Ora, se pararmos para pensar... olharmos para a história... a
                                                     verdade é
-                                                    que, em outros momentos da história, as pessoas constituíam famílias
-                                                    muito mais jovens, e as meninas tornavam-se mães ainda bem novas!
+                                                    que, em outros momentos da história, as pessoas constituíam
+                                                    famílias
+                                                    muito mais jovens, e as meninas tornavam-se mães ainda bem
+                                                    novas!
                                                     Também
                                                     é certo que uma gravidez indesejada pode acontecer em diferentes
                                                     fases
                                                     da vida e ser difícil de lidar.
                                                     Essa lembrança pode nos ajudar a observar como concepções de
                                                     infâncias,
-                                                    juventudes e fases da vida em geral adquirem diferentes contornos ao
+                                                    juventudes e fases da vida em geral adquirem diferentes
+                                                    contornos ao
                                                     longo do tempo!
                                                 </p>
                                             </div>
@@ -1889,7 +1998,8 @@
                                                     diferentes vulnerabilidades e potencialidades, podem definir
                                                     infinitas
                                                     possibilidades e significantes para a gravidez na adolescência e
-                                                    juventude! Esteves (2003) e Catharino (2002), por exemplo, mostram
+                                                    juventude! Esteves (2003) e Catharino (2002), por exemplo,
+                                                    mostram
                                                     que
                                                     essa gravidez, muitas vezes, além de ser desejada pelas jovens e
                                                     pelos
@@ -1904,40 +2014,77 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- gravidez - parte 3 -->
                 <div id="gravidez-3" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="row pt-mobile-5">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
-                                <p class="pb-2">Nesse sentido, é válido mencionar que o próprio Ministério da Saúde já
-                                    compreendeu que, Embora a gravidez de adolescentes e jovens possa ser interpretada
-                                    majoritariamente como um ‘evento-problema’ ou ainda como indesejável em muitas
+                                <p class="pb-2">Nesse sentido, é válido mencionar que o próprio Ministério da Saúde
+                                    já
+                                    compreendeu que, embora a gravidez de adolescentes e jovens possa ser
+                                    interpretada
+                                    majoritariamente como um "evento-problema" ou ainda como indesejável em muitas
                                     análises e políticas, avaliamos ser mais adequado entendê-la como um ponto de
-                                    inflexão que poderá resultar uma multiplicidade de experiências de vida - por isto
+                                    inflexão que poderá resultar uma multiplicidade de experiências de vida - por
+                                    isto
                                     pode assumir diferentes significados, ser também tratada de diferentes formas e
                                     apresentar diferentes desfechos (BRASIL 2006 apud BRASIL, 2010).</p>
                                 <p class="py-2">Ampliando esse enfoque, a sexualidade e a reprodução são dimensões
                                     fundamentais da saúde humana e pressupostos para a qualidade de vida e bem-estar
-                                    físico, psicológico e social e para a satisfação e prazer. Pessoas jovens devem ser
+                                    físico, psicológico e social e para a satisfação e prazer. Pessoas jovens devem
+                                    ser
                                     reconhecidas como sujeitos de direitos sexuais e reprodutivos, que são afirmados
                                     como Direitos Humanos. A consciência desse direito implica reconhecer a
                                     individualidade e a autonomia dessas pessoas, estimulando-as a assumir as
                                     responsabilidades relacionadas à sua própria saúde. Assim, garantir os direitos
                                     reprodutivos a adolescentes e jovens, de ambos os sexos, significa assegurar as
-                                    condições de escolha para aqueles e aquelas que não querem engravidar, que querem
+                                    condições de escolha para aqueles e aquelas que não querem engravidar, que
+                                    querem
                                     planejar uma gravidez ou que já vivem uma gravidez.</p>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="pb-2">Os estudos demográficos, psicossociais e epidemiológicos são
                                     frequentemente restritos às mulheres, invisibilizando o parceiro masculino. Com
-                                    frequência, as intervenções profissionais não têm levado em consideração o papel que
-                                    os meninos e os homens podem desempenhar. Além disso, existe a tendência de reduzir
+                                    frequência, as intervenções profissionais não têm levado em consideração o papel
+                                    que
+                                    os meninos e os homens podem desempenhar. Além disso, existe a tendência de
+                                    reduzir
                                     as temáticas saúde sexual e saúde reprodutiva à prevenção de gravidez na
                                     adolescência e ao uso de anticoncepcionais, o que também dificulta alcançar as
                                     diferentes formas de exercício da sexualidade.</p>
                                 <p class="py-2">Vamos prestar mais atenção aos significados e possibilidades dessa
-                                    vivência para nossos jovens?</p>
+                                    vivência para nossos <button id="btn4" class="popover-btn">jovens?</button></p>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content popover-w-2">
+                                        <b>Proposição:</b> Será que as gestações de adolescentes são sempre indesejadas?
+                                        Será
+                                        que a gravidez é apenas fruto da irresponsabilidade, da imaturidade e da
+                                        impulsividade dos jovens? <br><br>
+
+                                        <b>Feedback positivo:</b> Temos como pressuposto que a gravidez na adolescência
+                                        pode
+                                        ser vivida de múltiplas formas. Os contextos sociais irão definir universos de
+                                        possibilidades e de significações diferentes entre os jovens de distintas
+                                        classes sociais. As escolhas podem ser influenciadas pela exclusão, desigualdade
+                                        de classe, de gênero e de raça e pela falta de perspectivas. A maternidade, pode
+                                        ainda, expressar reconhecimento social para muitas jovens.<br><br>
+
+                                        <b>Feedback orientador:</b> As políticas e programas de saúde voltados para os
+                                        jovens
+                                        devem considerar a sexualidade como parte do desenvolvimento humano e incluir os
+                                        conceitos de amor, sentimentos, emoções, intimidade e desejo (OPAS, 2002, in MS
+                                        2006). A discussão sobre gravidez na adolescência precisa ser pensada de maneira
+                                        ampliada. É importante criar espaços onde os jovens possam debater temáticas
+                                        referentes à saúde sexual e saúde reprodutiva na escola, na saúde, no lazer, na
+                                        cultura. É importante ainda que a atenção à saúde sexual e saúde reprodutiva de
+                                        adolescentes inclua aqueles em cumprimento de medidas socioeducativas, em
+                                        situação de rua, de abrigamento, vivendo com HIV/AIDS. São necessárias ações
+                                        para compartilhamento de informações e ações educativas em saúde sexual e saúde
+                                        reprodutiva que abranjam as famílias e as comunidades locais.
+
+                                    </div>
+                                </div>
 
                             </div>
                             <img src="./image/modulo_01/gravidez_detalhes_1.svg" alt="Detalhes"
@@ -1945,25 +2092,55 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- gravidez - parte 4 -->
                 <div id="gravidez-4" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="row pt-mobile-5">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
-                                <p class="pb-2">O que podemos refletir sobre o cuidado em saúde, com um olhar e escuta
-                                    atentos para a subjetividade e questões sociais?</p>
-                                <p class="py-2">No trabalho com adolescentes e jovens, não podemos perder de vista a
-                                    importância do estabelecimento de vínculos! Por não se sentirem seguros e acolhidos,
-                                    muitos acabam deixando de buscar um serviço e descuidam de sua própria saúde. Dessa
-                                    forma, privacidade e sigilo constituem direitos de grande importância, porque
+                                <p class="pb-2">O que podemos refletir sobre o cuidado em saúde, com um olhar e
+                                    escuta atentos para a subjetividade e questões sociais?</p>
+                                <p class="py-2">No trabalho com <button id="btn5"
+                                        class="popover-btn">adolescentes</button> e jovens, não podemos perder de vista
+                                    a
+                                    importância do estabelecimento de vínculos! Por não se sentirem seguros e
+                                    acolhidos, muitos acabam deixando de buscar um serviço e descuidam de sua própria
+                                    saúde.
+                                    Dessa forma, privacidade e sigilo constituem direitos de grande importância, porque
                                     determinados assuntos são de difícil abordagem, em especial aqueles que envolvem
-                                    sexualidades e afetos. Portanto, é necessário muito cuidado para preservar o direito
-                                    à privacidade juvenil e, ao mesmo tempo, também desenvolver um trabalho com as
+                                    sexualidades e afetos. Portanto, é necessário muito cuidado para preservar o
+                                    direito à privacidade juvenil e, ao mesmo tempo, também desenvolver um trabalho com
+                                    as
                                     famílias.</p>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content">
+                                        <b>Proposição:</b> Você sabia que um adolescente pode ser atendido
+                                        sem os responsáveis legais? O que você pensa sobre isso?
+
+                                        <b>Feedback positivo:</b> Adolescentes têm direito de serem atendidos sem a
+                                        presença
+                                        dos pais ou responsáveis. Esse direito refere-se à importância da garantia de
+                                        espaços seguros de acolhimento e sigilo, considerando-os sujeitos de direitos.
+                                        Isto não significa que o atendimento à família seja desnecessário ou menos
+                                        importante, mas sim que a autonomia do adolescente deve ser respeitada e
+                                        garantida. O ECA, em seu capítulo II, artigo 17, dispõe a respeito “do direito à
+                                        liberdade, ao respeito e à dignidade” da criança e do adolescente e prescreve:
+                                        “O direito ao respeito consiste na inviolabilidade da integridade física,
+                                        psíquica e moral da criança e do adolescente, abrangendo a preservação da
+                                        imagem, da identidade, da autonomia, dos valores, ideias e crenças, dos espaços
+                                        e objetos pessoais”.
+
+                                        <b>Feedback orientador:</b> Se você trabalha em um serviço que atende
+                                        adolescentes, que
+                                        tal experimentar acolher o adolescente sem a família mas ao mesmo tempo,
+                                        promover um acolhimento da família? Uma outra pessoa poderia acolher a família
+                                        ou você mesmo, em outro momento.
+
+                                    </div>
+                                </div>
                                 <p class="pb-2">Por falar em família, é importante conhecermos um pouco mais as suas
-                                    configurações no cenário atual, tendo em vista o acolhimento e a construção de um
-                                    trabalho que seja realmente efetivo.</p>
+                                    configurações no cenário atual, tendo em vista o acolhimento e a construção de
+                                    um trabalho que seja realmente efetivo.</p>
                             </div>
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container d-flex align-items-center justify-content-center">
@@ -1975,39 +2152,43 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Topico - conversando sobre familias - parte 1 -->
                 <div id="conversando-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">Conversando sobre Famílias</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="Detalhes">
+                            <p class="text-light title-topico space-line">CONVERSANDO SOBRE FAMÍLIAS</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="Detalhes">
                         </div>
                     </div>
                 </div>
-
                 <!-- conversando - parte 2 -->
                 <div id="conversando-2" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="row pt-mobile-5">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
-                                <p class="pb-3 title text-primary text-center">Conversando sobre Famílias
+                                <p class="pb-3 title text-primary text-center">CONVERSANDO SOBRE FAMÍLIAS
                                 </p>
                                 <p class="py-3">O que você acha de a gente conversar um pouco sobre famílias?
                                 </p>
                                 <div class="box">
-                                    <p class="text-light p-4">Famílias também no plural? Sim, porque são muitas. Há um
-                                        livro sobre direito de família (Dicionário de Direito de Família e Sucessões, do
-                                        Rodrigo da Cunha Pereira, São Paulo: Saraiva, 2015) que tem 37 páginas dedicadas
+                                    <p class="text-light p-4">Famílias também no plural? Sim, porque são muitas. Há
+                                        um
+                                        livro sobre direito de família (Dicionário de Direito de Família e
+                                        Sucessões, do
+                                        Rodrigo da Cunha Pereira, São Paulo: Saraiva, 2015) que tem 37 páginas
+                                        dedicadas
                                         às definições de família!</p>
                                 </div>
                                 <p class="pt-3">De acordo com Sales (1997), na sociedade contemporânea, coexistem
                                     diferentes arranjos familiares. De maneira geral, podemos observar as seguintes
-                                    tendências: crescimento do número de divórcios; redução do número de filhos; aumento
+                                    tendências: crescimento do número de divórcios; redução do número de filhos;
+                                    aumento
                                     do número de famílias monoparentais chefiadas por mulheres; presença de famílias
-                                    monoparentais chefiadas por homens; aumento do número de adultos que vivem sozinhos;
-                                    existência de casais que optam por não ter filhos; presença de famílias formadas por
+                                    monoparentais chefiadas por homens; aumento do número de adultos que vivem
+                                    sozinhos;
+                                    existência de casais que optam por não ter filhos; presença de famílias formadas
+                                    por
                                     casais homoafetivos; ocorrência de famílias ampliadas formadas pelos membros
                                     iniciais, acrescidas de novos membros – os netos –, trazidos por filhas-mães
                                     adolescentes.
@@ -2021,7 +2202,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- conversando - parte 3 -->
                 <div id="conversando-3" class="carousel-item default">
                     <div class="container-fluid pt-5">
@@ -2029,14 +2209,16 @@
                             <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
                                 <p class="py-3">Você conhece a música Paula e Bebeto, de Caetano Veloso e Milton
                                     Nascimento? Vamos ouvir?</p>
-                                <img class="img-fluid d-block mr-auto" src="./image/modulo_01/conversando_detalhes_2.svg" alt="Detalhes">
+                                <img class="img-fluid d-block mr-auto"
+                                    src="./image/modulo_01/conversando_detalhes_2.svg" alt="Detalhes">
                                 <div class="padding-desk-5 padding-mobile-2">
                                     <iframe class="w-100 video" src="https://www.youtube.com/embed/YE4cbDO8eTE"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                 </div>
-                                <img class="img-fluid d-block ml-auto" src="./image/modulo_01/conversando_detalhes_3.svg" alt="Detalhes">
+                                <img class="img-fluid d-block ml-auto"
+                                    src="./image/modulo_01/conversando_detalhes_3.svg" alt="Detalhes">
                             </div>
                             <div
                                 class="col-lg-4 col-md-12 col-sm-12 col-xs-12 padding-container d-flex align-items-center justify-content-end">
@@ -2074,21 +2256,27 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- conversando - parte 4 -->
                 <div id="conversando-4" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="row pt-mobile-5">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container pb-3 text-justify">
-                                <p class="pb-3">E, às vezes, não há amor, ou ele acabou, como já dizia a ciranda... É
+                                <p class="pb-3">E, às vezes, não há amor, ou ele acabou, como já dizia a ciranda...
+                                    É
                                     importante não ter um conceito rígido e único de família.</p>
-                                <p class="py-3">Vários autores já se debruçaram sobre o conceito de família. Para Mioto
+                                <p class="py-3">Vários autores já se debruçaram sobre o conceito de família. Para
+                                    Mioto
                                     (1997), família pode ser definida como um fato histórico, com grande ênfase
-                                    cultural, cuja constituição não é a priori “lugar de felicidade”, mas “um núcleo de
-                                    pessoas que convivem em determinado lugar, durante um tempo e que se acham unidas
-                                    por laços, de consanguinidade ou não” (MIOTO, 1997 apud RAYMUNDO et al., 2014, p.
-                                    259). Para Carvalho (2000 apud RAYMUNDO et al., 2014), a família pode ser entendida
-                                    como um canal de iniciação e aprendizado de afetos e do padrão de relações sociais
+                                    cultural, cuja constituição não é a priori “lugar de felicidade”, mas “um núcleo
+                                    de
+                                    pessoas que convivem em determinado lugar, durante um tempo e que se acham
+                                    unidas
+                                    por laços, de consanguinidade ou não” (MIOTO, 1997 apud RAYMUNDO et al., 2014,
+                                    p.
+                                    259). Para Carvalho (2000 apud RAYMUNDO et al., 2014), a família pode ser
+                                    entendida
+                                    como um canal de iniciação e aprendizado de afetos e do padrão de relações
+                                    sociais
                                     vigente em um determinado tempo histórico.</p>
                                 <div class="box-saiba-mais">
                                     <div class="title-saiba-mais">
@@ -2097,7 +2285,8 @@
                                     </div>
                                     <div class="padding-desk-5
                                             padding-mobile-2">
-                                        <p class="py-2">Convidamos você a ler um texto interessante sobre as famílias
+                                        <p class="py-2">Convidamos você a ler um texto interessante sobre as
+                                            famílias
                                             tentaculares, diferentes e divertidas, de Maria Rita Kehl, que é
                                             psicanalista e autora desse trabalho:</p>
                                         <p>
@@ -2106,8 +2295,10 @@
                                                 aqui para acessar o material
                                                 descrito</a>
                                         </p>
-                                        <p class="py-2">Trata-se de um artigo que fala sobre a diversidade das famílias
-                                            na atualidade e os estigmas que ainda pairam sobre as famílias que fogem a
+                                        <p class="py-2">Trata-se de um artigo que fala sobre a diversidade das
+                                            famílias
+                                            na atualidade e os estigmas que ainda pairam sobre as famílias que fogem
+                                            a
                                             um pretenso modelo tradicional.
                                         </p>
                                     </div>
@@ -2115,18 +2306,27 @@
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <div class="box p-4">
-                                    <p class="text-light p-4">“A família tentacular contemporânea, menos endogâmica e
-                                        mais arejada que a família estável no padrão oitocentista, traz em seu desenho
+                                    <p class="text-light p-4">“A família tentacular contemporânea, menos endogâmica
+                                        e
+                                        mais arejada que a família estável no padrão oitocentista, traz em seu
+                                        desenho
                                         irregular as marcas de sonhos frustrados, projetos abandonados e retomados,
-                                        esperanças de felicidade das quais os filhos, se tiverem sorte, continuam a ser
-                                        portadores. Pois cada filho de um casal separado é a memória viva do momento em
-                                        que aquele amor fazia sentido, em que aquele par apostou, na falta de um padrão
-                                        que corresponda às novas composições familiares, na construção de um futuro o
+                                        esperanças de felicidade das quais os filhos, se tiverem sorte, continuam a
+                                        ser
+                                        portadores. Pois cada filho de um casal separado é a memória viva do momento
+                                        em
+                                        que aquele amor fazia sentido, em que aquele par apostou, na falta de um
+                                        padrão
+                                        que corresponda às novas composições familiares, na construção de um futuro
+                                        o
                                         mais parecido possível com os ideais da família do passado. Ideal que não
-                                        deixará de orientar, desde o lugar das fantasias inconscientes, os projetos de
-                                        felicidade conjugal das crianças e adolescentes de hoje. Ideal que, se não for
+                                        deixará de orientar, desde o lugar das fantasias inconscientes, os projetos
+                                        de
+                                        felicidade conjugal das crianças e adolescentes de hoje. Ideal que, se não
+                                        for
                                         superado, pode funcionar como impedimento à legitimação da experiência viva
-                                        dessas famílias misturadas, engraçadas, esquisitas, improvisadas e mantidas com
+                                        dessas famílias misturadas, engraçadas, esquisitas, improvisadas e mantidas
+                                        com
                                         afeto, esperança e desilusão, na medida do possível” (KEHL, 2003).
                                     </p>
                                 </div>
@@ -2136,37 +2336,51 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- conversando - parte 5 -->
                 <div id="conversando-5" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="row pt-mobile-5">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
-                                <p class="pb-2">Você se recorda da personagem Lia, do caso complexo deste módulo? Lia
-                                    era uma adolescente grávida, vulnerável, que morava em uma ocupação e temia que seu
-                                    filho fosse retirado dela. Você já ouviu a expressão Mães Órfãs?</p>
-                                <p class="py-2">Temos usado essa expressão para definir situações nas quais os filhos
+                                <p class="pb-2">Você se recorda da personagem Lia, do caso complexo deste módulo?
+                                    Lia
+                                    era uma adolescente grávida, vulnerável, que morava em uma ocupação e temia que
+                                    seu
+                                    filho fosse retirado dela. Você já ouviu a expressão <i>Mães Órfãs?</i></p>
+                                <p class="py-2">Temos usado essa expressão para definir situações nas quais os
+                                    filhos
                                     são retirados compulsoriamente de suas mães para supostamente protegê-los,
-                                    desconsiderando essa mulher/mãe, a família extensa e o dever do Estado de proteger a
-                                    família (SOUZA, 2018). Esse movimento social e jurídico tem um viés segregativo e
-                                    racista. Parte-se do entendimento de que jovens pobres e negras não têm condições de
-                                    criar seus filhos. No entanto, políticas públicas adequadas ofereceriam as condições
+                                    desconsiderando essa mulher/mãe, a família extensa e o dever do Estado de
+                                    proteger a
+                                    família (SOUZA, 2018). Esse movimento social e jurídico tem um viés segregativo
+                                    e
+                                    racista. Parte-se do entendimento de que jovens pobres e negras não têm
+                                    condições de
+                                    criar seus filhos. No entanto, políticas públicas adequadas ofereceriam as
+                                    condições
                                     necessárias para a criação de seus filhos e continuidade de seus projetos.</p>
-                                <p class="pt-2">Assim, tendo em vista as novas configurações familiares na atualidade,
-                                    fica para os atores que lidam com jovens o desafio de acompanhar esse processo de
-                                    mudança e de construir práticas profissionais desprovidas de julgamentos morais e
+                                <p class="pt-2">Assim, tendo em vista as novas configurações familiares na
+                                    atualidade,
+                                    fica para os atores que lidam com jovens o desafio de acompanhar esse processo
+                                    de
+                                    mudança e de construir práticas profissionais desprovidas de julgamentos morais
+                                    e
                                     culpabilização.
-                                    Diversas vulnerabilidades sociais podem afetar a capacidade protetiva das famílias.
-                                    Assim, as políticas públicas, particularmente as de Assistência Social, possuem um
-                                    papel fundamental: os programas de redistribuição de renda, possuem relação direta
-                                    com a sobrevivência das famílias; e os serviços de convivência e fortalecimento de
-                                    vínculos, objetivam a construção ou a reconstrução de laços familiares e
+                                    Diversas vulnerabilidades sociais podem afetar a capacidade protetiva das
+                                    famílias.
+                                    Assim, as políticas públicas, particularmente as de Assistência Social, possuem
+                                    um
+                                    papel fundamental: os programas de redistribuição de renda possuem relação
+                                    direta
+                                    com a sobrevivência das famílias; e os serviços de convivência e fortalecimento
+                                    de
+                                    vínculos objetivam a construção ou a reconstrução de laços familiares e
                                     comunitários.</p>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="pb-2">Dessa forma, as referidas ações previstas na Política de Assistência
                                     Social devem contribuir com o fortalecimento da convivência e da autonomia das
-                                    famílias, para que, por sua vez, elas possam promover a proteção e a emancipação dos
+                                    famílias, para que, por sua vez, elas possam promover a proteção e a emancipação
+                                    dos
                                     adolescentes e jovens.</p>
                                 <img src="./image/modulo_01/conversando_detalhes_1.png" alt="Conversando"
                                     class="p-2 w-75 img-fluid d-block mx-auto">
@@ -2174,112 +2388,143 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Topico - adolescencias e juventudes - parte 1 -->
                 <div id="adolescencias-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line">Adolescências e juventudes: singularidades e
-                                diversidades</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_01/conceituando_detalhe_1.svg"
-                                alt="Detalhes">
+                            <p class="text-light title-topico space-line">ADOLESCÊNCIAS E JUVENTUDES: SINGULARIDADES E
+                                DIVERSIDADES</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
+                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="Detalhes">
                         </div>
                     </div>
                 </div>
-
                 <!-- adolescencias - parte 2 -->
                 <div id="adolescencias-2" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <p class="title text-center text-primary pb-3 pt-mobile-5">
-                            Adolescências e juventudes: singularidades e diversidades
+                            ADOLESCÊNCIAS E JUVENTUDES: SINGULARIDADES E DIVERSIDADES
                         </p>
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
-                                <p class="pb-2">Durante a nossa conversa, várias vezes voltamos a um mesmo ponto: não há
-                                    um único jeito de ser adolescente ou jovem. Vimos que vários fatores contribuem para
+                                <p class="pb-2">Durante a nossa conversa, várias vezes voltamos a um mesmo ponto:
+                                    não há
+                                    um único jeito de ser adolescente ou jovem. Vimos que vários fatores contribuem
+                                    para
                                     essa diversidade.</p>
                                 <p class="py-2">Vamos concluir este texto chamando a atenção para as diferentes
                                     culturas. Afinal, o que é cultura em termos conceituais? Há muitas definições.
                                     Escolhemos uma delas:</p>
-                                <div class="citacao-2 my-3 w-md-75">
+                                <div class="citacao-2 my-3 w-75">
                                     Cultura pode ser definida como um conjunto de elementos que mediam e qualificam
-                                    qualquer atividade física ou mental, que não seja determinada pela biologia, e que
-                                    seja compartilhada por diferentes membros de um grupo social. Trata-se de elementos
-                                    sobre os quais os atores sociais constroem significados para as ações e interações
-                                    sociais concretas e temporais, assim como sustentam as formas sociais vigentes, as
-                                    instituições e seus modelos operativos. A cultura inclui valores, símbolos, normas e
+                                    qualquer atividade física ou mental, que não seja determinada pela biologia, e
+                                    que
+                                    seja compartilhada por diferentes membros de um grupo social. Trata-se de
+                                    elementos
+                                    sobre os quais os atores sociais constroem significados para as ações e
+                                    interações
+                                    sociais concretas e temporais, assim como sustentam as formas sociais vigentes,
+                                    as
+                                    instituições e seus modelos operativos. A cultura inclui valores, símbolos,
+                                    normas e
                                     práticas (LANGDON; WIIK, 2010, p. 175).
                                 </div>
                                 <p class="py-2">Você se lembra do estudante de medicina indígena que participou da
                                     conversa na ESF?</p>
-                                <p class="py-2">Conversando um pouco mais com ele, contou-nos que no Brasil são faladas
-                                    cerca de 200 línguas, sendo 180 delas indígenas. Em 2007, foi aprovada a Declaração
-                                    das Nações Unidas sobre os Direitos dos Povos Indígenas, depois de mais de 20 anos
-                                    de negociações</p>
+                                <p class="py-2">Conversando um pouco mais com ele, contou-nos que no Brasil são
+                                    faladas
+                                    cerca de 200 línguas, sendo 180 delas indígenas. Em 2007, foi aprovada a
+                                    Declaração
+                                    das Nações Unidas sobre os Direitos dos Povos Indígenas, depois de mais de 20
+                                    anos
+                                    de negociações.</p>
+                                    <p class="py-2">Ressaltamos a importância de valorizar as culturas indígenas, de respeitar os povos originários, de preservar e ampliar as trocas interculturais e de compreender o lugar social
+                                        de onde cada adolescente fala e como o fortalecimento das
+                                        matrizes culturais é ponto de fortalecimento da identidade e da
+                                        saúde mental.
+                                        </p>
                             </div>
-                            <div
-                                class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify d-flex align-items-center">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
+                                
+                                <p class="pb-2">Adotar práticas interculturais, antes de qualquer coisa,
+                                    é estar aberto para olhar e ouvir. Só quando estamos abertos a
+                                    olhar e a ouvir conseguimos adotar uma postura de abertura crítica de nós mesmos em favor do outro. Esse movimento propicia
+                                    a compreensão profunda dos diferentes mundos, dos diversos
+                                    campos de significados, das variadas formas de ser e estar no
+                                    mundo e dos múltiplos saberes, histórica e culturalmente constituídos.</p>
                                 <img src="./image/modulo_01/adolescencia_detalhes_2.png" alt="Adolescencia"
-                                    class="p-2 w-75 img-fluid d-block mx-auto">
+                                    class="padding-y-mobile-2 w-75 w-md-100 img-fluid d-block mx-auto">
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- encerramento - parte 1 -->
                 <div id="encerramento-1" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="box-gradiente text-center p-4 mb-4">
-                            <span class="title text-light">encerramento do módulo</span>
+                            <span class="title text-light">ENCERRAMENTO DO MÓDULO</span>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="py-2">Com base neste caso complexo, é importante ressaltar que existem
-                                    narrativas em disputa sobre a juventude. José pode ser visto de forma simplista como
-                                    um jovem negro, periférico e entregador de delivery, sem que seja considerada a sua
-                                    trajetória como uma jovem liderança, que respeita e mantém as tradições culturais de
+                                    narrativas em disputa sobre a juventude. José pode ser visto de forma simplista
+                                    como
+                                    um jovem negro, periférico e entregador de <i>delivery</i>, sem que seja considerada
+                                    a
+                                    sua
+                                    trajetória como uma jovem liderança, que respeita e mantém as tradições
+                                    culturais de
                                     seu território.</p>
                                 <p class="py-2">Da mesma forma, Lucca, embora atravessado pelo racismo e pela
                                     transfobia, cotidianamente luta por mudanças que parecem pequenas, mas que podem
                                     fissurar a intolerância estrutural.
                                     Nesse contexto, Renata, que ainda vive tantas violências e violações, resiste
                                     construindo seu corpo e seu nome e sonhando com uma vida possível.</p>
-                                <p class="py-2">Acreditamos em um olhar sobre essas histórias que identifique e valorize
-                                    as potencialidades desses jovens. A elaboração de políticas públicas, via de regra,
+                                <p class="py-2">Acreditamos em um olhar sobre essas histórias que identifique e
+                                    valorize
+                                    as potencialidades desses jovens. A elaboração de políticas públicas, via de
+                                    regra,
                                     não inclui a participação juvenil. Um entendimento amplo sobre essas trajetórias
-                                    reforça a importância das políticas públicas e das instituições e de seus agentes
-                                    olharem para os desafios sem deixar de valorizar as múltiplas vozes, identificando e
+                                    reforça a importância das políticas públicas e das instituições e de seus
+                                    agentes
+                                    olharem para os desafios sem deixar de valorizar as múltiplas vozes,
+                                    identificando e
                                     visibilizando as potencialidades presentes nesses espaços.</p>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="py-2">No trabalho com adolescentes e jovens, acreditamos que seja muito
-                                    importante um olhar e uma escuta para cada um, respeitando sua singularidade e sua
-                                    história, mas pensando que esses uns podem fazer coletivos, que têm força política
-                                    para mudar o que precisa ser mudado, para que esses adolescentes e jovens possam
-                                    viver, e viver com dignidade!</p>
-                                <p class="py-2">Avaliamos que as ações que estimulem o potencial da juventude devam ser
+                                    importante um olhar e uma escuta para cada um, respeitando sua singularidade e
+                                    sua história, mas pensando que esses <i>uns</i> podem fazer coletivos, que têm força
+                                    política para mudar o que precisa ser mudado, para que esses adolescentes e jovens
+                                    possam
+                                    viver, e viver com dignidade!
+                                </p>
+                                <p class="py-2">Avaliamos que as ações que estimulem o potencial da juventude devam
+                                    ser
                                     territorializadas e intersetoriais. Por exemplo:</p>
                                 <ul class="py-2">
                                     <li>Ampliar redes intersetoriais de compromisso com a juventude;</li>
-                                    <li>Buscar espaços ampliados para conversar com os jovens sobre aspectos da vida;
+                                    <li>Buscar espaços ampliados para conversar com os jovens sobre aspectos da
+                                        vida;
                                     </li>
                                     <li>Instalar equipamentos múltiplos, como centros de juventude;</li>
                                     <li>Fomentar a participação juvenil nas ações de planejamento e avaliação dos
                                         serviços;</li>
                                     <li>Propor educação entre pares, como a de jovens promotores de saúde;</li>
-                                    <li>Potencializar o acolhimento de adolescentes e jovens nos diferentes serviços,
-                                        reconhecê-los como sujeitos de direitos e valorizar a autonomia juvenil.</li>
+                                    <li>Potencializar o acolhimento de adolescentes e jovens nos diferentes
+                                        serviços,
+                                        reconhecê-los como sujeitos de direitos e valorizar a autonomia juvenil.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- referencias - parte 1 -->
                 <div id="referencias-1" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="box-gradiente text-center p-4 mb-4">
-                            <span class="title text-light">referências</span>
+                            <span class="title text-light">REFERÊNCIAS</span>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
@@ -2288,25 +2533,33 @@
                                     travestis e transexuais brasileiras em 2021. Brasília: Distrito Drag, ANTRA,
                                     2022.<br><br>
 
-                                    BRASIL. Lei nº 12.852, de 5 de agosto de 2013. Institui o Estatuto da Juventude e
+                                    BRASIL. Lei nº 12.852, de 5 de agosto de 2013. Institui o Estatuto da Juventude
+                                    e
                                     dispõe sobre os direitos dos jovens, os princípios e diretrizes das políticas
-                                    públicas de juventude e o Sistema Nacional de Juventude - SINAJUVE. Diário Oficial
+                                    públicas de juventude e o Sistema Nacional de Juventude - SINAJUVE. Diário
+                                    Oficial
                                     da União, Brasília, DF, 6 ago. 2013. Disponível em:
-                                    https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12852.htm. Acesso em:
+                                    https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12852.htm. Acesso
+                                    em:
                                     17 nov. 2022.<br><br>
 
-                                    BRASIL. Ministério da Saúde. Secretaria de Atenção em Saúde. Departamento de Ações
-                                    Programáticas Estratégicas. Diretrizes nacionais para a atenção integral à saúde de
+                                    BRASIL. Ministério da Saúde. Secretaria de Atenção em Saúde. Departamento de
+                                    Ações
+                                    Programáticas Estratégicas. Diretrizes nacionais para a atenção integral à saúde
+                                    de
                                     adolescentes e jovens na promoção, proteção e recuperação da saúde. Brasília,
                                     2010.<br><br>
 
                                     BRASIL. Lei nº 12.009, de 29 de julho de 2009. Regulamenta o exercício das
-                                    atividades dos profissionais em transporte de passageiros, “mototaxista”, em entrega
+                                    atividades dos profissionais em transporte de passageiros, “mototaxista”, em
+                                    entrega
                                     de mercadorias e em serviço comunitário de rua, e “motoboy”, com o uso de
                                     motocicleta, altera a Lei no 9.503, de 23 de setembro de 1997, para dispor sobre
                                     regras de segurança dos serviços de transporte remunerado de mercadorias em
-                                    motocicletas e motonetas – moto-frete –, estabelece regras gerais para a regulação
-                                    deste serviço e dá outras providências. Diário Oficial da União, Brasília, DF, 30
+                                    motocicletas e motonetas – moto-frete –, estabelece regras gerais para a
+                                    regulação
+                                    deste serviço e dá outras providências. Diário Oficial da União, Brasília, DF,
+                                    30
                                     jul. 2009.<br><br>
 
                                     BRASIL. Política Nacional de Juventude: diretrizes e perspectivas. São Paulo:
@@ -2315,7 +2568,8 @@
                                     Juventude.pdf.
                                     Acesso em: 18 nov. 2022.<br><br>
 
-                                    BRASIL. Lei nº 8.069, de 13 de julho de 1990. Dispõe sobre Estatuto da Criança e do
+                                    BRASIL. Lei nº 8.069, de 13 de julho de 1990. Dispõe sobre Estatuto da Criança e
+                                    do
                                     Adolescente. Diário Oficial da União, Brasília, DF, 16 jul. 1990. Disponível em:
                                     https://www.gov.br/mdh/pt-br/navegue-por-temas/crianca-e-adolescente/publicacoes/o-estatuto-da-crianca-e-do-adolescente.
                                     Acesso em: 17 nov. 2022.<br><br>
@@ -2323,7 +2577,8 @@
                                     CALAZANS, G. Saúde e Juventude: por horizontes mais saudáveis. Onda Jovem, São
                                     Paulo, ano 2, n. 4, p. 34-37, 30 mar. 2006.<br><br>
 
-                                    CARVALHO, M. do C. B. de. A priorização da família na agenda da política social. In:
+                                    CARVALHO, M. do C. B. de. A priorização da família na agenda da política social.
+                                    In:
                                     KALOUSTIAN, S. M. (Org.). Família brasileira: a base de tudo. 4. ed. São Paulo:
                                     Cortez, 2000.<br><br>
                                 </p>
@@ -2331,38 +2586,47 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="small">CATHARINO, T. R.; GIFFIN, K. Gravidez e adolescência: investigação
                                     de um
-                                    problema moderno. In: ENCONTRO NACIONAL DE ESTUDOS POPULACIONAIS, 13., 2002, Ouro
+                                    problema moderno. In: ENCONTRO NACIONAL DE ESTUDOS POPULACIONAIS, 13., 2002,
+                                    Ouro
                                     Preto-MG. Anais [...]. Ouro Preto, 2002.<br><br>
 
-                                    CERQUEIRA, D. et al. Atlas da Violência 2021. São Paulo: FBSP, 2021. Disponível em:
+                                    CERQUEIRA, D. et al. Atlas da Violência 2021. São Paulo: FBSP, 2021. Disponível
+                                    em:
                                     https://www.ipea.gov.br/atlasviolencia/arquivos/artigos/5141-atlasdaviolencia2021completo.pdf.
                                     Acesso em: 17 nov. 2022.<br><br>
 
-                                    COIMBRA, C. M. B.; NASCIMENTO, M. L. Ser jovem, ser pobre é ser perigoso? Jovenes.
+                                    COIMBRA, C. M. B.; NASCIMENTO, M. L. Ser jovem, ser pobre é ser perigoso?
+                                    Jovenes.
                                     Revista de Estudios sobre Juventud, 2005.<br><br>
 
                                     ESTEVES, J. R. Trajetórias de vida: repercussões da gravidez adolescente na
-                                    biografia de mulheres que viveram tal experiência. 2003. Dissertação (Mestrado em
+                                    biografia de mulheres que viveram tal experiência. 2003. Dissertação (Mestrado
+                                    em
                                     Psicologia) – Universidade Federal do Espírito Santo, Vitória, 2003.<br><br>
 
-                                    GIANNINI, D. Motoboys são os que mais sofrem acidentes, diz Ministério da Saúde. R7,
+                                    GIANNINI, D. Motoboys são os que mais sofrem acidentes, diz Ministério da Saúde.
+                                    R7,
                                     30 jul. 2018. Disponível em:
                                     https://noticias.r7.com/saude/motoboys-sao-os-que-mais-sofrem-acidentes-diz-ministerio-da-saude-30072018.
                                     Acesso em: 17 nov. 2022.<br><br>
 
                                     GRANEIRO, F.; MARTINS, L. B. Adolescência e transexualidade: possibilidades e
                                     desafios à política de saúde. In: SEMINÁRIO INTERNACIONAL, DIREITOS HUMANOS,
-                                    VIOLÊNCIA E POBREZA: A SITUAÇÃO DE CRIANÇAS E ADOLESCENTES NA AMÉRICA LATINA HOJE,
+                                    VIOLÊNCIA E POBREZA: A SITUAÇÃO DE CRIANÇAS E ADOLESCENTES NA AMÉRICA LATINA
+                                    HOJE,
                                     7., 2019, Rio de Janeiro. Anais [...]. Rio de Janeiro, 2019. Disponível em:
                                     https://drive.google.com/file/d/1kXudaSVEOXnM4zIJqtkrzBu-VTd5vkZA/view?usp=sharing
                                     Acesso em: nov. 2022.<br><br>
 
-                                    GRILLO, C. F. C. et al. Saúde do adolescente. Belo Horizonte: Nescon/UFMG, 2011, 80
-                                    p. Disponível em: <https:
-                                        //www.nescon.medicina.ufmg.br/biblioteca/registro/referencia/0000002738>. Acesso
-                                        em: 17 nov. 2022.<br><br>
+                                    GRILLO, C. F. C. et al. Saúde do adolescente. Belo Horizonte: Nescon/UFMG, 2011,
+                                    80
+                                    p. Disponível em:
+                                    <https: //www.nescon.medicina.ufmg.br/biblioteca/registro/referencia/0000002738>
+                                        .
+                                        Acesso em: 17 nov. 2022.<br><br>
 
-                                        IDOETA, P. A. 4 Efeitos do racismo no cérebro e no corpo de crianças, segundo
+                                        IDOETA, P. A. 4 Efeitos do racismo no cérebro e no corpo de crianças,
+                                        segundo
                                         Harvard. Portal Geledés, 11 dez. 2020. Disponível em:
                                         https://www.geledes.org.br/4-efeitos-do-racismo-no-cerebro-e-no-corpo-de-criancas-segundo-harvard/.
                                         Acesso em: 17 nov. 2022.<br><br>
@@ -2371,34 +2635,38 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- referencias - parte 2 -->
                 <div id="referencias-2" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="box-gradiente text-center p-4 mb-4">
-                            <span class="title text-light">referências</span>
+                            <span class="title text-light">REFERÊNCIAS</span>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="small text-wrap">KEHL, M. R. Em defesa da família tentacular. Fronteiras
-                                    do pensamento, 2013. Disponível em: <https:
+                                    do pensamento, 2013. Disponível em:
+                                    <https:
                                         //www.fronteiras.com/leia/exibir/maria-rita-kehl-em-defesa-da-familia-tentacular>
                                         Acesso em: 18 nov. 2022.<br><br>
 
                                         LANGDON, E. J.; WIIK, F. B. Antropologia, saúde e doença: uma introdução ao
-                                        conceito de cultura aplicado às ciências da saúde. Rev. Latino-Am. Enfermagem,
+                                        conceito de cultura aplicado às ciências da saúde. Rev. Latino-Am.
+                                        Enfermagem,
                                         v. 18, n. 3, p. 459-466, 2010.<br><br>
 
                                         MARTINS, L. B. Desafios e Possibilidades para o Atendimento à Saúde de
-                                        Adolescentes Transexuais na Atenção Primária à Saúde: a Experiência do Projeto
+                                        Adolescentes Transexuais na Atenção Primária à Saúde: a Experiência do
+                                        Projeto
                                         Aquarela. 2021. Dissertação (Especialização em Serviço Social e Saúde) –
                                         Universidade do Estado do Rio de Janeiro UERJ, Rio de Janeiro, 2021.<br><br>
 
-                                        MATOS, M. Gênero. In: FLEURY-TEIXEIRA, E. M.; MENEGHEL, S. N. (Org.). Dicionário
+                                        MATOS, M. Gênero. In: FLEURY-TEIXEIRA, E. M.; MENEGHEL, S. N. (Org.).
+                                        Dicionário
                                         feminino da infâmia: acolhimento e diagnóstico e mulheres em situação de
                                         violência. Rio de Janeiro: Editora FIOCRUZ, 2015.<br><br>
 
-                                        MIOTO, R. C. T. Família e Serviço Social: contribuições para o debate. Revista
+                                        MIOTO, R. C. T. Família e Serviço Social: contribuições para o debate.
+                                        Revista
                                         Serviço Social e Sociedade, ano XVIII, n. 54, p. 114-130, 1997.<br><br>
 
                                         NAÇÕES UNIDAS. Declaração das Nações Unidas sobre os Direitos dos Povos
@@ -2407,15 +2675,20 @@
                                         _Unidas_sobre_os_Direitos_dos_Povos_Indigenas.pdf.
                                         Acesso em: 18 nov. 2022.<br><br>
 
-                                        NOVAES, R. Juventude e sociedade: jogos de espelhos. Sentimentos, percepções e
-                                        demandas por direitos e políticas públicas. Revista Sociologia Especial, v. 1,
+                                        NOVAES, R. Juventude e sociedade: jogos de espelhos. Sentimentos, percepções
+                                        e
+                                        demandas por direitos e políticas públicas. Revista Sociologia Especial, v.
+                                        1,
                                         n. 2, p. 6-15, 2007.<br><br>
 
-                                        ORGANIZAÇÃO INTERNACIONAL DO TRABALHO. Módulos de auto-aprendizagem sobre saúde
-                                        e segurança no trabalho infantil e juvenil. Brasília: Editora do Ministério da
+                                        ORGANIZAÇÃO INTERNACIONAL DO TRABALHO. Módulos de auto-aprendizagem sobre
+                                        saúde
+                                        e segurança no trabalho infantil e juvenil. Brasília: Editora do Ministério
+                                        da
                                         Saúde, 2007.<br><br>
 
-                                        PEREIRA, R. C. Dicionário de direito de família e sucessões. São Paulo: Saraiva,
+                                        PEREIRA, R. C. Dicionário de direito de família e sucessões. São Paulo:
+                                        Saraiva,
                                         2015.<br><br>
 
                                 </p>
@@ -2423,12 +2696,14 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="small">RAYMUNDO, C. M.; VEIGA, J. dos S. Contribuição da Atenção Primária
                                     a Saúde para a prevenção e erradicação do trabalho infantil e para a proteção do
-                                    trabalhador adolescente. In: DIAS, E. C.; SILVA, T. L. (Org.). Saúde do Trabalhador
+                                    trabalhador adolescente. In: DIAS, E. C.; SILVA, T. L. (Org.). Saúde do
+                                    Trabalhador
                                     na Atenção Primária a Saúde. Belo Horizonte: coopmed, 2013. <br><br>
 
                                     RAYMUNDO, C. M.; VEIGA, J. dos S.; GOMES, V. Famílias contemporâneas e a rede
                                     intersetorial de atendimento. In: GRANEIRO, F.; OLIVEIRA, S.; GOMES, V. (Org.).
-                                    Eixos para a Saúde de Adolescentes e Jovens. Rio de Janeiro: Flizo, 2014.<br><br>
+                                    Eixos para a Saúde de Adolescentes e Jovens. Rio de Janeiro: Flizo,
+                                    2014.<br><br>
 
                                     SALES, M. A. Famílias no Brasil e no Rio de Janeiro: alguns indicadores e
                                     indicativos para formulação de políticas sociais. Revista em Pauta, n. 11, p.
@@ -2437,53 +2712,62 @@
                                     SANTOS, M. P. et al. Território, territórios: ensaios sobre o ordenamento
                                     territorial. 3. ed. Rio de Janeiro: Luparina, 2007.<br><br>
 
-                                    SOUZA, C. M. B. et al. Mães Órfãs: o direito à maternidade e a judicialização das
-                                    vidas em situação de vulnerabilidade. Saúde em Redes, v. 4, supl. 1, p. 27-36, 2018.
+                                    SOUZA, C. M. B. et al. Mães Órfãs: o direito à maternidade e a judicialização
+                                    das
+                                    vidas em situação de vulnerabilidade. Saúde em Redes, v. 4, supl. 1, p. 27-36,
+                                    2018.
                                     Disponível em:
-                                    http://revista.redeunida.org.br/ojs/index.php/rede-unida/article/view/915. Acesso
+                                    http://revista.redeunida.org.br/ojs/index.php/rede-unida/article/view/915.
+                                    Acesso
                                     em: 18 nov. 2022.<br><br>
 
                                     VIVENDO A ADOLESCÊNCIA. Vamos falar de sexo? 2022. Disponível em:
                                     http://www.adolescencia.org.br/site-pt-br/sexualidade. Acesso em: 18 nov.
                                     2022.<br><br>
 
-                                    WERNECK, J. Estatuto da Igualdade Racial é uma ameaça à Saúde da População Negra.
+                                    WERNECK, J. Estatuto da Igualdade Racial é uma ameaça à Saúde da População
+                                    Negra.
                                     Universidade Livre Feminista, 25 jun. 2010. Disponível em:
                                     http://assets-institucional-ipg.sfo2.cdn.digitaloceanspaces.com/2010/06/estatutoiracial_juremawerneck.pdf.
                                     Acesso em: 18 nov. 2022.<br><br>
 
-                                    ZIZEK, S. Violência: seis reflexões colaterais. São Paulo: Boitempo, 2014.<br><br>
+                                    ZIZEK, S. Violência: seis reflexões colaterais. São Paulo: Boitempo,
+                                    2014.<br><br>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- referencias - parte 3 -->
                 <div id="referencias-3" class="carousel-item default">
                     <div class="container-fluid pt-5">
                         <div class="box-gradiente text-center p-4">
-                            <span class="title text-light">principais referências</span>
+                            <span class="title text-light">PRINCIPAIS REFERÊNCIAS</span>
                         </div>
                         <div class="row pt-3">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
                                 <div class="box-referencias">
                                     <p class="py-2">
-                                        GRILLO, C. F. C. et al. Saúde do adolescente. Belo Horizonte: Nescon/UFMG, 2011,
-                                        80 p. Disponível em: <https:
-                                            //www.nescon.medicina.ufmg.br/biblioteca/registro/referencia/0000002738>.
-                                            Acesso em: 17 nov. 2022.<br><br>
+                                        GRILLO, C. F. C. et al. Saúde do adolescente. Belo Horizonte: Nescon/UFMG,
+                                        2011,
+                                        80 p. Disponível em:
+                                        <https: //www.nescon.medicina.ufmg.br/biblioteca/registro/referencia/0000002738>
+                                            . Acesso em: 17 nov. 2022.<br><br>
 
-                                            KEHL, M. R. Em defesa da família tentacular. Fronteiras do pensamento, 2013.
-                                            Disponível em: <https:
+                                            KEHL, M. R. Em defesa da família tentacular. Fronteiras do pensamento,
+                                            2013.
+                                            Disponível em:
+                                            <https:
                                                 //www.fronteiras.com/leia/exibir/maria-rita-kehl-em-defesa-da-familia-tentacular>
                                                 Acesso em: 18 nov. 2022.<br><br>
 
                                                 SANTOS, M. P. et al. Território, territórios: ensaios sobre o
-                                                ordenamento territorial. 3. ed. Rio de Janeiro: Luparina, 2007.<br><br>
+                                                ordenamento territorial. 3. ed. Rio de Janeiro: Luparina,
+                                                2007.<br><br>
 
                                                 SOUZA, C. M. B. et al. Mães Órfãs: o direito à maternidade e a
-                                                judicialização das vidas em situação de vulnerabilidade. Saúde em Redes,
+                                                judicialização das vidas em situação de vulnerabilidade. Saúde em
+                                                Redes,
                                                 v. 4, supl. 1, p. 27-36, 2018.<br><br>
                                     </p>
                                 </div>
@@ -2491,7 +2775,8 @@
                             </div>
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-desk-5 d-flex align-items-center">
-                                <img class="w-75 d-block mx-auto pb-5" src="./image/modulo_01/referencias_detalhes_1.svg" alt="Detalhes">
+                                <img class="w-75 d-block mx-auto pb-5"
+                                    src="./image/modulo_01/referencias_detalhes_1.svg" alt="Detalhes">
                             </div>
                         </div>
                     </div>
@@ -2501,6 +2786,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="./js/index.min.js"></script>
     <script src="./js/popover.min.js"></script>
 

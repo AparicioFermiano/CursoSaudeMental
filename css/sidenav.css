@@ -99,8 +99,6 @@
     -moz-box-shadow: 20px 5px 80px -10px rgba(121, 121, 121, 0.397);
     box-shadow: 20px 5px 80px -10px rgba(121, 121, 121, 0.397);
 }
-
-
 @media (min-width: 992px) {
     .sidebar-navbar {
         display: none;

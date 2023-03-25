@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/modulo04.min.css">
@@ -19,7 +20,8 @@
 <body>
     <!-- SIDEBAR -->
     <nav class="sidebar-navbar">
-        <button id="btn-sidebar" class="z-5 btn-sidebar" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" onclick="nav()">
+        <button id="btn-sidebar" class="z-5 btn-sidebar" type="button" data-toggle="collapse" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="nav()">
             <i class="bi bi-list"></i>
         </button>
     </nav>
@@ -39,31 +41,16 @@
             </button>
         </div>
         <!-- SIDEBAR - APRESENTACAO DO MODULO -->
-        <div id="apresentacao" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-apresentacao" aria-expanded="false">
+        <div id="list-apresentacao-slide-1" class="sidebar-item py-1 px-2">
+            <button id="list-sobre" class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-1')">
                 apresentação do módulo
             </button>
-            <div id="accordion-apresentacao" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <ul class="list-group">
-                        <li id="list-apresentacao-slide-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-1')">
-                                1. Apresentação do módulo
-                            </button>
-                        </li>
-                        <li id="list-apresentacao-slide-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-2')">
-                                1.2. Apresentação do módulo
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
 
         <!-- SIDEBAR - A escola como espaco de possibilidades -->
         <div id="escola" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-escola" aria-expanded="false">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-escola" aria-expanded="false">
                 a escola como espaço de possibilidades
             </button>
             <div id="accordion-escola" class="accordion-collapse collapse">
@@ -76,52 +63,72 @@
                         </li>
                         <li id="list-escola-2" class="sidebar-subitem">
                             <button class="w-100 text-start" onclick="mudar_carrosel('#escola-2')">
-                                2. A escola como espaco de possibilidades
+                                2. Vamos conversar um pouco sobre história? 
                             </button>
                         </li>
                         <li id="list-escola-3" class="sidebar-subitem">
                             <button class="w-100 text-start" onclick="mudar_carrosel('#escola-3')">
-                                1.2. A escola como espaco de possibilidades
+                                1.2. Vamos conversar um pouco sobre história?
                             </button>
                         </li>
                         <li id="list-escola-4" class="sidebar-subitem">
                             <button class="w-100 text-start" onclick="mudar_carrosel('#escola-4')">
-                                2. A escola como espaco de possibilidades
+                                2. Vamos conversar um pouco sobre história?
                             </button>
                         </li>
                         <li id="list-escola-5" class="sidebar-subitem">
                             <button class="w-100 text-start" onclick="mudar_carrosel('#escola-5')">
-                                3. A escola como espaco de possibilidades
+                                3. Vamos conversar um pouco sobre história?
                             </button>
                         </li>
                         <li id="list-escola-6" class="sidebar-subitem">
                             <button class="w-100 text-start" onclick="mudar_carrosel('#escola-6')">
-                                4. A escola como espaco de possibilidades
+                                4. Vamos conversar um pouco sobre história?
                             </button>
                         </li>
-                        <li id="list-escola-7" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-7')">
-                                5. A escola como espaco de possibilidades
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compreensao e organizacao dos servicos -->
+        <div id="compreensao" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-compreensao" aria-expanded="false">
+                compreensão e organização dos serviços de atenção à saúde?
+            </button>
+            <div id="accordion-compreensao" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-compreensao-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#compreensao-1')">
+                                1. Início
                             </button>
                         </li>
-                        <li id="list-escola-8" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-8')">
-                                6. A escola como espaco de possibilidades
+                        <li id="list-compreensao-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#compreensao-2')">
+                                2. compreensão e organização dos serviços de atenção à saúde?
                             </button>
                         </li>
-                        <li id="list-escola-9" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-9')">
-                                7. A escola como espaco de possibilidades
+                        <li id="list-compreensao-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#compreensao-3')">
+                                3. compreensão e organização dos serviços de atenção à saúde?
                             </button>
                         </li>
-                        <li id="list-escola-10" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-10')">
-                                8. A escola como espaco de possibilidades
+                        <li id="list-compreensao-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#compreensao-4')">
+                                4. compreensão e organização dos serviços de atenção à saúde?
                             </button>
                         </li>
-                        <li id="list-escola-11" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#escola-11')">
-                                9. A escola como espaco de possibilidades
+                        <li id="list-compreensao-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#compreensao-5')">
+                                5. compreensão e organização dos serviços de atenção à saúde?
+                            </button>
+                        </li>
+                        <li id="list-compreensao-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#compreensao-6')">
+                                6. compreensão e organização dos serviços de atenção à saúde?
                             </button>
                         </li>
                     </ul>
@@ -129,27 +136,38 @@
             </div>
         </div>
 
-        <!-- Pessoas estao na foto da violencia -->
-        <div id="foto" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-foto" aria-expanded="false">
-                mas quantas pessoas estão na foto da violência?
+        <!-- Importancia da politica de assistencia social -->
+        <div id="politica" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-politica" aria-expanded="false">
+                importância da política de assistência social
             </button>
-            <div id="accordion-foto" class="accordion-collapse collapse">
+            <div id="accordion-politica" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
-                        <li id="list-foto-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#foto-1')">
+                        <li id="list-politica-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#politica-1')">
                                 1. Início
                             </button>
                         </li>
-                        <li id="list-foto-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#foto-2')">
-                                2. pessoas estao na foto da violencia
+                        <li id="list-politica-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#politica-2')">
+                                2. Importância da política de assistência social
                             </button>
                         </li>
-                        <li id="list-foto-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#foto-3')">
-                                3. pessoas estao na foto da violencia
+                        <li id="list-politica-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#politica-3')">
+                                3. Importância da política de assistência social
+                            </button>
+                        </li>
+                        <li id="list-politica-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#politica-4')">
+                                4. Importância da política de assistência social
+                            </button>
+                        </li>
+                        <li id="list-politica-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#politica-5')">
+                                5. Importância da política de assistência social
                             </button>
                         </li>
                     </ul>
@@ -157,32 +175,43 @@
             </div>
         </div>
 
-        <!-- Consequencias de toda essa violencia? -->
-        <div id="consequencias" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-consequencias" aria-expanded="false">
-                e quais são as consequências de toda essa violência?
+        <!-- Equipamentos no seu territorio -->
+        <div id="equipamento" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-equipamento" aria-expanded="false">
+                você já ouviu falar nesses equipamentos no seu território?
             </button>
-            <div id="accordion-consequencias" class="accordion-collapse collapse">
+            <div id="accordion-equipamento" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
-                        <li id="list-consequencias-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#consequencias-1')">
+                        <li id="list-equipamento-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#equipamento-1')">
                                 1. Início
                             </button>
                         </li>
-                        <li id="list-consequencias-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#consequencias-2')">
-                                2. Consequencias de toda essa violencia?
+                        <li id="list-equipamento-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#equipamento-2')">
+                                2. Você já ouviu falar nesses equipamentos no seu território?
                             </button>
                         </li>
-                        <li id="list-consequencias-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#consequencias-3')">
-                                3. Adolescências, ansiedade e contextos sociais
+                        <li id="list-equipamento-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#equipamento-3')">
+                                3. Você já ouviu falar nesses equipamentos no seu território?
                             </button>
                         </li>
-                        <li id="list-consequencias-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#consequencias-4')">
-                                4. Adolescências, ansiedade e contextos sociais
+                        <li id="list-equipamento-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#equipamento-4')">
+                                4. Você já ouviu falar nesses equipamentos no seu território?
+                            </button>
+                        </li>
+                        <li id="list-equipamento-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#equipamento-5')">
+                                5. Você já ouviu falar nesses equipamentos no seu território?
+                            </button>
+                        </li>
+                        <li id="list-equipamento-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#equipamento-6')">
+                                6. Você já ouviu falar nesses equipamentos no seu território?
                             </button>
                         </li>
                     </ul>
@@ -190,27 +219,53 @@
             </div>
         </div>
 
-        <!-- Tanta dor -->
-        <div id="dor" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-dor" aria-expanded="false">
-                tanta dor, tanta tristeza... o que gera tudo isso?
+        <!-- Reforma Psiquiatrica -->
+        <div id="reforma" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-reforma" aria-expanded="false">
+                reforma Psiquiátrica
             </button>
-            <div id="accordion-dor" class="accordion-collapse collapse">
+            <div id="accordion-reforma" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
-                        <li id="list-dor-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#dor-1')">
+                        <li id="list-reforma-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#reforma-1')">
                                 1. Início
                             </button>
                         </li>
-                        <li id="list-dor-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#dor-2')">
-                                2. Tanta dor, tanta tristeza...
+                        <li id="list-reforma-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#reforma-2')">
+                                2. Reforma Psiquiátrica
                             </button>
                         </li>
-                        <li id="list-dor-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#dor-3')">
-                                3. Tanta dor, tanta tristeza...
+                        <li id="list-reforma-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#reforma-3')">
+                                3. Reforma Psiquiátrica
+                            </button>
+                        </li>
+                        <li id="list-reforma-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#reforma-4')">
+                                4. Reforma Psiquiátrica
+                            </button>
+                        </li>
+                        <li id="list-reforma-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#reforma-5')">
+                                5. Reforma Psiquiátrica
+                            </button>
+                        </li>
+                        <li id="list-reforma-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#reforma-6')">
+                                6. Reforma Psiquiátrica
+                            </button>
+                        </li>
+                        <li id="list-reforma-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#reforma-7')">
+                                7. Reforma Psiquiátrica
+                            </button>
+                        </li>
+                        <li id="list-reforma-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('#reforma-8')">
+                                8. Reforma Psiquiátrica
                             </button>
                         </li>
                     </ul>
@@ -218,129 +273,6 @@
             </div>
         </div>
 
-        <!-- Influencias para estar vitima -->
-        <div id="influencia" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-influencia" aria-expanded="false">
-                influências para estar vítima
-            </button>
-            <div id="accordion-influencia" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <ul class="list-group">
-                        <li id="list-influencia-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#influencia-1')">
-                                1. Início
-                            </button>
-                        </li>
-                        <li id="list-influencia-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#influencia-2')">
-                                2. influências para estar vítima
-                            </button>
-                        </li>
-                        <li id="list-influencia-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#influencia-3')">
-                                3. influências para estar vítima
-                            </button>
-                        </li>
-                        <li id="list-influencia-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#influencia-4')">
-                                4. influências para estar vítima
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- autor -->
-        <div id="autor" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-autor" aria-expanded="false">
-                influências para estar autor
-            </button>
-            <div id="accordion-autor" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <ul class="list-group">
-                        <li id="list-autor-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-1')">
-                                1. Início
-                            </button>
-                        </li>
-                        <li id="list-autor-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-2')">
-                                2. Influências para estar autor
-                            </button>
-                        </li>
-                        <li id="list-autor-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-3')">
-                                3. Influências para estar autor
-                            </button>
-                        </li>
-                        <li id="list-autor-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-4')">
-                                3.2. Influências para estar autor
-                            </button>
-                        </li>
-                        <li id="list-autor-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autor-5')">
-                                4. Influências para estar autor
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- As situacoes podem mudar se todos nos envolvermos  -->
-        <div id="situacoes" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-situacoes" aria-expanded="false">
-                as situações podem mudar se todos nos envolvermos
-            </button>
-            <div id="accordion-situacoes" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <ul class="list-group">
-                        <li id="list-situacoes-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-1')">
-                                1. Início
-                            </button>
-                        </li>
-                        <li id="list-situacoes-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-2')">
-                                2. as situações podem mudar se todos nos envolvermos
-                            </button>
-                        </li>
-                        <li id="list-situacoes-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-3')">
-                                3. as situações podem mudar se todos nos envolvermos
-                            </button>
-                        </li>
-                        <li id="list-situacoes-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-4')">
-                                3.2. as situações podem mudar se todos nos envolvermos
-                            </button>
-                        </li>
-                        <li id="list-situacoes-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-5')">
-                                4. as situações podem mudar se todos nos envolvermos
-                            </button>
-                        </li>
-                        <li id="list-situacoes-6" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-6')">
-                                5. as situações podem mudar se todos nos envolvermos
-                            </button>
-                        </li>
-                        <li id="list-situacoes-7" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-7')">
-                                6. as situações podem mudar se todos nos envolvermos
-                            </button>
-                        </li>
-                        <li id="list-situacoes-8" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#situacoes-8')">
-                                7. as situações podem mudar se todos nos envolvermos
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <!-- ENCERRAMENTO -->
         <div id="list-encerramento" class="sidebar-item py-1 px-2">
@@ -351,7 +283,8 @@
 
         <!-- REFERENCIAS -->
         <div id="referencias" class="accordion-item sidebar-item py-1 px-2">
-            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-referencias" aria-expanded="false">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-referencias" aria-expanded="false">
                 referências
             </button>
             <div id="accordion-referencias" class="accordion-collapse collapse">
@@ -364,17 +297,7 @@
                         </li>
                         <li id="list-referencias-2" class="sidebar-subitem">
                             <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-2')">
-                                1.2. Referencias
-                            </button>
-                        </li>
-                        <li id="list-referencias-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-3')">
-                                1.3. Referencias
-                            </button>
-                        </li>
-                        <li id="list-referencias-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-4')">
-                                1.4. Principais referencias
+                                2. Referencias
                             </button>
                         </li>
                     </ul>
@@ -386,29 +309,32 @@
         <div id="btn_control_carousel" class="sidebar-action px-2 d-flex">
             <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="prev">
                 < </button> <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="next">
-                    >
-            </button>
+                        >
+                    </button>
         </div>
     </div>
 
     <div id="corpo">
-        <div id="carousel" class="carousel slide slide-to-right" data-bs-touch="false" data-ride="carousel" data-bs-interval="false">
+        <div id="carousel" class="carousel slide slide-to-right" data-bs-touch="false" data-ride="carousel"
+            data-bs-interval="false">
             <div class="carousel-inner">
                 <!-- Home -->
-                <div id="home" class="carousel-item default">
+                <div id="home" class="carousel-item default active">
                     <div class="container-fluid background-capa rounded-2">
                         <div class="row justify-content-center
                                 align-items-center padding-x-container">
                             <div class="col-lg-6 col-md-12 col-sm-12
                                     padding-container">
-                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5" src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
                                 <span class="title text-dark">Curso
                                     em aperfeiçoamento em saúde mental e
                                     atenção
                                     psicossocial de
                                     adolescentes e jovens</span>
                                 <hr class="line line-primary my-4">
-                                <p class="subtitle text-primary">Módulo: Escola e redes sociais nas adolescências e juventudes
+                                <p class="subtitle text-primary">Módulo: Escola e redes sociais nas adolescências e
+                                    juventudes
                                 </p>
                                 <div class="row justify-content-around
                                         py-5">
@@ -434,7 +360,8 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_04/capa_modulo_4.png" alt="Capa Modulo 04">
+                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_04/capa_modulo_4.png"
+                                    alt="Capa Modulo 04">
                             </div>
                         </div>
                     </div>
@@ -452,36 +379,64 @@
                             <div class="row justify-content-center
                                     align-items-top text-center">
                                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
-                                    <img src="./image/modulo_04/autora01.png" alt="Neidy Marcia de Souza Silva" class="img-fluid d-block mx-auto pb-3">
+                                    <img src="./image/modulo_04/autora01.png" alt="Neidy Marcia de Souza Silva"
+                                        class="img-fluid d-block mx-auto pb-3">
                                     <h5 class="bold pb-3">Neidy Marcia de Souza Silva</h5>
                                     <p class="px-2 text-justify">
-                                        Graduação em Serviço Social pela Universidade Federal do Rio de Janeiro (1985) e Mestrado em Serviço Social pela Universidade do Estado do Rio de Janeiro (2007). Assistente Social da Universidade do Estado do Rio de Janeiro e da Prefeitura da Cidade do
-                                        Rio de Janeiro (aposentada), com ênfase de intervenção no campo da Saúde, Assistência Social e gestão em órgãos de controle social na área da criança e do adolescente, atuando principalmente no seguinte tema: Saúde
-                                        do Adolescente. Atualmente, é Assistente Social do Núcleo de Estudos da Saúde do Adolescente, realizando atendimento com abordagem interdisciplinar e interinstitucional a adolescentes e famílias nas ações de atenção
-                                        à saúde e participando em programas e projetos de garantia de direitos de adolescentes e jovens. Realiza preceptoria a alunos da faculdade de Serviço Social da UERJ e residentes do curso de Especialização Lato Sensu
+                                        Graduação em Serviço Social pela Universidade Federal do Rio de Janeiro (1985) e
+                                        Mestrado em Serviço Social pela Universidade do Estado do Rio de Janeiro (2007).
+                                        Assistente Social da Universidade do Estado do Rio de Janeiro e da Prefeitura da
+                                        Cidade do
+                                        Rio de Janeiro (aposentada), com ênfase de intervenção no campo da Saúde,
+                                        Assistência Social e gestão em órgãos de controle social na área da criança e do
+                                        adolescente, atuando principalmente no seguinte tema: Saúde
+                                        do Adolescente. Atualmente, é Assistente Social do Núcleo de Estudos da Saúde do
+                                        Adolescente, realizando atendimento com abordagem interdisciplinar e
+                                        interinstitucional a adolescentes e famílias nas ações de atenção
+                                        à saúde e participando em programas e projetos de garantia de direitos de
+                                        adolescentes e jovens. Realiza preceptoria a alunos da faculdade de Serviço
+                                        Social da UERJ e residentes do curso de Especialização Lato Sensu
                                         em Serviço Social e Saúde.
                                     </p>
                                 </div>
 
                                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
-                                    <img src="./image/modulo_04/autora02.png" alt="Helena Ferraz Gomes" class="img-fluid d-block mx-auto pb-3">
+                                    <img src="./image/modulo_04/autora02.png" alt="Helena Ferraz Gomes"
+                                        class="img-fluid d-block mx-auto pb-3">
                                     <h5 class="bold text-center pb-3">Helena Ferraz Gomes</h5>
                                     <p class="px-2 text-justify">
-                                        Formada em Bacharelado e Licenciatura em Enfermagem pela Faculdade de Enfermagem da Universidade Federal de Juiz de Fora em 2009. Especialista em Saúde Coletiva, sob moldes de residência em enfermagem pela UNIRIO/UFF (2010-2012). Doutora e Mestre em Enfermagem
-                                        pela Faculdade de Enfermagem da Universidade do Estado do Rio de Janeiro. Docente: Professora Adjunta da Faculdade de Enfermagem da Universidade do Estado do Rio de Janeiro – Departamento de Enfermagem Médico-Cirúrgica
-                                        (DEMC) – Área Clínica. Atuação Teórico-Prática em Enfermagem Clínica com enfoque na Saúde do Adolescente. Experiência Profissional nas seguintes áreas: Enfermagem Clínica, Saúde do Adolescente e Saúde Coletiva.
-                                        Realiza pesquisas nas seguintes áreas: Saúde do Trabalhador, Saúde do Adolescente e Terapia Infusional. Atua na Coordenação do Programa de Residência de Enfermagem em Saúde do Adolescente da Faculdade de Enfermagem
+                                        Formada em Bacharelado e Licenciatura em Enfermagem pela Faculdade de Enfermagem
+                                        da Universidade Federal de Juiz de Fora em 2009. Especialista em Saúde Coletiva,
+                                        sob moldes de residência em enfermagem pela UNIRIO/UFF (2010-2012). Doutora e
+                                        Mestre em Enfermagem
+                                        pela Faculdade de Enfermagem da Universidade do Estado do Rio de Janeiro.
+                                        Docente: Professora Adjunta da Faculdade de Enfermagem da Universidade do Estado
+                                        do Rio de Janeiro – Departamento de Enfermagem Médico-Cirúrgica
+                                        (DEMC) – Área Clínica. Atuação Teórico-Prática em Enfermagem Clínica com enfoque
+                                        na Saúde do Adolescente. Experiência Profissional nas seguintes áreas:
+                                        Enfermagem Clínica, Saúde do Adolescente e Saúde Coletiva.
+                                        Realiza pesquisas nas seguintes áreas: Saúde do Trabalhador, Saúde do
+                                        Adolescente e Terapia Infusional. Atua na Coordenação do Programa de Residência
+                                        de Enfermagem em Saúde do Adolescente da Faculdade de Enfermagem
                                         da UERJ.
                                     </p>
                                 </div>
 
                                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
-                                    <img src="./image/modulo_04/autora03.png" alt="Anália da Silva Barbosa" class="img-fluid d-block mx-auto pb-3">
+                                    <img src="./image/modulo_04/autora03.png" alt="Anália da Silva Barbosa"
+                                        class="img-fluid d-block mx-auto pb-3">
                                     <h5 class="bold text-center pb-3">Anália da Silva Barbosa</h5>
                                     <p class="px-2 text-justify">
-                                        Graduada em Serviço Social pela Universidade Federal Fluminense, Mestre em Serviço Social pelo Programa de Pós-Graduação em Serviço Social da Escola de Serviço Social da Universidade Federal do Rio de Janeiro (PPGSS/ESS/UFRJ) e Doutoranda do Programa
-                                        de Políticas Públicas e Formação Humana da Universidade do Estado do Rio de Janeiro (PPFH/UERJ). Preceptora e Docente da Residência Multiprofissional em Saúde Mental da UERJ. Atualmente é Coordenadora do Centro
-                                        de Atenção Psicossocial da UERJ e presta assessoria para Entidade Filantrópica do Terceiro Setor (Instituto Santa Lúcia) na área da política de assistência social, criança e adolescente e saúde mental.
+                                        Graduada em Serviço Social pela Universidade Federal Fluminense, Mestre em
+                                        Serviço Social pelo Programa de Pós-Graduação em Serviço Social da Escola de
+                                        Serviço Social da Universidade Federal do Rio de Janeiro (PPGSS/ESS/UFRJ) e
+                                        Doutoranda do Programa
+                                        de Políticas Públicas e Formação Humana da Universidade do Estado do Rio de
+                                        Janeiro (PPFH/UERJ). Preceptora e Docente da Residência Multiprofissional em
+                                        Saúde Mental da UERJ. Atualmente é Coordenadora do Centro
+                                        de Atenção Psicossocial da UERJ e presta assessoria para Entidade Filantrópica
+                                        do Terceiro Setor (Instituto Santa Lúcia) na área da política de assistência
+                                        social, criança e adolescente e saúde mental.
                                     </p>
                                 </div>
                             </div>
@@ -495,7 +450,8 @@
                     <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente text-center p-3">
                             <p class="title text-light">Sobre o Módulo</p>
-                            <p class="text-light">Módulo: Redes de serviços de saúde, de proteção social e de direitos nas adolescências e juventudes
+                            <p class="text-light">Módulo: Redes de serviços de saúde, de proteção social e de direitos
+                                nas adolescências e juventudes
                             </p>
                             <p class="subtitle text-light">Carga horaria: 20 horas
                             </p>
@@ -510,31 +466,40 @@
                                                 APRENDIZAGEM</b>
                                         </p>
                                     </div>
-                                    <p class="py-2">Apresentar a organização, em nível local e nacional, da Rede de Atenção à Saúde (SUS) e de Proteção Social (SUAS) voltadas para a adolescência e juventude, e o papel do Conselho Tutelar.</p>
+                                    <p class="py-2">Apresentar a organização, em nível local e nacional, da Rede de
+                                        Atenção à Saúde (SUS) e de Proteção Social (SUAS) voltadas para a adolescência e
+                                        juventude, e o papel do Conselho Tutelar.</p>
                                     <p class="py-2 subtitle">Conhecimentos</p>
                                     <ul class="py-2">
                                         <li>Conhecer o SUS, princípios, organização, estrutura e rede de serviços;</li>
                                         <li>Conhecer o SUAS, princípios, organização, estrutura e rede de serviços;</li>
                                         <li>Conhecer o Conselho Tutelar, organização e atribuições;</li>
-                                        <li>Conhecer a Política Nacional de Atenção Integral à Saúde de Adolescentes e Jovens e o ECA;</li>
+                                        <li>Conhecer a Política Nacional de Atenção Integral à Saúde de Adolescentes e
+                                            Jovens e o ECA;</li>
                                         <li>Conhecer o Estatuto da Juventude;</li>
-                                        <li>Conhecer redes de apoio formal e informal para o cuidado em saúde mental de Adolescentes e Jovens;</li>
+                                        <li>Conhecer redes de apoio formal e informal para o cuidado em saúde mental de
+                                            Adolescentes e Jovens;</li>
                                     </ul>
                                 </div>
 
                                 <div class="col-lg-6 col-md-12 col-sm-12 padding-x-desk-3 padding-x-mobile-2">
                                     <ul class="pb-2">
-                                        <li>Identificar as principais redes de atenção à saúde no SUS, com ênfase na Rede de Atenção Psicossocial (RAPS)</li>
-                                        <li>Identificar situações de risco que demandam acompanhamento dos serviços do SUS, SUAS e Conselho Tutelar;</li>
-                                        <li>Reconhecer a importância da rede de proteção dos direitos de Adolescentes e Jovens e o papel do Ministério Público na garantia desses direitos.</li>
+                                        <li>Identificar as principais redes de atenção à saúde no SUS, com ênfase na
+                                            Rede de Atenção Psicossocial (RAPS)</li>
+                                        <li>Identificar situações de risco que demandam acompanhamento dos serviços do
+                                            SUS, SUAS e Conselho Tutelar;</li>
+                                        <li>Reconhecer a importância da rede de proteção dos direitos de Adolescentes e
+                                            Jovens e o papel do Ministério Público na garantia desses direitos.</li>
                                     </ul>
                                     <p class="py-2 subtitle">Habilidades</p>
                                     <ul class="py-2">
                                         <li>Recomendar, quando necessário, os serviços do SUS;</li>
                                         <li>Recomendar, quando necessário, os serviços do SUAS;</li>
                                         <li>Recomendar, quando necessário, os serviços do Conselho Tutelar;</li>
-                                        <li>Recomendar, quando necessário, redes de apoio formal e informal para o cuidado em saúde mental de Adolescentes e Jovens;</li>
-                                        <li>Recomendar, quando necessário, o acesso ao Ministério Público na garantia dos direitos de Adolescentes e Jovens.</li>
+                                        <li>Recomendar, quando necessário, redes de apoio formal e informal para o
+                                            cuidado em saúde mental de Adolescentes e Jovens;</li>
+                                        <li>Recomendar, quando necessário, o acesso ao Ministério Público na garantia
+                                            dos direitos de Adolescentes e Jovens.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -549,17 +514,27 @@
                             <div class="col-lg-6 col-md-12 col-sm-12
                                     d-flex align-items-center
                                     justify-content-center">
-                                <img class="w-75 w-sm-100" src="./image/modulo_04/apresentacao_detalhes_1.png" alt="Apresentacao Modulo 02">
+                                <img class="w-75 w-sm-100" src="./image/modulo_04/apresentacao_detalhes_1.png"
+                                    alt="Apresentacao Modulo 02">
                             </div>
 
                             <div class="col-lg-6 col-md-12 col-sm-12
                                     padding-x-desk-5 py-3 text-justify">
                                 <p class="text-center title text-primary">Apresentação do módulo</p>
-                                <p class="py-2">Olá! Neste módulo, vamos trocar conhecimentos, pensando juntos sobre as Redes de Atenção à Saúde e proteção social e o eixo de defesa de direitos nas adolescências e juventudes.</p>
-                                <p class="py-2">Você reconhece que ainda temos muitos desafios a serem superados nesse campo, principalmente na efetivação de políticas públicas que possam de fato assegurar direitos de adolescentes e jovens?</p>
-                                <p class="py-2">Acreditamos que podemos avançar coletivamente, e é por isso que você está aqui, não é?</p>
-                                <p class="py-2">Sabemos que o número de adolescentes e jovens na população brasileira é significativo, assim como o aumento da quantidade de famílias em situação de pobreza e extrema pobreza, agravando ainda mais as vulnerabilidades desse
-                                    grupo populacional o que demonstra a necessidade de implementação de políticas públicas capazes de garantir acesso à saúde, educação, alimentação, cultura, esporte e lazer, assim como o desenvolvimento de suas potencialidades
+                                <p class="py-2">Olá! Neste módulo, vamos trocar conhecimentos, pensando juntos sobre as
+                                    Redes de Atenção à Saúde e proteção social e o eixo de defesa de direitos nas
+                                    adolescências e juventudes.</p>
+                                <p class="py-2">Você reconhece que ainda temos muitos desafios a serem superados nesse
+                                    campo, principalmente na efetivação de políticas públicas que possam de fato
+                                    assegurar direitos de adolescentes e jovens?</p>
+                                <p class="py-2">Acreditamos que podemos avançar coletivamente, e é por isso que você
+                                    está aqui, não é?</p>
+                                <p class="py-2">Sabemos que o número de adolescentes e jovens na população brasileira é
+                                    significativo, assim como o aumento da quantidade de famílias em situação de pobreza
+                                    e extrema pobreza, agravando ainda mais as vulnerabilidades desse
+                                    grupo populacional o que demonstra a necessidade de implementação de políticas
+                                    públicas capazes de garantir acesso à saúde, educação, alimentação, cultura, esporte
+                                    e lazer, assim como o desenvolvimento de suas potencialidades
                                     como pessoas e cidadãos de direitos.</p>
                             </div>
                         </div>
@@ -567,12 +542,1750 @@
                 </div>
 
                 <!-- Topico - A escola como espaco de possibilidades - parte 1 -->
-                <div id="escola-1" class="carousel-item default active">
+                <div id="escola-1" class="carousel-item default">
                     <div class="container-fluid background-topico vh-100
                             d-flex">
                         <div class="m-auto">
-                            <p class="text-light title-topico space-line padding-x-desk-3">Vamos conversar um pouco sobre história? Você acredita que conhecer o passado ajuda a explicar o que está acontecendo agora?</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_04/detalhes_topico.svg" alt="detalhes">
+                            <p class="text-light title-topico space-line padding-x-desk-3">Vamos conversar um pouco
+                                sobre história? Você acredita que conhecer o passado ajuda a explicar o que está
+                                acontecendo agora?</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_04/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A escola como espaco de possibilidades - parte 2 -->
+                <div id="escola-2" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <p class="title pb-2 text-primary text-center padding-x-desk-3">
+                                    Vamos conversar um pouco sobre história? Você acredita que conhecer o passado ajuda
+                                    a explicar o que está acontecendo agora?
+                                </p>
+                                <p class="py-2"><i>
+                                        “Não vou deixar<br>
+                                        Não vou, não vou deixar você esculachar<br>
+                                        Com a nossa história<br>
+                                        É muito amor, é muita luta<br>
+                                        É muito gozo, é muita dor<br>
+                                        E muita glória<br>
+                                        [...]<br>
+                                        Apesar de você dizer que acabou<br>
+                                        Que o sonho não tem mais cor<br>
+                                        Eu grito e repito: Eu não vou”<br>
+                                        (Não vou deixar – Caetano Veloso)<br>
+                                    </i></p>
+                                <p class="py text-justify">Para compreender os desafios relacionados a esse campo de
+                                    intervenção, é importante entender que as políticas públicas de atenção à criança,
+                                    ao adolescente e ao jovem têm uma trajetória muito recente de mudança, fruto de
+                                    muitas lutas.</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box py-2 rounded-4 mb-4">
+                                    <span class="text-light d-block text-center bold">O Código de Menores, de
+                                        1927...</span>
+                                </div>
+                                <p class="py-2">O Código de Menores, de 1927, estabeleceu que a pessoa é penalmente
+                                    inimputável até os 17 anos, portanto somente a partir dos 18 responde por seus
+                                    crimes e pode ser condenada à prisão. Essa foi a primeira lei do Brasil dedicada à
+                                    proteção da infância e da adolescência. Ele foi revogado na década de 1970, mas o
+                                    artigo 68, que prevê que os menores de 18 anos não podem ser processados
+                                    criminalmente, resistiu às mudanças dos tempos.</p>
+                                <div class="box py-2 rounded-4 my-4">
+                                    <span class="text-light d-block text-center bold">Você já ouviu falar sobre
+                                        maioridade penal? </span>
+                                </div>
+                                <p class="py-2">Até os anos de 1970, compreendia-se o termo “menor em situação
+                                    irregular” como menor de 18 anos de idade que se encontrava abandonado
+                                    materialmente, vítima de maus-tratos, em perigo moral, com desvio de conduta e autor
+                                    da infração penal, constituindo-se em ameaça à sociedade e à ordem vigente. Essa
+                                    visão era centrada na política autoritária do Código de Menores. Você concorda que
+                                    esses termos ainda são muito usados atualmente? E que ainda os ouvimos muito nas
+                                    nossas relações pessoais e de trabalho? No entanto, precisamos estar atentos, pois
+                                    essas nomenclaturas nos indicam qual é a direção do nosso olhar para os nossos
+                                    adolescentes e jovens!</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A escola como espaco de possibilidades - parte 3 -->
+                <div id="escola-3" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-desk-5 padding-mobile-2 text-justify ">
+                                        <p class="pb-2">Se você quiser entender um pouco mais esse período, converse com
+                                            as pessoas mais idosas do seu território, ou faça leituras de livros e veja
+                                            filmes que abordam essa temática. Deixamos aqui algumas sugestões:
+                                        </p>
+                                        <p class="py-2"><a
+                                                href="http://www.ser.puc-rio.br/4_S%C3%A9culo_Perdido_completo.pdf"
+                                                target="_blank">Clique aqui para acessar o material descrito</a></p>
+                                        <p class="py-2">
+                                            <b>Livro: O século perdido. Autora: Irene Rizzini.</b><br>
+                                            Esse livro é um trabalho apresentado por uma autora que pretende fugir do
+                                            pequeno círculo de especialistas. Do livro participa uma vasta literatura
+                                            devidamente incorporada e criticada por Irene Rizzini, cuja segurança em
+                                            temas tão controversos como a infância e a construção nacional apenas revela
+                                            a sua já longa dedicação a uma causa que, em geral, se prefere ignorar. Há
+                                            uma análise da legislação proposta e em vigor na passagem do século XIX ao
+                                            XX, dos discursos parlamentares e de fontes diversas, tais como jornais e
+                                            obras de ficção, que, além da sua relevância substantiva, revela o esmero
+                                            metodológico na montagem e na exposição dessa pesquisa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-x-desk-5 p-2 text-justify">
+                                        <p>Se você quiser entender um pouco mais esse período, converse com
+                                            as pessoas mais idosas do seu território, ou faça leituras de livros e veja
+                                            filmes que abordam essa temática. Deixamos aqui algumas sugestões:
+                                        </p>
+                                        <div class="p-2">
+                                            <iframe class="w-100 video" src="https://www.youtube.com/embed/kRJwQg-oavc"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <p>
+                                            <b>Filme: O contador de história</b><br>
+                                            O filme retrata a estória de um menino pobre de Belo Horizonte. Roberto
+                                            Carlos Ramos que cresce na Febem e que tem sua vida mudada ao conhecer uma
+                                            pedagoga francesa. dessa pesquisa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A escola como espaco de possibilidades - parte 4 -->
+                <div id="escola-4" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box padding-container rounded-4 my-4">
+                                    <span class="text-light d-block text-center">Você considera inapropriada a
+                                        utilização do termo menor para designar crianças e adolescentes? Acha que ele se
+                                        contrapõe à ideia de direitos e cidadania?</span>
+                                </div>
+                                <button id="btn0"
+                                    class="btn btn-1 w-50 w-md-75 rounded-4 d-block mx-auto my-5">Proposição
+                                    1</button>
+                                <div class="popover right">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content popover-w-2 bg-card-primary"><b>Proposição:</b> Você
+                                        sabe de onde surgiram os termos:
+                                        “menor de idade”, “menor perante a lei”, “menor abandonado”, “menor
+                                        infrator”, “menor carente”, "de menor” para se referir às crianças e
+                                        adolescentes? Você acha que esses termos apontam para alguma visão no que
+                                        tange à compreensão acerca desses sujeitos?<br><br>
+
+                                        <b>Feedback positivo:</b> O termo menor, embora não seja dito com má intenção
+                                        por
+                                        parte da população, tem conotação pejorativa por seu histórico de separação
+                                        e inferiorização envolvendo crianças e adolescentes pobres. Raramente o
+                                        termo é usado para mencionar crianças ou adolescentes de classes sociais
+                                        média e alta. O próprio dicionário já apresenta a palavra menor como
+                                        sinônimo de inferioridade, menos importante e hierarquicamente inferior.<br><br>
+
+                                        <b>Feedback orientador:</b> A expressão "menor de idade" está relacionada ao
+                                        Código
+                                        de Menores de 1927, que foi criado para pensar especificamente formas de
+                                        lidar com crianças e adolescentes que viviam em situação irregular ou seja,
+                                        esse código foi pensado para tratar da população infantojuvenil que vivia
+                                        alguma vulnerabilidade social—muitas vezes por negligência do Estado na
+                                        garantia do básico para se viver— e que seriam objetos de intervenção do
+                                        próprio Estado.<br><br>
+                                    </div>
+                                </div>
+                                <p class="py-2">No princípio dos anos de 1980, com a gravidade da situação a que estavam
+                                    expostas as crianças e adolescentes em nosso país, desencadeou-se um processo de
+                                    luta pelos direitos das pessoas desse segmento, que ascenderam então à condição de
+                                    sujeitos de direito, com a promulgação da Constituição cidadã brasileira de 1988, do
+                                    Estatuto da Criança e do Adolescente e, recentemente, do Estatuto da Juventude.
+                                <p class="py-2"> O Brasil, assim, abandonou uma lei discriminatória, repressiva e
+                                    segregacionista relacionada à infância e adolescência, recepcionada no Código de
+                                    Menores, para adotar, em definitivo, o Estatuto da Criança e do Adolescente. O novo
+                                    marco legal incorporou princípios da Convenção sobre os Direitos da Criança, adotada
+                                    pela Resolução n. L44 (XLIV) da Assembleia Geral da Organização das Nações Unidas
+                                    (ONU) de 20 de novembro de 1989, ratificada pelo Brasil em 24 de setembro de 1990
+                                    (ORGANIZAÇÃO DAS NAÇÕES UNIDAS, 1989; BRASIL, 1990).</p>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container">
+                                <div class="box padding-container rounded-4 my-4">
+                                    <span class="text-light d-block text-center">A Constituição de 1988 estabeleceu, em
+                                        seu artigo 227, que a infância e a adolescência são prioridades absolutas
+                                        (BRASIL, 1988), e o Estatuto da Criança e do Adolescente consolidou os preceitos
+                                        da Convenção e da Carta Magna brasileira (BRASIL, 1990).</span>
+                                </div>
+                                <p class="py-2">Além da materialização das políticas públicas específicas no campo da
+                                    saúde, assistência social, educação, entre outras, vai se consolidando,
+                                    principalmente após a Constituição Federal de 1988, um novo olhar para adolescentes
+                                    e jovens, que os reconhece como sujeitos com necessidades específicas, que devem ser
+                                    garantidas pelo Estado, sociedade civil e pela família. Foi com esse entendimento
+                                    que a história relatada, “Caio: da camisa do pai aos olhos de jabuticaba”, foi se
+                                    desenrolando em suas diferentes situações de vulnerabilidades e riscos.
+                                <p class="py-2">Para alcançar os objetivos de reduzir riscos e fortalecer os fatores
+                                    protetores de adolescentes e jovens, é preciso que, cada vez mais, as ações da rede
+                                    de atenção e proteção estejam articuladas, em uma concepção de abordagem integral,
+                                    levando em consideração o contexto no qual o jovem está inserido. Mais uma vez nos
+                                    remetemos à ideia de adolescências e juventudes plurais.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A escola como espaco de possibilidades - parte 5 -->
+                <div id="escola-5" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Cada pessoa é diferente e vem de culturas, famílias e territórios, por
+                                    vezes, diferentes daqueles de quem os acolhe.</p>
+                                <p class="py-2">Assim, além de pensarmos nessa pluralidade e diversidade, temos que
+                                    lembrar que as ações das redes de serviço devem contemplar uma atenção integral. Já
+                                    pensou no significado de atenção<button id="btn1"
+                                        class="popover-btn rounded-4">integral?
+                                    </button></p>
+                                <p class="py-2">Partindo dessas reflexões, vamos avançar um pouco mais na nossa troca,
+                                    abordando e conhecendo a Rede de Atenção à Saúde e de Proteção Social? Quais são
+                                    suas principais diretrizes? Como elas se organizam e se entrelaçam em um movimento
+                                    de rede? Convidamos você a refletir conosco!</p>
+                                </p>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content popover-w-2 bg-card-primary"><b>Proposição:</b> Você
+                                        sabe de onde surgiram os termos:
+                                        “menor de idade”, “menor perante a lei”, “menor abandonado”, “menor
+                                        infrator”, “menor carente”, "de menor” para se referir às crianças e
+                                        adolescentes? Você acha que esses termos apontam para alguma visão no que
+                                        tange à compreensão acerca desses sujeitos?<br><br>
+
+                                        <b>Feedback positivo:</b> O termo menor, embora não seja dito com má intenção
+                                        por
+                                        parte da população, tem conotação pejorativa por seu histórico de separação
+                                        e inferiorização envolvendo crianças e adolescentes pobres. Raramente o
+                                        termo é usado para mencionar crianças ou adolescentes de classes sociais
+                                        média e alta. O próprio dicionário já apresenta a palavra menor como
+                                        sinônimo de inferioridade, menos importante e hierarquicamente inferior.<br><br>
+
+                                        <b>Feedback orientador:</b> A expressão "menor de idade" está relacionada ao
+                                        Código
+                                        de Menores de 1927, que foi criado para pensar especificamente formas de
+                                        lidar com crianças e adolescentes que viviam em situação irregular ou seja,
+                                        esse código foi pensado para tratar da população infantojuvenil que vivia
+                                        alguma vulnerabilidade social—muitas vezes por negligência do Estado na
+                                        garantia do básico para se viver— e que seriam objetos de intervenção do
+                                        próprio Estado.<br><br>
+                                    </div>
+                                </div>
+                                <div class="box padding-container rounded-4 my-4">
+                                    <span class="text-light d-block text-center">Você já pensou nos argumentos mais
+                                        importantes para justificar investimentos na saúde da população adolescente e
+                                        jovem?</span>
+                                </div>
+                                <p class="py-2">Diante dos desafios da promoção, proteção e recuperação da saúde dos
+                                    adolescentes e jovens e da magnitude das questões e das situações de risco que
+                                    envolvem esse segmento, o Ministério da Saúde criou o Programa de Saúde do
+                                    Adolescente (PROSAD) (BRASIL, 1996), cujas Bases Programáticas foram publicadas em
+                                    1989.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box padding-container rounded-4 mb-4">
+                                    <span class="text-light d-block text-center">Destacamos alguns pontos desse
+                                        Programa: a integralidade das ações, o trabalho multidisciplinar e a integração
+                                        com outros setores governamentais e não governamentais (educação, trabalho,
+                                        cultura, justiça e lazer). Esses aspectos têm como base fundamental a
+                                        consideração da natureza múltipla da problemática do adolescente.</span>
+                                </div>
+                                <div class="box p-2 rounded-4 my-4">
+                                    <span class="text-light d-block text-center">Posteriormente, em 2005...</span>
+                                </div>
+                                <p class="py-2">O Ministério lançou o documento Marco Legal da Saúde de Adolescentes.
+                                    Apenas em 2010 os jovens passaram a ser também incluídos nessa política consolidada
+                                    nas <b><i><u>Diretrizes Nacionais para a Atenção Integral à Saúde de Adolescentes e
+                                                Jovens na
+                                                Promoção, Proteção e Reparação da Saúde</u></i></b>. Esse documento
+                                    aprofunda o enfoque da
+                                    perspectiva de atenção integral da saúde do adolescente e jovem, visando superar uma
+                                    visão fragmentada e entender os vários aspectos que fazem parte das suas
+                                    necessidades de saúde. Além de propor o diálogo interdisciplinar e intersetorial,
+                                    ele propõe a interação com os adolescentes e jovens, respeitando sua cultura e
+                                    conhecimentos adquiridos. Esse movimento aumenta a possibilidade de identificação
+                                    das necessidades dos adolescentes e de suas famílias e de absorção dos conhecimentos
+                                    pelos usuários, o que favorece o fortalecimento do acesso aos direitos e uma maior
+                                    organização da sociedade.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A escola como espaco de possibilidades - parte 6 -->
+                <div id="escola-6" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Agora que já nos apropriamos da existência do programa voltado para
+                                    atenção à saúde do adolescente e jovem, é preciso entender que as discussões e
+                                    formas de atuação no campo da atenção integral à saúde dos adolescentes e jovens é
+                                    tarefa importante para as equipes de saúde e para a população local, haja vista que
+                                    lidar com situações complexas exige das equipes multidisciplinares uma abordagem
+                                    integral dos problemas detectados. Sabemos, ainda, que modelos tradicionais de
+                                    atendimento à saúde, trabalhados de forma isolada e independente, não respondem às
+                                    necessidades dessa população (PINHEIRO, 2001).</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img src="./image/modulo_04/escola_detalhes_1.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto py-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - Compreensao e organizacao dos servicos - parte 1 -->
+                <div id="compreensao-1" class="carousel-item defaulte">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line padding-x-desk-3">Vamos caminhar mais um pouco
+                                na compreensão e organização dos serviços de atenção à saúde?</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_04/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compreensao e organizacao dos servicos - parte 2 -->
+                <div id="compreensao-2" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="title text-primary text-center pb-2 padding-x-desk-3">
+                                    Vamos caminhar mais um pouco na compreensão e organização dos serviços de atenção à
+                                    saúde?
+                                </p>
+                                <div class="citacao-2 my-3">[...] a ansiedade só deveria ser considerada patológica
+                                    quando exageradamente intensa, persistente, inadequada à idade ou à fase do
+                                    desenvolvimento e quando interfere negativamente nas relações nos ambientes onde a
+                                    criança circula (LIMA, 2022, p. 87).
+                                </div>
+                                <p class="py-2">Para responder às diferentes demandas dos indivíduos que procuram os
+                                    cuidados em saúde, é preciso destacar o papel da Atenção Básica ou Atenção Primária
+                                    em Saúde na reorganização do sistema. Ela foi desenvolvida com base na
+                                    descentralização e na capilaridade, para ser oferecida no local mais próximo da vida
+                                    das pessoas (BRASIL, 2012; BRASIL, 2017a).</p>
+
+                                <div class="box padding-container rounded-4 my-2">
+                                    <span class="text-light d-block text-center">A Atenção Básica é considerada a “porta
+                                        de entrada” e o centro articulador da Rede de Atenção à Saúde. Caracteriza-se
+                                        por um “conjunto de ações de saúde, no âmbito individual e coletivo, que abrange
+                                        a promoção e a proteção da saúde, a prevenção de agravos, o diagnóstico, o
+                                        tratamento, a reabilitação, a redução de danos e a manutenção da saúde com o
+                                        objetivo de desenvolver uma atenção integral” (BRASIL, 2012, p. 19).</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Além disso, a Atenção Básica é constituída por equipe multidisciplinar
+                                    que atua no desenvolvimento de programas e ações que levam em consideração a
+                                    diversidade das necessidades de saúde dos usuários, com vistas a atender os
+                                    princípios da acessibilidade, coordenação do cuidado, vínculo, continuidade e
+                                    integralidade. Essas equipes atuam nas Unidades Básicas de Saúde (UBS) ou Estratégia
+                                    Saúde da Família (ESF) (ANDERSON, 2019).
+                                </p>
+                                <p class="py-2">Partindo desses questionamentos, é importante destacar que as UBS e a
+                                    ESF são unidades instaladas perto de onde as pessoas vivem, trabalham e estudam que
+                                    possibilitam a resolução de grande parte das suas necessidades de saúde e, caso seja
+                                    necessário, encaminham os usuários para outros níveis de atenção. No caso relatado
+                                    neste módulo, “Caio: da camisa do pai aos olhos de jabuticaba”, a ESF foi a porta de
+                                    entrada e o início de uma grande jornada na garantia dos direitos e da dignidade.
+                                    Essa rede de cuidados garantiu a Caio e à sua família o atendimento pautado pelos
+                                    princípios da universalidade, da integralidade, do vínculo, da continuidade do
+                                    cuidado, da equidade e da humanização.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compreensao e organizacao dos servicos - parte 3 -->
+                <div id="compreensao-3" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A ESF, por meio de seus agentes de cuidado, Agente Comunitário de Saúde
+                                    (ACS), médico, enfermeiro, assistente social e dos profissionais do Núcleo Ampliado
+                                    de Saúde da Família e Atenção Primária (NASF), possibilitou a Caio a escuta ativa, a
+                                    criação de vínculo e a articulação com a rede de serviços de saúde, de proteção
+                                    social e demais políticas públicas que contribuem para o acesso a direitos</p>
+                                <img src="./image/modulo_04/compreensao_detalhes_1.png" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto py-3">
+                                <p class="py-2">A Visita Domiciliar constitui instrumento técnico-operativo de
+                                    acompanhamento das famílias, tendo como objetivo compreender os aspectos que
+                                    envolvem o cotidiano e a realidade socioterritorial daquela família. A Visita
+                                    Domiciliar também visa aprofundar o conhecimento sobre o modo de viver e as
+                                    condições de vida das famílias, de modo singular, com postura ético-política voltada
+                                    ao atendimento das necessidades, respeitando a liberdade e a autonomia (CLOSS;
+                                    SCHERER, 2017).</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Nesse sentido, é importante lembrar o papel dos profissionais que atuam
+                                    nessas unidades, que é o de cuidar da saúde da população adscrita, no âmbito da
+                                    unidade de saúde e, quando necessário, no domicílio e demais espaços comunitários,
+                                    como escolas, associaç ões, entre outros.
+                                </p>
+                                <div class="box padding-container rounded-4 my-4">
+                                    <span class="text-light d-block text-center">Contudo, é preciso lembrar que essas
+                                        unidades avançaram e se remodelaram, levando em consideração as diferentes
+                                        populações e realidades do nosso país. Além dos diversos formatos dessas
+                                        unidades, houve a inclusão do atendimento pelo Consultório de Rua para a
+                                        população que vive nas ruas, além das UBS Fluviais e ESF para as Populações
+                                        Ribeirinhas. Ocorreu também a ampliação das ações intersetoriais e de promoção
+                                        da saúde, com a universalização do Programa Saúde na Escola e expansão dele às
+                                        creches.</span>
+                                </div>
+                                <p class="py-2">Lembra-se da equipe do Consultório na Rua, que foi responsável pela
+                                    acolhida e escuta qualificada de Caio e que, por meio de uma articulação com a rede,
+                                    encaminhou o jovem a uma Central de Acolhimento para Crianças e Adolescentes?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compreensao e organizacao dos servicos - parte 4 -->
+                <div id="compreensao-4" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A situação de Caio e de seu amigo nos leva a pensar naquilo que Bruna
+                                    Alt afirma no estudo que fez:</p>
+                                <div class="citacao-2 my-3">a pessoa que se encontra em situação de rua sente fome e
+                                    frio, e, mais do que o atendimento das necessidades essenciais, essas pessoas
+                                    precisam de meios para se tornarem protagonistas de suas vidas e conquistarem
+                                    condições de suprir suas necessidades de forma independente (ALT, 2017, p. 8).
+                                </div>
+                                <p class="py-2">As pessoas em situação de rua enfrentam violência psicológica devido às
+                                    ações preconceituosas e a discriminação que sofrem no cotidiano. Além disso, sofrem
+                                    violência física nas ruas e nos espaços institucionalizados.</p>
+                                <img src="./image/modulo_04/compreensao_detalhes_2.png" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto py-3">
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Essa iniciativa do canal Pode Falar é uma potente estratégia de ação
+                                    voltada aos adolescentes e jovens, (incluir uma vírgula) que busca a integração com
+                                    as atividades rotineiramente previstas e desenvolvidas pelas equipes de atenção
+                                    básica.
+                                </p>
+                                <div class="box padding-container rounded-4 my-2">
+                                    <span class="text-light d-block text-center">Essas equipes da atenção básica são
+                                        compostas por profissionais de saúde com a responsabilidade exclusiva de
+                                        articular e prestar atenção integral à saúde das pessoas em situação de rua,
+                                        tendo papel importante dentro da Rede de Atenção à Saúde porque articulam e
+                                        desenvolvem ações em parceria com as demais equipes de atenção básica do
+                                        território e dos Centros de Atenção Psicossocial, da Rede de Urgência e dos
+                                        serviços e instituições componentes do Sistema Único de Assistência
+                                        Social.</span>
+                                </div>
+                                <p class="py-2">Somam-se às equipes da Atenção Básica os NASF-AP, compostos por equipe
+                                    multiprofissional e interdisciplinar com profissionais de saúde de diferentes
+                                    categorias e especialidades que atuam de forma integrada buscando garantir a
+                                    ampliação das ações e a resolutividade. Lembra-se de que Bia e Carol, irmãs de Caio,
+                                    por intermédio da equipe pedagógica da escola em conjunto com a equipe da ESF, foram
+                                    avaliadas pela psicóloga matriciadora do NASF e que Bia passou a ser acompanhada no
+                                    ambulatório de saúde mental do território?</p>
+                                <div class="citacao">
+                                    <small><i>[1]O Pode Falar, canal de ajuda virtual em saúde mental e bem-estar para
+                                            adolescentes e jovens de 13 a 24 anos, foi criado em abril de 2021. A
+                                            iniciativa nasceu da parceria do UNICEF com organizações da sociedade civil
+                                            e empresas com expertise em tecnologia e funciona de forma anônima e
+                                            gratuita por meio de um chatbot batizado de Ariel por adolescentes que pode
+                                            ser acessado pelo site podefalar.org.br.</i>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compreensao e organizacao dos servicos - parte 5 -->
+                <div id="compreensao-5" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box-saiba-mais mt-0">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-desk-5 padding-mobile-2 text-justify ">
+                                        <p class="pb-2 bold">Vamos compreender melhor o que é matriciamento? Leia o Guia
+                                            prático de matriciamento em saúde mental acessando o link:
+                                        </p>
+                                        <p class="py-2"><a
+                                                href="https://www.figma.com/exit?url=https%3A%2F%2Fbvsms.saude.gov.br%2Fbvs%2Fpublicacoes%2Fguia_pratico_matriciamento_saudemental.pdf"
+                                                target="_blank">Clique aqui para acessar o material descrito</a></p>
+                                        <p class="py-2">
+                                            Nesse guia, podemos compreender que o matriciamento ou apoio matricial é um
+                                            novo modo de produzir saúde em que duas ou mais equipes, num processo de
+                                            construção compartilhada, criam uma proposta de intervenção
+                                            pedagógico-terapêutica. No processo de integração da saúde mental à atenção
+                                            primária na realidade brasileira, esse novo modelo tem sido o norteador das
+                                            experiências implementadas em diversos municípios, ao longo dos últimos
+                                            anos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="pt-4 pb-2">Nesse caso, podemos observar o papel da ESF e do NASF e a
+                                    articulação em
+                                    rede, fundamentais para a garantia da resolutividade e do cuidado, que deve ser
+                                    pautado pelas necessidades de saúde do usuário.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Portanto, as UBS e a ESF estão próximas ao território e têm por função
+                                    organizar a Rede de Atenção à Saúde por meio da interlocução com os serviços de
+                                    saúde, da proteção social e demais políticas públicas que contribuem para o acesso a
+                                    direitos, ressignificando o modo de ser e de viver de muitos adolescentes, jovens e
+                                    seus familiares.
+                                </p>
+                                <p class="py-2">Ah, lembra-se de que falamos do Programa Saúde na Escola (PSE)? Pois
+                                    bem, esse Programa foi instituído pelo Decreto nº 6.286, de 5 de dezembro de 2007
+                                    (BRASIL, 2007). Surgiu como política intersetorial e interministerial, em uma
+                                    perspectiva de atenção integral à saúde de crianças, adolescentes e jovens do ensino
+                                    básico, no âmbito das escolas e UBS.</p>
+                                <img src="./image/modulo_04/compreensao_detalhes_3.png" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto py-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compreensao e organizacao dos servicos - parte 6 -->
+                <div id="compreensao-6" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box padding-container rounded-4">
+                                    <span class="text-light d-block text-center">Dentre as ações do PSE, destacam-se: a
+                                        promoção da saúde e a prevenção de agravos por meio da articulação de práticas
+                                        educativas, de formação e de saúde, como promoção da alimentação saudável;
+                                        práticas corporais e atividades físicas; educação para a saúde sexual e
+                                        reprodutiva; prevenção ao uso de álcool, tabaco e outras drogas; promoção da
+                                        cultura de paz e prevenção das violências; além da avaliação clínica e
+                                        psicossocial, cujo objetivo é identificar necessidades de saúde e garantir a
+                                        atenção integral na Rede de Atenção à Saúde.</span>
+                                </div>
+                                <p class="pt-4 pb-2">Contudo, pensar em rede é um desafio. Lembra-se da Bianca,
+                                    assistente social? Ela, por meio de um grupo de WhatsApp que tinha profissionais que
+                                    compunham os serviços da rede local (CRAS, CREAS, Conselho Tutelar, CAPSi, CAPSad,
+                                    Escola Municipal, Clínica da Família, ONGs), articulou uma reunião com os
+                                    equipamentos públicos locais e com a rede socioassistencial do território para
+                                    pensar estratégias de cuidado para Caio. Bianca juntou todas as lembranças e
+                                    aprendizados e transformou-os em propulsão.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img src="./image/modulo_04/compreensao_detalhes_4.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto py-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - Importancia da politica de assistencia social - parte 1 -->
+                <div id="politica-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line padding-x-desk-3">Vamos, a partir de agora,
+                                pensar sobre a importância da política de assistência social e as suas mudanças nos dias
+                                atuais?</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_04/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Importancia da politica de assistencia social - parte 2 -->
+                <div id="politica-2" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-3">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="title text-center text-primary pb-3 padding-x-desk-3">
+                                    Vamos, a partir de agora, pensar sobre a importância da política de assistência
+                                    social e as suas mudanças nos dias atuais?
+                                </p>
+                                <div class="citacao-2 my-3">O tempo escorre pela ampulheta.<br>
+                                    É ele o contador da história que construímos.<br>
+                                    O tempo que cura saudades,<br>
+                                    que em mais-valia capitalista<br>
+                                    explora cada trabalhador/a na sua labuta.<br>
+                                    O tempo é também contradição, <br>
+                                    que prepara a luta, tece a resistência...<br>
+                                    E que o tempo que nós vivemos<br>
+                                    traga na sua outra face<br>
+                                    a sonoridade da liberdade, um verde <br>
+                                    mais vicejante de esperança.<br>
+                                    E que em todos os seus versos<br>
+                                    tenha a emergência da luta e da resistência,<br>
+                                    no tempo em que lutar<br>
+                                    é tão necessário quanto viver, respirar...”<br>
+                                    (Tempo de luta e Resistência – Andrea Lima)
+                                </div>
+                                <p class="pt-4">Vamos conversar um pouco mais sobre os percursos históricos para
+                                    entender o processo de fortalecimento desse campo. Mais uma vez, esse caminho não
+                                    foi fácil. Bem, aqui estamos falando de uma rede de dispositivos, no campo da
+                                    Assistência Social, que assegura direitos, apesar de historicamente já demarcar na
+                                    prática a necessidade de fortalecimento de uma política voltada para a lógica de
+                                    direitos sociais, esse movimento chega bem mais tarde ao Brasil, o que o diferencia
+                                    do campo da saúde que foi pioneira nessa luta.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Partindo desses questionamentos, é importante destacar que as UBS e a
+                                    ESF são unidades instaladas perto de onde as pessoas vivem, trabalham e estudam que
+                                    possibilitam a resolução de grande parte das nossas necessidades de saúde e, caso
+                                    seja necessário, encaminham os usuários para outros níveis de atenção. No caso
+                                    relatado neste módulo, “Caio: da camisa do pai aos olhos de jabuticaba”, a ESF foi a
+                                    porta de entrada e o início de uma grande jornada na garantia dos direitos e da
+                                    dignidade. Essa rede de cuidados garantiu a Caio e à sua família o atendimento
+                                    pautado pelos princípios da universalidade, da integralidade, do vínculo, da
+                                    continuidade do cuidado, da equidade e da humanização.</p>
+                                <div class="box">
+                                    <p class="padding-container text-center text-light">
+                                        Na área da Assistência Social esse movimento é impulsionado pela Constituição
+                                        Federal de 1988, em que o termo Seguridade Social é utilizado pela primeira vez.
+                                        A Seguridade Social é composta pelo tripé: Saúde, como direito de todos;
+                                        Previdência, de caráter contributivo; e Assistência Social, para os que dela
+                                        necessitarem (BRASIL, 1988). Assim, a perspectiva da assistência social na
+                                        lógica dos direitos marca seu início[1] em 1993 com a aprovação da Lei Orgânica
+                                        da Assistência Social, Lei nº 8.742 (LOAS) (BRASIL, 1993).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Importancia da politica de assistencia social - parte 3 -->
+                <div id="politica-3" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A LOAS preconiza que a gestão da política de Assistência Social e a
+                                    organização das ações devem ser articuladas em um sistema descentralizado e
+                                    participativo, organizado nos três níveis de gestão governamental. A política de
+                                    assistência social é um direito do cidadão e um dever do Estado no provimento aos
+                                    mínimos sociais.</p>
+                                <p class="py-2">Em 2004, o Ministério do Desenvolvimento Social e Combate à Fome (MDS)
+                                    consolidou a assistência social como Política Nacional de Assistência Social (PNAS),
+                                    com o compromisso de redesenhar, coletivamente, a política na perspectiva de
+                                    implementação de um Sistema com diretrizes e serviços envolvidos: o Sistema Único de
+                                    Assistência Social (SUAS), que foi promulgado em 2005 (BRASIL, 2005b). É a partir da
+                                    implementação do SUAS que há um forte movimento de rompimento com a lógica de uma
+                                    ação vinculada à concepção assistencialista. Os segmentos mais pobres, com mais
+                                    desempregados e subempregados sem vínculo formal não tinham direito aos benefícios e
+                                    serviços sociais públicos. Para eles eram destinados, pelo Estado ou sociedade
+                                    civil, os programas assistenciais a título compensatório ou de benesse.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box">
+                                    <p class="padding-container text-center text-light">
+                                        Você sabe a diferença entre assistencialismo e a política de Assistência Social?
+                                    </p>
+                                </div>
+                                <div class="accordion-header pt-3">
+                                    <div class="accordion-item-person">
+                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_assistencialismo" aria-expanded="true">
+                                            Assistencialismo
+                                        </button>
+                                        <div id="accordion_assistencialismo" class="accordion-collapse collapse">
+                                            <div class="accordion-corpo">
+                                                <ul class="p-4 small">
+                                                    <li>Ligado à filantropia;</li>
+                                                    <li>Concepção culpabilizadora dos indivíduos;</li>
+                                                    <li>Eventual, incerta, fragmentada;</li>
+                                                    <li>Com o fim em si mesma;</li>
+                                                    <li>Sem capacidade para provocar mudanças na vida dos cidadãos.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item-person">
+                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_social" aria-expanded="true">
+                                            Assistência Social
+                                        </button>
+                                        <div id="accordion_social" class="accordion-collapse collapse">
+                                            <div class="accordion-corpo">
+                                                <ul class="p-4 small">
+                                                    <li>Ligada ao direito social e dever estatal;</li>
+                                                    <li>Concepção contextualizada das situações em uma dada realidade
+                                                        social, histórica, econômica, cultural e política;</li>
+                                                    <li>Voltada ao desenvolvimento individual, familiar e coletivo;</li>
+                                                    <li>Contínua e transformadora.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item-person">
+                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_equipamento" aria-expanded="true">
+                                            Equipamentos da politica de Assistencia Social
+                                        </button>
+                                        <div id="accordion_equipamento" class="accordion-collapse collapse">
+                                            <div class="accordion-corpo">
+                                                <ul class="p-4 small">
+                                                    <li>CRAS – Centro de Referência de Assistência Social;</li>
+                                                    <li>CREAS – Centro de Referência Especializado de Assistência
+                                                        Social;</li>
+                                                    <li>Centro Pop – Centros de Referência Especializados para População
+                                                        em Situação de Rua;</li>
+                                                    <li>Centro Dia – Centro Dia de Referência para Pessoa com
+                                                        Deficiência e suas Famílias;</li>
+                                                    <li>Unidades de Acolhimento – Casa Lar, Albergue, Abrigo
+                                                        Institucional, República, Residência Inclusiva, Casa de
+                                                        Passagem.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Importancia da politica de assistencia social - parte 4 -->
+                <div id="politica-4" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <button id="btn2" class="btn btn-1 w-50 rounded-4 d-block mx-auto mb-5">Proposição
+                                    3</button>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content popover-w-2 bg-card-primary"><b>Proposição:</b> Por que
+                                        você
+                                        acha que as ações de apoio às famílias deixaram de ser benesse e viraram
+                                        politica publica? Na sua avaliação isso foi um avanço ou um retrocesso?<br><br>
+
+                                        <b>Feedback positivo:</b> Faz-se muito importante compreender a politica de
+                                        assistência social como uma politica de Estado e organizada dentro do
+                                        Sistema Unico da Assistência Social.<br><br>
+
+                                        <b>Feedback orientador:</b> Para facilitar o entendimento iremos listar as
+                                        diferenças entre o assistencialismo e a política de assistência social
+                                        garantida pela Constituição Federal de 88.
+                                    </div>
+                                </div>
+                                <p class="py-2">Será que já superamos essa lógica? O que você percebe na sua região? De
+                                    fato, o que o SUAS apresenta como diferente no seu desenho de política pública? Que
+                                    tal agora conhecermos os equipamentos e benefícios criados por essa política, assim
+                                    como vimos na história de Caio?</p>
+                                <div class="box">
+                                    <p class="padding-container text-center text-light">
+                                        Vamos lá! O SUAS é um modelo de gestão descentralizado, com uma nova lógica de
+                                        organização das ações socioassistenciais, que considera as características do
+                                        território e tem foco prioritário na atenção às famílias, que são o alvo das
+                                        ações de proteção social. O SUAS reforça a importância de um conjunto protetivo
+                                        da seguridade social como um direito de cidadania, articulada à lógica da
+                                        universalidade.
+                                    </p>
+                                </div>
+                                <p class="py-2">Com base nesse desenho, o SUAS consolida uma nova forma de gestão
+                                    pública, tendo como pressupostos principais a territorialização, a descentralização
+                                    e a intersetorialidade.
+                                    É importante destacar que o SUAS permitiu a ampliação dos serviços
+                                    socioassistenciais, respeitando as diferenças locais, desenvolvidos de forma
+                                    descentralizada, com enfoque na matricialidade familiar com ações intersetoriais
+                                    conjuntas e articuladas.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img class="img-fluid w-75 pb-3 mx-auto d-block"
+                                    src="./image/modulo_04/politica_detalhes_1.png" alt="detalhes">
+                                <p class="py-2">Considerando essa lógica, observa-se que, no atendimento às necessidades
+                                    sociais de Caio, levaram-se em consideração a família, a rede de atenção à saúde e a
+                                    rede constituída pelos equipamentos sociais e comunitários do território, tendo por
+                                    base o desafio de enfrentar as questões sociais que afetam a vida do cidadão no
+                                    local onde vive e convive com outros cidadãos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Importancia da politica de assistencia social - parte 5 -->
+                <div id="politica-5" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Você consegue perceber que essa forma de gestão tem o mesmo desenho do
+                                    Programa Estratégia Saúde da Família, que desmonta uma marca a ser superada?
+                                    Concorda que o contexto em que se encontram e se movimentam setores e organizações
+                                    faz diferença no desenvolvimento dos<button id="btn3"
+                                        class="popover-btn">programas?</button></p>
+
+                                <div class="popover right">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content popover-w-2 bg-card-primary"><b>Proposição:</b> Você
+                                        consegue perceber no seu território que a execução das políticas públicas
+                                        hoje estão focadas num desenho de gestão e organização dos serviços de forma
+                                        descentralizada, intersetorial e focada no território?<br><br>
+
+                                        <b>Feedback positivo:</b> Sabemos que por décadas as políticas públicas foram
+                                        organizadas na lógica da centralização com base num único comando. A
+                                        proposta do SUAS tem por eixos ordenadores: o território, a família, a
+                                        descentralização administrativa e a intersetorialidade. Tem como foco
+                                        principal a atenção integral à família e indivíduos que a formam, buscando
+                                        assegurar o direito à convivência familiar e comunitária.<br><br>
+
+                                        <b>Feedback orientador:</b> O SUAS por meio da territorialização, reconhece a
+                                        presença dos múltiplos fatores sociais e econômicos que levam o indivíduo e
+                                        a família a situações de vulnerabilidade ou risco social. Com a
+                                        intersetorialidade busca a integração entre os diferentes serviços de saúde,
+                                        proteção social e justiça. E na perspectiva da descentralização, cada esfera
+                                        de governo tem suas ações político-administrativas, respeitando-se as
+                                        diferenças e características socioterritoriais e locais. Além disso, é
+                                        importante enfatizar que todos somos
+                                        participantes: gestores, técnicos, trabalhadores em geral, usuários,
+                                        conjunto social, na implementação e consolidação do SUAS.
+                                    </div>
+                                </div>
+                                <p class="py-2">Nessa perspectiva, a política de proteção social toma uma nova forma,
+                                    passando a compor um conjunto de ações que deve assegurar a preservação, a segurança
+                                    e a dignidade de todos os cidadãos. Tem como fundamento diretrizes embasadas na
+                                    perspectiva do acolhimento, do fortalecimento de vínculos, do atendimento integral
+                                    ao cidadão e da prática intersetorial.</p>
+                                <div class="box">
+                                    <p class="padding-container text-center text-light">
+                                        O SUAS buscou estruturar sua rede de proteção social em níveis de complexidade,
+                                        organizando os equipamentos públicos em proteção social básica e especial,
+                                        materializados como Centros de Referência da Assistência Social (CRAS) e como
+                                        Centro de Referência Especializado da Assistência Social (CREAS), espaços de
+                                        prestação de serviços e de articulação da rede de atenção socioassistencial que
+                                        têm como eixos estruturantes as necessidades sociais das famílias em seus
+                                        territórios.[1]
+                                        Sugerimos que esse trecho fique em destaque seja em um quadro ou algo que
+                                        sinalize a sua importância.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img class="img-fluid w-75 pb-3 mx-auto d-block"
+                                    src="./image/modulo_04/politica_detalhes_2.svg" alt="detalhes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - Equipamentos no seu territorio - parte 1 -->
+                <div id="equipamento-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line padding-x-desk-3">Você já ouviu falar nesses
+                                equipamentos
+                                no seu território?</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_04/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipamentos no seu territorio - parte 2 -->
+                <div id="equipamento-2" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="title text-center text-primary pb-3 padding-x-desk-3">
+                                    Você já ouviu falar nesses equipamentos no seu território?
+                                </p>
+                                <p class="py-2">Então vamos situar você mais um pouco nesse rol de siglas! A Proteção
+                                    Social Básica trabalha na prevenção de situações de vulnerabilidade e risco, bem
+                                    como no fortalecimento de vínculos familiares e comunitários. É por meio do Centro
+                                    de Referência da Assistência Social (CRAS) que a proteção social se territorializa e
+                                    se aproxima da população, reconhecendo a existência das desigualdades sociais
+                                    (BRASIL, 2009a).</p>
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-desk-5 padding-mobile-2 text-justify ">
+                                        <p class="pb-2 bold">Despertou seu interesse em conhecer mais sobre o Centro de
+                                            Referência da Assistência Social (CRAS)? Acesse o link:
+                                        </p>
+                                        <p class="py-2"><a
+                                                href="https://www.mds.gov.br/webarquivos/publicacao/assistencia_social/Cadernos/orientacoes_Cras.pdf"
+                                                target="_blank">Clique aqui para acessar o material descrito</a></p>
+                                        <p class="py-2">
+                                            Essa obra apresenta o funcionamento do CRAS por todo o país, representando
+                                            mais um fio da extensa rede de proteção e promoção social que está sendo
+                                            construída no Brasil
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Mais uma vez, lembra-se da Assistente Social da ESF que lembrou do grupo
+                                    do WhatsApp? Pois é, esse espaço é importante para organizar esse trabalho de
+                                    formação de rede local!</p>
+                                <p class="py-2">Contudo, é fundamental entender que essa articulação na formação de rede
+                                    é um ato em movimento impulsionada pelos diferentes atores institucionais. Essa rede
+                                    se constitui em cada território mediante a integração de serviços, reconhecendo a
+                                    interdependência dos atores e organizações, em face da constatação de que nenhuma
+                                    delas dispõe da totalidade de recursos, atribuições e competências necessários para
+                                    a resolutividade dos problemas e demandas de uma população em seus diversos ciclos
+                                    de vida. (SILVA JUNIOR et al, 2006)</p>
+                                <p class="py-2">A rede local caracteriza-se como um exercício de prática intersetorial,
+                                    um arranjo institucional, que exige articulação, conexão, vínculos, ações
+                                    complementares, relações horizontais entre parceiros, uma vez que o sujeito é um só
+                                    com suas diferentes dimensões de vulnerabilidade e risco.</p>
+                                <p class="py-2">
+                                    É importante sabermos também sobre os Serviços de Proteção Social Especial, que tem
+                                    estreita relação com o Sistema de Garantia de Direitos, cujo foco está nas famílias
+                                    e indivíduos que estão em situação de risco pessoal e social.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipamentos no seu territorio - parte 3 -->
+                <div id="equipamento-3" class="carousel-item default">
+                    <div class="container-fluid padding-container">
+                        <p class="bold pb-3">A Proteção Social Especial prevê dois níveis de complexidade:</p>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card flex-column w-75 w-sm-100 ">
+                                        <p class="title text-light text-center padding-x-desk-5 padding-mobile-2">
+                                            Serviços de média
+                                            complexidade
+                                        </p>
+                                    </div>
+                                    <div class="card-back border-card card-md-scrool w-75 w-sm-100 pt-3">
+                                        <p class="text-dark p-4 text-center">
+                                            São organizados nos Centros de Referência Especializados de Assistência
+                                            Social
+                                            (CREAS), unidades que oferecem atendimento às famílias e indivíduos que
+                                            tiveram seus
+                                            direitos violados, mas cujos vínculos familiares e comunitários não foram
+                                            rompidos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="card card-separador mx-auto">
+                                    <div class="card-front bg-card-primary flex-column w-75 w-sm-100 ">
+                                        <p class="title text-light text-center padding-x-desk-5 padding-mobile-2">
+                                            Serviços de alta complexidade
+                                        </p>
+                                    </div>
+                                    <div class="card-back border-card card-scrool w-75 w-sm-100 pt-3">
+                                        <p class="text-dark p-4 text-center">
+                                            (Serviço de Acolhimento Institucional, República de jovens, Família
+                                            Acolhedora, entre outros). Garantem proteção integral tanto para famílias e
+                                            indivíduos (crianças, adolescentes, jovens e adultos) que estão sem
+                                            referência e cujos vínculos familiares e afetivos foram rompidos como para
+                                            indivíduos em situação de ameaça, que precisam ser retirados do convívio
+                                            familiar e/ou comunitário.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="py-3">Você compreendeu a relação entre esses diferentes serviços na história de vida
+                            do jovem Caio e de sua família? Muitas redes se entrelaçaram, né? Assim, podemos pensar que,
+                            apesar de haver muitas lacunas na operacionalização desses serviços, eles existem na
+                            estrutura da política da Assistência Social e precisam exercer o seu papel na proteção
+                            social da população.</p>
+
+
+                    </div>
+                </div>
+
+                <!-- Equipamentos no seu territorio - parte 4 -->
+                <div id="equipamento-4" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box mb-2">
+                                    <p class="padding-container text-center text-light">
+                                        Você já pensou nos múltiplos significados que a palavra rede tem? Rede de pesca, rede de cabelo, rede de futebol, redes de cuidado, e, mais recentemente, um grupo de redes ganhou destaque: as redes sociais virtuais. Bianca buscou parcerias em um grupo de WhatsApp. Você já fez uso ou vislumbra outras utilidades das redes sociais para acolher adolescentes e jovens em situação de vulnerabilidade psicossocial?
+                                    </p>
+                                </div>
+                                <p class="py-2">Por falar em redes, a família é o primeiro espaço de socialização de uma criança e, por isso, tem um papel importante de representação do mundo exterior.</p>
+                                <img src="./image/modulo_04/equipamento_detalhes_4.svg" alt="Detalhe"
+                                    class="w-75 w-md-100 d-block mx-auto pb-3 padding-x-desk-3">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box">
+                                    <p class="padding-container text-center text-light subtitle">
+                                        Vamos refletir um pouco sobre família, esse grupo social tão importante em nossa
+                                        sociedade?
+                                    </p>
+                                </div>
+                                <div class="accordion-header pt-3">
+                                    <div class="accordion-item-person">
+                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_vinculos" aria-expanded="true">
+                                            Vínculos familiares e afetos rompidos
+                                        </button>
+                                        <div id="accordion_vinculos" class="accordion-collapse collapse">
+                                            <div class="accordion-corpo">
+                                                <ul class="p-4 small">
+                                                    <p>Ao pensar em vínculos familiares e afetivos rompidos, não podemos
+                                                        deixar de destacar a violência intrafamiliar, problema social
+                                                        complexo que afeta toda a sociedade, atingindo, de forma
+                                                        contínua, mulheres, crianças, adolescentes e jovens (BRASIL,
+                                                        2009b).</p>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item-person">
+                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordion_violencia" aria-expanded="true">
+                                            Violência intrafamiliar
+                                        </button>
+                                        <div id="accordion_violencia" class="accordion-collapse collapse">
+                                            <div class="accordion-corpo">
+                                                <ul class="p-4 small">
+                                                    <p>A violência intrafamiliar é a ação ou a omissão de algum membro
+                                                        da família que causa danos ao outro indivíduo. Esse tipo de
+                                                        violência contra crianças, adolescentes e jovens viola os
+                                                        direitos humanos, prejudicando o bem-estar, a liberdade e a
+                                                        integridade física e psicológica da pessoa que sofre a violência
+                                                        (BRASIL, 2009b; RIBEIRO, 2020).</p>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box my-4">
+                                    <p class="padding-container text-center text-light">
+                                        O ECA, em seu artigo 5º, estabelece que nenhuma criança ou adolescente será
+                                        objeto de qualquer forma de negligência, discriminação, exploração, violência,
+                                        crueldade e opressão, punido na forma da lei qualquer atentado, por ação ou
+                                        omissão, aos seus direitos fundamentais (BRASIL, 1990). Além disso, ampara a
+                                        denúncia e estabelece os princípios para o seu enfrentamento, assim como para a
+                                        atenção psicossocial da família.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipamentos no seu territorio - parte 5 -->
+                <div id="equipamento-5" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A violência precisa ser visibilizada, discutida e combatida. Cabe a toda
+                                    a sociedade civil, a agentes públicos, a profissionais de saúde e à família
+                                    assegurar a proteção de crianças, adolescentes e jovens. Dentro do ordenamento
+                                    jurídico, ressalta-se a importância do Conselho Tutelar, do Ministério Público e das
+                                    Varas da Infância e da Juventude, órgãos responsáveis pela defesa dos direitos de
+                                    criança e adolescente e assegurados pelo Sistema de Garantia do Direito da Criança e
+                                    do Adolescente (SGDCA) (Resolução 113 do CONANDA) (CONSELHO NACIONAL DOS DIREITOS DA
+                                    CRIANÇA E DO ADOLESCENTE, 2006).</p>
+                                <p class="py-2">Esses órgãos são fundamentais no eixo de defesa diante da violação de
+                                    direitos de adolescentes e jovens. O objetivo deles é defender e garantir direitos,
+                                    podendo, com a aplicação da lei, determinar ações de atendimento e de
+                                    responsabilização do Estado, da sociedade e da família. Assim, é importante termos a
+                                    compreensão de que, sempre que possível, devemos buscar o diálogo com esses órgãos
+                                    de defesa. Eles devem estar próximos e acessíveis à população. Destacamos aqui a
+                                    importância do Conselho Tutelar e de romper com a visão tão impregnada na população
+                                    de que esse órgão desempenha uma função “policialesca”, “repressora” e de poder
+                                    máximo nas intervenções diante da violação de direitos de crianças e adolescentes.
+                                    Como vimos na história de Caio, não foi atribuído ao Conselho Tutelar o poder de
+                                    decisão sobre o afastamento do adolescente do convívio familiar e sobre a guarda
+                                    provisória, mas à decisão da autoridade judiciária, conforme estabelece o ECA, em
+                                    seu artigo 101 (BRASIL, 1990).</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box">
+                                    <p class="padding-container text-center text-light">
+                                        Você sabia que a promulgação do ECA rompeu com a cultura do acolhimento
+                                        institucional ao garantir a excepcionalidade da medida apenas quando esgotadas
+                                        todas as possibilidades para a manutenção da criança e/ou do adolescente na
+                                        família de origem, família ampliada ou comunidade? Sabia, ainda, que o ECA
+                                        assegura que a situação de pobreza da família não é motivo suficiente para o
+                                        afastamento de criança e adolescente do convívio familiar, conforme artigo 23?
+                                        (BRASIL, 1990).
+                                    </p>
+                                </div>
+                                <p class="py-2">
+                                    São muitas as conquistas no campo da defesa dos direitos da criança e do
+                                    adolescente atribuídas a esse marco regulatório. Ao falar ainda nos órgãos,
+                                    precisamos lembrar aqui da importância da participação no processo eleitoral
+                                    realizado nos Conselhos Tutelares.
+                                </p>
+                                <img src="./image/modulo_04/equipamento_detalhes_2.svg" alt="Detalhe"
+                                    class="w-75 w-md-100 d-block ml-auto pb-3 padding-x-desk-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipamentos no seu territorio - parte 6 -->
+                <div id="equipamento-6" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Você sabe como os conselheiros tutelares são <button id="btn4"
+                                        class="popover-btn">eleitos?</button></p>
+                                <div class="popover bottom">
+                                    <div class="popover-arrow"></div>
+                                    <div class="popover-content popover-w-2 bg-card-primary"><b>Proposição:</b> Em algum
+                                        momento você
+                                        participou em seu município ou presenciou o processo de eleição dos
+                                        representantes do Conselho tutelar? Você sabia que esse conselho tem um
+                                        importante papel de auxiliar o gestor municipal na defesa dos direitos da
+                                        criança e do adolescente?<br><br>
+
+                                        <b>Feedback positivo:</b> A participação ativa da população na eleição dos
+                                        representantes do Conselho tutelar é um exercício de cidadania, contudo a
+                                        maioria dos municípios não reconhece a importância da escolha dessa
+                                        representatividade, principalmente no apoio operacional nas ações de
+                                        divulgação e mobilização da população local. Todos os cidadãos do território
+                                        podem votar e eleger os representantes deste órgão. Esse movimento tem como
+                                        gestores da organização o Conselho Municipal dos Direitos da Criança e do
+                                        Adolescente-CMDCA, Ministério Público e o apoio do Tribunal Superior
+                                        Eleitoral, que oferece o suporte operacional para a votação, respeitando a
+                                        organização do processo eleitoral no Brasil. Os locais de votação são
+                                        divulgados no momento da eleição por cada município.<br><br>
+
+                                        <b>Feedback orientador:</b> O Conselho Tutelar, é um órgão permanente, autônomo
+                                        e
+                                        não jurisdicional (que não integra ao judiciário), encarregado pela
+                                        sociedade de zelar pelo
+                                        cumprimento dos direitos da criança e do adolescente, constituído por cinco
+                                        membros escolhidos pela comunidade local, para um mandato de quatro anos. A
+                                        principal função é a garantia dos direitos das crianças e adolescentes
+                                        estabelecidas no ECA (art. 136). Divulgar o trabalho desse órgão e lutar
+                                        pela consolidação de suas ações é garantir uma vida mais digna aos nossos
+                                        adolescentes e jovens.
+                                    </div>
+                                </div>
+                                <p class="py-2">Com certeza, você, assim como eu, preocupa-se com a garantia de defesa
+                                    de direitos desse segmento da população.</p>
+                                <p class="py-2">A história de Caio escancara diversas formas de violação de direitos e
+                                    situações de violência: o menino que saiu do Pará no meio da noite, que veio para a
+                                    cidade grande, que sofre com a desorganização familiar, que vê naqueles que deveriam
+                                    cuidar a falta de carinho, zelo e atenção, que vê a mãe e o padrasto dependentes do
+                                    álcool e das drogas, que sofre violência na escola, que vai morar nas ruas, que
+                                    sofre violência institucional... o menino dos “olhos de jabuticaba” da “blusa do seu
+                                    pai”.</p>
+                                <div class="box w-75 w-md-100 mr-auto">
+                                    <p class="p-3 text-center text-light">
+                                        Diante de tantas vulnerabilidades, como pensar a Rede de Atenção Psicossocial?
+                                    </p>
+                                </div>
+                                <div class="box w-75 w-md-100 ml-auto">
+                                    <p class="p-3 text-center text-light">
+                                        Qual é o seu papel dentro da Rede de Atenção à Saúde e Proteção Social?
+                                    </p>
+                                </div>
+                                <div class="box w-75 w-md-100 mr-auto">
+                                    <p class="p-3 text-center text-light">
+                                        Como pensar toda essa rede no contexto da garantia da dignidade da pessoa
+                                        humana?
+                                    </p>
+                                </div>
+                                <div class="box w-75 w-md-100 ml-auto">
+                                    <p class="p-3 text-center text-light">
+                                        Como pensar essa Rede considerando a proteção de Caio e de sua família?
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img src="./image/modulo_04/equipamento_detalhes_3.svg" alt="Detalhe"
+                                    class="w-75 w-md-100 d-block mx-auto pb-3 padding-x-desk-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topico - Reforma Psiquiatrica - parte 1 -->
+                <div id="reforma-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line padding-x-desk-3">Vamos agora pensar como a
+                                Reforma Psiquiátrica possibilitou a criação de uma Rede de Atenção Psicossocial?</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_04/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reforma Psiquiatrica - parte 2 -->
+                <div id="reforma-2" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="title text-primary text-center pb-3 padding-x-desk-3">
+                                    Vamos agora pensar como a Reforma Psiquiátrica possibilitou a criação de uma Rede de
+                                    Atenção Psicossocial?
+                                </p>
+                                <div class="citacao-2 my-3">“Estou vivendo<br>
+                                    No mundo do hospital<br>
+                                    Tomando remédios<br>
+                                    De psiquiatria mental<br>
+                                    [...]<br>
+                                    Me amarram, me aplicam<br>
+                                    Me sufocam<br>
+                                    Num quarto trancado<br>
+                                    Socorro<br>
+                                    Sou um cara normal<br>
+                                    Asfixiado<br>
+                                    [...]<br>
+                                    Ai, ai, ai<br>
+                                    Que sufoco da vida<br>
+                                    Sufoco louco<br>
+                                    (Sufoco da Vida – Harmonia Enlouquece)
+                                </div>
+                                <p class="py-2">Para pensarmos na criação da RAPS, precisamos entender como o sofrimento
+                                    psíquico era visto há poucos anos. No Brasil, o movimento da Reforma Psiquiátrica se
+                                    iniciou no final dos anos de 1970, com a iniciativa e organização dos trabalhadores
+                                    da saúde mental, pacientes e seus familiares que questionavam o modelo manicomial
+                                    existente à época. Esses atores propuseram, nos anos de 1980, a diversificação de
+                                    serviços e de ações em saúde mental, de acordo com as complexidades, com vistas à
+                                    constituição do que seria chamado de rede de atenção em saúde mental (AMARANTE,
+                                    1996).</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-desk-5 padding-mobile-2 text-justify">
+                                        <p class="pb-2">Vamos ver um vídeo que mostra o drama dos pacientes
+                                            psiquiátricos em um hospital psiquiátrico.
+                                        </p>
+                                        <iframe class="w-100 video" src="https://www.youtube.com/embed/kRJwQg-oavc"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <p class="py-2">
+                                            O vídeo trata de uma adaptação do livro homônimo escrito por Daniela Arbex,
+                                            este é um retrato aprofundado e contundente sobre os eventos que ficaram
+                                            conhecidos como: Holocausto Brasileiro. O grande genocídio cometido contra
+                                            os pacientes psiquiátricos do hospício de Barbacena, em Minas Gerais.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reforma Psiquiatrica - parte 3 -->
+                <div id="reforma-3" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A partir da promulgação da Lei nº 10.216/2001, o modelo de saúde mental
+                                    foi redirecionado para um modelo de atenção pautado pela perspectiva da Atenção
+                                    Psicossocial, e os Centros de Atenção Psicossocial (CAPS) passaram a ser
+                                    considerados dispositivos estratégicos do movimento progressivo do deslocamento do
+                                    centro do cuidado para fora do hospital em direção à comunidade (BRASIL, 2004).</p>
+                                <p class="py-2">Nessa direção, de acordo com o previsto pelo Ministério da Saúde, é
+                                    também dada aos CAPS a responsabilidade de organizar a rede de serviços de saúde
+                                    mental de seu território, em uma perspectiva de que esses dispositivos estejam
+                                    articulados na rede de serviços de saúde e intersetorial, o que configura a Rede de
+                                    Atenção Psicossocial (RAPS).</p>
+                                <p class="py-2">Lembra-se de Caio e de sua família? Lembra-se da importância do CAPSi em
+                                    articular a rede de Belém para encontrar o pai do adolescente? E da importância do
+                                    CAPS AD no acompanhamento e suporte a Telma para garantir o contato e o diálogo com
+                                    o judiciário? A interação com outras redes sociais é necessária para fazer face à
+                                    complexidade das demandas de inclusão e compreensão nesses casos, visto que pessoas
+                                    com transtornos mentais eram simplesmente excluídas da sociedade (BRASIL, 2004).</p>
+                                <p class="py-2">
+                                    Seixas et al. (2021) ressaltam a aposta nos cuidados de proximidade como estratégia
+                                    para configurar um cuidado ampliado no território, mais próximo da população,
+                                    presente na vida cotidiana dos usuários, que articula diferentes atores no
+                                    território para criar possibilidades de cuidado que atendam às necessidades
+                                    particulares de cada sujeito, entendendo que é imprescindível essa compreensão para
+                                    não sermos cooptados pela lógica médico-centrada e para que não haja a retomada do
+                                    modelo manicomial.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">A organização dessa rede tem a noção de território como importante
+                                    orientadora. O conceito de território no campo da saúde mental opera como
+                                    instrumento para promoção de saúde e cidadania, afirmando que só será possível
+                                    produzirmos saúde se valorizarmos a região emoldurada pelas referências sociais e
+                                    culturais daquela comunidade.</p>
+                                <div class="box my-4">
+                                    <p class="padding-container text-center text-light">
+                                        O território deve ser entendido não apenas como o bairro do domicílio do
+                                        sujeito, mas como um conjunto de referências socioculturais e econômicas que
+                                        desenham seu projeto de vida e sua inserção no mundo (SANTOS, 2007).
+                                    </p>
+                                </div>
+                                <p class="py-2">Lembra-se do impacto da mudança de território em cada membro nesse
+                                    núcleo e de seus diferentes sofrimentos psíquicos, com demandas diversas? É
+                                    compreendendo essas diferentes ordens de sofrimento que a RAPS estabelece serviços
+                                    diferentes no campo da atenção psicossocial, com intensidades de cuidados
+                                    diferentes, de acordo com a complexidade do sofrimento que os sujeitos apresentam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reforma Psiquiatrica - parte 4 -->
+                <div id="reforma-4" class="carousel-item default">
+                    <div class="container-fluid padding-container text-justify">
+                        <p class="pb-2 pt-mobile-5">
+                            Dentre os objetivos, destacam-se: ampliar o acesso à atenção psicossocial da população em
+                            geral e promover o acesso às pessoas com transtornos mentais e com necessidades decorrentes
+                            do uso de crack, álcool e outras drogas e a suas famílias aos pontos de atenção. Além disso,
+                            busca garantir a articulação e integração com as redes de atenção no território, promovendo
+                            um cuidado pautado pelo acolhimento, acompanhamento contínuo e atenção às situações de
+                            urgência (BRASIL, 2017b).
+                        </p>
+                        <p class="py-2">A Rede é composta por diferentes serviços e equipamentos: Centros de Atenção
+                            Psicossocial (CAPS); Serviços Residenciais Terapêuticos (SRT); Centros de Convivência e
+                            Cultura; Unidade de Acolhimento (UAs); e leitos de atenção integral (em Hospitais Gerais,
+                            nos CAPS III).</p>
+                        <img class="img-fluid w-75 w-md-100 pt-4 mx-auto d-block"
+                            src="./image/modulo_04/reforma_detalhes_1.png" alt="detalhes">
+                    </div>
+                </div>
+
+                <!-- Reforma Psiquiatrica - parte 5 -->
+                <div id="reforma-5" class="carousel-item default">
+                    <div class="container-fluid padding-container text-justify">
+                        <p class="pb-2 pt-mobile-5">
+                            Os CAPS, regulamentados pela Portaria nº 336 (BRASIL, 2002), devem ser compostos por uma
+                            equipe multiprofissional, e os profissionais que a integram devem trabalhar em perspectiva
+                            interdisciplinar, e cada sujeito acompanhado nesse dispositivo deve ter seu Projeto
+                            Terapêutico Singular, o que permite um olhar considerando a particularidade da forma como o
+                            sofrimento se apresenta naquele sujeito.
+                        </p>
+                        <img class="img-fluid w-75 w-md-100 pt-4 mx-auto d-block"
+                            src="./image/modulo_04/reforma_detalhes_2.png" alt="detalhes">
+                    </div>
+                </div>
+
+                <!-- Reforma Psiquiatrica - parte 6 -->
+                <div id="reforma-6" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Considerando essas modalidades, vale destacar os CAPS que atuaram no
+                                    caso “Caio: da camisa do pai aos olhos de jabuticaba”. Você já acompanhou algum caso
+                                    que demandou articulação com o CAPSi e/ou CAPSad? Como foram as suas experiências
+                                    quando precisou acionar esses dispositivos?</p>
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-desk-5 padding-mobile-2 text-justify ">
+                                        <p class="pb-2 bold">Vamos conhecer mais sobre a importância das redes para a
+                                            garantia de direitos? acesse o link:
+                                        </p>
+                                        <p class="py-2"><a
+                                                href="https://bvsms.saude.gov.br/bvs/publicacoes/atencao_psicossocial_criancas_adolescentes_sus.pdf"
+                                                target="_blank">Clique aqui para acessar o material descrito</a></p>
+                                        <p class="py-2">
+                                            Nesse documento, são resgatados os principais marcos no campo dos direitos
+                                            humanos e da atenção psicossocial de crianças e adolescentes, bem como os
+                                            principais temas e desafios para o desenvolvimento de ações efetivas na
+                                            promoção, na proteção e na defesa de direitos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="py-2">
+                                    Outra importante reflexão que precisamos fazer é sobre o atraso de nosso país na
+                                    implantação de uma atenção voltada especificamente para crianças e adolescentes.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="pb-2">Quando estudamos políticas públicas de saúde mental voltadas para
+                                    crianças e adolescentes, verificamos uma grande defasagem de atenção a essa
+                                    população.</p>
+                                <div class="box my-4">
+                                    <p class="padding-container text-center text-light">
+                                        Couto, Duarte e Delgado (2008) fazem uma análise do processo histórico da
+                                        implementação de políticas no campo da saúde mental infantil no Brasil. Destacam
+                                        que a tardia implantação de políticas públicas de saúde mental infantil se deu
+                                        devido à variedade de demandas, pois nessas faixas etárias são encontrados
+                                        problemas de saúde como transtornos invasivos do desenvolvimento, transtornos de
+                                        conduta, transtornos de ansiedade, transtornos depressivos, uso abusivo de
+                                        substâncias, além da extrema violência e vulnerabilidade social a que está
+                                        exposta parte dessas crianças e adolescentes.
+                                    </p>
+                                </div>
+                                <p class="py-2">Além disso, outros pontos levantados dizem respeito ao conhecimento
+                                    apenas recente das consequências de transtornos da infância e da adolescência na
+                                    vida adulta, assim como ao fato de haver poucos dados produzidos que comprovassem a
+                                    eficácia de tratamento desses transtornos, ainda muito pautado por uma lógica
+                                    médico-centrada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reforma Psiquiatrica - parte 7 -->
+                <div id="reforma-7" class="carousel-item default">
+                    <div class="container-fluid padding-container text-justify">
+                        <p class="pb-3 pt-mobile-5">Sendo assim, as iniciativas no campo da assistência a crianças e
+                            adolescentes
+                            que sofrem com transtorno mental ainda demandam um trabalho dos profissionais na lógica de
+                            romper com a desinformação técnico-política, promover a intersetorialidade e particularizar
+                            o atendimento ao público infantojuvenil, antes pautado pela assistência a adultos ou
+                            deficientes. Esse é o desafio que se coloca ante as novas formas de lidar com a assistência
+                            em saúde mental, principalmente quando se fala de práticas profissionais (GUERRA, 2003).</p>
+                        <div class="p-2">
+                            <div class="d-flex" role="tablist">
+                                <div class="w-100 d-flex align-items-bottom" role="presentation">
+                                    <button class="btn-panel w-100 active" data-bs-toggle="tab"
+                                        data-bs-target="#dificuldade_caps" type="button" role="tab"
+                                        aria-selected="true">01</button>
+                                </div>
+                                <div class="w-100 d-flex align-items-bottom" role="presentation">
+                                    <button class="btn-panel w-100" data-bs-toggle="tab"
+                                        data-bs-target="#importancia_caps" type="button" role="tab"
+                                        aria-selected="false">02</button>
+                                </div>
+                            </div>
+                            <div class="tab-content pt-5 p-3">
+                                <div class="tab-pane fade show active" id="dificuldade_caps" role="tabpanel"
+                                    tabindex="0">
+                                    <p class="bold pb-3 text-center">Você já pensou quão difícil deve ser o trabalho no
+                                        CAPSi diante
+                                        de todas as particularidades que a infância e a adolescência têm?</p>
+                                    <p class="py-2">Diante do que expusemos, você viu a importância do profissional que
+                                        atendeu Caio e da articulação que os diferentes dispositivos de saúde mental
+                                        CAPSi e CAPSad fizeram para o fortalecimento dos vínculos familiares e
+                                        comunitários? Telma, a mãe de Caio, fazia uso excessivo de substância que
+                                        prejudicava suas relações e afetava o vínculo com seus filhos. Você conseguiu
+                                        identificar a importância do CAPSad no apoio e nas estratégias de cuidado a
+                                        Telma?</p>
+                                    <button id="btn5"
+                                        class="btn btn-1 w-md-75 rounded-4 d-block mr-auto my-5">Proposição
+                                        6</button>
+                                    <div class="popover right">
+                                        <div class="popover-arrow"></div>
+                                        <div class="popover-content popover-w-2 bg-card-primary"><b>Proposição:</b> Você
+                                            acredita que o campo da infância e adolescência possui suas especificidades
+                                            e particularidades, diferentes da assistência aos adultos? E o que pensar da
+                                            relação desse público
+                                            com a atenção psicossocial? <br><br>
+
+                                            <b>Feedback positivo:</b> Um dos desafios na assistência em saúde mental
+                                            infantojuvenil e promover
+                                            um diálogo entre os diferentes saberes que perpassam as crianças e os
+                                            jovens, uma vez que
+                                            estão diluídos por diferentes áreas, como pedagogia, psicologia e medicina,
+                                            importantes
+                                            para a construção e a reconstrução de projetos de vida.<br><br>
+
+                                            <b>Feedback orientador:</b> Romper com a desinformação técnico-política,
+                                            promover a
+                                            intersetorialidade
+                                            e particularizar o atendimento ao público infantojuvenil, antes pautado na
+                                            assistência aos adultos
+                                            ou deficientes, representa o desafio que se coloca ante as novas formas de
+                                            lidar com a
+                                            assistência em saúde mental, principalmente quando se fala de práticas
+                                            profissionais.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="importancia_caps" role="tabpanel" tabindex="0">
+                                    <p class="bold pb-3 text-center">Você sabe sobre a importância do CAPSad e o
+                                        significado da lógica da redução de danos?</p>
+                                    <p class="py-2">Vale destacar que o vasto e diversificado perfil dos usuários de um
+                                        CAPSad é um aspecto importante a ser considerado no contexto de trabalho desse
+                                        serviço, uma vez que as pessoas chegam, muitas vezes, com demandas relacionadas
+                                        à integridade física, como higiene, comida, alojamento e cuidados básicos em
+                                        saúde, ou ainda que requerem o envolvimento de outros setores da política
+                                        pública, como a mediação entre a justiça, a educação, o trabalho etc.</p>
+                                    <button id="btn6"
+                                        class="btn btn-1 w-md-75 rounded-4 d-block mr-auto my-5">Proposição
+                                        7</button>
+                                    <div class="popover right">
+                                        <div class="popover-arrow"></div>
+                                        <div class="popover-content popover-w-2 bg-card-primary"><b>Proposição:</b> Você
+                                            já
+                                            ouviu falar em redução de danos? O que você acha dessa lógica que
+                                            orienta o trabalho nos CAPSad para acompanhar as pessoas que fazem uso
+                                            prejudicial de substâncias?
+
+                                            <b>Feedback positivo:</b> A lógica da redução de danos privilegia e propõe
+                                            romper com os modelos anteriores de estigmatização das drogas, a fim de
+                                            suscitar o surgimento de outras possibilidades terapêuticas em relação
+                                            ao uso e dependência.
+
+                                            <b>Feedback orientador:</b> Dessa maneira, a redução de danos não exige
+                                            abstinência como
+                                            pré-requisito para permanência em programas de atenção à saúde, mas
+                                            busca criar estratégias não coercitivas para adesão aos serviços,
+                                            estabelecer uma relação acolhedora dos profissionais com os usuários
+                                            (Canadian AIDS Society, 2008), além de incluí-los como partícipes na
+                                            produção de cuidado (Souza, 2007).
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reforma Psiquiatrica - parte 8 -->
+                <div id="reforma-8" class="carousel-item default">
+                    <div class="container-fluid">
+                        <div class="row pt-4">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <div class="box my-4">
+                                    <p class="padding-container text-center text-light">
+                                        Para tanto, faz-se imprescindível pensar na concepção de doença vinculada à
+                                        concepção de assistência, para que seja possível acolher as diversas demandas
+                                        dos sujeitos que chegam à equipe desse dispositivo e, assim, constituir vínculo.
+                                    </p>
+                                </div>
+                                <p class="py-2">Se o usuário de álcool e de outras drogas é um sujeito em sofrimento na
+                                    sua relação com a substância e isso faz com que se afaste das pessoas, o vínculo com
+                                    o local de tratamento pode permitir que esse sujeito estabeleça outras relações em
+                                    sua vida e, com isso, no decorrer do tratamento, esvazie um pouco a relação de
+                                    dependência com a droga. Essa relação do sujeito com a droga não é desconsiderada,
+                                    mas também não é entendida como protagonista na intervenção de cuidado. Logo, o
+                                    cuidado passa pelo acesso a outros serviços de saúde e por diversas políticas
+                                    públicas, assim como pelo conjunto de profissionais, com estratégias de intervenção
+                                    que alcancem os produtores de cuidado ao apostarem em novas organizações para vida
+                                    desses sujeitos.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <img class="img-fluid w-75 w-md-100 pt-4 mx-auto d-block"
+                                    src="./image/modulo_04/reforma_detalhes_3.svg" alt="detalhes">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- encerramento do modulo - parte 1 -->
+                <div id="encerramento" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="box-gradiente p-4">
+                            <span class="title text-light py-2 d-block text-center my-auto">encerramento do
+                                módulo</span>
+                        </div>
+                        <div class="padding-container text-justify">
+                            <p class="py-3">A história “Caio: da camisa do pai aos olhos de jabuticaba” nos possibilitou
+                                observar como as Redes de Atenção à Saúde no SUS e a Rede Socioassistencial do SUAS se
+                                entrelaçam, se organizam mutuamente por meio de construções e reconstruções, que
+                                permitem
+                                que o cuidado dos indivíduos e das famílias seja efetivado. A vida de Caio e de sua
+                                família
+                                é semelhante à vida de muitos outros brasileiros e brasileiras, marcada por diversas
+                                vulnerabilidades e pela falta de efetividade das políticas públicas.
+                            </p>
+                            <p class="py-2">Essa narrativa de vida nos permite refletir sobre a importância dos
+                                diferentes
+                                agentes sociais, das redes de apoio formal e informal e do papel do Estado, da
+                                comunidade e
+                                da sociedade civil na garantia de direitos de adolescentes e jovens.
+                                Crianças, adolescentes e jovens são sujeitos de direitos do presente e do futuro!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- referencias - parte 1 -->
+                <div id="referencias-1" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="box-gradiente p-4">
+                            <span class="title text-light py-2 d-block text-center my-auto">referências</span>
+                        </div>
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="py-2">ALT, B. S. População em situação de rua: interferências do olhar da
+                                    sociedade na forma como esse grupo enfrenta o mundo do trabalho. 2017. 92 f.
+                                    Dissertação (Mestrado em Política Social) – Centro de Ciências Jurídicas, Econômicas
+                                    e Sociais, Universidade Católica de Pelotas/UCPEL, Pelotas, 2017. <br><br>
+
+                                    AMARANTE, P. O homem e a serpente: outras histórias para a loucura e a psiquiatria.
+                                    Rio de Janeiro: Fiocruz, 1996.<br><br>
+
+                                    ANDERSON, M. I. P. Médicos pelo Brasil e as políticas de saúde para a Estratégia
+                                    Saúde da Família de 1994 a 2019: caminhos e descaminhos da Atenção Primária no
+                                    Brasil. Revista Brasileira de Medicina de Família e Comunidade, Rio de Janeiro, v.
+                                    14, n. 41, p. 2180, 2019. DOI: 10.5712/rbmfc14(41)2180. Disponível em:
+                                    https://rbmfc.org.br/rbmfc/article/view/2180. Acesso em: 6 out. 2022.<br><br>
+
+                                    BRASIL. Ministério da Saúde. Secretaria de Atenção Especializada à Saúde.
+                                    Departamento de Atenção Hospitalar, Domiciliar e de Urgência. Atenção domiciliar na
+                                    Atenção Primária à Saúde. Brasília: Ministério da Saúde, 2020. 98 p.<br><br>
+
+                                    BRASIL. Portaria Nº 2.436, de 21 de setembro de 2017. Aprova a Política Nacional de
+                                    Atenção Básica, estabelecendo a revisão de diretrizes para a organização da Atenção
+                                    Básica, no âmbito do Sistema Único de Saúde (SUS). Diário Oficial da União,
+                                    Brasília, DF, 2017a.Disponível em:
+                                    https://bvsms.saude.gov.br/bvs/saudelegis/gm/2017/prt2436_22_09_2017.html. Acesso
+                                    em: 27 set. 2022.<br><br>
+
+                                    BRASIL. Ministério da Saúde. Portaria Nº 3.588, de 21 de dezembro de 2017. Altera as
+                                    Portarias de Consolidação no 3 e nº 6, de 28 de setembro de 2017, para dispor sobre
+                                    a Rede de Atenção Psicossocial, e dá outras providências.Diário Oficial da União,
+                                    Brasília, DF, 2017b.<br><br>
+
+                                    BRASIL. Ministério da Saúde. Atenção psicossocial a crianças e adolescentes no SUS:
+                                    tecendo redes para garantir direitos. Brasília: Ministério da Saúde, 2014. 60
+                                    p.<br><br>
+
+                                    BRASIL. Ministério da Saúde. Política Nacional de Atenção Básica. Brasília:
+                                    Ministério da Saúde, 2012. (Série E. Legislação em Saúde)
+
+
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="py-2">
+                                    BRASIL. Ministério da Saúde. Secretaria de Atenção em Saúde. Departamento de Ações
+                                    Programáticas Estratégicas. Diretrizes nacionais para a atenção integral à saúde de
+                                    adolescentes e jovens na promoção, proteção e recuperação da saúde. Brasília, 2010.
+                                    132 p. (Série A. Normas e Manuais Técnicos)<br><br>
+
+                                    BRASIL. Orientações Técnicas: Centro de Referência de Assistência Social – CRAS.
+                                    Brasília: Ministério do Desenvolvimento Social e Combate à Fome, 2009a. 72
+                                    p.<br><br>
+
+                                    BRASIL. Ministério da Saúde. Por uma cultura da paz, promoção da saúde e prevenção
+                                    da violência. Brasília; 2009b.<br><br>
+
+                                    BRASIL. Decreto Nº 6.286, de 5 de dezembro de 2007. Institui o Programa Saúde na
+                                    Escola - PSE, e dá outras providências. Diário Oficial da União, Brasília, DF,6 dez.
+                                    2007.<br><br>
+
+                                    BRASIL. Ministério da Saúde. Secretaria de Atenção à Saúde. Área de Saúde do
+                                    Adolescente e do Jovem. Marco legal: saúde, um direito de adolescentes. Brasília,
+                                    2005a. 60 p. (Série A. Normas e Manuais Técnicos)<br><br>
+
+                                    BRASIL. Ministério do Desenvolvimento Social e Combate à Fome Secretaria Nacional de
+                                    Assistência Social. Política Nacional de Assistência Social PNAS. Norma Operacional
+                                    da Assistência Social – NOB/SUAS. Brasília, 2005b.<br><br>
+
+                                    BRASIL. Ministério da Saúde. Lei Nº 10.216, de 6 de abril de 2001. Dispõe sobre a
+                                    proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o
+                                    modelo assistencial. In: BRASIL. Legislação em saúde mental: 1990-2004. 5. ed. ampl.
+                                    Brasília, 2004. p. 17-20.<br><br>
+
+                                    BRASIL. Ministério da Saúde. Secretaria Executiva. Coordenação da Saúde da Criança e
+                                    do Adolescente. Programa Saúde do Adolescente. Bases Programáticas. 2.ed. Brasília:
+                                    Ministério da Saúde, 1996.<br><br>
+
+                                    BRASIL. Lei Nº 8.742, de 7 de dezembro de 1993. Dispõe sobre a organização da
+                                    Assistência Social e dá outras providências. Diário Oficial da União, Brasília, DF,
+                                    8 dez. 1993.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- referencias - parte 2 -->
+                <div id="referencias-2" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="box-gradiente p-4">
+                            <span class="title text-light py-2 d-block text-center my-auto">referências</span>
+                        </div>
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="py-2">BRASIL. Lei Nº 8.069, de 13 de julho de 1990. Dispõe sobre o Estatuto da
+                                    Criança e do Adolescente e dá outras providências. Diário Oficial da União,
+                                    Brasília, DF, 16 jul. 1990. Disponível em
+                                    http://www.planalto.gov.br/ccivil_03/leis/l8069.htm. Acesso em: 27 set. 2022.
+                                    <br><br>
+
+                                    BRASIL. Constituição da República Federativa do Brasil. Brasília, DF: Senado
+                                    Federal: Centro Gráfico, 1988.Disponível em:
+                                    http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm. Acesso em: 27
+                                    set. 2022.<br><br>
+
+                                    BRASIL. Lei N° 17.943-A, de 12 de outubro de 1927.Consolida as leis de assistência e
+                                    proteção a menores. Coleção de Leis do Brasil, 31 dez. 1927.<br><br>
+
+                                    CLOSS, T. T.; SCHERER, G. A. Visita domiciliar no trabalho do assistente social.
+                                    Revista Libertas, v. 17, n. 2, p. 41-60, 2017. Disponível em:
+                                    https://periodicos.ufjf.br/index.php/libertas/article/view/18528. Acesso em: 18 nov.
+                                    2022.<br><br>
+
+                                    CONSELHO NACIONAL DOS DIREITOS DA CRIANÇA E DO ADOLESCENTE (CONANDA). Resolução Nº
+                                    113, de 19 de abril de 2006. Dispõe sobre os parâmetros para a institucionalização e
+                                    fortalecimento do Sistema de Garantia dos Direitos da Criança e do Adolescente.
+                                    Diário Oficial da União, 2006.<br><br>
+
+                                    COUTO, M. C. V.; DUARTE, C. S.; DELGADO, P. G. G. A saúde mental infantil na Saúde
+                                    Pública brasileira: situação atual e desafios. Brazilian Journal of Psychiatry, v.
+                                    30, n. 4, p. 390-398, 2008. Disponível em:
+                                    https://doi.org/10.1590/S1516-44462008000400015. Acesso em: 14 nov. 2022.<br><br>
+
+                                    GUERRA, A. M. C. Tecendo a rede na assistência em saúde mental infanto-juvenil:
+                                    interfaces entre a dimensão clínica e a dimensão política. In: GUERRA, A. M. C.;
+                                    LIMA, N. L. (Org.). A clínica de crianças com transtornos no desenvolvimento– uma
+                                    contribuição no campo da psicanálise e da saúde mental. Belo Horizonte: Autêntica,
+                                    2003. p. 171-189.<br><br>
+
+                                    ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Assembleia Geral das Nações Unidas. Convenção sobre
+                                    os Direitos da Criança. 1989.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-container text-justify">
+                                <p class="py-2">
+                                    RIBEIRO, V.M. A violência intrafamiliar e os dispositivos protecionais voltados para
+                                    a criança e o adolescente contidos no ECA. Boletim Jurídico, a. 18, n. 974,2020.
+                                    Disponível em
+                                    https://www.boletimjuridico.com.br/artigos/direito-da-infancia-e-juventude/10107/
+                                    a-violencia-intrafamiliar-os-dispositivos-protecionais-voltados-crianca-adolescente-contidos-eca.
+                                    Acesso em: 27 set. 2022. <br><br>
+
+                                    SANTOS, M. A natureza do espaço: técnica e tempo. Razão e emoção. 4.ed. São Paulo:
+                                    EdUSP, 2006. (Coleção Milton Santos, 1)<br><br>
+
+                                    SEIXAS, C. T.et al. A crise como potência: os cuidados de proximidade e a epidemia
+                                    pela Covid-19. Interface - Comunicação, Saúde, Educação, v. 25, supl. 1,2021.
+                                    Disponível em: https://doi.org/10.1590/interface.200379.Acesso em: 14 nov. 2022.<br><br>
+
+                                    SILVA, Jr. et al. Refletindo sobre o ato de cuidar da saúde. In PINHEIRO, R e
+                                    MATTOS, RA (Orgs.). Gestão em redes: práticas de avaliação, formação e participação
+                                    na saúde. Rio de Janeiro, IMS- UERJ – ABRASCO, 2006.<br><br>
+
+                                    PINHEIRO, R., MATTOS, R.A. (Org.). Os Sentidos da Integralidade na Atenção e no
+                                    Cuidado à Saúde. Rio de Janeiro, IMS- UERJ – ABRASCO, 2001.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
