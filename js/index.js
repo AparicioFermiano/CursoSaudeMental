@@ -1,3 +1,6 @@
+// Autor: Aparicio Fermiano dos Santos Junior
+// https://github.com/AparicioFermiano 
+
 function nav() {
     var sidenav = document.getElementById("mySidenav");
     var marginRight = window
@@ -6,50 +9,80 @@ function nav() {
     var btn = document.getElementById("btn-sidebar");
     if (marginRight === "-300px" || marginRight === "") {
         sidenav.style.marginRight = "0px";
-        btn.className = btn.className.replace(
-            "btn-sidebar-light",
-            "btn-sidebar-dark"
-        );
     } else {
         sidenav.style.marginRight = "-300px";
-        btn.className = btn.className.replace(
-            "btn-sidebar-dark",
-            "btn-sidebar-light"
-        );
     }
 }
 
-function mudar_carrosel(id, sem_nav) {
-    let id_pai = document.querySelector(id.split("-")[0]);
-    let id_lista = document.querySelector("#list-" + id.substring(1));
+function mudar_sidebar(id){
+    const id_pai = document.getElementById(id.split("-")[0]);
+    const id_lista = document.querySelector("#list-" + id);
+    const sidebarItems = document.querySelectorAll(".sidebar-item, .sidebar-subitem");
 
-    $("#carousel").carousel($(id).index());
-    document.querySelectorAll(".sidebar-item, .sidebar-subitem").forEach((item) => {
-        item.classList.remove("active");
+    sidebarItems.forEach((item) => {
+        if (item.classList.contains("active")) {
+            item.classList.remove("active");
+        }
     });
-
-    id_lista.classList.add("active");
-
-    if (id_pai && id_pai.querySelector(".active")) {
+    
+    if(id_lista) {
+        id_lista.classList.add("active");
+    }
+    
+    if (id_pai) {
         id_pai.classList.add("active");
     }
-
-    if (sem_nav !== 1) {
-        nav();
-    }
-
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
 }
 
-$(document).ready(function() {
-    $("#carousel").swipe({
-      swipeLeft: function() {
-        $(this).carousel("next");
-      },
-      swipeRight: function() {
-        $(this).carousel("prev");
-      },
-      threshold: 75
+function mudar_carrosel(id_prox, sem_nav) {
+    if(sem_nav !== 1){
+        nav()
+    }
+    slide = document.getElementById(id_prox)
+    
+    id_atual = document.querySelector('.default.active');
+
+    id_atual.classList.remove('active', 'slide-fade');
+    slide.classList.add('active', 'slide-fade');
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
     });
-  });
+
+    mudar_sidebar(id_prox)
+}
+
+function carouselHandler(action, carouselId) {
+    var carousel = document.getElementById(carouselId);
+    var activeElement = carousel.querySelector('.default.active');
+
+    if (action === "next") {
+        var ProxElement = activeElement.nextElementSibling || carousel.querySelector('.carousel-item:first-child');
+        activeElement.classList.remove('active', 'slide-fade');
+        ProxElement.classList.add('active', 'slide-fade');
+    } else if (action === "prev") {
+        console.log(activeElement)
+        if(activeElement.id == 'home-1' || activeElement.id == 'autoras-1'){
+            ProxElement = activeElement
+        } else {
+            var ProxElement = activeElement.previousElementSibling || carousel.querySelector('.carousel-item:last-child');
+            activeElement.classList.remove('active');
+            ProxElement.classList.add('active');
+        }
+    }
+
+    mudar_sidebar(ProxElement.id);
+}
+
+$(document).ready(function () {
+    $("#carousel1").swipe({
+        swipeLeft: function () {
+            carouselHandler('next', 'carousel1');
+        },
+        swipeRight: function () {
+            carouselHandler('prev', 'carousel1')
+        },
+        threshold: 75
+    });
+});

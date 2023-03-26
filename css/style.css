@@ -1,3 +1,8 @@
+/* 
+- Autor: Aparicio Fermiano dos Santos Junior
+- https://github.com/AparicioFermiano 
+*/
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -40,18 +45,16 @@ body::-webkit-scrollbar-thumb,
     border: 3px solid var(--font-light);
 }
 
-
 /* IDs */
 
 #corpo {
     margin-right: 300px !important;
 }
 
-
 /* CORES, BACKGROUND e FONTE */
 
 .bold {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 .default {
@@ -391,50 +394,14 @@ small {
 
 /* Accordion - Animacao */
 
-.accordion-item-person {
-    color: var(--font-dark);
-}
 
 .accordion-button {
     color: var(--primary-dark) !important;
-    text-decoration: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1em;
-    background-color: var(--font-light);
-    width: 100%;
-    text-align: left;
-    position: relative;
-    padding-right: 30px;
-    cursor: pointer;
+    font-weight: bold;
 }
 
-.accordion-button::before {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 6px 4px 0 4px;
-    border-color: var(--primary-dark) transparent transparent transparent;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%) rotate(-180deg);
-    transition: transform 0.3s ease-in-out;
-
-}
-
-.accordion-button.collapsed::before {
-    transform: translateY(-50%);
-}
-
-.accordion-button.collapsed {
-    border-bottom: 1px solid var(--disabled);
-}
-
-.accordion-corpo {
-    border-bottom: 1px solid var(--disabled) !important;
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-light);
 }
 
 .porcentagem-larger {
@@ -456,6 +423,36 @@ small {
     color: var(--secondary-light);
     font-weight: 700;
     line-height: 3rem;
+}
+
+/* MODAL */
+
+.modal-conteudo {
+    background-color: var(--primary-dark);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: var(--font-light);
+    font-size: medium;
+    text-align: justify;
+    margin: 1.4rem !important;
+}
+
+.modal-btn {
+    border: 0px;
+    padding: 0px !important;
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--primary-dark);
+    font-weight: 700;
+}
+
+.modal-btn:hover {
+    color: var(--primary);
+}
+
+.modal-btn:focus {
+    outline: none !important;
 }
 
 @media (max-width: 992px) {
@@ -626,11 +623,15 @@ small {
     } 
 }
 
-.slide-to-right {
-    animation: slide-to-right 1s ease;
+.slide-fade {
+    animation: fade 0.5s;
   }
   
-  @keyframes slide-to-right {
-    from { transform: translateX(0); }
-    to { transform: translateX(100%); }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }

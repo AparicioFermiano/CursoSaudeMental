@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Aparicio Fermiano dos Santos Junior">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/modulo01.min.css">
-    <link rel="stylesheet" href="./css/popover.min.css?v=17032023">
     <link rel="stylesheet" href="./css/sidenav.min.css">
     <title>Módulo 01</title>
 </head>
@@ -25,45 +25,41 @@
             <i class="bi bi-list"></i>
         </button>
     </nav>
-
     <div id="mySidenav" class="sidenav">
         <p class="title text-dark">MENU</p>
         <!-- SIDEBAR - HOME -->
-        <div id="list-home" class="sidebar-item active py-1 px-2">
-            <button class="w-100 text-start" onclick="mudar_carrosel('#home')">
+        <div id="list-home-1" class="sidebar-item active py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('home-1')">
                 <i class="bi bi-house"></i>
             </button>
         </div>
         <!-- SIDEBAR - SOBRE -->
-        <div id="list-sobre" class="sidebar-item py-1 px-2">
-            <button id="list-sobre" class="w-100 text-start" onclick="mudar_carrosel('#sobre')">
-                sobre o módulo
+        <div id="list-sobre-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('sobre-1')">
+                Sobre o módulo
             </button>
         </div>
         <!-- SIDEBAR - APRESENTACAO DO MODULO -->
         <div id="apresentacao" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-apresentacao" aria-expanded="false">
-                apresentação do módulo
+                Apresentação do módulo
             </button>
             <div id="accordion-apresentacao" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-apresentacao-slide-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('apresentacao-slide-1')">
                                 1. Apresentação do módulo
                             </button>
                         </li>
                         <li id="list-apresentacao-slide-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-2')">
-                                1.2. Você considera
-                                possível pensar em
-                                um único jeito de
-                                ser adolescente?
+                            <button class="w-100 text-start" onclick="mudar_carrosel('apresentacao-slide-2')">
+                                1.2. Apresentação do módulo
                             </button>
                         </li>
                         <li id="list-apresentacao-slide-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('apresentacao-slide-3')">
                                 2. Saiba mais
                             </button>
                         </li>
@@ -71,57 +67,55 @@
                 </div>
             </div>
         </div>
-
         <!-- SIDEBAR - CONCEITUANDO ADOLESCENCIAS -->
         <div id="conceituando" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-conceituando" aria-expanded="false">
-                conceituando adolescências e juventudes
+                Conceituando adolescências e juventudes
             </button>
             <div id="accordion-conceituando" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-conceituando-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#conceituando-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('conceituando-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-conceituando-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#conceituando-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('conceituando-2')">
                                 2. Conceituando adolescências e juventudes
                             </button>
                         </li>
                         <li id="list-conceituando-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#conceituando-3')">
-                                1.2. Conceituando adolescências e juventudes
+                            <button class="w-100 text-start" onclick="mudar_carrosel('conceituando-3')">
+                                2.2. Conceituando adolescências e juventudes
                             </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <!-- TRABALHO DE JUVENTUDE -->
         <div id="trabalho" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-trabalho" aria-expanded="false">
-                trabalho e Juventudes
+                Trabalho e Juventudes
             </button>
             <div id="accordion-trabalho" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-trabalho-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#trabalho-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('trabalho-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-trabalho-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#trabalho-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('trabalho-2')">
                                 2. Trabalho e juventudes
                             </button>
                         </li>
                         <li id="list-trabalho-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#trabalho-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('trabalho-3')">
                                 3. Saiba mais
                             </button>
                         </li>
@@ -129,52 +123,50 @@
                 </div>
             </div>
         </div>
-
         <!-- VIOLENCIA DE ONDE ESPERAMOS PROTECAO -->
         <div id="violencia" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-violencia" aria-expanded="false">
-                e quando a violência vem de onde esperamos proteção?
+                E quando a violência vem de onde esperamos proteção?
             </button>
             <div id="accordion-violencia" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-violencia-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#violencia-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('violencia-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-violencia-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#violencia-2')">
-                                2. Violência institucional
+                            <button class="w-100 text-start" onclick="mudar_carrosel('violencia-2')">
+                                2. E quando a violência vem de onde esperamos proteção?
                             </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <!-- RACISMO -->
         <div id="racismo" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-racismo" aria-expanded="false">
-                racismo
+                Racismo
             </button>
             <div id="accordion-racismo" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-racismo-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#racismo-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('racismo-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-racismo-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#racismo-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('racismo-2')">
                                 2. Racismo
                             </button>
                         </li>
                         <li id="list-racismo-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#racismo-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('racismo-3')">
                                 2.2. Racismo
                             </button>
                         </li>
@@ -182,23 +174,22 @@
                 </div>
             </div>
         </div>
-
         <!-- JUVENTUDES E TERRITORIOS -->
         <div id="juventudes" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-juventudes" aria-expanded="false">
-                juventudes e territórios
+                Juventudes e territórios
             </button>
             <div id="accordion-juventudes" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-juventudes-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#juventudes-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('juventudes-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-juventudes-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#juventudes-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('juventudes-2')">
                                 2. Juventudes e territórios
                             </button>
                         </li>
@@ -206,53 +197,52 @@
                 </div>
             </div>
         </div>
-
         <!-- SEXUALIDADE, GENERO E AFETOS -->
         <div id="sexualidade" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-sexualidade" aria-expanded="false">
-                sexualidade, gênero e afetos
+                Sexualidade, gênero e afetos
             </button>
             <div id="accordion-sexualidade" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-sexualidade-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sexualidade-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-sexualidade-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sexualidade-2')">
                                 2. Sexualidade, gênero e afetos
                             </button>
                         </li>
                         <li id="list-sexualidade-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sexualidade-3')">
                                 3. Conversando sobre sexualidade
                             </button>
                         </li>
                         <li id="list-sexualidade-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sexualidade-4')">
                                 3.2. Conversando sobre sexualidade
                             </button>
                         </li>
                         <li id="list-sexualidade-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-5')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sexualidade-5')">
                                 4. Saiba mais
                             </button>
                         </li>
                         <li id="list-sexualidade-6" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-6')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sexualidade-6')">
                                 4.2. Saiba mais
                             </button>
                         </li>
                         <li id="list-sexualidade-7" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-7')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sexualidade-7')">
                                 5. Incidência da violência contra a população LGBTQIA+
                             </button>
                         </li>
                         <li id="list-sexualidade-8" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#sexualidade-8')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sexualidade-8')">
                                 5.2. Incidência da violência contra a população LGBTQIA+
                             </button>
                         </li>
@@ -260,62 +250,60 @@
                 </div>
             </div>
         </div>
-
         <!-- JOVENS COM DEFICIENCIA -->
         <div id="jovens" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-jovens" aria-expanded="false">
-                jovens com deficiência, direitos e equidade
+                Jovens com deficiência, direitos e equidade
             </button>
             <div id="accordion-jovens" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-jovens-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#jovens-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('jovens-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-jovens-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#jovens-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('jovens-2')">
                                 2. Jovens com deficiência, direitos e equidade
                             </button>
                         </li>
                         <li id="list-jovens-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#jovens-3')">
-                                2.1. Jovens com deficiência, direitos e equidade
+                            <button class="w-100 text-start" onclick="mudar_carrosel('jovens-3')">
+                                2.2. Jovens com deficiência, direitos e equidade
                             </button>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-
         <!-- GRAVIDEZ NA ADOLESCENCIA -->
         <div id="gravidez" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-gravidez" aria-expanded="false">
-                gravidez na adolescência: discutindo maternidades e paternidades juvenis
+                Gravidez na adolescência: discutindo maternidades e paternidades juvenis
             </button>
             <div id="accordion-gravidez" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-gravidez-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#gravidez-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('gravidez-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-gravidez-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#gravidez-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('gravidez-2')">
                                 2. Saiba mais
                             </button>
                         </li>
                         <li id="list-gravidez-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#gravidez-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('gravidez-3')">
                                 3. Gravidez na adolescência: discutindo maternidades e paternidades juvenis
                             </button>
                         </li>
                         <li id="list-gravidez-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#gravidez-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('gravidez-4')">
                                 3.2. Gravidez na adolescência: discutindo maternidades e paternidades juvenis
                             </button>
                         </li>
@@ -323,28 +311,27 @@
                 </div>
             </div>
         </div>
-
         <!-- CONVERSANDO SOBRE FAMILIAS -->
         <div id="conversando" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-conversando" aria-expanded="false">
-                conversando sobre famílias
+                Conversando sobre famílias
             </button>
             <div id="accordion-conversando" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-conversando-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#conversando-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('conversando-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-conversando-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#conversando-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('conversando-2')">
                                 2. Conversando sobre famílias
                             </button>
                         </li>
                         <li id="list-conversando-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#conversando-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('conversando-3')">
                                 3. Vamos ouvir?
                             </button>
                         </li>
@@ -362,23 +349,22 @@
                 </div>
             </div>
         </div>
-
         <!-- ADOLESCENCIAS E JUVENTUDES -->
         <div id="adolescencias" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-adolescencias" aria-expanded="false">
-                adolescências e juventudes: singularidades e diversidades
+                Adolescências e juventudes: singularidades e diversidades
             </button>
             <div id="accordion-adolescencias" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-adolescencias-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencias-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencias-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-adolescencias-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencias-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencias-2')">
                                 2. Singularidades e diversidades
                             </button>
                         </li>
@@ -386,35 +372,33 @@
                 </div>
             </div>
         </div>
-
         <!-- ENCERRAMENTO -->
-        <div id="list-encerramento" class="sidebar-item py-1 px-2">
-            <button class="w-100 text-start" onclick="mudar_carrosel('#encerramento-1')">
-                encerramento do módulo
+        <div id="list-encerramento-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('encerramento-1')">
+                Encerramento do módulo
             </button>
         </div>
-
         <!-- REFERENCIAS -->
         <div id="referencias" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-referencias" aria-expanded="false">
-                referências
+                Referências
             </button>
             <div id="accordion-referencias" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-referencias-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-1')">
                                 1. Referencias
                             </button>
                         </li>
                         <li id="list-referencias-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-2')">
                                 1.2. Referencias
                             </button>
                         </li>
                         <li id="list-referencias-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-3')">
                                 1.3. Principais referencias
                             </button>
                         </li>
@@ -422,82 +406,30 @@
                 </div>
             </div>
         </div>
-
         <!-- BOTOES CARROSEL -->
-        <div id="list-encerramento" class="sidebar-action px-2 d-flex">
-            <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="prev">
-                < </button> <button type="button" class="btn-carousel" data-bs-target="#carousel" data-bs-slide="next">
-                        >
-                    </button>
+        <div class="sidebar-action px-2 d-flex">
+            <button type="button" class="btn-carousel" onclick="carouselHandler('prev', 'carousel1')">
+                < </button> <button type="button" class="btn-carousel" onclick="carouselHandler('next', 'carousel1')"> >
+            </button>
         </div>
     </div>
-
     <div id="corpo">
-        <div id="carousel" class="carousel slide slide-to-right" data-bs-touch="false" data-bs-interval="false">
+        <div id="carousel1" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
-                <!-- Home -->
-                <div id="home" class="carousel-item default active">
-                    <div class="container-fluid background-capa rounded-2">
-                        <div class="row justify-content-center
-                                align-items-center padding-x-container">
-                            <div class="col-lg-6 col-md-12 col-sm-12
-                                    col-xs-12 padding-container pb-4">
-                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
-                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
-                                <span class="title text-dark">Curso
-                                    de aperfeiçoamento em saúde mental e
-                                    atenção
-                                    psicossocial de
-                                    adolescentes e jovens</span>
-                                <hr class="line line-primary my-4">
-                                <p class="subtitle text-primary">Módulo: Adolescências e juventudes na
-                                    contemporaneidade: diferentes perspectivas, diversidades, aspectos étnicos e
-                                    culturais</p>
-                                <div class="row justify-content-around
-                                        py-5">
-                                    <button class="col-lg-6 col-md-12
-                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#autoras',
-                                            1)">Sobre as
-                                        autoras</button>
-                                    <button class="col-lg-6 col-md-12
-                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#sobre',
-                                            1)">Iniciar</button>
-                                </div>
-                                <div class="d-flex justify-content-between
-                                        pb-5">
-                                    <div class="wrapper my-auto mx-1">
-                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
-                                    </div>
-                                    <div class="wrapper my-auto mx-1">
-                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
-                                    </div>
-                                    <div class="wrapper my-auto mx-1">
-                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <img class="w-75 mx-auto d-block pb-4" src="./image/modulo_01/capa_modulo_1.png"
-                                    alt="Capa Modulo 01">
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Sobre as Autoras -->
-                <div id="autoras" class="carousel-item default">
+                <div id="autoras-1" class="carousel-item default">
                     <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente p-4">
-                            <button onclick="mudar_carrosel('#home', 1)"
+                            <button onclick="mudar_carrosel('home-1', 1)"
                                 class="btn text-light title ml-auto text-start">
                                 <i class="bi bi-file-x"></i>
                             </button>
-                            <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
+                            <p class="title text-light pb-3 text-center ">SOBRE AS AUTORAS</p>
                         </div>
                         <div class="container-fluid pt-5">
                             <div class="row justify-content-center align-items-top">
                                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
-                                    <img src="./image/modulo_01/cristiane.png" alt="autora 01"
+                                    <img src="./image/cristiane.png" alt="autora 01"
                                         class="w-25 w-md-50 img-fluid d-block mx-auto pb-3">
                                     <h5 class="bold text-center pb-3">Cristiane de Freitas Cunha Grillo
                                     </h5>
@@ -518,7 +450,7 @@
                                 </div>
 
                                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
-                                    <img src="./image/modulo_01/carmen.png" alt="autora 02"
+                                    <img src="./image/carmen.png" alt="autora 02"
                                         class="w-25 w-md-50 img-fluid d-block mx-auto pb-3">
                                     <h5 class="bold text-center pb-3">Carmen Maria Raymundo
                                     </h5>
@@ -554,7 +486,7 @@
                                 </div>
 
                                 <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
-                                    <img src="./image/modulo_01/luiza.png" alt="autora 03"
+                                    <img src="./image/luiza.png" alt="autora 03"
                                         class="w-25 w-md-50 img-fluid d-block mx-auto pb-3">
                                     <h5 class="bold text-center pb-3">Luiza Buzgaib Martins</h5>
                                     <p class="text-justify">
@@ -577,11 +509,60 @@
 
                     </div>
                 </div>
+                <!-- Home -->
+                <div id="home-1" class="carousel-item default active">
+                    <div class="container-fluid background-capa rounded-2">
+                        <div class="row justify-content-center
+                                align-items-center padding-x-container">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    col-xs-12 padding-container pb-4">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
+                                <span class="title text-dark">Curso
+                                    de aperfeiçoamento em saúde mental e
+                                    atenção
+                                    psicossocial de
+                                    adolescentes e jovens</span>
+                                <hr class="line line-primary my-4">
+                                <p class="subtitle text-primary">Módulo: Adolescências e juventudes na
+                                    contemporaneidade: diferentes perspectivas, diversidades, aspectos étnicos e
+                                    culturais</p>
+                                <div class="row justify-content-around
+                                        py-5">
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5"
+                                        onclick="mudar_carrosel('autoras-1', 1)">Sobre as
+                                        autoras</button>
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5"
+                                        onclick="mudar_carrosel('sobre-1', 1)">Iniciar</button>
+                                </div>
+                                <div class="d-flex justify-content-between
+                                        pb-5">
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <img class="w-75 mx-auto d-block pb-4" src="./image/capa_modulo_1.png"
+                                    alt="Capa Modulo 01">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Sobre o curso -->
-                <div id="sobre" class="carousel-item default">
+                <div id="sobre-1" class="carousel-item default">
                     <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente text-center p-4">
-                            <p class="title text-light">Sobre o Módulo</p>
+                            <p class="title text-light">SOBRE O MÓDULO</p>
                             <p class="text-light">Adolescências e juventudes na contemporaneidade: diferentes
                                 perspectivas, diversidades, aspectos étnicos e culturais</p>
                             <p class="subtitle text-light">Carga horaria: 30 horas
@@ -594,7 +575,7 @@
                                         col-xs-12 padding-x-desk-5
                                         text-justify">
                                     <div class="d-flex pb-5 justify-content-center">
-                                        <img class="mx-2" src="./image/modulo_01/icon-leitura.svg" alt="Icone Leitura">
+                                        <img class="mx-2" src="./image/icon-leitura.svg" alt="Icone Leitura">
                                         <p class="space-line text-primary
                                                 mx-2 my-auto text-center"><b>OBJETIVO DE
                                                 APRENDIZAGEM</b>
@@ -665,10 +646,9 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12
                                     d-flex align-items-center
                                     justify-content-center">
-                                <img class="w-75 w-sm-100" src="./image/modulo_01/apresentacao_modulo_1.png"
+                                <img class="w-75 w-sm-100" src="./image/apresentacao_modulo_1.png"
                                     alt="Apresentacao Modulo 01">
                             </div>
-
                             <div class="col-lg-6 col-md-12 col-sm-12
                                     col-xs-12 padding-x-desk-5 py-3">
                                 <p class="text-center title text-primary">Apresentação do Módulo</p>
@@ -718,7 +698,7 @@
                                     violências, à desigualdade de direitos e oportunidades, à gravidez na adolescência,
                                     ao trabalho, entre tantos outros aspectos.
                                 </p>
-                                <img class="w-75 w-md-100" src="./image/modulo_01/apresentacao_modulo_1_detalhes.png"
+                                <img class="w-75 w-md-100" src="./image/apresentacao_modulo_1_detalhes.png"
                                     alt="Detalhes 01">
                             </div>
 
@@ -762,14 +742,13 @@
                     <div class="container-fluid mt-4">
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12
-                                    col-xs-12 padding-x-container">
+                                    col-xs-12 padding-container">
                                 <div class="box-saiba-mais">
                                     <div class="title-saiba-mais">
                                         <p class="title text-light
                                                 text-center py-3">Saiba mais</p>
                                     </div>
-                                    <div class="padding-desk-5
-                                            padding-mobile-2">
+                                    <div class="padding-container">
                                         <p class="bold">Despertou seu interesse em conhecer mais sobre a puberdade?</p>
                                         <p class="text-justify py-2">Esse e-book trata da saúde de adolescentes e
                                             aprofunda as questões sobre puberdade e adolescência. Siga explorando o tema
@@ -815,8 +794,7 @@
                                     jovens é reconhecer o potencial criativo e a
                                     pujança de vida e, acima de tudo, não menosprezar as questões que os preocupam e que
                                     lhes trazem sofrimento.</p>
-                                <img class="w-100" src="./image/modulo_01/apresentacao_modulo_1_detalhes_2.svg"
-                                    alt="detalhes">
+                                <img class="w-100" src="./image/apresentacao_modulo_1_detalhes_2.svg" alt="detalhes">
                             </div>
                         </div>
                     </div>
@@ -827,8 +805,8 @@
                             d-flex">
                         <div class="m-auto">
                             <p class="text-light title-topico space-line">CONCEITUANDO ADOLESCÊNCIAS E JUVENTUDES</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -839,14 +817,13 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12
                                     padding-x-container d-flex align-items-center
                                     justify-content-center">
-                                <img class="w-75" src="./image/modulo_01/conceituando_detalhe_1.png"
-                                    alt="Conceituando Capa">
+                                <img class="w-75" src="./image/conceituando_detalhe_1.png" alt="Conceituando Capa">
                             </div>
 
                             <div class="col-lg-6 col-md-12 col-sm-12
                                     col-xs-12 padding-x-container text-justify">
                                 <p class="title text-primary text-center
-                                        pt-4">Conceituando adolescências e juventudes
+                                        pt-4">CONCEITUANDO ADOLESCÊNCIAS E JUVENTUDES
                                 </p>
                                 <p class="text-start">Por falar em adolescentes e jovens, que tal conceituarmos
                                     ADOLESCÊNCIA e JUVENTUDE?
@@ -910,8 +887,8 @@
                                     acidentes de trânsito relacionados com o trabalho têm, atualmente, uma taxa alta de
                                     ocorrência. Você já pensou na relação entre trabalho e acidentes de trânsito?
                                     É sobre o que vamos conversar a seguir.</p>
-                                <img class="p-3 w-75 w-md-100 d-block mx-auto"
-                                    src="./image/modulo_01/conceituando_detalhe_2.svg" alt="detalhes">
+                                <img class="p-3 w-75 w-md-100 d-block mx-auto" src="./image/conceituando_detalhe_2.svg"
+                                    alt="detalhes">
                                 <div class="citacao">
                                     <small><i>¹ Sobre a morte juvenil por
                                             causas externas, o Atlas da
@@ -933,8 +910,8 @@
                             d-flex">
                         <div class="m-auto">
                             <p class="text-light title-topico space-line">TRABALHO E JUVENTUDES</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -955,7 +932,8 @@
                                     movimento de mulheres negras e doutora em Comunicação e Cultura, alerta-nos que, no
                                     nosso país, elas se manifestam de forma institucional, seja na forma de exclusão,
                                     prioridades ou metas de realização das diversas instituições sociais, nas áreas da
-                                    educação, do mercado de <button id="btn0" class="popover-btn">trabalho</button>, da
+                                    educação, do mercado de <button type="button" class="modal-btn"
+                                        data-bs-toggle="modal" data-bs-target="#modal_trabalho">trabalho</button>, da
                                     política, da segurança pública, da esfera
                                     privada e, também, da saúde.
 
@@ -966,27 +944,45 @@
                                     , possíveis situações de risco à saúde e, em especial, de que forma
                                     interpretam o trabalho e a si mesmos como trabalhadores.
                                 </p>
-                                <div class="popover right">
-                                    <div class="popover-arrow"></div>
-                                    <div class="popover-content"><b>Proposição:</b> Você avalia que o trabalho possa ter
-                                        implicações na saúde juvenil? Você já pensou que existe uma possível relação
-                                        entre a experiência de trabalho na adolescência e na juventude e o
-                                        aproveitamento escolar, a necessidade de tempo livre e a convivência familiar e
-                                        comunitária?<br><br>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal_trabalho" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content modal-conteudo">
+                                            <div class="mx-auto border-0">
+                                                <button type="button"
+                                                    class="btn-close bg-light border rounded-circle p-3"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="pt-3"><b>Proposição:</b> Você avalia que o trabalho possa ter
+                                                implicações na saúde juvenil? Você já pensou que existe uma possível
+                                                relação
+                                                entre a experiência de trabalho na adolescência e na juventude e o
+                                                aproveitamento escolar, a necessidade de tempo livre e a convivência
+                                                familiar e
+                                                comunitária?<br><br>
 
-                                        <b>Feedback positivo:</b> A realidade do trabalho juvenil ilustra que, apesar
-                                        dos
-                                        direitos assegurados pelo arcabouço jurídico-legal, ainda são poucos ou inexatos
-                                        os dados conhecidos acerca da ocorrência de doenças e acidentes de trabalho
-                                        neste grupo populacional, assim como das situações de risco à saúde, as quais
-                                        estão submetidos nas experiências de trabalho de que participam.<br><br>
+                                                <b>Feedback positivo:</b> A realidade do trabalho juvenil ilustra que,
+                                                apesar
+                                                dos
+                                                direitos assegurados pelo arcabouço jurídico-legal, ainda são poucos ou
+                                                inexatos
+                                                os dados conhecidos acerca da ocorrência de doenças e acidentes de
+                                                trabalho
+                                                neste grupo populacional, assim como das situações de risco à saúde, as
+                                                quais
+                                                estão submetidos nas experiências de trabalho de que participam.<br><br>
 
-                                        <b>Feedback orientador:</b> Uma maior aproximação com a diversidade dos
-                                        universos
-                                        juvenis no Brasil tem no tema trabalho uma mediação da maior importância, pelos
-                                        possíveis impactos originados por esta experiência, na qualidade de vida deste
-                                        grupo populacional. É fundamental aferir se os jovens com os quais trabalhamos
-                                        estão inseridos em atividades de trabalho.
+                                                <b>Feedback orientador:</b> Uma maior aproximação com a diversidade dos
+                                                universos
+                                                juvenis no Brasil tem no tema trabalho uma mediação da maior
+                                                importância, pelos
+                                                possíveis impactos originados por esta experiência, na qualidade de vida
+                                                deste
+                                                grupo populacional. É fundamental aferir se os jovens com os quais
+                                                trabalhamos
+                                                estão inseridos em atividades de trabalho.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <p class="py-2">
@@ -1039,7 +1035,7 @@
                         <div class="row">
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-desk-5 d-flex justify-content-center">
-                                <img class="img-fluid w-75 h-lg-75" src="./image/modulo_01/trabalho_juventude_capa.png"
+                                <img class="img-fluid w-75 h-lg-75" src="./image/trabalho_juventude_capa.png"
                                     alt="Capa Trabalho e Juventudes">
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-desk-5 text-justify">
@@ -1079,8 +1075,8 @@
                         <div class="m-auto">
                             <p class="text-light title-topico space-line">E QUANDO A VIOLÊNCIA VEM DE ONDE ESPERAMOS
                                 PROTEÇÃO?</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -1200,8 +1196,8 @@
                         <div class="m-auto">
                             <p class="text-light title-topico space-line">RACISMO
                             </p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -1301,7 +1297,7 @@
                                 <p class="py-2">Esses jovens exercem “resistência” em um território definido, em um
                                     espaço em que os acontecimentos e fatos ocorrem, em que a existência se manifesta e
                                     a vida flui. Por isso, é muito importante conversarmos sobre território.</p>
-                                <img class="w-100 p-2" src="./image/modulo_01/racismo_detalhe_1.svg" alt="Racismo">
+                                <img class="w-100 p-2" src="./image/racismo_detalhe_1.svg" alt="Racismo">
                             </div>
                         </div>
                     </div>
@@ -1313,8 +1309,8 @@
                             <p class="text-light title-topico space-line">JUVENTUDES E TERRITÓRIOS
 
                             </p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -1355,18 +1351,19 @@
                                     comportamentos de risco” (CALAZANS, 2006, p. 37). E mais: os serviços precisam
                                     reconhecer os jovens como sujeitos autônomos, com os quais se pode e se deve
                                     dialogar.
-                                <p class="py-2">Conforme vimos no caso que inaugura este módulo, convidar os jovens
-                                    para compor reuniões intersetoriais e escutar suas histórias é uma estratégia
-                                    bastante interessante! Saber quem são, onde se reúnem nos <b>territórios</b> e quais
-                                    são suas necessidades é um excelente ponto de partida para uma aproximação com
-                                    os jovens. Chamá-los para a construção de ações, valorizar suas experiências
-                                    pessoais e propor a participação criativa e o fortalecimento da autonomia dos
-                                    jovens pode render ótimos frutos aos trabalhos desenvolvidos com esse grupo.</p>
-                                <p class="py-2">Para o fortalecimento do protagonismo e autonomia dos jovens,
-                                    sobretudo os adolescentes, conhecer mais sobre eles é fundamental, assim como
-                                    estabelecer um diálogo afetivo e acolhedor.</p>
-                                <p class="py-2">Vamos então saber um pouco mais sobre essa fase tão importante da
-                                    vida?</p>
+                                    <p class="py-2">Conforme vimos no caso que inaugura este módulo, convidar os jovens
+                                        para compor reuniões intersetoriais e escutar suas histórias é uma estratégia
+                                        bastante interessante! Saber quem são, onde se reúnem nos <b>territórios</b> e
+                                        quais
+                                        são suas necessidades é um excelente ponto de partida para uma aproximação com
+                                        os jovens. Chamá-los para a construção de ações, valorizar suas experiências
+                                        pessoais e propor a participação criativa e o fortalecimento da autonomia dos
+                                        jovens pode render ótimos frutos aos trabalhos desenvolvidos com esse grupo.</p>
+                                    <p class="py-2">Para o fortalecimento do protagonismo e autonomia dos jovens,
+                                        sobretudo os adolescentes, conhecer mais sobre eles é fundamental, assim como
+                                        estabelecer um diálogo afetivo e acolhedor.</p>
+                                    <p class="py-2">Vamos então saber um pouco mais sobre essa fase tão importante da
+                                        vida?</p>
                             </div>
                         </div>
                     </div>
@@ -1376,8 +1373,8 @@
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
                             <p class="text-light title-topico space-line">SEXUALIDADES, GÊNERO E AFETOS</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="detalhes">
                         </div>
                     </div>
                 </div>
@@ -1409,7 +1406,7 @@
                             <div class="col-lg-4 col-md-12 col-sm-12">
                                 <div class="card mx-auto">
                                     <div class="card-front">
-                                        <img src="./image/modulo_01/card_1.jpg" alt="Card 01" class="card-img">
+                                        <img src="./image/card_1.jpg" alt="Card 01" class="card-img">
                                     </div>
                                     <div class="card-back bg-card d-flex align-items-center">
                                         <p class="text-center text-light p-4">
@@ -1425,7 +1422,7 @@
                             <div class="col-lg-4 col-md-12 col-sm-12">
                                 <div class="card mx-auto">
                                     <div class="card-front">
-                                        <img src="./image/modulo_01/card_2.jpg" alt="Card 02" class="card-img">
+                                        <img src="./image/card_2.jpg" alt="Card 02" class="card-img">
                                     </div>
                                     <div class="card-back bg-card d-flex align-items-center">
                                         <p class="text-center text-light p-4">
@@ -1443,7 +1440,7 @@
                             <div class="col-lg-4 col-md-12 col-sm-12">
                                 <div class="card mx-auto">
                                     <div class="card-front">
-                                        <img src="./image/modulo_01/card_3.jpg" alt="Card 03" class="card-img">
+                                        <img src="./image/card_3.jpg" alt="Card 03" class="card-img">
                                     </div>
                                     <div class="card-back bg-card d-flex align-items-center">
                                         <p class="text-center text-light p-4">Reflita sobre o sofrimento que surge
@@ -1465,7 +1462,7 @@
                     <div class="container-fluid pt-5">
                         <div class="row pt-5">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
-                                <p class="title text-primary text-center">Conversando sobre sexualidade</p>
+                                <p class="title text-primary text-center">CONVERSANDO SOBRE SEXUALIDADE</p>
                                 <p class="pb-2">A sexualidade faz parte de um conjunto de temas que, quando discutidos,
                                     contribuem para o conhecimento de si e do outro. Viver a sexualidade de maneira
                                     responsável, com menos riscos e com respeito, é uma questão fundamental dos direitos
@@ -1552,7 +1549,7 @@
                                     socialmente padronizada”.
                                 </p>
                                 <img class="img-fluid d-block mx-auto padding-y-desk-5 padding-y-mobile-2"
-                                    src="./image/modulo_01/sexualidade_detalhes_1.png" alt="Sexualidade">
+                                    src="./image/sexualidade_detalhes_1.png" alt="Sexualidade">
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
                                 <div class="box-saiba-mais">
@@ -1604,37 +1601,55 @@
                                     386 apud MARTINS, 2021, p. 17).</p>
                                 <p class="pt-2 bold">Você acha que a diversidade de gênero e de orientação sexual tem
                                     relação com a saúde e com a escola?</p>
-                                <img class="w-75 img-fluid d-block mx-auto"
-                                    src="./image/modulo_01/sexualidade_detalhes_2.svg" alt="detalhes">
+                                <img class="w-75 img-fluid d-block mx-auto" src="./image/sexualidade_detalhes_2.svg"
+                                    alt="detalhes">
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
                                 <p class="pb-2">Como vimos, o período da adolescência envolve complexas mudanças e
-                                    elaborações <button id="btn1" class="popover-btn">sociais</button>, comportamentais,
+                                    elaborações <button type="button" class="modal-btn" data-bs-toggle="modal"
+                                        data-bs-target="#modal_sociais">sociais</button>, comportamentais,
                                     físicas etc. Por isso,</p>
-                                <div class="popover bottom">
-                                    <div class="popover-arrow"></div>
-                                    <div class="popover-content"><b>Proposição:</b> Você já pensou na importância do
-                                        nome
-                                        social? Vamos pensar no impacto para um adolescente de não ter o nome social
-                                        acolhido e respeitado na escola, no centro de saúde etc? <br><br>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal_sociais" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content modal-conteudo">
+                                            <div class="mx-auto border-0">
+                                                <button type="button"
+                                                    class="btn-close bg-light border rounded-circle p-3"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="pt-3"><b>Proposição:</b> Você já pensou na importância do
+                                                nome
+                                                social? Vamos pensar no impacto para um adolescente de não ter o nome
+                                                social
+                                                acolhido e respeitado na escola, no centro de saúde etc? <br><br>
 
-                                        <b>Feedback positivo:</b> Nome social é o modo como a pessoa se autoidentifica e
-                                        é
-                                        reconhecida, identificada, chamada e denominada na sua comunidade e no meio
-                                        social, uma vez que o seu nome civil, isto é, seu nome de registro não
-                                        reflete a sua identidade de gênero.<br><br>
-                                        Se considerarmos a grande evasão escolar por parte de travestis e
-                                        transexuais e portadores de outras identidades de gênero que estão em
-                                        desacordo com seu registro, conceder o nome social significa promover o
-                                        acesso aos espaços educacionais (também de saúde e outros) a esses grupos
-                                        histórica e sistematicamente marginalizados.<br><br>
+                                                <b>Feedback positivo:</b> Nome social é o modo como a pessoa se
+                                                autoidentifica e
+                                                é
+                                                reconhecida, identificada, chamada e denominada na sua comunidade e no
+                                                meio
+                                                social, uma vez que o seu nome civil, isto é, seu nome de registro não
+                                                reflete a sua identidade de gênero.<br><br>
+                                                Se considerarmos a grande evasão escolar por parte de travestis e
+                                                transexuais e portadores de outras identidades de gênero que estão em
+                                                desacordo com seu registro, conceder o nome social significa promover o
+                                                acesso aos espaços educacionais (também de saúde e outros) a esses
+                                                grupos
+                                                histórica e sistematicamente marginalizados. <a class="text-warning"
+                                                    target="_blank"
+                                                    href="https://www.ufsm.br/pro-reitorias/pre/observatorio-de-direitos-humanos/nome-social/">Acesse
+                                                    o link aqui.</a><br><br>
 
-                                        <b>Feedback orientador:</b> Não acolher o nome equivale a não acolher a
-                                        diferença,
-                                        a diversidade. Estamos vendo aqui que cada adolescente é diferente do outro,
-                                        cada um de nós tem a sua marca singular. Esse acolhimento pode definir o
-                                        destino de um jovem, como vemos aqui com Lucca e Renata.
-                                        rabalhamos estão inseridos em atividades de trabalho.
+                                                <b>Feedback orientador:</b> Não acolher o nome equivale a não acolher a
+                                                diferença,
+                                                a diversidade. Estamos vendo aqui que cada adolescente é diferente do
+                                                outro,
+                                                cada um de nós tem a sua marca singular. Esse acolhimento pode definir o
+                                                destino de um jovem, como vemos aqui com Lucca e Renata.
+                                                rabalhamos estão inseridos em atividades de trabalho.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="citacao-2 w-75 my-3">Não raro, neste período os/as jovens se entendem acerca
@@ -1655,9 +1670,6 @@
                                     de gênero também é outro assunto que precisa ser discutido. Afinal, vivemos em um
                                     país que lidera a estatística de mortes violentas contra pessoas trans e travestis.
                                 </p>
-                                <p class="py-2"><a
-                                        href="https://www.ufsm.br/pro-reitorias/pre/observatorio-de-direitos-humanos/nome-social/">Acesse
-                                        o link aqui.</a></p>
                             </div>
                         </div>
                     </div>
@@ -1688,10 +1700,57 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
-                                FAZER O CARROSEL
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-justify">
+                                <p class="pb-2 text-primary text-center bold">
+                                    Vamos ler o que os autores escreveram na página 58 do Atlas:
+                                </p>
+                                <div id="carousel2" data-bs-interval="false"
+                                    class="carousel slide carousel-sexualidade">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel2" class="active bg-card"
+                                            aria-current="true" aria-label="Slide 1" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
+                                            class="bg-card" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner padding-x-container h-100 card-md-scrool py-3">
+                                        <div class="carousel-item active text-center padding-x-desk-5">
+                                            <p class="py-2">
+                                                A violência contra pessoas LGBTQI+ no Brasil é um fenômeno histórico. Na
+                                                dimensão simbólica, a violência opera ora pelo recurso ao holofote
+                                                lançado sobre a ideia de um modelo único e compulsório de família
+                                                nuclear, cis, heterossexual e biparental, que apaga as diversidades
+                                                sexuais e de gênero (MELLO, 2006), ora pelo recurso aos estereótipos e
+                                                estigmas que marcam LGBTQI+ como agentes desviantes, de contaminação e
+                                                degeneração, recorrendo a discursos morais, sociais, biológicos,
+                                                religiosos e médicos. Na dimensão corporal, a violência se materializa
+                                                na forma de abandono, estupros “corretivos”, assassinatos e
+                                                espancamentos.
+                                            </p>
+                                        </div>
+                                        <div class="carousel-item text-center padding-x-desk-5">
+                                            <p class="py-2">
+                                                Na dimensão corporal, a violência se materializa na forma de abandono,
+                                                estupros “corretivos”, assassinatos e espancamentos. Ainda que
+                                                diferentes, as violências corporais e simbólicas se sobrepõem, visando
+                                                aniquilação, apagamento e silenciamento de sexualidades e expressões de
+                                                gênero dissidentes do modelo único cis hétero historicamente imposto no
+                                                Brasil, que ganhou força recentemente com a ascensão de movimentos
+                                                moralistas anti- LGBTQI+ operados pela narrativa de suposta priorização
+                                                da infância e da família (KALIL, 2020) (CERQUEIRA et al., 2021, p. 58).
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev justify-content-start" type="button"
+                                        data-bs-target="#carousel2" data-bs-slide="prev">
+                                        <img src="./image/direcional_carousel_preview.svg" alt="Preview">
+                                    </button>
+                                    <button class="carousel-control-next justify-content-end" type="button"
+                                        data-bs-target="#carousel2" data-bs-slide="next">
+                                        <img src="./image/direcional_carousel_next.svg" alt="Next">
+                                    </button>
+                                </div>
                             </div>
-                            <img class="w-100 py-2" src="./image/modulo_01/sexualidade_detalhes_3.svg" alt="Detalhes">
+                            <img class="w-100 py-2" src="./image/sexualidade_detalhes_3.svg" alt="Detalhes">
                         </div>
                     </div>
                 </div>
@@ -1708,7 +1767,7 @@
                                     – Brasil: Perfil de pessoas vítimas de violências, por orientação sexual, por
                                     raça/cor (2019)
                                 </p>
-                                <img class="w-100 d-block mx-auto" src="./image/modulo_01/sexualidade_grafico_1.png"
+                                <img class="w-100 d-block mx-auto" src="./image/sexualidade_grafico_1.png"
                                     alt="Grafico 01">
                                 <p class="pt-2">
                                     De acordo com os dados dispostos na Figura 1, pode-se observar que pessoas negras
@@ -1721,7 +1780,7 @@
                                 <p class="py-2 bold text-center text-primary padding-x-desk-5 padding-mobile-2">Figura 2
                                     – Brasil: Perfil de pessoas trans vítimas de violências, por raça/cor (2019)
                                 </p>
-                                <img class="w-100 d-block mx-auto" src="./image/modulo_01/sexualidade_grafico_2.png"
+                                <img class="w-100 d-block mx-auto" src="./image/sexualidade_grafico_2.png"
                                     alt="Grafico 02">
                                 <p class="pt-2">De acordo com os dados dispostos na Figura 2, pode--se observar que
                                     pessoas negras também são mais vulneráveis à violência relacionada à identidade de
@@ -1746,7 +1805,8 @@
                                     mental dos jovens mais vulneráveis. A criação de espaços de convivência e de
                                     vínculos entre as famílias e entre jovens é fundamental.</p>
                                 <p class="py-2">Apesar de todos os avanços na construção e implementação de políticas
-                                    públicas, reconhece-se que o <button id="btn2" class="popover-btn">racismo e a
+                                    públicas, reconhece-se que o <button type="button" class="modal-btn"
+                                        data-bs-toggle="modal" data-bs-target="#modal_racismo">racismo e a
                                         intolerância</button> persistem na
                                     sociedade brasileira. Essas duas dimensões das relações raciais no Brasil são,
                                     sabe-se, históricas e, como afirmam muitos militantes do movimento negro e
@@ -1757,24 +1817,38 @@
                                     também constitui fator de grande vulnerabilidade o pertencimento à população
                                     LGBTQIA+
                                 </p>
-                                <div class="popover right">
-                                    <div class="popover-arrow"></div>
-                                    <div class="popover-content"><b>Proposição:</b> São muitas as violências e muito
-                                        complexas, já que estão entrelaçadas. A violência na fala, no discurso, às
-                                        vezes é sutil e se encontra tão naturalizada que não a chamamos de
-                                        violência. Você pensa em algum exemplo? <br><br>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal_racismo" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content modal-conteudo">
+                                            <div class="mx-auto border-0">
+                                                <button type="button"
+                                                    class="btn-close bg-light border rounded-circle p-3"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="pt-3"><b>Proposição:</b> São muitas as violências e muito
+                                                complexas, já que estão entrelaçadas. A violência na fala, no discurso,
+                                                às
+                                                vezes é sutil e se encontra tão naturalizada que não a chamamos de
+                                                violência. Você pensa em algum exemplo? <br><br>
 
-                                        <b>Feedback positivo:</b> Muitas crianças negras sofrem o racismo, que é chamado
-                                        de
-                                        bullying muitas vezes, velando a violência racial. É importante nomear a
-                                        violência como tal, para poder enfrentá-la.<br><br>
+                                                <b>Feedback positivo:</b> Muitas crianças negras sofrem o racismo, que é
+                                                chamado
+                                                de
+                                                bullying muitas vezes, velando a violência racial. É importante nomear a
+                                                violência como tal, para poder enfrentá-la.<br><br>
 
-                                        <b>Feedback orientador:</b> É importante uma atenção constante para detectarmos
-                                        em
-                                        nós e no nosso trabalho as evidências, às vezes discretas, mas não menos
-                                        violentas, do racismo, do machismo, da transfobia, da intolerância religiosa
-                                        etc. Devemos ver e explicitar as violações, violências, vulnerabilidades,
-                                        mas sempre com um olhar para o outro que realce sempre sua potência.
+                                                <b>Feedback orientador:</b> É importante uma atenção constante para
+                                                detectarmos
+                                                em
+                                                nós e no nosso trabalho as evidências, às vezes discretas, mas não menos
+                                                violentas, do racismo, do machismo, da transfobia, da intolerância
+                                                religiosa
+                                                etc. Devemos ver e explicitar as violações, violências,
+                                                vulnerabilidades,
+                                                mas sempre com um olhar para o outro que realce sempre sua potência.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <p class="py-2">Uma forma de violência institucional é não considerar as diversidades
@@ -1788,8 +1862,8 @@
                                 <p class="pb-2">
                                     <!-- ADICIONAR O TEXTO INFORMADO -->
                                 </p>
-                                <img class="w-75 img-fluid d-block mx-auto"
-                                    src="./image/modulo_01/sexualidade_detalhes_4.svg" alt="Detalhes">
+                                <img class="w-75 img-fluid d-block mx-auto" src="./image/sexualidade_detalhes_4.svg"
+                                    alt="Detalhes">
                             </div>
                         </div>
                     </div>
@@ -1800,8 +1874,8 @@
                         <div class="m-auto">
                             <p class="text-light title-topico space-line">JOVENS COM DEFICIÊNCIA, DIREITOS E EQUIDADE
                             </p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="Detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="Detalhes">
                         </div>
                     </div>
                 </div>
@@ -1815,16 +1889,30 @@
                                 <p class="py-2">Será que temos olhado para as <b>pessoas com deficiência</b> e para as
                                     necessidades delas tentando enxergar além da deficiência? Para que efetivamente
                                     ocorra a inclusão dessas pessoas, é importante refletir sobre os conceitos de
-                                    <i>igualdade e <button id="btn3" class="popover-btn">equidade.</button></i>
+                                    <i>igualdade e <button type="button" class="modal-btn" data-bs-toggle="modal"
+                                            data-bs-target="#modal_equidade">equidade.</button></i>
                                 </p>
-                                <div class="popover right">
-                                    <div class="popover-arrow"></div>
-                                    <div class="popover-content">Enquanto a igualdade pressupõe tratamento igualitário a
-                                        todos, a equidade busca garantir que pessoas diferentes recebam tratamentos
-                                        adequados às suas necessidades. Como exemplo, podemos refletir sobre as ações
-                                        referentes à saúde sexual e reprodutiva de pessoas com deficiência: em geral,
-                                        famílias e profissionais estão despreparados para lidar com pessoas sob seus
-                                        cuidados e orientá-las.
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal_equidade" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content modal-conteudo">
+                                            <div class="mx-auto border-0">
+                                                <button type="button"
+                                                    class="btn-close bg-light border rounded-circle p-3"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="pt-3">Enquanto a igualdade pressupõe tratamento igualitário a
+                                                todos, a equidade busca garantir que pessoas diferentes recebam
+                                                tratamentos
+                                                adequados às suas necessidades. Como exemplo, podemos refletir sobre as
+                                                ações
+                                                referentes à saúde sexual e reprodutiva de pessoas com deficiência: em
+                                                geral,
+                                                famílias e profissionais estão despreparados para lidar com pessoas sob
+                                                seus
+                                                cuidados e orientá-las.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <p class="py-2">Popularmente, considera-se que pessoas com deficiência tenham uma
@@ -1840,8 +1928,7 @@
                                 <p class="py-2">É importante pensar nas diversas deficiências e no enfrentamento das
                                     violências e violações que as pessoas com deficiências sofrem. Vamos ver o que o
                                     Atlas da Violência 2021 tem a nos ensinar sobre isso:</p>
-                                <img src="./image/modulo_01/jovem_detalhes_1.svg" alt="Detalhes"
-                                    class="img-fluid w-100">
+                                <img src="./image/jovem_detalhes_1.svg" alt="Detalhes" class="img-fluid w-100">
                             </div>
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-mobile-2 padding-desk-5 text-justify">
@@ -1896,8 +1983,8 @@
                                 </p>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
-                                <img class="w-75 img-fluid d-block mx-auto"
-                                    src="./image/modulo_01/sexualidade_detalhes_5.svg" alt="Detalhes">
+                                <img class="w-75 img-fluid d-block mx-auto" src="./image/sexualidade_detalhes_5.svg"
+                                    alt="Detalhes">
                             </div>
                         </div>
                     </div>
@@ -1908,17 +1995,16 @@
                         <div class="m-auto">
                             <p class="text-light title-topico space-line px-2">GRAVIDEZ NA ADOLESCÊNCIA: DISCUTINDO
                                 MATERNIDADES E PATERNIDADES JUVENIS</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="Detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="Detalhes">
                         </div>
                     </div>
                 </div>
                 <!-- gravidez - parte 2 -->
                 <div id="gravidez-2" class="carousel-item default">
                     <div class="container-fluid pt-5">
-                        <p class="title text-center text-primary pt-mobile-5">Gravidez na adolescência: discutindo
-                            maternidades e
-                            paternidades juvenis</p>
+                        <p class="title text-center text-primary pt-mobile-5">GRAVIDEZ NA ADOLESCÊNCIA: DISCUTINDO
+                            MATERNIDADES E PATERNIDADES JUVENIS</p>
                         <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="py-2">Lendo o caso complexo, você conheceu Lia, adolescente que morava na
@@ -1957,16 +2043,19 @@
                                     incapazes
                                     de lidar com ela!
                                 </p>
-                                <div class="accordion-header">
-                                    <div class="accordion-item-person">
-                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#accordion_gravidez_1" aria-expanded="true">
-                                            Quando é possível uma jovem engravidar?
-                                        </button>
-                                        <div id="accordion_gravidez_1" class="accordion-collapse collapse">
-                                            <div class="accordion-corpo">
-                                                <p class="p-4 small">
-                                                    Ora, se pararmos para pensar... olharmos para a história... a
+                                <div class="accordion pb-5" id="accordion_gravidez">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordion_gravidez_1"
+                                                aria-expanded="false" aria-controls="accordion_gravidez">
+                                                Quando é possível uma jovem engravidar?
+                                            </button>
+                                        </h2>
+                                        <div id="accordion_gravidez_1" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion_gravidez">
+                                            <div class="accordion-body">
+                                                <p>Ora, se pararmos para pensar... olharmos para a história... a
                                                     verdade é
                                                     que, em outros momentos da história, as pessoas constituíam
                                                     famílias
@@ -1980,21 +2069,24 @@
                                                     infâncias,
                                                     juventudes e fases da vida em geral adquirem diferentes
                                                     contornos ao
-                                                    longo do tempo!
-                                                </p>
+                                                    longo do tempo!</p>
+
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item-person">
-                                        <button class="accordion-button bold" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#accordion_gravidez_2" aria-expanded="true">
-                                            Que tal conversar com outras pessoas sobre as vivências das suas
-                                            adolescências e juventudes?
-                                        </button>
-                                        <div id="accordion_gravidez_2" class="accordion-collapse collapse">
-                                            <div class="accordion-corpo">
-                                                <p class="p-4 small">
-                                                    Assim, do mesmo modo que diferentes contextos sociais acompanham
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordion_gravidez_2"
+                                                aria-expanded="false" aria-controls="accordion_gravidez">
+                                                Que tal conversar com outras pessoas sobre as vivências das suas
+                                                adolescências e juventudes?
+                                            </button>
+                                        </h2>
+                                        <div id="accordion_gravidez_2" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion_gravidez">
+                                            <div class="accordion-body">
+                                                <p>Assim, do mesmo modo que diferentes contextos sociais acompanham
                                                     diferentes vulnerabilidades e potencialidades, podem definir
                                                     infinitas
                                                     possibilidades e significantes para a gravidez na adolescência e
@@ -2004,8 +2096,8 @@
                                                     essa gravidez, muitas vezes, além de ser desejada pelas jovens e
                                                     pelos
                                                     jovens, desempenha um papel importante na vida psíquica e social
-                                                    deles.
-                                                </p>
+                                                    deles.</p>
+
                                             </div>
                                         </div>
                                     </div>
@@ -2053,41 +2145,64 @@
                                     adolescência e ao uso de anticoncepcionais, o que também dificulta alcançar as
                                     diferentes formas de exercício da sexualidade.</p>
                                 <p class="py-2">Vamos prestar mais atenção aos significados e possibilidades dessa
-                                    vivência para nossos <button id="btn4" class="popover-btn">jovens?</button></p>
-                                <div class="popover bottom">
-                                    <div class="popover-arrow"></div>
-                                    <div class="popover-content popover-w-2">
-                                        <b>Proposição:</b> Será que as gestações de adolescentes são sempre indesejadas?
-                                        Será
-                                        que a gravidez é apenas fruto da irresponsabilidade, da imaturidade e da
-                                        impulsividade dos jovens? <br><br>
+                                    vivência para nossos <button type="button" class="modal-btn" data-bs-toggle="modal"
+                                        data-bs-target="#modal_jovens">jovens?</button></p>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal_jovens" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content modal-conteudo">
+                                            <div class="mx-auto border-0">
+                                                <button type="button"
+                                                    class="btn-close bg-light border rounded-circle p-3"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="pt-3"><b>Proposição:</b> Será que as gestações de adolescentes
+                                                são sempre indesejadas?
+                                                Será
+                                                que a gravidez é apenas fruto da irresponsabilidade, da imaturidade e da
+                                                impulsividade dos jovens? <br><br>
 
-                                        <b>Feedback positivo:</b> Temos como pressuposto que a gravidez na adolescência
-                                        pode
-                                        ser vivida de múltiplas formas. Os contextos sociais irão definir universos de
-                                        possibilidades e de significações diferentes entre os jovens de distintas
-                                        classes sociais. As escolhas podem ser influenciadas pela exclusão, desigualdade
-                                        de classe, de gênero e de raça e pela falta de perspectivas. A maternidade, pode
-                                        ainda, expressar reconhecimento social para muitas jovens.<br><br>
+                                                <b>Feedback positivo:</b> Temos como pressuposto que a gravidez na
+                                                adolescência
+                                                pode
+                                                ser vivida de múltiplas formas. Os contextos sociais irão definir
+                                                universos de
+                                                possibilidades e de significações diferentes entre os jovens de
+                                                distintas
+                                                classes sociais. As escolhas podem ser influenciadas pela exclusão,
+                                                desigualdade
+                                                de classe, de gênero e de raça e pela falta de perspectivas. A
+                                                maternidade, pode
+                                                ainda, expressar reconhecimento social para muitas jovens.<br><br>
 
-                                        <b>Feedback orientador:</b> As políticas e programas de saúde voltados para os
-                                        jovens
-                                        devem considerar a sexualidade como parte do desenvolvimento humano e incluir os
-                                        conceitos de amor, sentimentos, emoções, intimidade e desejo (OPAS, 2002, in MS
-                                        2006). A discussão sobre gravidez na adolescência precisa ser pensada de maneira
-                                        ampliada. É importante criar espaços onde os jovens possam debater temáticas
-                                        referentes à saúde sexual e saúde reprodutiva na escola, na saúde, no lazer, na
-                                        cultura. É importante ainda que a atenção à saúde sexual e saúde reprodutiva de
-                                        adolescentes inclua aqueles em cumprimento de medidas socioeducativas, em
-                                        situação de rua, de abrigamento, vivendo com HIV/AIDS. São necessárias ações
-                                        para compartilhamento de informações e ações educativas em saúde sexual e saúde
-                                        reprodutiva que abranjam as famílias e as comunidades locais.
-
+                                                <b>Feedback orientador:</b> As políticas e programas de saúde voltados
+                                                para os
+                                                jovens
+                                                devem considerar a sexualidade como parte do desenvolvimento humano e
+                                                incluir os
+                                                conceitos de amor, sentimentos, emoções, intimidade e desejo (OPAS,
+                                                2002, in MS
+                                                2006). A discussão sobre gravidez na adolescência precisa ser pensada de
+                                                maneira
+                                                ampliada. É importante criar espaços onde os jovens possam debater
+                                                temáticas
+                                                referentes à saúde sexual e saúde reprodutiva na escola, na saúde, no
+                                                lazer, na
+                                                cultura. É importante ainda que a atenção à saúde sexual e saúde
+                                                reprodutiva de
+                                                adolescentes inclua aqueles em cumprimento de medidas socioeducativas,
+                                                em
+                                                situação de rua, de abrigamento, vivendo com HIV/AIDS. São necessárias
+                                                ações
+                                                para compartilhamento de informações e ações educativas em saúde sexual
+                                                e saúde
+                                                reprodutiva que abranjam as famílias e as comunidades locais.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <img src="./image/modulo_01/gravidez_detalhes_1.svg" alt="Detalhes"
+                            <img src="./image/gravidez_detalhes_1.svg" alt="Detalhes"
                                 class="w-100 img-fluid d-block mx-auto padding-x-desk-5 pb-4">
                         </div>
                     </div>
@@ -2099,8 +2214,10 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
                                 <p class="pb-2">O que podemos refletir sobre o cuidado em saúde, com um olhar e
                                     escuta atentos para a subjetividade e questões sociais?</p>
-                                <p class="py-2">No trabalho com <button id="btn5"
-                                        class="popover-btn">adolescentes</button> e jovens, não podemos perder de vista
+                                <p class="py-2">No trabalho com <button type="button" class="modal-btn"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modal_adolescentes">adolescentes</button>
+                                    e jovens, não podemos perder de vista
                                     a
                                     importância do estabelecimento de vínculos! Por não se sentirem seguros e
                                     acolhidos, muitos acabam deixando de buscar um serviço e descuidam de sua própria
@@ -2111,31 +2228,49 @@
                                     direito à privacidade juvenil e, ao mesmo tempo, também desenvolver um trabalho com
                                     as
                                     famílias.</p>
-                                <div class="popover bottom">
-                                    <div class="popover-arrow"></div>
-                                    <div class="popover-content">
-                                        <b>Proposição:</b> Você sabia que um adolescente pode ser atendido
-                                        sem os responsáveis legais? O que você pensa sobre isso?
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal_adolescentes" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content modal-conteudo">
+                                            <div class="mx-auto border-0">
+                                                <button type="button"
+                                                    class="btn-close bg-light border rounded-circle p-3"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="pt-3"><b>Proposição:</b> Você sabia que um adolescente pode ser
+                                                atendido
+                                                sem os responsáveis legais? O que você pensa sobre isso?<br><br>
 
-                                        <b>Feedback positivo:</b> Adolescentes têm direito de serem atendidos sem a
-                                        presença
-                                        dos pais ou responsáveis. Esse direito refere-se à importância da garantia de
-                                        espaços seguros de acolhimento e sigilo, considerando-os sujeitos de direitos.
-                                        Isto não significa que o atendimento à família seja desnecessário ou menos
-                                        importante, mas sim que a autonomia do adolescente deve ser respeitada e
-                                        garantida. O ECA, em seu capítulo II, artigo 17, dispõe a respeito “do direito à
-                                        liberdade, ao respeito e à dignidade” da criança e do adolescente e prescreve:
-                                        “O direito ao respeito consiste na inviolabilidade da integridade física,
-                                        psíquica e moral da criança e do adolescente, abrangendo a preservação da
-                                        imagem, da identidade, da autonomia, dos valores, ideias e crenças, dos espaços
-                                        e objetos pessoais”.
+                                                <b>Feedback positivo:</b> Adolescentes têm direito de serem atendidos
+                                                sem a
+                                                presença
+                                                dos pais ou responsáveis. Esse direito refere-se à importância da
+                                                garantia de
+                                                espaços seguros de acolhimento e sigilo, considerando-os sujeitos de
+                                                direitos.
+                                                Isto não significa que o atendimento à família seja desnecessário ou
+                                                menos
+                                                importante, mas sim que a autonomia do adolescente deve ser respeitada e
+                                                garantida. O ECA, em seu capítulo II, artigo 17, dispõe a respeito “do
+                                                direito à
+                                                liberdade, ao respeito e à dignidade” da criança e do adolescente e
+                                                prescreve:
+                                                “O direito ao respeito consiste na inviolabilidade da integridade
+                                                física,
+                                                psíquica e moral da criança e do adolescente, abrangendo a preservação
+                                                da
+                                                imagem, da identidade, da autonomia, dos valores, ideias e crenças, dos
+                                                espaços
+                                                e objetos pessoais”. <br><br>
 
-                                        <b>Feedback orientador:</b> Se você trabalha em um serviço que atende
-                                        adolescentes, que
-                                        tal experimentar acolher o adolescente sem a família mas ao mesmo tempo,
-                                        promover um acolhimento da família? Uma outra pessoa poderia acolher a família
-                                        ou você mesmo, em outro momento.
-
+                                                <b>Feedback orientador:</b> Se você trabalha em um serviço que atende
+                                                adolescentes, que
+                                                tal experimentar acolher o adolescente sem a família mas ao mesmo tempo,
+                                                promover um acolhimento da família? Uma outra pessoa poderia acolher a
+                                                família
+                                                ou você mesmo, em outro momento.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <p class="pb-2">Por falar em família, é importante conhecermos um pouco mais as suas
@@ -2144,10 +2279,10 @@
                             </div>
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-container d-flex align-items-center justify-content-center">
-                                <img src="./image/modulo_01/gravidez_detalhes_2.svg" alt="Detalhes"
+                                <img src="./image/gravidez_detalhes_2.svg" alt="Detalhes"
                                     class="w-75 img-fluid d-block mx-auto">
                             </div>
-                            <img src="./image/modulo_01/gravidez_detalhes_3.svg" alt="Detalhes"
+                            <img src="./image/gravidez_detalhes_3.svg" alt="Detalhes"
                                 class="w-100 img-fluid d-block mx-auto padding-x-desk-5 py-3">
                         </div>
                     </div>
@@ -2157,8 +2292,8 @@
                     <div class="container-fluid background-topico vh-100 d-flex">
                         <div class="m-auto">
                             <p class="text-light title-topico space-line">CONVERSANDO SOBRE FAMÍLIAS</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="Detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="Detalhes">
                         </div>
                     </div>
                 </div>
@@ -2196,7 +2331,7 @@
                             </div>
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-desk-5 d-flex align-items-center justify-content-center">
-                                <img src="./image/modulo_01/conversando_detalhes_1.png" alt="Conversando"
+                                <img src="./image/conversando_detalhes_1.png" alt="Conversando"
                                     class="w-75 img-fluid d-block mx-auto py-3">
                             </div>
                         </div>
@@ -2209,16 +2344,16 @@
                             <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 padding-container text-justify">
                                 <p class="py-3">Você conhece a música Paula e Bebeto, de Caetano Veloso e Milton
                                     Nascimento? Vamos ouvir?</p>
-                                <img class="img-fluid d-block mr-auto"
-                                    src="./image/modulo_01/conversando_detalhes_2.svg" alt="Detalhes">
+                                <img class="img-fluid d-block mr-auto" src="./image/conversando_detalhes_2.svg"
+                                    alt="Detalhes">
                                 <div class="padding-desk-5 padding-mobile-2">
                                     <iframe class="w-100 video" src="https://www.youtube.com/embed/YE4cbDO8eTE"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen></iframe>
                                 </div>
-                                <img class="img-fluid d-block ml-auto"
-                                    src="./image/modulo_01/conversando_detalhes_3.svg" alt="Detalhes">
+                                <img class="img-fluid d-block ml-auto" src="./image/conversando_detalhes_3.svg"
+                                    alt="Detalhes">
                             </div>
                             <div
                                 class="col-lg-4 col-md-12 col-sm-12 col-xs-12 padding-container d-flex align-items-center justify-content-end">
@@ -2331,7 +2466,7 @@
                                     </p>
                                 </div>
                                 <img class="img-fluid w-75 d-block ml-auto py-5"
-                                    src="./image/modulo_01/conversando_detalhes_4.svg" alt="Detalhes">
+                                    src="./image/conversando_detalhes_4.svg" alt="Detalhes">
                             </div>
                         </div>
                     </div>
@@ -2382,7 +2517,7 @@
                                     famílias, para que, por sua vez, elas possam promover a proteção e a emancipação
                                     dos
                                     adolescentes e jovens.</p>
-                                <img src="./image/modulo_01/conversando_detalhes_1.png" alt="Conversando"
+                                <img src="./image/conversando_detalhes_1.png" alt="Conversando"
                                     class="p-2 w-75 img-fluid d-block mx-auto">
                             </div>
                         </div>
@@ -2394,8 +2529,8 @@
                         <div class="m-auto">
                             <p class="text-light title-topico space-line">ADOLESCÊNCIAS E JUVENTUDES: SINGULARIDADES E
                                 DIVERSIDADES</p>
-                            <img class="img-fluid w-75 pt-3 mx-auto d-block"
-                                src="./image/modulo_01/conceituando_detalhe_1.svg" alt="Detalhes">
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/conceituando_detalhe_1.svg"
+                                alt="Detalhes">
                         </div>
                     </div>
                 </div>
@@ -2438,21 +2573,24 @@
                                     das Nações Unidas sobre os Direitos dos Povos Indígenas, depois de mais de 20
                                     anos
                                     de negociações.</p>
-                                    <p class="py-2">Ressaltamos a importância de valorizar as culturas indígenas, de respeitar os povos originários, de preservar e ampliar as trocas interculturais e de compreender o lugar social
-                                        de onde cada adolescente fala e como o fortalecimento das
-                                        matrizes culturais é ponto de fortalecimento da identidade e da
-                                        saúde mental.
-                                        </p>
+                                <p class="py-2">Ressaltamos a importância de valorizar as culturas indígenas, de
+                                    respeitar os povos originários, de preservar e ampliar as trocas interculturais e de
+                                    compreender o lugar social
+                                    de onde cada adolescente fala e como o fortalecimento das
+                                    matrizes culturais é ponto de fortalecimento da identidade e da
+                                    saúde mental.
+                                </p>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
-                                
+
                                 <p class="pb-2">Adotar práticas interculturais, antes de qualquer coisa,
                                     é estar aberto para olhar e ouvir. Só quando estamos abertos a
-                                    olhar e a ouvir conseguimos adotar uma postura de abertura crítica de nós mesmos em favor do outro. Esse movimento propicia
+                                    olhar e a ouvir conseguimos adotar uma postura de abertura crítica de nós mesmos em
+                                    favor do outro. Esse movimento propicia
                                     a compreensão profunda dos diferentes mundos, dos diversos
                                     campos de significados, das variadas formas de ser e estar no
                                     mundo e dos múltiplos saberes, histórica e culturalmente constituídos.</p>
-                                <img src="./image/modulo_01/adolescencia_detalhes_2.png" alt="Adolescencia"
+                                <img src="./image/adolescencia_detalhes_2.png" alt="Adolescencia"
                                     class="padding-y-mobile-2 w-75 w-md-100 img-fluid d-block mx-auto">
                             </div>
                         </div>
@@ -2621,8 +2759,7 @@
                                     GRILLO, C. F. C. et al. Saúde do adolescente. Belo Horizonte: Nescon/UFMG, 2011,
                                     80
                                     p. Disponível em:
-                                    <https: //www.nescon.medicina.ufmg.br/biblioteca/registro/referencia/0000002738>
-                                        .
+                                    <https: //www.nescon.medicina.ufmg.br/biblioteca/registro/referencia/0000002738> .
                                         Acesso em: 17 nov. 2022.<br><br>
 
                                         IDOETA, P. A. 4 Efeitos do racismo no cérebro e no corpo de crianças,
@@ -2645,8 +2782,7 @@
                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-container text-justify">
                                 <p class="small text-wrap">KEHL, M. R. Em defesa da família tentacular. Fronteiras
                                     do pensamento, 2013. Disponível em:
-                                    <https:
-                                        //www.fronteiras.com/leia/exibir/maria-rita-kehl-em-defesa-da-familia-tentacular>
+                                    <https: //www.fronteiras.com/leia/exibir/maria-rita-kehl-em-defesa-da-familia-tentacular>
                                         Acesso em: 18 nov. 2022.<br><br>
 
                                         LANGDON, E. J.; WIIK, F. B. Antropologia, saúde e doença: uma introdução ao
@@ -2757,8 +2893,7 @@
                                             KEHL, M. R. Em defesa da família tentacular. Fronteiras do pensamento,
                                             2013.
                                             Disponível em:
-                                            <https:
-                                                //www.fronteiras.com/leia/exibir/maria-rita-kehl-em-defesa-da-familia-tentacular>
+                                            <https: //www.fronteiras.com/leia/exibir/maria-rita-kehl-em-defesa-da-familia-tentacular>
                                                 Acesso em: 18 nov. 2022.<br><br>
 
                                                 SANTOS, M. P. et al. Território, territórios: ensaios sobre o
@@ -2775,8 +2910,8 @@
                             </div>
                             <div
                                 class="col-lg-6 col-md-12 col-sm-12 col-xs-12 padding-x-desk-5 d-flex align-items-center">
-                                <img class="w-75 d-block mx-auto pb-5"
-                                    src="./image/modulo_01/referencias_detalhes_1.svg" alt="Detalhes">
+                                <img class="w-75 d-block mx-auto pb-5" src="./image/referencias_detalhes_1.svg"
+                                    alt="Detalhes">
                             </div>
                         </div>
                     </div>
@@ -2788,8 +2923,6 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
     <script src="./js/index.min.js"></script>
-    <script src="./js/popover.min.js"></script>
-
 </body>
 
 </html>
