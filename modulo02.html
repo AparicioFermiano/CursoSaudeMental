@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/modulo02.min.css">
-    <link rel="stylesheet" href="./css/popover.min.css?v=17032023">
     <link rel="stylesheet" href="./css/sidenav.min.css">
     <title>Módulo 02</title>
 </head>
@@ -29,33 +28,33 @@
     <div id="mySidenav" class="sidenav">
         <p class="title text-dark">MENU</p>
         <!-- SIDEBAR - HOME -->
-        <div id="list-home" class="sidebar-item active py-1 px-2">
-            <button class="w-100 text-start" onclick="mudar_carrosel('#home')">
+        <div id="list-home-1" class="sidebar-item active py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('home-1')">
                 <i class="bi bi-house"></i>
             </button>
         </div>
         <!-- SIDEBAR - SOBRE -->
-        <div id="list-sobre" class="sidebar-item py-1 px-2">
-            <button id="list-sobre" class="w-100 text-start" onclick="mudar_carrosel('#sobre')">
-                sobre o módulo
+        <div id="list-sobre-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('sobre-1')">
+                Sobre o módulo
             </button>
         </div>
         <!-- SIDEBAR - APRESENTACAO DO MODULO -->
         <div id="apresentacao" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-apresentacao" aria-expanded="false">
-                apresentação do módulo
+                Apresentação do módulo
             </button>
             <div id="accordion-apresentacao" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-apresentacao-slide-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('apresentacao-slide-1')">
                                 1. Apresentação do módulo
                             </button>
                         </li>
                         <li id="list-apresentacao-slide-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#apresentacao-slide-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('apresentacao-slide-2')">
                                 1.2. Apresentação do módulo
                             </button>
                         </li>
@@ -67,73 +66,73 @@
         <div id="adolescencia" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-adolescencia" aria-expanded="false">
-                adolescência(s) e violência(s)
+                Adolescência(s) e violência(s)
             </button>
             <div id="accordion-adolescencia" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-adolescencia-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-1')">
                                 1. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-2')">
                                 2. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-3')">
                                 1.2. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-4')">
                                 2. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-5')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-5')">
                                 3. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-6" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-6')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-6')">
                                 4. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-7" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-7')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-7')">
                                 5. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-8" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-8')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-8')">
                                 6. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-9" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-9')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-9')">
                                 7. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-10" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-10')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-10')">
                                 8. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-11" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-11')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-11')">
                                 9. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-12" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-12')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-12')">
                                 10. adolescência(s) e violência(s)
                             </button>
                         </li>
                         <li id="list-adolescencia-13" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#adolescencia-13')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('adolescencia-13')">
                                 11. adolescência(s) e violência(s)
                             </button>
                         </li>
@@ -145,38 +144,38 @@
         <div id="substancias" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-substancias" aria-expanded="false">
-                aolescências e o uso de substâncias psicoativas
+                Adolescências e o uso de substâncias psicoativas
             </button>
             <div id="accordion-substancias" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-substancias-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('substancias-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-substancias-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('substancias-2')">
                                 2. Adolescências e o uso de substâncias psicoativas
                             </button>
                         </li>
                         <li id="list-substancias-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('substancias-3')">
                                 3. Adolescências e o uso de substâncias psicoativas
                             </button>
                         </li>
                         <li id="list-substancias-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('substancias-4')">
                                 4. Adolescências e o uso de substâncias psicoativas
                             </button>
                         </li>
                         <li id="list-substancias-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-5')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('substancias-5')">
                                 5. Adolescências e o uso de substâncias psicoativas
                             </button>
                         </li>
                         <li id="list-substancias-6" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#substancias-6')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('substancias-6')">
                                 6. Adolescências e o uso de substâncias psicoativas
                             </button>
                         </li>
@@ -194,27 +193,27 @@
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-ansiedade-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('ansiedade-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-ansiedade-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('ansiedade-2')">
                                 2. Adolescências, ansiedade e contextos sociais
                             </button>
                         </li>
                         <li id="list-ansiedade-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('ansiedade-3')">
                                 3. Adolescências, ansiedade e contextos sociais
                             </button>
                         </li>
                         <li id="list-ansiedade-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('ansiedade-4')">
                                 4. Adolescências, ansiedade e contextos sociais
                             </button>
                         </li>
                         <li id="list-ansiedade-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#ansiedade-5')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('ansiedade-5')">
                                 5. Adolescências, ansiedade e contextos sociais
                             </button>
                         </li>
@@ -232,27 +231,27 @@
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-tristeza-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('tristeza-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-tristeza-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('tristeza-2')">
                                 2. Nem toda tristeza é patológica
                             </button>
                         </li>
                         <li id="list-tristeza-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('tristeza-3')">
                                 2.2. Nem toda tristeza é patológica
                             </button>
                         </li>
                         <li id="list-tristeza-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('tristeza-4')">
                                 4. Nem toda tristeza é patológica
                             </button>
                         </li>
                         <li id="list-tristeza-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#tristeza-5')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('tristeza-5')">
                                 5. Nem toda tristeza é patológica
                             </button>
                         </li>
@@ -270,37 +269,37 @@
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-corporal-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('corporal-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-corporal-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('corporal-2')">
                                 2. Adolescência, imagem corporal e transtornos alimentares
                             </button>
                         </li>
                         <li id="list-corporal-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('corporal-3')">
                                 3. Adolescência, imagem corporal e transtornos alimentares
                             </button>
                         </li>
                         <li id="list-corporal-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('corporal-4')">
                                 4. Adolescência, imagem corporal e transtornos alimentares
                             </button>
                         </li>
                         <li id="list-corporal-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-5')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('corporal-5')">
                                 5. Adolescência, imagem corporal e transtornos alimentares
                             </button>
                         </li>
                         <li id="list-corporal-6" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-6')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('corporal-6')">
                                 6. Adolescência, imagem corporal e transtornos alimentares
                             </button>
                         </li>
                         <li id="list-corporal-7" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#corporal-7')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('corporal-7')">
                                 7. Adolescência, imagem corporal e transtornos alimentares
                             </button>
                         </li>
@@ -312,28 +311,28 @@
         <div id="autolesao" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-autolesao" aria-expanded="false">
-                autolesão
+                Autolesão
             </button>
             <div id="accordion-autolesao" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-autolesao-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autolesao-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('autolesao-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-autolesao-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autolesao-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('autolesao-2')">
                                 2. autolesão
                             </button>
                         </li>
                         <li id="list-autolesao-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autolesao-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('autolesao-3')">
                                 3. autolesão
                             </button>
                         </li>
                         <li id="list-autolesao-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#autolesao-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('autolesao-4')">
                                 3.2. autolesão
                             </button>
                         </li>
@@ -345,63 +344,63 @@
         <div id="suicidio" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-suicidio" aria-expanded="false">
-                ideação suicida e suicídio
+                Ideação suicida e suicídio
             </button>
             <div id="accordion-suicidio" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-suicidio-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-suicidio-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-2')">
                                 2. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-3')">
                                 3. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-4')">
                                 3.2. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-5" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-5')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-5')">
                                 4. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-6" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-6')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-6')">
                                 5. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-7" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-7')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-7')">
                                 6. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-8" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-8')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-8')">
                                 7. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-9" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-9')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-9')">
                                 8. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-10" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-10')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-10')">
                                 9. Ideação suicida e suicídio
                             </button>
                         </li>
                         <li id="list-suicidio-11" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#suicidio-11')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('suicidio-11')">
                                 10. Ideação suicida e suicídio
                             </button>
                         </li>
@@ -413,28 +412,28 @@
         <div id="perdas" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-perdas" aria-expanded="false">
-                perdas e lutos nas adolescências e juventudes
+                Perdas e lutos nas adolescências e juventudes
             </button>
             <div id="accordion-perdas" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-perdas-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#perdas-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('perdas-1')">
                                 1. Início
                             </button>
                         </li>
                         <li id="list-perdas-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#perdas-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('perdas-2')">
                                 2. Perdas e lutos nas adolescências e juventudes
                             </button>
                         </li>
                         <li id="list-perdas-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#perdas-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('perdas-3')">
                                 3. Perdas e lutos nas adolescências e juventudes
                             </button>
                         </li>
                         <li id="list-perdas-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#perdas-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('perdas-4')">
                                 4. Perdas e lutos nas adolescências e juventudes
                             </button>
                         </li>
@@ -443,37 +442,37 @@
             </div>
         </div>
         <!-- ENCERRAMENTO -->
-        <div id="list-encerramento" class="sidebar-item py-1 px-2">
-            <button class="w-100 text-start" onclick="mudar_carrosel('#encerramento')">
-                encerramento do módulo
+        <div id="list-encerramento-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('encerramento-1')">
+                Encerramento do módulo
             </button>
         </div>
         <!-- REFERENCIAS -->
         <div id="referencias" class="accordion-item sidebar-item py-1 px-2">
             <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#accordion-referencias" aria-expanded="false">
-                referências
+                Referências
             </button>
             <div id="accordion-referencias" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul class="list-group">
                         <li id="list-referencias-1" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-1')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-1')">
                                 1. Referencias
                             </button>
                         </li>
                         <li id="list-referencias-2" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-2')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-2')">
                                 1.2. Referencias
                             </button>
                         </li>
                         <li id="list-referencias-3" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-3')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-3')">
                                 1.3. Referencias
                             </button>
                         </li>
                         <li id="list-referencias-4" class="sidebar-subitem">
-                            <button class="w-100 text-start" onclick="mudar_carrosel('#referencias-4')">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-4')">
                                 1.4. Principais referencias
                             </button>
                         </li>
@@ -492,60 +491,11 @@
     <div id="corpo">
         <div id="carousel" class="carousel slide slide-to-right" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
-                <!-- Home -->
-                <div id="home" class="carousel-item default active">
-                    <div class="container-fluid background-capa rounded-2">
-                        <div class="row justify-content-center
-                                align-items-center padding-x-container">
-                            <div class="col-lg-6 col-md-12 col-sm-12
-                                    padding-container">
-                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
-                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
-                                <span class="title text-dark">Curso
-                                    de aperfeiçoamento em saúde mental e
-                                    atenção
-                                    psicossocial de
-                                    adolescentes e jovens</span>
-                                <hr class="line line-primary my-4">
-                                <p class="subtitle text-primary">Módulo: Adolescências e Juventudes: Dores e Sofrimentos
-                                    Específicos
-                                </p>
-                                <div class="row justify-content-around
-                                        py-5">
-                                    <button class="col-lg-6 col-md-12
-                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#autoras',
-                                            1)">Sobre as
-                                        autoras</button>
-                                    <button class="col-lg-6 col-md-12
-                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('#sobre',
-                                            1)">Iniciar</button>
-                                </div>
-                                <div class="d-flex justify-content-between
-                                        pb-5">
-                                    <div class="wrapper my-auto mx-1">
-                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
-                                    </div>
-                                    <div class="wrapper my-auto mx-1">
-                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
-                                    </div>
-                                    <div class="wrapper my-auto mx-1">
-                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_02/capa_modulo_2.png"
-                                    alt="Capa Modulo 02">
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Sobre as Autoras -->
-                <div id="autoras" class="carousel-item default">
+                <div id="autoras-1" class="carousel-item default">
                     <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente p-4">
-                            <button onclick="mudar_carrosel('#home', 1)" class="btn text-light title ml-auto
+                            <button onclick="mudar_carrosel('home-1', 1)" class="btn text-light title ml-auto
                                     text-start"><i class="bi bi-file-x"></i></button>
                             <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
                         </div>
@@ -649,8 +599,58 @@
 
                     </div>
                 </div>
+                <!-- Home -->
+                <div id="home-1" class="carousel-item default active">
+                    <div class="container-fluid background-capa rounded-2">
+                        <div class="row justify-content-center
+                                align-items-center padding-x-container">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-container">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
+                                <span class="title text-dark">Curso
+                                    de aperfeiçoamento em saúde mental e
+                                    atenção
+                                    psicossocial de
+                                    adolescentes e jovens</span>
+                                <hr class="line line-primary my-4">
+                                <p class="subtitle text-primary">Módulo: Adolescências e Juventudes: Dores e Sofrimentos
+                                    Específicos
+                                </p>
+                                <div class="row justify-content-around
+                                        py-5">
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('autoras-1',
+                                            1)">Sobre as
+                                        autoras</button>
+                                    <button class="col-lg-6 col-md-12
+                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('sobre-1',
+                                            1)">Iniciar</button>
+                                </div>
+                                <div class="d-flex justify-content-between
+                                        pb-5">
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_02/capa_modulo_2.png"
+                                    alt="Capa Modulo 02">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Sobre o curso -->
-                <div id="sobre" class="carousel-item default">
+                <div id="sobre-1" class="carousel-item default">
                     <div class="container-fluid rounded-2 mt-4">
                         <div class="box-gradiente text-center p-5">
                             <p class="title text-light">Sobre o Módulo</p>
