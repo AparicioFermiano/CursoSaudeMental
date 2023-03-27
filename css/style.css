@@ -405,17 +405,17 @@ small {
 }
 
 .porcentagem-larger {
-    font-size: 10rem;
+    font-size: 8rem;
     color: var(--secondary-light);
     font-weight: 700;
-    line-height: 10rem;
+    line-height: 8rem;
 }
 
 .porcentagem-medium {
-    font-size: 7rem;
+    font-size: 5rem;
     color: var(--secondary-light);
     font-weight: 700;
-    line-height: 7rem;
+    line-height: 5rem;
 }
 
 .porcentagem-small {
@@ -546,14 +546,6 @@ small {
         align-items: baseline !important;
     }
 
-    .porcentagem-larger {
-        font-size: 8rem;
-    }
-    
-    .porcentagem-medium {
-        font-size: 5rem;
-    }
-    
     .porcentagem-small {
         font-size: 2rem;
     }
