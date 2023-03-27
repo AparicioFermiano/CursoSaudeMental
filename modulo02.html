@@ -616,15 +616,51 @@
                                 <p class="subtitle text-primary">Módulo: Adolescências e Juventudes: Dores e Sofrimentos
                                     Específicos
                                 </p>
-                                <div class="row justify-content-around
-                                        py-5">
-                                    <button class="col-lg-6 col-md-12
-                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('autoras-1',
-                                            1)">Sobre as
-                                        autoras</button>
-                                    <button class="col-lg-6 col-md-12
-                                            col-sm-12 btn btn-1 rounded-5" onclick="mudar_carrosel('sobre-1',
-                                            1)">Iniciar</button>
+                                <div class="row py-5">
+                                    <div class="col-12">
+                                        <button class="btn btn-3 w-50 d-block w-100 mx-auto rounded-5 mb-3"
+                                            data-bs-toggle="modal" data-bs-target="#modal_trabalho">Instruções para navegação</button>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <button class="btn btn-1 rounded-5 w-100 d-block mx-auto"
+                                            onclick="mudar_carrosel('autoras-1', 1)">Sobre as
+                                            autoras</button>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <button class="btn btn-1 rounded-5 w-100 d-block mx-auto"
+                                            onclick="mudar_carrosel('sobre-1', 1)">Iniciar</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal_trabalho" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content modal-conteudo">
+                                                <div class="mx-auto border-0">
+                                                    <button type="button"
+                                                        class="btn-close bg-light border rounded-circle p-3"
+                                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="pt-3">
+                                                    <p class="text-light">
+                                                        - Você pode ajustar a visualização do
+                                                        material de acordo com o nível de zoom do seu navegador, pressione:</p>
+                                                        <div class="text-center">
+                                                            <p class="text-light"><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar o zoom</p>
+                                                            <p class="text-light"><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir o zoom</p>
+                                                        </div>
+                                                        
+                                                    
+                                                    <div class="py-2 text-light">
+                                                        - Quando uma palavra do texto estiver <u>destacada</u> com a cor principal do módulo e sublinhada, isso indica que há conteúdo adicional relacionado ao contexto. Clique na palavra para obter mais informações e aprofundar seu estudo;
+                                                    </div>
+                                                    <div class="py-2 text-light">
+                                                        - Quando você se deparar com botões de
+                                                        <kbd>proposição</kbd>, clique neles e estude o
+                                                        conteúdo proposto.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="d-flex justify-content-between
                                         pb-5">
@@ -664,7 +700,7 @@
                                         col-xs-12 padding-x-desk-5
                                         text-justify">
                                     <div class="d-flex pb-5 justify-content-center">
-                                        <img class="mx-2" src="./image/modulo_01/icon-leitura.svg" alt="Icone Leitura">
+                                        <img class="mx-2" src="./image/modulo_02/icon-leitura.svg" alt="Icone Leitura">
                                         <p class="space-line text-primary
                                                 mx-2 my-auto text-center"><b>OBJETIVO DE
                                                 APRENDIZAGEM</b>
@@ -875,7 +911,7 @@
                                         <div id="accordion_crianca" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion_estatuto">
                                             <div class="accordion-body">
-                                                <p class="py-2">De acordo com o <a
+                                                <p class="py-2">De acordo com o <a target="_blank"
                                                         href="https://www.gov.br/mdh/pt-br/navegue-por-temas/crianca-e-adolescente/publicacoes/o-estatuto-da-crianca-e-do-adolescente">Estatuto
                                                         da Criança e do Adolescente</a> (BRASIL, 2017a), a adolescência
                                                     corresponde ao período que vai dos 12 aos 18 anos.</p>
@@ -893,7 +929,7 @@
                                         <div id="accordion_juventude" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion_estatuto">
                                             <div class="accordion-body">
-                                                <p class="py-2">Já o <a
+                                                <p class="py-2">Já o <a target="_blank"
                                                         href="https://www2.senado.leg.br/bdsf/bitstream/handle/id/509232/001032616.pdf">Estatuto
                                                         da Juventude</a> (2013) situa a juventude entre os 15 e os 29
                                                     anos</p>

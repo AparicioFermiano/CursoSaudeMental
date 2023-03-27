@@ -213,7 +213,6 @@ small {
 
 .btn-1 {
     background-color: var(--primary);
-    width: 40%;
     color: var(--font-light);
     border: none;
     font-size: 1em;
@@ -245,7 +244,6 @@ small {
 
 .btn-2 {
     background-color: var(--secondary);
-    width: 40%;
     color: var(--font-light);
     border: none;
     font-size: 1em;
@@ -258,6 +256,22 @@ small {
     background-color: var(--secondary-light) !important;
     border: 2px solid var(--primary-light);
     color: var(--font-light);
+}
+
+.btn-3, .btn-3:focus{
+    background-color: var(--secondary);
+    color: var(--font-light);
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 2px solid var(--secondary);
+}
+
+.btn-3:hover {
+    background-color: var(--secondary-light);
+    color: var(--font-light);
+    border: 2px solid var(--primary);;
 }
 
 /* OUTROS */
