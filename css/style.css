@@ -211,7 +211,7 @@ small {
 }
 /* BOTAO */
 
-.btn-1 {
+.btn-1, .btn:focus-visible {
     background-color: var(--primary);
     color: var(--font-light);
     border: none;
@@ -315,6 +315,13 @@ small {
 .box-title {
     background-color: var(--primary-dark);
     border-radius: 1rem;
+}
+
+.border-panel {
+    border-bottom: 1px solid var(--disabled);
+    border-left: 1px solid var(--disabled);
+    border-right: 1px solid var(--disabled);
+    box-shadow: 0px 4px 4px rgba(20, 46, 82, 0.2);
 }
 
 /* Saiba mais */
