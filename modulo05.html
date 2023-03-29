@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aparicio Fermiano dos Santos Junior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/modulo05.min.css">
+    <link rel="stylesheet" href="./css/sidenav.min.css">
+    <title>Módulo 05</title>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar-navbar">
+        <button id="btn-sidebar" class="z-5 btn-sidebar" type="button" data-toggle="collapse" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="nav()">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <p class="title text-dark">MENU</p>
+        <!-- SIDEBAR - HOME -->
+        <div id="list-home-1" class="sidebar-item active py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('home-1')">
+                <i class="bi bi-house"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR - SOBRE -->
+        <div id="list-sobre-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('sobre-1')">
+                Sobre o módulo
+            </button>
+        </div>
+        <!-- SIDEBAR - APRESENTACAO DO MODULO -->
+        <div id="list-apresentacao-slide-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('apresentacao-slide-1')">
+                Apresentação do módulo
+            </button>
+        </div>
+        <!-- SIDEBAR - A escola como espaco de possibilidades -->
+        <div id="escola" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-escola" aria-expanded="false">
+                Vamos conversar um pouco sobre história?
+            </button>
+            <div id="accordion-escola" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-escola-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('escola-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-escola-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('escola-2')">
+                                2. Vamos conversar um pouco sobre história?
+                            </button>
+                        </li>
+                        <li id="list-escola-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('escola-3')">
+                                3. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-escola-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('escola-4')">
+                                4. Vamos conversar um pouco sobre história?
+                            </button>
+                        </li>
+                        <li id="list-escola-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('escola-5')">
+                                4.2. Vamos conversar um pouco sobre história?
+                            </button>
+                        </li>
+                        <li id="list-escola-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('escola-6')">
+                                4.3. Vamos conversar um pouco sobre história?
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Compreensao e organizacao dos servicos -->
+        <div id="compreensao" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-compreensao" aria-expanded="false">
+                Compreensão e organização dos serviços de atenção à saúde?
+            </button>
+            <div id="accordion-compreensao" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-compreensao-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compreensao-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-compreensao-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compreensao-2')">
+                                2. Compreensão e organização dos serviços de atenção à saúde?
+                            </button>
+                        </li>
+                        <li id="list-compreensao-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compreensao-3')">
+                                2.2. Compreensão e organização dos serviços de atenção à saúde?
+                            </button>
+                        </li>
+                        <li id="list-compreensao-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compreensao-4')">
+                                2.3. Compreensão e organização dos serviços de atenção à saúde?
+                            </button>
+                        </li>
+                        <li id="list-compreensao-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compreensao-5')">
+                                3. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-compreensao-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compreensao-6')">
+                                4. Compreensão e organização dos serviços de atenção à saúde?
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Importancia da politica de assistencia social -->
+        <div id="politica" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-politica" aria-expanded="false">
+                Importância da política de assistência social
+            </button>
+            <div id="accordion-politica" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-politica-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('politica-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-politica-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('politica-2')">
+                                2. Importância da política de assistência social
+                            </button>
+                        </li>
+                        <li id="list-politica-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('politica-3')">
+                                2.2. Importância da política de assistência social
+                            </button>
+                        </li>
+                        <li id="list-politica-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('politica-4')">
+                                2.3. Importância da política de assistência social
+                            </button>
+                        </li>
+                        <li id="list-politica-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('politica-5')">
+                                2.4. Importância da política de assistência social
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Equipamentos no seu territorio -->
+        <div id="equipamento" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-equipamento" aria-expanded="false">
+                Você já ouviu falar nesses equipamentos no seu território?
+            </button>
+            <div id="accordion-equipamento" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-equipamento-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('equipamento-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-equipamento-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('equipamento-2')">
+                                2. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-equipamento-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('equipamento-3')">
+                                3. A Proteção Social Especial prevê dois níveis de complexidade
+                            </button>
+                        </li>
+                        <li id="list-equipamento-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('equipamento-4')">
+                                4. Você já ouviu falar nesses equipamentos no seu território?
+                            </button>
+                        </li>
+                        <li id="list-equipamento-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('equipamento-5')">
+                                4.2. Você já ouviu falar nesses equipamentos no seu território?
+                            </button>
+                        </li>
+                        <li id="list-equipamento-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('equipamento-6')">
+                                4.3. Você já ouviu falar nesses equipamentos no seu território?
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Reforma Psiquiatrica -->
+        <div id="reforma" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-reforma" aria-expanded="false">
+                Como a reforma Psiquiátrica possibilitou a criação de uma rede de atenção psicossocial?
+            </button>
+            <div id="accordion-reforma" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-reforma-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('reforma-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-reforma-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('reforma-2')">
+                                2. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-reforma-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('reforma-3')">
+                                3. Como a reforma Psiquiátrica possibilitou a criação de uma rede de atenção psicossocial?
+                            </button>
+                        </li>
+                        <li id="list-reforma-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('reforma-4')">
+                                3.2. Como a reforma Psiquiátrica possibilitou a criação de uma rede de atenção psicossocial?
+                            </button>
+                        </li>
+                        <li id="list-reforma-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('reforma-5')">
+                                4. CAPS
+                            </button>
+                        </li>
+                        <li id="list-reforma-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('reforma-6')">
+                                5. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-reforma-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('reforma-7')">
+                                6. Como a reforma Psiquiátrica possibilitou a criação de uma rede de atenção psicossocial?
+                            </button>
+                        </li>
+                        <li id="list-reforma-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('reforma-8')">
+                                6.2. Como a reforma Psiquiátrica possibilitou a criação de uma rede de atenção psicossocial?
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ENCERRAMENTO -->
+        <div id="list-encerramento" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('encerramento')">
+                Encerramento do módulo
+            </button>
+        </div>
+        <!-- REFERENCIAS -->
+        <div id="referencias" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-referencias" aria-expanded="false">
+                Referências
+            </button>
+            <div id="accordion-referencias" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-referencias-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-1')">
+                                1. Referencias
+                            </button>
+                        </li>
+                        <li id="list-referencias-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-2')">
+                                1.2. Referencias
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- BOTOES CARROSEL -->
+        <div class="sidebar-action px-2 d-flex">
+            <button type="button" class="btn-carousel" onclick="carouselHandler('prev', 'carousel1')">
+                <img src="./image/modulo_04/direcional_carousel_preview.svg" alt="Preview" class="img-fluid">
+            </button>
+            <button type="button" class="btn-carousel" onclick="carouselHandler('next', 'carousel1')">
+                <img src="./image/modulo_04/direcional_carousel_next.svg" alt="Next" class="img-fluid">
+            </button>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div id="carousel1" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+                <!-- Sobre as Autoras -->
+                <div id="autoras-1" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente p-4">
+                            <button onclick="mudar_carrosel('home-1', 1)" class="btn text-light title ml-auto
+                                    text-start"><i class="bi bi-file-x"></i></button>
+                            <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
+                        </div>
+                        <div class="container-fluid p-4">
+                            <div class="row justify-content-center
+                                    align-items-top text-center">
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_04/autora01.png" alt="Neidy Marcia de Souza Silva"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold pb-3">Neidy Marcia de Souza Silva</h5>
+                                    <p class="px-2 text-justify">
+                                        Graduação em Serviço Social pela Universidade Federal do Rio de Janeiro (1985) e
+                                        Mestrado em Serviço Social pela Universidade do Estado do Rio de Janeiro (2007).
+                                        Assistente Social da Universidade do Estado do Rio de Janeiro e da Prefeitura da
+                                        Cidade do
+                                        Rio de Janeiro (aposentada), com ênfase de intervenção no campo da Saúde,
+                                        Assistência Social e gestão em órgãos de controle social na área da criança e do
+                                        adolescente, atuando principalmente no seguinte tema: Saúde
+                                        do Adolescente. Atualmente, é Assistente Social do Núcleo de Estudos da Saúde do
+                                        Adolescente, realizando atendimento com abordagem interdisciplinar e
+                                        interinstitucional a adolescentes e famílias nas ações de atenção
+                                        à saúde e participando em programas e projetos de garantia de direitos de
+                                        adolescentes e jovens. Realiza preceptoria a alunos da faculdade de Serviço
+                                        Social da UERJ e residentes do curso de Especialização Lato Sensu
+                                        em Serviço Social e Saúde.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_04/autora02.png" alt="Helena Ferraz Gomes"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Helena Ferraz Gomes</h5>
+                                    <p class="px-2 text-justify">
+                                        Formada em Bacharelado e Licenciatura em Enfermagem pela Faculdade de Enfermagem
+                                        da Universidade Federal de Juiz de Fora em 2009. Especialista em Saúde Coletiva,
+                                        sob moldes de residência em enfermagem pela UNIRIO/UFF (2010-2012). Doutora e
+                                        Mestre em Enfermagem
+                                        pela Faculdade de Enfermagem da Universidade do Estado do Rio de Janeiro.
+                                        Docente: Professora Adjunta da Faculdade de Enfermagem da Universidade do Estado
+                                        do Rio de Janeiro - Departamento de Enfermagem Médico-Cirúrgica
+                                        (DEMC) - Área Clínica. Atuação Teórico-Prática em Enfermagem Clínica com enfoque
+                                        na Saúde do Adolescente. Experiência Profissional nas seguintes áreas:
+                                        Enfermagem Clínica, Saúde do Adolescente e Saúde Coletiva.
+                                        Realiza pesquisas nas seguintes áreas: Saúde do Trabalhador, Saúde do
+                                        Adolescente e Terapia Infusional. Atua na Coordenação do Programa de Residência
+                                        de Enfermagem em Saúde do Adolescente da Faculdade de Enfermagem
+                                        da UERJ.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_04/autora03.png" alt="Anália da Silva Barbosa"
+                                        class="img-fluid d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Anália da Silva Barbosa</h5>
+                                    <p class="px-2 text-justify">
+                                        Graduada em Serviço Social pela Universidade Federal Fluminense, Mestre em
+                                        Serviço Social pelo Programa de Pós-Graduação em Serviço Social da Escola de
+                                        Serviço Social da Universidade Federal do Rio de Janeiro (PPGSS/ESS/UFRJ) e
+                                        Doutoranda do Programa
+                                        de Políticas Públicas e Formação Humana da Universidade do Estado do Rio de
+                                        Janeiro (PPFH/UERJ). Preceptora e Docente da Residência Multiprofissional em
+                                        Saúde Mental da UERJ. Atualmente é Coordenadora do Centro
+                                        de Atenção Psicossocial da UERJ e presta assessoria para Entidade Filantrópica
+                                        do Terceiro Setor (Instituto Santa Lúcia) na área da política de assistência
+                                        social, criança e adolescente e saúde mental.
+                                    </p>
+                                </div>
+                                <div class="row justify-content-center align-items-top py-3">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 pt-3 d-lg-flex align-items-center">
+                                        <div class="w-25 px-3">
+                                            <img src="./image/modulo_04/autor_5.png"
+                                                alt="Coordenação acadêmica - Eloísa Grossman"
+                                                class="img-fluid d-block mx-auto pb-3">
+                                        </div>
+                                        <div class="w-100 p-3">
+                                            <h5 class="bold text-center pb-md-3">Coordenação acadêmica - Eloísa Grossman
+                                            </h5>
+                                            <p class="text-justify">
+                                                Graduação em Medicina pela Universidade do Estado do Rio de Janeiro
+                                                (1982). Mestrado (1995) e Doutorado (2006) em Saúde da Criança e da
+                                                Mulher pela Fundação Oswaldo Cruz. MBA em Administração em Saúde pela
+                                                UFRJ (2000). Professora Associada do Departamento de Pediatria da
+                                                Faculdade de Ciências Médicas (FCM) da UERJ, onde exerceu o cargo de
+                                                Coordenadora de Graduação entre 2016 e 2019. Docente do Mestrado
+                                                Profissional em Saúde da Família - PROFSAUDE/ UERJ. Coordenou o Projeto
+                                                de Educação a distância do Núcleo de Estudos da Saúde do Adolescente
+                                                (NESA/ UERJ), apoiado pela Organização Pan-Americana da Saúde (módulos
+                                                de auto-aprendizagem e curso virtual Introdução à Saúde Integral de
+                                                Adolescentes e Jovens). Participou da Comissão Assessora do Enade
+                                                (2019). Atualmente é professora da Disciplina de Medicina de
+                                                Adolescentes e coordenadora da Disciplina Integradora Competência
+                                                Narrativa na Prática Médica da FCM/UERJ. Está concluindo o curso de
+                                                Especialização Lato Sensu em “Formação do Escritor” (PUC/RJ).
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 pt-3 d-lg-flex align-items-center">
+                                        <div class="w-25 px-3">
+                                            <img src="./image/modulo_04/autor_4.png"
+                                                alt="Coordenação Pedagógica - Ewângela Aparecida Pereira"
+                                                class="img-fluid d-block mx-auto pb-3">
+                                        </div>
+                                        <div class="w-100 p-3">
+                                            <h5 class="bold text-center pb-md-3">Coordenação Pedagógica - Ewângela
+                                                Aparecida Pereira
+                                            </h5>
+                                            <p class="text-justify">
+                                                Pedagoga, graduada pela Universidade Federal de Mato Grosso do Sul.
+                                                Especialista em Gestão e Vigilância em Saúde Pública pelo Centro
+                                                Universitário de Campo Grande (UNAES) e em Educação em Saúde para
+                                                preceptores do SUS pelo Hospital Sírio Libanês. Mestre em Educação pela
+                                                Universidade Federal de Mato Grosso do Sul. Desde 2002 atua na Escola
+                                                Técnica do SUS Professora Ena de Araújo Galvão, da Secretaria de Estado
+                                                de Saúde de Mato Grosso do Sul, no cargo de Analista de Desenvolvimento Profissional. É Gerente
+                                                de Assessoramento Pedagógico, responsável pelo setor pedagógico da
+                                                Escola, há mais de 15 anos atuando com formação em Educação Profissional
+                                                em Saúde principalmente com cursos técnicos e de formação profissional
+                                                inicial. Foi Coordenadora Pedagógica do módulo V do Programa Educacional
+                                                em Vigilância e Cuidado em Saúde no Enfrentamento da Covid-19 de outras
+                                                Doenças e Síndromes Virais- VigiEpidemia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Home -->
+                <div id="home-1" class="carousel-item default active">
+                    <div class="container-fluid background-capa rounded-2">
+                        <div class="row justify-content-center
+                                align-items-center padding-x-container">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-container">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
+                                <span class="title text-dark">Curso
+                                    de Aperfeiçoamento em Saúde Mental e
+                                    Atenção
+                                    Psicossocial de
+                                    Adolescentes e Jovens</span>
+                                <hr class="line line-primary my-4">
+                                <p class="subtitle text-primary">Módulo: Redes de serviços de saúde, de proteção social e de direitos nas adolescências e juventudes
+                                </p>
+                                <div class="row py-5">
+                                    <div class="col-12">
+                                        <button class="btn btn-3 w-50 d-block w-100 mx-auto rounded-5 mb-3"
+                                            data-bs-toggle="modal" data-bs-target="#instrucao">Instruções para
+                                            navegação</button>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <button class="btn btn-1 rounded-5 w-100 d-block mx-auto"
+                                            onclick="mudar_carrosel('autoras-1', 1)">Sobre as
+                                            autoras</button>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <button class="btn btn-1 rounded-5 w-100 d-block mx-auto"
+                                            onclick="mudar_carrosel('sobre-1', 1)">Iniciar</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="instrucao" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content modal-conteudo">
+                                                <div class="mx-auto border-0">
+                                                    <button type="button"
+                                                        class="btn-close bg-light border rounded-circle p-3"
+                                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="pt-3">
+                                                    <p class="py-2 text-light text-center subtitle bold">Instruções para
+                                                        navegação</p>
+                                                    <p class="text-light">
+                                                        - Você pode ajustar a visualização do
+                                                        material de acordo com o nível de zoom do seu navegador,
+                                                        pressione:</p>
+                                                    <div class="text-center">
+                                                        <p class="text-light"><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar
+                                                            o zoom</p>
+                                                        <p class="text-light"><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir
+                                                            o zoom</p>
+                                                    </div>
+
+                                                    <div class="py-2 text-light">
+                                                        - Quando uma palavra do texto estiver <u>destacada</u> com a cor
+                                                        principal do módulo e sublinhada, isso indica que há conteúdo
+                                                        adicional relacionado ao contexto. Clique na palavra para obter
+                                                        mais informações e aprofundar seu estudo;
+                                                    </div>
+                                                    <div class="py-2 text-light">
+                                                        - Quando você se deparar com botões de
+                                                        <kbd>proposição</kbd>, clique neles e estude o
+                                                        conteúdo proposto.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between
+                                        pb-5">
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_04/capa_modulo_4.png"
+                                    alt="Capa Modulo 04">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sobre o curso -->
+                <div id="sobre-1" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente text-center p-3">
+                            <p class="title text-light">SOBRE O MODULO</p>
+                            <p class="text-light">Redes de serviços de saúde, de proteção social e de direitos
+                                nas adolescências e juventudes
+                            </p>
+                            <p class="subtitle text-light">Carga horaria: 20 horas
+                            </p>
+                        </div>
+                        <div class="container-fluid px-4 pt-5">
+                            <div class="row justify-content-center align-items-top padding-x-container">
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-x-desk-5">
+                                    <div class="d-flex pb-2 justify-content-center">
+                                        <img class="mx-1" src="./image/modulo_04/icon-leitura.svg" alt="Icone Leitura">
+                                        <p class="subtitle text-primary
+                                                mx-1 my-auto text-center"><b>OBJETIVOS DE
+                                                APRENDIZAGEM</b>
+                                        </p>
+                                    </div>
+                                    <p class="py-2">Apresentar a organização, em nível local e nacional, da Rede de
+                                        Atenção à Saúde (SUS) e de Proteção Social (SUAS) voltadas para a adolescência e
+                                        juventude, e o papel do Conselho Tutelar.</p>
+                                    <p class="py-2 subtitle">Conhecimentos</p>
+                                    <ul class="py-2">
+                                        <li>Conhecer o SUS, princípios, organização, estrutura e rede de serviços;</li>
+                                        <li>Conhecer o SUAS, princípios, organização, estrutura e rede de serviços;</li>
+                                        <li>Conhecer o Conselho Tutelar, organização e atribuições;</li>
+                                        <li>Conhecer a Política Nacional de Atenção Integral à Saúde de Adolescentes e
+                                            Jovens e o ECA;</li>
+                                        <li>Conhecer o Estatuto da Juventude;</li>
+                                        <li>Conhecer redes de apoio formal e informal para o cuidado em saúde mental de
+                                            Adolescentes e Jovens;</li>
+                                        <li>Identificar as principais redes de atenção à saúde no SUS, com ênfase na
+                                            Rede de Atenção Psicossocial (RAPS)</li>
+                                        <li>Identificar situações de risco que demandam acompanhamento dos serviços do
+                                            SUS, SUAS e Conselho Tutelar;</li>
+                                        <li>Reconhecer a importância da rede de proteção dos direitos de Adolescentes e
+                                            Jovens e o papel do Ministério Público na garantia desses direitos.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-x-desk-3 padding-x-mobile-2">
+                                    <p class="pb-2 subtitle">Conteúdo</p>
+                                    <ul class="py-2">
+                                        <li>Organização da Rede de Atenção e Proteção ao adolescente e jovem no contexto
+                                            SUS;</li>
+                                        <li>Organização da Rede de Atenção e Proteção à adolescência e juventude no
+                                            contexto SUAS;</li>
+                                        <li>Política Nacional de Atenção Integral à Saúde de Adolescentes e Jovens;</li>
+                                        <li>Estatuto da Criança e Adolescente (ECA);</li>
+                                        <li>Estatuto da juventude;</li>
+                                        <li>Organização, estrutura e atribuições do Conselho Tutelar</li>
+                                        <li>Redes de apoio para o cuidado em saúde mental de Adolescentes e Jovens;</li>
+                                        <li>Rede de proteção dos direitos de Adolescentes e Jovens e o papel do Ministério
+                                            Público: função e atribuições.</li>
+                                    </ul>
+                                    <p class="py-2 subtitle">Habilidades</p>
+                                    <ul class="py-2">
+                                        <li>Recomendar, quando necessário, os serviços do SUS;</li>
+                                        <li>Recomendar, quando necessário, os serviços do SUAS;</li>
+                                        <li>Recomendar, quando necessário, os serviços do Conselho Tutelar;</li>
+                                        <li>Recomendar, quando necessário, redes de apoio formal e informal para o
+                                            cuidado em saúde mental de Adolescentes e Jovens;</li>
+                                        <li>Recomendar, quando necessário, o acesso ao Ministério Público na garantia
+                                            dos direitos de Adolescentes e Jovens.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apresentacao do modulo - parte 1 -->
+                <div id="apresentacao-slide-1" class="carousel-item default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <div class="row padding-mobile-2">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    d-flex align-items-center
+                                    justify-content-center">
+                                <img class="w-75 w-sm-100" src="./image/modulo_04/apresentacao_detalhes_1.png"
+                                    alt="Apresentacao Modulo 02">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-x-desk-5 py-3 text-justify">
+                                <p class="text-center title text-primary">Apresentação do módulo</p>
+                                <p class="py-2">Olá! Neste módulo, vamos trocar conhecimentos, pensando juntos sobre as
+                                    Redes de Atenção à Saúde e proteção social e o eixo de defesa de direitos nas
+                                    adolescências e juventudes.</p>
+                                <p class="py-2">Você reconhece que ainda temos muitos desafios a serem superados nesse
+                                    campo, principalmente na efetivação de políticas públicas que possam de fato
+                                    assegurar direitos de adolescentes e jovens?</p>
+                                <p class="py-2">Acreditamos que podemos avançar coletivamente, e é por isso que você
+                                    está aqui, não é?</p>
+                                <p class="py-2">Sabemos que o número de adolescentes e jovens na população brasileira é
+                                    significativo, assim como o aumento da quantidade de famílias em situação de pobreza
+                                    e extrema pobreza, agravando ainda mais as vulnerabilidades desse
+                                    grupo populacional o que demonstra a necessidade de implementação de políticas
+                                    públicas capazes de garantir acesso à saúde, educação, alimentação, cultura, esporte
+                                    e lazer, assim como o desenvolvimento de suas potencialidades
+                                    como pessoas e cidadãos de direitos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="./js/index.min.js"></script>
+    <!-- https://github.com/AparicioFermiano -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+:root {
+    --primary: #CC7339;
+    --primary-hover: #EE9A64;
+    --primary-light: #FDC194;
+    --primary-dark: #C84F00;
+    --secondary: #4ea568;
+    --secondary-dark: rgb(65, 134, 86);
+    --secondary-light: #9BF1B4;
+    --aux: #DDB559;
+    --aux-dark: #906835;
+    --aux-light: #FDDFA3;
+    --font-dark: #6D6C6C;
+    --font-light: #ffffff;
+    --disabled: #B8B8B8;
+    --background-capa: #FDDFA3;
+    --card-size: 400px;
+}
