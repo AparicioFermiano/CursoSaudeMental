@@ -317,6 +317,13 @@ small {
     border-radius: 1rem;
 }
 
+.box-line {
+    padding: 1.8rem;
+    height: 100%;
+    border-left: 0.8rem solid var(--font-light);
+    border-right: 0.8rem solid var(--font-light);
+}
+
 .border-panel {
     border-bottom: 1px solid var(--disabled);
     border-left: 1px solid var(--disabled);
@@ -476,6 +483,7 @@ small {
     outline: none !important;
 }
 
+
 @media (max-width: 992px) {
     #corpo {
         margin-right: 0 !important;
@@ -574,6 +582,18 @@ small {
     #btn_control_carousel {
         display: none !important;
     }
+
+    .table-md-head {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .table-lg-head {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -615,6 +635,14 @@ small {
 
     .align-items-center-lg {
         align-items: center !important;
+    }
+
+    .table-md-head {
+        display: none;
+    }
+
+    .table-lg-head {
+        display: flex;
     }
 }
 
