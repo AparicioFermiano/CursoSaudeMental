@@ -19,6 +19,10 @@ p.rodape {
     font-size: small;
 }
 
+small.creditos{
+    font-size: 0.8rem;
+}
+
 hr.line {
     border: solid 1px;
     opacity: 1;
@@ -109,6 +113,10 @@ body::-webkit-scrollbar-thumb,
     background-color: var(--primary-light) !important;
 }
 
+.bg-box-pode-falar {
+    background-color: #fddfa391 !important;
+}
+
 .background-capa {
     background-color: var(--background-capa);
     border: 2em solid white;
@@ -135,6 +143,10 @@ body::-webkit-scrollbar-thumb,
 
 .text-secondary-light {
     color: var(--secondary-light) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
 }
 
 .text-dark,
@@ -204,6 +216,14 @@ small {
 
 .mr-auto {
     margin-right: auto !important;
+}
+
+.ml-1 {
+    margin-left: 1% !important;
+}
+
+.mr-1 {
+    margin-right: 1% !important;
 }
 
 .list-decimal {
@@ -343,11 +363,6 @@ small {
 .title-saiba-mais {
     background: linear-gradient(89.58deg, var(--primary-dark) 13.41%, var(--primary) 96.79%);
     border-radius: 8px 8px 0px 0px;
-}
-
-.seta-saiba-mais {
-    background: #C4C4C4;
-    transform: rotate(-180deg);
 }
 
 /* ANIMATION CARD */
