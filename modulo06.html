@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aparicio Fermiano dos Santos Junior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/modulo06.min.css">
+    <link rel="stylesheet" href="./css/sidenav.min.css">
+    <title>Módulo 06</title>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <nav class="sidebar-navbar">
+        <button id="btn-sidebar" class="z-5 btn-sidebar" type="button" data-toggle="collapse" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="nav()">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <p class="title text-dark">MENU</p>
+        <!-- SIDEBAR - HOME -->
+        <div id="list-home-1" class="sidebar-item active py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('home-1')">
+                <i class="bi bi-house"></i>
+            </button>
+        </div>
+        <!-- SIDEBAR - SOBRE -->
+        <div id="list-sobre-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('sobre-1')">
+                Sobre o módulo
+            </button>
+        </div>
+        <!-- SIDEBAR - APRESENTACAO DO MODULO -->
+        <div id="list-apresentacao-slide-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('apresentacao-slide-1')">
+                Apresentação do módulo
+            </button>
+        </div>
+        <!-- SIDEBAR - quando o sofrimento bate à porta -->
+        <div id="sofrimento" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-sofrimento" aria-expanded="false">
+                Quando o sofrimento bate à porta
+            </button>
+            <div id="accordion-sofrimento" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-sofrimento-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-2')">
+                                2. Vamos conversar um pouco sobre história?
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-3')">
+                                3. Crise, automutilação e suicídio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-4')">
+                                3.1. Crise, automutilação e suicídio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-5')">
+                                3.2. Crise, automutilação e suicídio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-6')">
+                                3.3. Crise, automutilação e suicídio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-7')">
+                                4. Níveis de ideação e comportamento de autoextermínio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-8')">
+                                4.1. Níveis de ideação e comportamento de autoextermínio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-9" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-9')">
+                                4.2. Níveis de ideação e comportamento de autoextermínio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-10" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-10')">
+                                4.3. Níveis de ideação e comportamento de autoextermínio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-11" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-11')">
+                                4.4. Níveis de ideação e comportamento de autoextermínio
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-12" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-12')">
+                                5. Frases que podem sinalizar pensamentos suicidas
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-13" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-13')">
+                                5.1. Frases que podem sinalizar pensamentos suicidas
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-14" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-14')">
+                                6. Fique de olho
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-15" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-15')">
+                                6.1. Fique de olho
+                            </button>
+                        </li>
+                        <li id="list-sofrimento-16" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('sofrimento-16')">
+                                6.2. Fique de olho
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- o que fazer? primeiros esboços! -->
+        <div id="esbocos" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-esbocos" aria-expanded="false">
+                O que fazer? primeiros esboços!
+            </button>
+            <div id="accordion-esbocos" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-esbocos-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('esbocos-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-esbocos-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('esbocos-2')">
+                                2. O que fazer? primeiros esboços!
+                            </button>
+                        </li>
+                        <li id="list-esbocos-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('esbocos-3')">
+                                2.2. O que fazer? primeiros esboços!
+                            </button>
+                        </li>
+                        <li id="list-esbocos-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('esbocos-4')">
+                                2.3. O que fazer? primeiros esboços!
+                            </button>
+                        </li>
+                        <li id="list-esbocos-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('esbocos-5')">
+                                2.4. O que fazer? primeiros esboços!
+                            </button>
+                        </li>
+                        <li id="list-esbocos-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('esbocos-6')">
+                                2.5. O que fazer? primeiros esboços!
+                            </button>
+                        </li>
+                        <li id="list-esbocos-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('esbocos-7')">
+                                3. "Pode falar!"
+                            </button>
+                        </li>
+                        <li id="list-esbocos-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('esbocos-8')">
+                                3.1. "Pode falar!"
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- O acolhimento e a escuta: aliados do vínculo -->
+        <div id="acolhimento" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-acolhimento" aria-expanded="false">
+                O acolhimento e a escuta: aliados do vínculo
+            </button>
+            <div id="accordion-acolhimento" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-acolhimento-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-2')">
+                                2. O acolhimento e a escuta: aliados do vínculo
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-3')">
+                                2.1. O acolhimento e a escuta: aliados do vínculo
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-4')">
+                                2.2. O acolhimento e a escuta: aliados do vínculo
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-5')">
+                                2.3. O acolhimento e a escuta: aliados do vínculo
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-6')">
+                                2.4. O acolhimento e a escuta: aliados do vínculo
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-7')">
+                                2.5. O acolhimento e a escuta: aliados do vínculo
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-8" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-8')">
+                                2.6. O acolhimento e a escuta: aliados do vínculo
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-9" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-9')">
+                                3. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-10" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-10')">
+                                4. Exemplos de como se comunicar usando a CNV
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-11" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-11')">
+                                5. Empatia cognitiva e empatia afetiva
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-12" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-12')">
+                                6. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-acolhimento-13" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('acolhimento-13')">
+                                6.1. Saiba mais
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Compartilhando e ampliando o cuidado -->
+        <div id="compartilhando" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-compartilhando" aria-expanded="false">
+                Compartilhando e ampliando o cuidado
+            </button>
+            <div id="accordion-compartilhando" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-compartilhando-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compartilhando-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-compartilhando-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compartilhando-2')">
+                                2. Compartilhando e ampliando o cuidado
+                            </button>
+                        </li>
+                        <li id="list-compartilhando-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compartilhando-3')">
+                                2.1. Compartilhando e ampliando o cuidado
+                            </button>
+                        </li>
+                        <li id="list-compartilhando-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compartilhando-4')">
+                                3. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-compartilhando-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('compartilhando-5')">
+                                3.1. Saiba mais
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- O fortalecimento de vínculos -->
+        <div id="fortalecimento" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-fortalecimento" aria-expanded="false">
+                O fortalecimento de vínculos
+            </button>
+            <div id="accordion-fortalecimento" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-fortalecimento-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('fortalecimento-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-fortalecimento-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('fortalecimento-2')">
+                                2. O fortalecimento de vínculos
+                            </button>
+                        </li>
+                        <li id="list-fortalecimento-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('fortalecimento-3')">
+                                2.1. O fortalecimento de vínculos
+                            </button>
+                        </li>
+                        <li id="list-fortalecimento-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('fortalecimento-4')">
+                                2.2. O fortalecimento de vínculos
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Projetos de vida e outras estratégias positivas -->
+        <div id="projetos" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-projetos" aria-expanded="false">
+                Projetos de vida e outras estratégias positivas
+            </button>
+            <div id="accordion-projetos" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-projetos-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('projetos-1')">
+                                1. Início
+                            </button>
+                        </li>
+                        <li id="list-projetos-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('projetos-2')">
+                                2. Projetos de vida e outras estratégias positivas
+                            </button>
+                        </li>
+                        <li id="list-projetos-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('projetos-3')">
+                                3. Saiba mais
+                            </button>
+                        </li>
+                        <li id="list-projetos-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('projetos-4')">
+                                4. PERMA
+                            </button>
+                        </li>
+                        <li id="list-projetos-5" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('projetos-5')">
+                                4.1. PERMA
+                            </button>
+                        </li>
+                        <li id="list-projetos-6" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('projetos-6')">
+                                5. Projetos de vida e outras estratégias positivas
+                            </button>
+                        </li>
+                        <li id="list-projetos-7" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('projetos-7')">
+                                5.1. Projetos de vida e outras estratégias positivas
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ENCERRAMENTO -->
+        <div id="list-encerramento-1" class="sidebar-item py-1 px-2">
+            <button class="w-100 text-start" onclick="mudar_carrosel('encerramento-1')">
+                Encerramento do módulo
+            </button>
+        </div>
+        <!-- REFERENCIAS -->
+        <div id="referencias" class="accordion-item sidebar-item py-1 px-2">
+            <button class="w-100 text-start collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordion-referencias" aria-expanded="false">
+                Referências
+            </button>
+            <div id="accordion-referencias" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li id="list-referencias-1" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-1')">
+                                1. Referências
+                            </button>
+                        </li>
+                        <li id="list-referencias-2" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-2')">
+                                1.1. Referências
+                            </button>
+                        </li>
+                        <li id="list-referencias-3" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-3')">
+                                1.2. Referências
+                            </button>
+                        </li>
+                        <li id="list-referencias-4" class="sidebar-subitem">
+                            <button class="w-100 text-start" onclick="mudar_carrosel('referencias-4')">
+                                2. Principais referências
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- BOTOES CARROSEL -->
+        <div class="sidebar-action px-2 d-flex">
+            <button type="button" class="btn-carousel" onclick="carouselHandler('prev', 'carousel1')">
+                <img src="./image/modulo_06/direcional_carousel_preview.svg" alt="Preview" class="img-fluid">
+            </button>
+            <button type="button" class="btn-carousel" onclick="carouselHandler('next', 'carousel1')">
+                <img src="./image/modulo_06/direcional_carousel_next.svg" alt="Next" class="img-fluid">
+            </button>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div id="carousel1" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner">
+                <!-- Sobre as Autoras -->
+                <div id="autoras-1" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente p-4">
+                            <button onclick="mudar_carrosel('home-1', 1)" class="btn text-light title ml-auto
+                                    text-start"><i class="bi bi-file-x"></i></button>
+                            <p class="title text-light pb-3 text-center ">Sobre as autoras</p>
+                        </div>
+                        <div class="container-fluid p-4">
+                            <div class="row justify-content-center
+                                    align-items-top text-center">
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_06/autor01.png" alt="Erica Gonçalves Nunes"
+                                        class="img-fluid w-25 d-block mx-auto pb-3">
+                                    <h5 class="bold pb-3">Erica Gonçalves Nunes</h5>
+                                    <p class="px-2 text-justify">
+                                        Psicóloga e Advogada. Especialista em Intervenções em Psicologia Social e
+                                        Comunitária pela Faculdade Frassinetti do Recife, FAFIRE (2017). Mestranda no
+                                        Programa de Pós-graduação em Educação, Culturas e Identidades da UFRPE/FUNDAJ.
+                                        Membro do Grupo de Estudo Transdisciplinar da Infância e Juventude (GETIJ).
+                                        Atendente voluntária no canal Pode Falar – UNICEF
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_06/autor02.png" alt="Isadora Simões de Souza
+                                    " class="img-fluid w-25 d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Isadora Simões de Souza
+                                    </h5>
+                                    <p class="px-2 text-justify">
+                                        Psicóloga, doutora em psicologia social pela Pontifícia Universidade Católica de
+                                        São Paulo (PUC-SP) e mestre em Saúde Mental pela Faculdade de Ciências Médicas
+                                        da Universidade Nova de Lisboa, Portugal. Os principais temas em que atua são
+                                        saúde mental, saúde mental infantojuvenil, justiça, gênero, drogas e direitos
+                                        humanos. Atualmente, é professora do curso de Graduação em Psicologia da
+                                        Universidade Mackenzie em São Paulo-SP; professora e supervisora da Residência
+                                        Médica em Psiquiatria em Rede (SUS) da 8 Coreme, da Prefeitura de São Paulo; e
+                                        supervisora de CAPSij, na cidade de São Paulo.
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 pt-3">
+                                    <img src="./image/modulo_06/autor03.png" alt="Marcia Nunes"
+                                        class="img-fluid w-25 d-block mx-auto pb-3">
+                                    <h5 class="bold text-center pb-3">Marcia Nunes</h5>
+                                    <p class="px-2 text-justify">
+                                        Psicóloga. Trabalhadora do SUAS. Mestranda em Educação, Culturas e Identidades
+                                        pela Universidade Federal Rural de Pernambuco (UFRPE). Especialista em Direitos
+                                        da Criança e do Adolescente pela Universidade Federal Rural de Pernambuco
+                                        (2021), Especialista em Saúde Mental e Intervenções Psicossociais pela UNIFAVIP
+                                        DEVRY (2011). Pesquisadora no Grupo de Estudo Transdisciplinar da Infância e
+                                        Juventude (GETIJ). Membro do Núcleo do Cuidado Humano da UFRPE. Atendente
+                                        voluntária no canal Pode Falar – UNICEF.
+                                    </p>
+                                </div>
+                                <div class="row justify-content-center align-items-top pt-3">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 pt-3 d-lg-flex align-items-center">
+                                        <div class="w-100 px-3">
+                                            <img src="./image/modulo_06/autor04.png"
+                                                alt="Coordenação acadêmica – Luana Lima"
+                                                class="img-fluid d-block mx-auto pb-3">
+                                        </div>
+                                        <div class="p-3">
+                                            <h5 class="bold text-center pb-md-3">Coordenação acadêmica – Luana Lima
+                                            </h5>
+                                            <p class="text-justify">
+                                                Psicóloga e Bacharel Interdisciplinar em Humanidades (UFBA). Doutoranda
+                                                e
+                                                Mestra
+                                                em Bioética (UnB). Membra-fundadora da Associação Brasileira de Estudo e
+                                                Prevenção do Suicídio (ABEPS). Pesquisadora do Observatório de Direitos
+                                                Humanos
+                                                dos Pacientes (ODHP). Autora do livro <i>Deverei velar pelo Outro?
+                                                    Suicídio,
+                                                    estigma e economia dos cuidados.</i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 pt-3 d-lg-flex align-items-center">
+                                        <div class="w-100 px-3">
+                                            <img src="./image/modulo_06/autor05.png"
+                                                alt="Coordenação Pedagógica – Maisse Fernandes de Oliveira Rotta"
+                                                class="img-fluid d-block mx-auto pb-3">
+                                        </div>
+                                        <div class="p-3">
+                                            <h5 class="bold text-center pb-md-3">Coordenação Pedagógica – Maisse
+                                                Fernandes
+                                                de
+                                                Oliveira Rotta
+                                            </h5>
+                                            <p class="text-justify">
+                                                Médica pediatra. Mestra em Saúde da Família e Comunidade pela Fiocruz.
+                                                Doutoranda em Saúde e Desenvolvimento na Região Centro-Oeste pela UFMS.
+                                                Pós-graduada em psiquiatria infantil. Professora do curso de medicina da
+                                                Universidade Anhanguera (UNIDERP) e da Universidade Estadual do Mato
+                                                Grosso
+                                                do Sul.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Home -->
+                <div id="home-1" class="carousel-item default">
+                    <div class="container-fluid background-capa rounded-2">
+                        <div class="row justify-content-center
+                                align-items-center padding-x-container">
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                                    padding-container">
+                                <img class="w-75 w-md-100 img-fluid d-block mx-auto padding-desk-3 pb-5"
+                                    src="./image/logo_saude_mental_completo.png" alt="Logo Saude Mental">
+                                <span class="title text-dark">Curso
+                                    de Aperfeiçoamento em Saúde Mental e
+                                    Atenção
+                                    Psicossocial de
+                                    Adolescentes e Jovens</span>
+                                <hr class="line line-primary my-4">
+                                <p class="subtitle text-primary">Módulo: Espaços de cuidado: construindo possibilidades
+                                    de vida
+                                </p>
+                                <div class="row py-5">
+                                    <div class="col-12">
+                                        <button class="btn btn-3 w-50 d-block w-100 mx-auto rounded-5 mb-3"
+                                            data-bs-toggle="modal" data-bs-target="#instrucao">Instruções para
+                                            navegação</button>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <button class="btn btn-1 rounded-5 w-100 d-block mx-auto"
+                                            onclick="mudar_carrosel('autoras-1', 1)">Sobre as
+                                            autoras</button>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <button class="btn btn-1 rounded-5 w-100 d-block mx-auto"
+                                            onclick="mudar_carrosel('sobre-1', 1)">Iniciar</button>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="instrucao" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content modal-conteudo">
+                                                <div class="mx-auto border-0">
+                                                    <button type="button"
+                                                        class="btn-close bg-light border rounded-circle p-3"
+                                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="pt-3">
+                                                    <p class="py-2 text-light text-center subtitle bold">Instruções para
+                                                        navegação</p>
+                                                    <p class="text-light">
+                                                        - Você pode ajustar a visualização do
+                                                        material de acordo com o nível de zoom do seu navegador,
+                                                        pressione:</p>
+                                                    <div class="text-center">
+                                                        <p class="text-light"><kbd>CTRL</kbd> + <kbd>+</kbd> : Aumentar
+                                                            o zoom</p>
+                                                        <p class="text-light"><kbd>CTRL</kbd> + <kbd>-</kbd> : Diminuir
+                                                            o zoom</p>
+                                                    </div>
+
+                                                    <div class="py-2 text-light">
+                                                        - Quando uma palavra do texto estiver <u>destacada</u> com a cor
+                                                        principal do módulo e sublinhada, isso indica que há conteúdo
+                                                        adicional relacionado ao contexto. Clique na palavra para obter
+                                                        mais informações e aprofundar seu estudo;
+                                                    </div>
+                                                    <div class="py-2 text-light">
+                                                        - Quando você se deparar com botões de
+                                                        <kbd>proposição</kbd>, clique neles e estude o
+                                                        conteúdo proposto.</li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between
+                                        pb-5">
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_fiocruz.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_nova_una_sus.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                    <div class="wrapper my-auto mx-1">
+                                        <img src="./image/logo_unicef.png" alt="Imagem" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <img class="w-75 mx-auto d-block pb-5" src="./image/modulo_06/capa_modulo_6.png"
+                                    alt="Capa Modulo 06">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sobre o curso -->
+                <div id="sobre-1" class="carousel-item default">
+                    <div class="container-fluid rounded-2 mt-4">
+                        <div class="box-gradiente text-center p-3">
+                            <p class="title text-light">SOBRE O MODULO</p>
+                            <p class="text-light">Espaços de cuidados: construindo possibilidades de vida
+                            </p>
+                            <p class="subtitle text-light">Carga horaria: 20 horas
+                            </p>
+                        </div>
+                        <div class="container-fluid px-4 pt-5">
+                            <div class="row justify-content-center align-items-top">
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container">
+                                    <div class="d-flex pb-2 justify-content-center">
+                                        <img class="mx-1" src="./image/modulo_06/icon-leitura.svg" alt="Icone Leitura">
+                                        <p class="subtitle text-primary
+                                                mx-1 my-auto text-center"><b>OBJETIVO DE
+                                                APRENDIZAGEM</b>
+                                        </p>
+                                    </div>
+                                    <p class="py-2">Possibilitar uma aproximação/familiarização com os Espaços de
+                                        Cuidado, apresentando seu papel e finalidade, composição e funcionamento, assim
+                                        como as atribuições do agente de cuidado.
+                                    </p>
+                                    <p class="py-2 subtitle">Conteúdo</p>
+                                    <ul class="py-2">
+                                        <li>Espaços de Cuidado: conceito, composição, funcionamento;
+                                        </li>
+                                        <li>Conhecimentos e habilidades essenciais para acolhimento de adolescentes e
+                                            jovens: comunicação assertiva; escuta empática; abordagem inicial;
+                                            continuidade do atendimento;
+                                        </li>
+                                        <li>Funções, atribuições e limites do agente de cuidado;</li>
+                                        <li>Ética e sigilo das informações.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container">
+                                    <p class="pb-2 subtitle">Conhecimentos</p>
+                                    <ul class="py-2">
+                                        <li>Reconhecer o papel e importância dos Espaços de cuidado para o atendimento
+                                            da demanda de cuidado a adolescentes e jovens na área de saúde mental;
+                                        </li>
+                                        <li>Conhecer a composição e o funcionamento dos Espaços de cuidado;
+                                        </li>
+                                        <li>Compreender a importância de uma comunicação assertiva e da escuta empática
+                                            no acolhimento e atendimento a adolescentes e jovens na área de saúde
+                                            mental;
+                                        </li>
+                                        <li>Reconhecer a importância da ética e do sigilo das informações no acolhimento
+                                            e atendimento a adolescentes e jovens na área de saúde mental realizado
+                                            pelos Espaços de cuidado.</li>
+                                    </ul>
+                                    <p class="py-2 subtitle">Habilidades</p>
+                                    <ul class="py-2">
+                                        <li>Identificar as funções e atribuições do agente de cuidado, bem como seus
+                                            limites de atuação;</li>
+                                        <li>Realizar comunicação assertiva e escuta qualificada, de forma empática, com
+                                            adolescente e jovens que procuram atendimento nos Espaços de cuidado;
+                                        </li>
+                                        <li>Atender com ética, mantendo o sigilo das informações, e respeitando seus
+                                            limites de atuação.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Apresentacao do modulo - parte 1 -->
+                <div id="apresentacao-slide-1" class="carousel-item default">
+                    <div class="container-fluid pt-5 mt-4">
+                        <p class="py-3 title text-primary text-center">Apresentação do Módulo</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 text-justify padding-x-container text-justify">
+                                <p class="py-2">Olá! Seja muito bem-vindo ao módulo 6! Este é o trecho final desse
+                                    percurso formativo. Neste módulo, pensamos em trazer para o centro do debate a
+                                    importância de fomentar outros espaços de cuidado, assim como de pensar no
+                                    fortalecimento de diversos agentes de cuidado que estão no território, mas que, não
+                                    necessariamente, estejam compondo a rede de serviços já instituída. A intenção é
+                                    garantirmos o princípio de prioridade absoluta estabelecido no Estatuto da Criança e
+                                    do Adolescente (ECA). É dever de toda a sociedade garantir direitos e cuidado para
+                                    essa população.</p>
+                                <p class="py-2">Pensamos em problematizar pontos que nos autorizem a escutar
+                                    adolescentes e jovens, entendendo que isso não é uma tarefa exclusiva dos
+                                    especialistas da área, uma vez que a saúde mental de adolescentes e jovens está
+                                    presente e demanda acolhimento em muitos espaços.</p>
+                                <p class="py-2">Para iniciar essa conversa, trouxemos o caso complexo “A comunidade de
+                                    Monte Verde: construindo espaços de cuidado e vida”, que retrata a história de
+                                    jovens ribeirinhos, com vidas atravessadas por um cenário de exploração e pobreza,
+                                    mas que encontram, em alguns agentes e parceiros, a possibilidade de construir um
+                                    outro espaço de escuta e acolhimento.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12
+                            padding-x-container text-justify">
+                                <p class="pb-2">Chamaremos aqui tais construções de “espaços de cuidado”, por
+                                    entendermos que estes podem ser múltiplos e diversos, não necessariamente aqueles
+                                    instituídos pelas políticas públicas, que são serviços formais. Pretendemos mostrar
+                                    que os espaços de cuidado podem surgir em qualquer lugar como resultado das relações
+                                    entre as pessoas, inspirando, portanto, múltiplas e novas formas de cuidado, de
+                                    acordo com as possibilidades da sua atuação e/ou trabalho.</p>
+                                <p class="py-2">Ao longo deste módulo, sugeriremos algumas atribuições para o exercício
+                                    da escuta, passando por algumas habilidades essenciais para o acolhimento de
+                                    adolescentes e jovens, como a escuta empática e o afastamento de julgamentos morais,
+                                    e, por fim, pensaremos em algumas considerações éticas para realizar modos
+                                    potencializadores e coletivos de cuidado.</p>
+                                <img src="./image/modulo_06/apresentacao_detalhes_1.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto pb-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topico - núcleos de espaços de cuidado: construindo propostas - parte 1 -->
+                <div id="nucleo-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line padding-x-desk-3">NÚCLEOS DE ESPAÇOS DE
+                                CUIDADO: CONSTRUINDO PROPOSTAS</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_06/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+                <!-- núcleos de espaços de cuidado: construindo propostas - parte 2 -->
+                <div id="nucleo-2" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="title pb-2 text-primary text-center padding-x-desk-3">
+                                    NÚCLEOS DE ESPAÇOS DE CUIDADO: CONSTRUINDO PROPOSTAS
+                                </p>
+                                <div class="citacao-2 my-3 w-100">
+                                    Expliquei à professora que na sala de aula tudo era perto e que nada se distanciava
+                                    de nada como nos montes da paisagem. Mas a professora negou. Disse-me que o rosto de
+                                    cada um também era imenso como a paisagem e, visto com atenção, tinha distâncias até
+                                    infinitas que importava tentar percorrer. [...] Percebi que para dentro de nós há um
+                                    longo caminho e muita distância. Não somos nada feitos do mais imediato que se vê à
+                                    superfície. Somos feitos daquilo que chega à alma e a alma tem um tamanho muito
+                                    diferente do corpo. Percebi que para ver verdadeiramente uma pessoa obriga a um
+                                    esforço como o de estarmos sentados nos nossos bancos a tomar conta do que passa
+                                    pelos montes. Percebi que ver verdadeiramente uma pessoa também é como prevenir os
+                                    fogos, como fazia o meu pai que, afinal, era guarda florestal. [...] Toda a vida
+                                    precisamos estar atentos, se assim não fizermos vamos perder muito do mais
+                                    importante que acontece em nosso redor. Como se houvesse um incêndio mesmo diante de
+                                    nós e nem sequer o percebêssemos antes que restem todas as coisas completamente
+                                    queimadas (Mãe, 2015).
+                                </div>
+                                <p class="py-2">Chegamos ao último módulo e pensamos que esse seja um espaço precioso
+                                    por trazer ao cerne do debate os adolescentes e jovens como prioridade absoluta, ou
+                                    seja, toda a sociedade tem responsabilidade ética de acolher e cuidar dessa
+                                    população.</p>
+                                <p class="py-2">Pensamos em problematizar pontos que nos autorizem a escutar esse
+                                    público, entendendo que isso não é uma tarefa única dos especialistas e que a
+                                    questão da saúde mental de adolescentes e jovens pode ter lugar e acolhimento em
+                                    muitos espaços.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Chamaremos aqui, tais espaços, como “espaços de cuidado”, justamente por
+                                    entender que esses lugares podem ser múltiplos e diversos, não necessariamente
+                                    precisam ser aqueles instituídos pelas políticas públicas. Estamos querendo mostrar
+                                    que os espaços de cuidado podem surgir em qualquer lugar, através das relações entre
+                                    as pessoas.</p>
+                                <p class="py-2">Profissionais dos campos da saúde, assistência social e educação
+                                    costumam pensar em como intervir em situações de sofrimento. Isso também ocorre com
+                                    familiares, amigos, vizinhos, entre outros. Situações de sofrimento podem mobilizar
+                                    cuidado e, em outros casos, podem afastar, em virtude de se temer uma intervenção
+                                    equivocada. Aqui, imaginamos que um lugar de escuta e de acolhimento é precioso e
+                                    que esse acolhimento pode ser feito por diferentes atores, tanto na rede formal de
+                                    serviços, quanto em redes informais, nos territórios em que a vida acontece.</p>
+                                <p class="py-2">Para ampliarmos essa conversa, decidimos compartilhar um pouco da
+                                    história de cuidado de crianças, adolescentes e jovens, na intenção de pensarmos
+                                    juntos formas de fazer e tecer esse cuidado.</p>
+                                <img src="./image/modulo_06/nucleo_detalhes_1.svg" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto pb-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- núcleos de espaços de cuidado: construindo propostas - parte 3 -->
+                <div id="nucleo-3" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="subtitle pb-2 text-primary text-center">
+                                    Linha do tempo - legislação e principais pontos de cada
+                                </p>
+                                <div class="accordion pb-5" id="accordion_legislacao">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordion_legislacao_1"
+                                                aria-expanded="false" aria-controls="accordion_legislacao">
+                                                1) Código Mello Mattos (BRASIL, 1927)
+                                            </button>
+                                        </h2>
+                                        <div id="accordion_legislacao_1" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordion_legislacao">
+                                            <div class="accordion-body">
+                                                <ul class="py-2">
+                                                    <li>Afirma-se enquanto instrumento legal destinado e regulado à
+                                                        “disciplinarização dos filhos da pobreza”;</li>
+                                                    <li>Finalidade: Saneamento Social;</li>
+                                                    <li>Fim do Império e início da República, modelo de família moral
+                                                        cristã;</li>
+                                                    <li>À infância “pobre” foi atribuído o sentido de periculosidade;
+                                                    </li>
+                                                    <li>Aliança entre médicos (educadores das famílias) e juristas –
+                                                        composição que resultava em intervenções na vida das pessoas;
+                                                    </li>
+                                                    <li>Processo centralizador da ditadura.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordion_legislacao_2"
+                                                aria-expanded="false" aria-controls="accordion_legislacao">
+                                                2) Código de Menores (1979)
+                                            </button>
+                                        </h2>
+                                        <div id="accordion_legislacao_2" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion_legislacao">
+                                            <div class="accordion-body">
+                                                <ul class="py-2">
+                                                    <li>Forte tendência à institucionalização de crianças e adolescentes
+                                                        e criminalização da infância. Tal característica teve como
+                                                        consequência a desassistência e segregação da população
+                                                        infantojuvenil;</li>
+                                                    <li>Abertura “galopante” de estabelecimentos para abrigar, em
+                                                        condições desumanas, “os filhos da pobreza” – afastamento
+                                                        compulsório das famílias;</li>
+                                                    <li>Movimentos sociais e intelectuais começam a rediscutir o modelo
+                                                        de atenção às crianças e adolescentes em resposta às
+                                                        arbitrariedades do regime ditatorial.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordion_legislacao_3"
+                                                aria-expanded="false" aria-controls="accordion_legislacao">
+                                                3) Constituição Federal – artigo 227 (BRASIL, 1988)
+                                            </button>
+                                        </h2>
+                                        <div id="accordion_legislacao_3" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion_legislacao">
+                                            <div class="accordion-body">
+                                                <ul class="py-2">
+                                                    <li>É dever da família, da sociedade e do Estado assegurar à
+                                                        criança, ao adolescente e ao jovem, com absoluta prioridade, o
+                                                        direito à vida, à saúde, à alimentação, à educação, ao lazer, à
+                                                        profissionalização, à cultura, à dignidade, ao respeito, à
+                                                        liberdade e à convivência familiar e comunitária, além de
+                                                        colocá-los a salvo de toda forma de negligência, discriminação,
+                                                        exploração, violência, crueldade e opressão;</li>
+                                                    <li>O Estado no lugar de garantir direitos, ou seja, essa função
+                                                        deixa de ser exclusiva da família;</li>
+                                                    <li>Estatuto da Criança e do Adolescente (ECA) (BRASIL, 1990);</li>
+                                                    <li>O debate de crianças, adolescentes e jovens como sujeitos de
+                                                        direitos se fortalecia;</li>
+                                                    <li>Substituição do termo “menor” por “crianças e adolescentes”;
+                                                    </li>
+                                                    <li>Doutrina da Proteção Integral, pautado na criação de políticas
+                                                        públicas voltadas à cidadania plena.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Foi somente após a promulgação da Constituição Federal de 1988 – marco
+                                    de restabelecimento de um Estado Democrático de Direito no Brasil – que entrou em
+                                    vigor o Estatuto da Criança e do Adolescente (ECA) (BRASIL, 1990), que passa a
+                                    considerar crianças e adolescentes como sujeitos de direitos, abolindo
+                                    definitivamente o termo “menor” e as “práticas menoristas", marca central dos
+                                    códigos anteriores. Calcado na perspectiva da doutrina da proteção integral, o ECA
+                                    abandonou o foco no assistencialismo para a população de 0 a 18 anos e redirecionou
+                                    as ações do Estado para a proteção integral de crianças e adolescentes. O ECA afirma
+                                    que a proteção somente será efetiva através da implantação de políticas públicas
+                                    voltadas à cidadania plena.</p>
+                                <img src="./image/modulo_06/nucleo_detalhes_1.svg" alt="Detalhes"
+                                    class="w-100 d-block mx-auto pb-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- núcleos de espaços de cuidado: construindo propostas - parte 4 -->
+                <div id="nucleo-4" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Apesar do reconhecimento dos avanços no Sistema de Garantia de Direitos
+                                    da Infância e da Adolescência, ainda percebemos que estão vigentes crenças e valores
+                                    morais semelhantes aos antigos códigos. Esse fator determina a necessidade de
+                                    ampliar a discussão sobre ações de proteção, garantindo atuações éticas para uma
+                                    efetiva proteção de crianças e adolescentes.</p>
+                                <p class="py-2">Quando pensamos na questão do cuidado em saúde mental, remetemo-nos logo
+                                    à questão da escuta, existindo, em muitos casos, a prática de uma “pretensa
+                                    proteção”, justificando a aplicabilidade do “melhor interesse” da criança (princípio
+                                    central do ECA), ou seja, adultos que julgam saber o que é melhor para crianças e
+                                    adolescentes.</p>
+                                <p class="py-2">Contudo, é importante percebermos que muitas pessoas, inclusive
+                                    trabalhadores de diferentes campos das políticas públicas da saúde, assistência e
+                                    educação, baseando-se em uma lógica adultocêntrica, julgam saber o que é melhor para
+                                    as crianças, como podemos perceber no caso complexo deste módulo, quando o seu
+                                    Cleiton aponta caminhos na intenção de ajudá-los, mas sem verdadeiramente escutar as
+                                    demandas que Maurício e seus amigos tinham.</p>
+                                <img src="./image/modulo_06/nucleo_detalhes_2.svg" alt="Detalhes"
+                                    class="w-100 d-block mx-auto pb-5">
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <img src="./image/modulo_06/nucleo_detalhes_3.png" alt="Detalhes"
+                                    class="w-100 d-block mx-auto pb-3">
+                                <p class="py-2">Pensando nessa perspectiva, a autora Maria Cristina Vicentin (2016)
+                                    produziu um importante debate para apresentar o conceito de descriançável, que
+                                    envolve um entendimento daquelas práticas que não acolhem as crianças e
+                                    adolescentes. Diz a autora:</p>
+                                <div class="citacao-2 my-3 w-75">
+                                    [...] identificamos o 'descriançável' no panorama das relações contemporâneas quando
+                                    estas produzem um empobrecimento ou mesmo um sufocamento dos processos de abertura,
+                                    acolhimento e invenção de territórios com as crianças e adolescentes (VICENTIN,
+                                    2016, p. 31).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- núcleos de espaços de cuidado: construindo propostas - parte 5 -->
+                <div id="nucleo-5" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Como resposta a estas “práticas de sufocamento”, a autora (VICENTIN,
+                                    2016, p. 31) nos dá pistas para pensarmos em práticas “criançáveis”, mostrando
+                                    caminhos para visualizarmos “onde estão os manicômios infantis e juvenis nos dias de
+                                    hoje” e onde estão “as situações de perigo” e, por fim, como pensar em “descolonizar
+                                    a infância”, com base na afirmação de práticas criançáveis¹. A seguir, detemo-nos em
+                                    duas “situações de perigo” que a autora nos apoia nessa discussão:</p>
+                                <div class="box p-3 my-2 text-light text-center">
+                                    <ul>
+                                        <li class="text-light">Na delimitação de fluxos dos serviços de saúde por
+                                            critérios exclusivamente diagnósticos e não pelas expressividades e
+                                            necessidades das situações ou pelo reconhecimento dos vínculos e dos
+                                            territórios forjados pelos usuários;
+                                        <li class="text-light">Na adoção acrítica às noções de proteção e
+                                            desenvolvimento e, de forma geral. As colonizações que fazemos da infância
+                                            (VICENTIN, 2016, p. 34).</li>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="./image/modulo_06/nucleo_detalhes_4.svg" alt="Detalhes"
+                                    class="w-100 d-block mx-auto py-4">
+                                <div class="citacao">
+                                    <small><i>[1] Para a autora Maria Cristina Gonçalves Vicentin, práticas
+                                            "criançaveis" são aquelas que ocorrem quando efetivamente valorizamos a
+                                            infância.</i>
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="py-2">Seguem sugestões de materiais que podem ser utilizados para aprofundar
+                                    seus estudos:</p>
+                                <img src="./image/modulo_06/nucleo_detalhes_5.png" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto py-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- núcleos de espaços de cuidado: construindo propostas - parte 6 -->
+                <div id="nucleo-6" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-mobile-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <img src="./image/modulo_06/nucleo_detalhes_6.png" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto py-4">
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <img src="./image/modulo_06/nucleo_detalhes_7.png" alt="Detalhes"
+                                    class="w-75 w-md-100 d-block mx-auto py-4">
+                                <div class="box padding-container mb-3 text-light text-center">
+                                    <div class="box bg-secondary p-2 mb-4 text-light text-center">
+                                        <b>Para refletir</b>
+                                    </div>
+                                    É muito importante reconhecermos e sabermos quais espaços de cuidado para
+                                    adolescentes e jovens existem no território. Sabemos que o Brasil é um país com
+                                    diferenças e especificidades locorregionais, porém, em toda cidade da federação,
+                                    existem pontos de atenção à saúde, à assistência social e à educação. Nesse sentido,
+                                    é muito importante que a rede de profissionais, assim como a sociedade civil, esteja
+                                    atenta para garantir espaços de escuta, cuidado e vida para a juventude, promovendo
+                                    protagonismo e autonomia para essa população.
+                                </div>
+                                <p class="py-2">Para além dos espaços instituídos nas políticas públicas que acabamos de
+                                    citar, é importante valorizarmos as redes de apoio que vão sendo construídas ao
+                                    longo da vida, como a família, amigos e comunidade. Você consegue pensar em espaços
+                                    de cuidado e escuta a que você tinha acesso na sua adolescência?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topico - CONHECIMENTOS E HABILIDADES ESSENCIAIS PARA A ESCUTA DE ADOLESCENTES E JOVENS - parte 1 -->
+                <div id="conhecimentos-1" class="carousel-item default">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line padding-x-desk-3">CONHECIMENTOS E HABILIDADES
+                                ESSENCIAIS PARA A ESCUTA DE ADOLESCENTES E JOVENS: COMUNICAÇÃO PRECISA; ABORDAGEM
+                                INICIAL; CONTINUIDADE DO ATENDIMENTO</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_06/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+                <!-- CONHECIMENTOS E HABILIDADES ESSENCIAIS PARA A ESCUTA DE ADOLESCENTES E JOVENS - parte 2 -->
+                <div id="conhecimentos-2" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <span class="text-primary text-center d-block title">CONHECIMENTOS E HABILIDADES ESSENCIAIS PARA
+                            A ESCUTA DE ADOLESCENTES E JOVENS:</span>
+                        <span class="subtitle text-primary d-block text-center">COMUNICAÇÃO PRECISA; ABORDAGEM INICIAL;
+                            CONTINUIDADE DO ATENDIMENTO</span>
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <div class="citacao-2 d-block my-3 w-100">
+                                    <p class="pb-2">Sempre vejo anunciados cursos de oratória. Nunca vi anunciado curso
+                                        de escutatória. Todo mundo quer aprender a falar. Ninguém quer aprender a ouvir.
+                                        Pensei em oferecer um curso de escutatória. Mas acho que ninguém vai se
+                                        matricular. Escutar é complicado e sutil…</p>
+                                    <p class="py-2">Parafraseio o Alberto Caeiro: “Não é bastante ter ouvidos para ouvir
+                                        o que é dito; é preciso também que haja silêncio dentro da alma”. Daí a
+                                        dificuldade: a gente não aguenta ouvir o que o outro diz sem logo dar um palpite
+                                        melhor, sem misturar o que ele diz com aquilo que a gente tem a dizer... Nossa
+                                        incapacidade de ouvir é a manifestação mais constante e sutil de nossa
+                                        arrogância e vaidade: no fundo, somos os mais bonitos...</p>
+                                    <p class="py-2">Tenho um velho amigo, Jovelino, que se mudou para os Estados Unidos
+                                        estimulado pela revolução de 64. Contou-me de sua experiência com os índios.
+                                        Reunidos os participantes, ninguém fala. Há um longo, longo silêncio. (Os
+                                        pianistas, antes de iniciar o concerto, diante do piano, ficam assentados em
+                                        silêncio, abrindo vazios de silêncio, expulsando todas as ideias estranhas).
+                                        Todos em silêncio, à espera do pensamento essencial</p>
+                                    <p class="py-2">Não basta o silêncio de fora. É preciso silêncio dentro. Ausência de
+                                        pensamentos. E aí, quando se faz o silêncio dentro, a gente começa a ouvir
+                                        coisas que não ouvia. Eu comecei a ouvir.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <div class="citacao-2 d-block my-3 w-100">
+                                    <p class="pb-2">Fernando Pessoa conhecia a experiência, e se referia a algo que se
+                                        ouve nos interstícios das palavras, no lugar onde não há palavras. A música
+                                        acontece no silêncio. A alma é uma catedral submersa. No fundo do mar – quem faz
+                                        mergulho sabe – a boca fica fechada. Somos todos olhos e ouvidos. Aí, livres dos
+                                        ruídos do falatório e dos saberes da filosofia, ouvimos a melodia que não havia,
+                                        que de tão linda nos faz chorar.</p>
+                                    <p class="py-2">Para mim, Deus é isto: a beleza que se ouve no silêncio. Daí a
+                                        importância de saber ouvir os outros: a beleza mora lá também. Comunhão é quando
+                                        a beleza do outro e a beleza da gente se juntam num contraponto. Ouçamos os
+                                        clamores dos famintos e dos despossuídos de humanidade que teimamos a não ver
+                                        nem ouvir. É tempo de renovar, se mais não fosse, a nós mesmos e assim nos
+                                        tornarmos seres humanos melhores, para o bem de cada um de nós.</p>
+                                    <p class="py-2">É chegado o momento, não temos mais o que esperar. Ouçamos o humano
+                                        que habita em cada um de nós e clama pela nossa humanidade, pela nossa
+                                        solidariedade, que teima em nos falar e nos fazer ver o outro que dá sentido e é
+                                        a razão do nosso existir, sem o qual não somos e jamais seremos humanos na
+                                        expressão da palavra.</p>
+                                    <p class="py-2 text-end">Alves, 1999</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONHECIMENTOS E HABILIDADES ESSENCIAIS PARA A ESCUTA DE ADOLESCENTES E JOVENS - parte 3 -->
+                <div id="conhecimentos-3" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="subtitle text-primary text-center pb-2">É comum vermos pessoas exaltando a
+                                    importância de falar, principalmente de falar bem, ter boa oratória,
+                                    uma fala eloquente, mas será que as pessoas também compreendem e valorizam a
+                                    importância de escutar,
+                                    de saber escutar?</p>
+                                <p class="py-2">Rubem Alves chama a atenção para isso no início do seu texto. Ele diz da
+                                    existência de muitos cursos de oratória e da ausência de cursos de escutatória.
+                                    Percebemos isso como uma realidade, a escassez de pessoas disponíveis para escutar,
+                                    e, quando nos referimos a escutar adolescentes e jovens, essa indisponibilidade se
+                                    evidencia ainda mais.</p>
+                                <button type="button" class="btn btn-2 d-block mx-auto mb-3 rounded-4"
+                                    data-bs-toggle="modal" data-bs-target="#proposicao_1">Proposição 1</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="proposicao_1" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content modal-conteudo">
+                                            <div class="mx-auto border-0">
+                                                <button type="button"
+                                                    class="btn-close bg-light border rounded-circle p-3"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="pt-3"><b>Proposição:</b> Você já parou para pensar sobre isso?
+                                                Sobre
+                                                o quanto, muitas vezes, a sociedade, a família e até mesmo a escola
+                                                não dão espaço para o que os adolescentes e jovens têm a dizer? <br><br>
+                                                <b>Feedback positivo:</b> A escuta é um recurso essencial para a
+                                                promoção
+                                                da saúde mental de adolescentes e jovens. Por meio deste podemos
+                                                oferecer atenção, cuidado e ferramentas de transformação às
+                                                situações de conflito ou sofrimento vivenciadas pelos jovens.<br><br>
+                                                <b>Feedback orientador:</b> A sociedade, a família e a escola, quando
+                                                ofertam espaços genuínos de escuta e troca, ao mesmo tempo em que
+                                                garantem o acolhimento e acesso às reais necessidades do sujeito,
+                                                permitem que o jovem seja protagonista da sua própria história.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="py-2">Primeiramente, vamos fazer uma distinção entre escutar e ouvir. “Do
+                                    ponto de vista conceitual, escutar é diferente de ouvir. Escutar remete a aderir ao
+                                    que se ouve, e ouvir não implica adesão. Aderir é se permitir ouvir quem nos fala –
+                                    ainda que não acordemos com aquilo que é dito por quem nos fala” (FERREIRA, 2022, p.
+                                    128). Nessa perspectiva, ouvir limita-se à função orgânica. Já escutar remete a ser
+                                    afetado, a sentir o que é trazido pela fala do outro.</p>
+                                <p class="py-2">É importante ressaltar que, quando falamos de escuta, estamos nos
+                                    referindo a um modo de cuidado não exclusivo de determinada área do saber. </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <div class="citacao-2 d-block my-3 w-100">
+                                    <p class="pb-2">Não se trata de uma escuta exclusiva de profissionais especialistas
+                                        da saúde mental, ou mesmo a escuta realizada no atendimento clínico psicológico.
+                                        Esses locais de escuta especializada instituídos formalmente são legítimos,
+                                        importantes e indispensáveis em casos específicos. Contudo, precisamos estar
+                                        atentos para o fato de que eles não são os únicos lugares e modos de escuta
+                                        possíveis. Como já vimos, os lugares e os modos de escuta podem e precisam ser
+                                        ampliados.</p>
+                                    <p class="py-2">
+                                        Então, de qual escuta é essa que estamos falando? A escuta a que nos referimos
+                                        aqui é uma ferramenta e uma habilidade que toda pessoa humana é capaz de
+                                        desenvolver. É um instrumento vital para a relação humana. Pensando nessa
+                                        relação numa perspectiva dialógica, em que uma pessoa se coloca diante da outra
+                                        em uma atitude de respeito, presença, horizontalidade, igualdade e inteireza.
+                                        Martin Buber (1977) aponta que o ser humano tem a capacidade de
+                                        inter-relacionamento com seu semelhante. Essa relação eu-tu acontece no encontro
+                                        verdadeiro de duas pessoas e se expressa pela habilidade da escuta.</p>
+                                    <p class="py-2">
+                                        Para a prática dessa escuta, à qual podemos nos referir como uma escuta ativa,
+                                        afetiva, amorosa, empática e acolhedora, não existe uma receita pronta ou uma
+                                        regra rígida a ser seguida. Estamos falando de algo que se estabelece na
+                                        complexidade e na individualidade de cada relação, sem modelos preestabelecidos.
+                                        No entanto, existem “habilidades” potencializadoras dessa escuta</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONHECIMENTOS E HABILIDADES ESSENCIAIS PARA A ESCUTA DE ADOLESCENTES E JOVENS - parte 4 -->
+                <div id="conhecimentos-4" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <div class="box padding-container mb-3 text-light text-center">
+                                    <div class="box bg-secondary p-2 mb-4 text-light text-center">
+                                        <b>Vamos pensar sobre
+                                            algumas dessas habilidades?</b>
+                                    </div>
+                                    <p class="text-light">Inicialmente, o estabelecimento de vínculo entre a pessoa que escuta e a pessoa
+                                        que fala é imprescindível. Nesse sentido, quem escuta precisa estar disponível
+                                        para a relação mais próxima, simétrica e igualitária possível. A pessoa que
+                                        escuta precisa ter cuidado para não se colocar no lugar de distanciamento e de
+                                        superioridade em relação àquele que fala, evitando uma postura adultocêntrica,
+                                        como já mencionado anteriormente.</p>
+                                    <p class="text-light">Vamos pensar em uma escuta sendo realizada por algum profissional de saúde,
+                                        educação ou assistência ou por algum outro agente de cuidado interessado em
+                                        ouvir o adolescente ou jovem. Vamos considerar que a pessoa que escuta terá mais
+                                        idade e, teoricamente, mais repertório ou experiências de vida do que aquela que
+                                        fala. Ainda assim, e principalmente assim, é preciso estabelecer uma relação de
+                                        proximidade e simetria com esse adolescente ou jovem para a construção de
+                                        vínculos e estabelecimento de uma relação de confiança.</p>
+                                </div>
+                                <button type="button" class="btn btn-2 d-block mx-auto my-4 rounded-4"
+                                    data-bs-toggle="modal" data-bs-target="#proposicao_2">Proposição 2</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="proposicao_2" tabindex="-1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content modal-conteudo">
+                                            <div class="mx-auto border-0">
+                                                <button type="button"
+                                                    class="btn-close bg-light border rounded-circle p-3"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="pt-3"><b>Proposição:</b> A fala de pessoas adultas ou mais velhas
+                                                    para os adolescentes e jovens, na maioria das vezes, vem carregada
+                                                    de opiniões e conselhos, mesmo quando baseados nas melhores
+                                                    intenções. Você já parou para pensar se isso favorece ou atrapalha a
+                                                    comunicação? <br><br>
+                                                    <b>Feedback positivo:</b> Para a fala do outro acontecer, faz-se valioso
+                                                    que a pessoa que escuta abra espaço dentro de si para acolher o que
+                                                    é dito pelo outro, desprendendo-se de julgamentos e vivências
+                                                    pessoais, evitando conselhos precipitados, excessos de teorizações
+                                                    e/ou veredictos.<br><br>
+                                                    <b>Feedback orientador:</b> Recorrer a respostas prontas, universais e/ou
+                                                    motivadoras pode ser um recurso acalentador ou apaziguador para quem
+                                                    diz, sem qualquer possibilidade de impacto profícuo para quem
+                                                    escuta. É preciso estar atento aos efeitos adversos do acolhimento.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">A arte de escutar demanda da pessoa que se propõe a fazê-la a atitude de se esvaziar de si. Esse esvaziar-se, como menciona Rubem Alves em seu texto, requer, muitas vezes, o silêncio.</p>
+                                <p class="py-2">
+                                    A receptividade é uma estratégia importante no contexto da escuta de adolescentes e jovens. É a atitude de acolher sem julgamento o que o outro diz. Isso não significa concordar com tudo que o adolescente ou o jovem fala nem aceitar comportamentos negativos. No entanto, quer dizer aceitar as suas emoções, legitimar seus sentimentos e dar espaço para que ele possa expressar o que sente e vive.</p>
+                                <p class="py-2">
+                                    Só é possível conhecer alguém se a pessoa que ouve se dispuser a escutar o outro que fala como ele é e não como queria que ele fosse. Por meio de uma atitude receptiva, pode ser possível compreender o que é trazido pelo outro, o que está acontecendo com ele e, a partir daí, pensar os cuidados que ele precisa.</p>
+                                <p class="py-2"> 
+                                    Quando nos referimos ao que é trazido ou dito pelo adolescente ou jovem é importante destacar que esses modos de dizer nem sempre são verbais. A comunicação ocorre de modos variados, inclusive de modo não verbal. Por isso é preciso estar atento para as atitudes, expressões, gestos, atos corporais e até mesmo o silêncio, que em alguns casos também está a serviço da comunicação.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONHECIMENTOS E HABILIDADES ESSENCIAIS PARA A ESCUTA DE ADOLESCENTES E JOVENS - parte 4 -->
+                <div id="conhecimentos-5" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Voltando às habilidades que favorecem a escuta acolhedora, vamos pensar na postura empática, que é tentar se colocar no lugar do outro. A empatia seria a capacidade de estar junto do outro para sentir o que ele sente, legitimando as emoções sentidas pelo outro. Brené Brown (2016) estuda a empatia e diz que ela consiste em quatro atitudes: assumir a perspectiva da outra pessoa; não julgar; reconhecer a emoção do outro; e comunicar essa emoção. </p>
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-container">
+                                        <p class="text-justify pb-2">Animação: O poder da empatia.</p>
+                                        <p class="text-justify py-2"><a href="http://www.gobblynne.com/" target="_blank">Clique aqui para acessar o material descrito</a></p>
+                                    </div>
+                                </div>
+                                <p class="py-2">Quando se está diante do relato de uma situação difícil vivida pelo outro, é comum se ter o impulso de tentar amenizar a situação. O uso de argumentos de conforto precisa ser ponderado, pois pode gerar o efeito negativo de fazer o outro não se sentir compreendido. Por outro lado, a postura empática, a de tentar compreender a perspectiva vivida pelo outro naquele contexto, sem julgamentos e buscando reconhecer e comunicar as emoções que ele vive, favorece a conexão e pode trazer benefícios.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Compreendemos que a escuta é uma alternativa para lidar com a dor e com o adoecimento. Ela, por si só, é uma estratégia potente, que pode repercutir de modo positivo em muitos casos. No entanto, é importante que a pessoa que escuta conheça seus limites e reconheça que determinadas questões identificadas podem demandar de apoio de algum serviço e/ou atendimento especializado. Por isso é de suma importância conhecer a rede de serviços existente em seu território.</p>
+                                <p class="py-2">
+                                    Como já foi mencionado anteriormente, a escuta à qual nos referimos aqui não se refere a uma escuta exclusiva de determinada área do saber, muito menos a uma escuta clínica terapêutica. Diversas pessoas que tenham interesse no cuidado de adolescentes e jovens podem ser agentes e promotores de cuidado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topico - FUNÇÕES, ATRIBUIÇÕES E LIMITES DO AGENTE DE CUIDADO - parte 1 -->
+                <div id="funcoes-1" class="carousel-item default active">
+                    <div class="container-fluid background-topico vh-100
+                            d-flex">
+                        <div class="m-auto">
+                            <p class="text-light title-topico space-line padding-x-desk-3">FUNÇÕES, ATRIBUIÇÕES E LIMITES DO AGENTE DE CUIDADO</p>
+                            <img class="img-fluid w-75 pt-3 mx-auto d-block" src="./image/modulo_06/detalhes_topico.svg"
+                                alt="detalhes">
+                        </div>
+                    </div>
+                </div>
+                <!-- FUNÇÕES, ATRIBUIÇÕES E LIMITES DO AGENTE DE CUIDADO - parte 4 -->
+                <div id="funcoes-2" class="carousel-item default">
+                    <div class="container-fluid pt-5">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Voltando às habilidades que favorecem a escuta acolhedora, vamos pensar na postura empática, que é tentar se colocar no lugar do outro. A empatia seria a capacidade de estar junto do outro para sentir o que ele sente, legitimando as emoções sentidas pelo outro. Brené Brown (2016) estuda a empatia e diz que ela consiste em quatro atitudes: assumir a perspectiva da outra pessoa; não julgar; reconhecer a emoção do outro; e comunicar essa emoção. </p>
+                                <div class="box-saiba-mais">
+                                    <div class="title-saiba-mais">
+                                        <p class="title text-light
+                                                text-center py-3">Saiba mais</p>
+                                    </div>
+                                    <div class="padding-container">
+                                        <p class="text-justify pb-2">Animação: O poder da empatia.</p>
+                                        <p class="text-justify py-2"><a href="http://www.gobblynne.com/" target="_blank">Clique aqui para acessar o material descrito</a></p>
+                                    </div>
+                                </div>
+                                <p class="py-2">Quando se está diante do relato de uma situação difícil vivida pelo outro, é comum se ter o impulso de tentar amenizar a situação. O uso de argumentos de conforto precisa ser ponderado, pois pode gerar o efeito negativo de fazer o outro não se sentir compreendido. Por outro lado, a postura empática, a de tentar compreender a perspectiva vivida pelo outro naquele contexto, sem julgamentos e buscando reconhecer e comunicar as emoções que ele vive, favorece a conexão e pode trazer benefícios.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 padding-x-container text-justify">
+                                <p class="pb-2">Compreendemos que a escuta é uma alternativa para lidar com a dor e com o adoecimento. Ela, por si só, é uma estratégia potente, que pode repercutir de modo positivo em muitos casos. No entanto, é importante que a pessoa que escuta conheça seus limites e reconheça que determinadas questões identificadas podem demandar de apoio de algum serviço e/ou atendimento especializado. Por isso é de suma importância conhecer a rede de serviços existente em seu território.</p>
+                                <p class="py-2">
+                                    Como já foi mencionado anteriormente, a escuta à qual nos referimos aqui não se refere a uma escuta exclusiva de determinada área do saber, muito menos a uma escuta clínica terapêutica. Diversas pessoas que tenham interesse no cuidado de adolescentes e jovens podem ser agentes e promotores de cuidado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="./js/index.min.js"></script>
+    <!-- https://github.com/AparicioFermiano -->
+</body>
+
+</html>
